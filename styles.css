@@ -3122,3 +3122,75 @@ body {
     transform:none;
   }
 }
+
+
+/* CARD HOVER REBALANCE — keep the earlier large proportions, extend across full visual */
+.story-card-visual::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  opacity:0;
+  transform:none;
+  background:
+    linear-gradient(var(--card-accent),var(--card-accent)) 100% 0 / 20% 34% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 50% 34% / 40% 18% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 0 58% / 34% 25% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 58% 100% / 20% 24% no-repeat;
+  transition:opacity .28s ease;
+  pointer-events:none;
+}
+
+.story-card-visual::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  opacity:0;
+  transform:none;
+  background:
+    linear-gradient(var(--card-accent),var(--card-accent)) 0 0 / 22% 18% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 76% 52% / 24% 20% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 25% 100% / 18% 20% no-repeat;
+  transition:opacity .36s ease .04s;
+  pointer-events:none;
+}
+
+.story-card:hover .story-card-visual::before,
+.story-card:hover .story-card-visual::after,
+.story-card:focus-within .story-card-visual::before,
+.story-card:focus-within .story-card-visual::after{
+  opacity:.94;
+  transform:none;
+}
+
+/* Preserve the same large-scale rhythm on alternating cards while changing placement only */
+.story-card:nth-child(even) .story-card-visual::before{
+  background:
+    linear-gradient(var(--card-accent),var(--card-accent)) 0 0 / 20% 34% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 50% 34% / 40% 18% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 100% 58% / 34% 25% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 42% 100% / 20% 24% no-repeat;
+}
+
+.story-card:nth-child(even) .story-card-visual::after{
+  background:
+    linear-gradient(var(--card-accent),var(--card-accent)) 78% 0 / 22% 18% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 0 52% / 24% 20% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 57% 100% / 18% 20% no-repeat;
+}
+
+.story-card:nth-child(3n) .story-card-visual::before{
+  background:
+    linear-gradient(var(--card-accent),var(--card-accent)) 100% 0 / 20% 34% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 46% 35% / 42% 18% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 0 61% / 36% 24% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 55% 100% / 21% 24% no-repeat;
+}
+
+.story-card:nth-child(3n) .story-card-visual::after{
+  background:
+    linear-gradient(var(--card-accent),var(--card-accent)) 0 0 / 20% 18% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 80% 54% / 20% 18% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 24% 100% / 19% 20% no-repeat;
+}
