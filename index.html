@@ -1,17 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Enrickson Varsori</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f6f2;
+      color: #1d1d1b;
+    }
+
+    .intro {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 10%;
+    }
+
+    .intro-content {
+      max-width: 900px;
+    }
+
+    .name {
+      margin: 0 0 20px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(48px, 7vw, 90px);
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -2px;
+    }
+
+    .tagline {
+      max-width: 850px;
+      margin: 0 0 30px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(26px, 3vw, 42px);
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .bio {
+      max-width: 720px;
+      margin-bottom: 40px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      border: 1px solid #1d1d1b;
+      text-decoration: none;
+      color: #1d1d1b;
+      font-size: 15px;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      background: #1d1d1b;
+      color: #ffffff;
+    }
+
+    @media (max-width: 700px) {
+      .intro {
+        padding: 50px 7%;
+      }
+
+      .bio {
+        font-size: 17px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <h1>Enrickson Varsori</h1>
+  <main>
+    <section class="intro">
 
-  <p>Researcher in Communication Sciences.</p>
+      <div class="intro-content">
 
-  <p>Welcome to my academic website.</p>
+        <h1 class="name">
+          Enrickson Varsori, PhD
+        </h1>
+
+        <h2 class="tagline">
+          Communication research across technology, sustainability and human behaviour.
+        </h2>
+
+        <p class="bio">
+          I am a researcher in Communication Sciences working across digital media,
+          human–computer interaction, sustainability and emerging technologies.
+          My work combines quantitative and qualitative methods and has been
+          developed within international research collaborations and European-funded projects.
+        </p>
+
+        <div class="buttons">
+          <a href="#research" class="button">Research</a>
+          <a href="#publications" class="button">Publications</a>
+          <a href="#" class="button">CV</a>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
 
 </body>
 </html>
