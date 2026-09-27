@@ -3194,3 +3194,49 @@ body {
     linear-gradient(var(--card-accent),var(--card-accent)) 80% 54% / 20% 18% no-repeat,
     linear-gradient(var(--card-accent),var(--card-accent)) 24% 100% / 19% 20% no-repeat;
 }
+
+
+/* RESTORE ORIGINAL GEOMETRIC CARD HOVER */
+.story-card-visual::before,
+.story-card:nth-child(even) .story-card-visual::before,
+.story-card:nth-child(3n) .story-card-visual::before{
+  content:"";
+  position:absolute;
+  z-index:2;
+  left:-3%;
+  top:18%;
+  width:58%;
+  height:30%;
+  background:var(--card-accent,#D97A63);
+  opacity:0;
+  transform:translateX(-105%);
+  transition:transform .52s cubic-bezier(.22,1,.36,1), opacity .35s ease;
+  pointer-events:none;
+}
+
+.story-card-visual::after,
+.story-card:nth-child(even) .story-card-visual::after,
+.story-card:nth-child(3n) .story-card-visual::after{
+  content:"";
+  position:absolute;
+  z-index:2;
+  right:-3%;
+  bottom:16%;
+  left:auto;
+  top:auto;
+  width:66%;
+  height:24%;
+  background:var(--card-accent,#D97A63);
+  opacity:0;
+  transform:translateX(105%);
+  transition:transform .52s cubic-bezier(.22,1,.36,1), opacity .35s ease;
+  pointer-events:none;
+}
+
+.story-card:hover .story-card-visual::before,
+.story-card:hover .story-card-visual::after,
+.story-card:focus-within .story-card-visual::before,
+.story-card:focus-within .story-card-visual::after{
+  transform:translateX(0);
+  opacity:.92;
+}
