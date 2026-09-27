@@ -75,8 +75,65 @@
       background: #1d1d1b;
       color: #ffffff;
     }
+.research-focus {
+  padding: 100px 10%;
+  background: #ffffff;
+}
 
-    @media (max-width: 700px) {
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-label {
+  margin: 0 0 14px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #777;
+}
+
+.section-title {
+  margin: 0 0 55px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 400;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 70px;
+}
+
+.research-item {
+  border-top: 1px solid #cfcfcf;
+  padding-top: 22px;
+}
+
+.research-item h3 {
+  margin: 0 0 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.research-item p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #555;
+}
+    @media (max-width: 700px) 
+    .research-focus {
+  padding: 70px 7%;
+}
+
+.research-grid {
+  grid-template-columns: 1fr;
+  gap: 38px;
+}
+    {
       .intro {
         padding: 50px 7%;
       }
@@ -119,6 +176,59 @@
       </div>
 
     </section>
+    </section>
+
+<section id="research" class="research-focus">
+  <div class="section-inner">
+
+    <p class="section-label">Research Focus</p>
+
+    <h2 class="section-title">
+      Areas of research
+    </h2>
+
+    <div class="research-grid">
+
+      <article class="research-item">
+        <h3>Communication & Digital Media</h3>
+        <p>
+          Research on digital communication and the everyday uses and practices
+          of hyperconnected technologies, with particular attention to young people,
+          temporal experience, attention and digitally mediated social behaviour.
+        </p>
+      </article>
+
+      <article class="research-item">
+        <h3>Human–Computer Interaction</h3>
+        <p>
+          Research on usability, user experience and the evaluation of digital
+          platforms, interfaces and technology-mediated interactions.
+        </p>
+      </article>
+
+      <article class="research-item">
+        <h3>Sustainability & Environmental Communication</h3>
+        <p>
+          Research on communication, engagement and behavioural dimensions of
+          climate, ocean and environmental challenges, including participatory
+          and stakeholder-oriented approaches.
+        </p>
+      </article>
+
+      <article class="research-item">
+        <h3>Artificial Intelligence & Ethics</h3>
+        <p>
+          Research on the ethical, normative and communicative dimensions of
+          artificial intelligence and generative technologies.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
   </main>
 
 </body>
