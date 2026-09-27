@@ -3039,3 +3039,86 @@ body {
     aspect-ratio:16/11;
   }
 }
+
+
+/* CARD HOVER REFINEMENT — layered geometric tiles */
+.story-card-visual::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  opacity:0;
+  transform:scale(.985);
+  background:
+    linear-gradient(var(--card-accent),var(--card-accent)) 100% 0 / 22% 34% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 48% 34% / 40% 18% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 0 56% / 34% 26% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 58% 100% / 20% 24% no-repeat;
+  transition:
+    opacity .28s ease,
+    transform .55s cubic-bezier(.22,1,.36,1);
+  pointer-events:none;
+}
+
+.story-card-visual::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  opacity:0;
+  transform:translateY(10px);
+  background:
+    linear-gradient(rgba(244,240,231,.12),rgba(244,240,231,.12)) 28% 0 / 1px 100% no-repeat,
+    linear-gradient(rgba(244,240,231,.12),rgba(244,240,231,.12)) 72% 0 / 1px 100% no-repeat,
+    linear-gradient(rgba(244,240,231,.12),rgba(244,240,231,.12)) 0 38% / 100% 1px no-repeat,
+    linear-gradient(rgba(244,240,231,.12),rgba(244,240,231,.12)) 0 72% / 100% 1px no-repeat;
+  transition:
+    opacity .35s ease,
+    transform .55s cubic-bezier(.22,1,.36,1);
+  pointer-events:none;
+}
+
+.story-card:hover .story-card-visual::before,
+.story-card:focus-within .story-card-visual::before{
+  opacity:.94;
+  transform:scale(1);
+}
+
+.story-card:hover .story-card-visual::after,
+.story-card:focus-within .story-card-visual::after{
+  opacity:.52;
+  transform:translateY(0);
+}
+
+.story-card-mark{
+  z-index:3;
+}
+
+.story-card-index{
+  z-index:5;
+}
+
+/* Slightly different tile composition for alternating cards */
+.story-card:nth-child(even) .story-card-visual::before{
+  background:
+    linear-gradient(var(--card-accent),var(--card-accent)) 0 0 / 25% 20% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 72% 24% / 28% 22% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 24% 52% / 42% 24% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 84% 100% / 16% 30% no-repeat;
+}
+
+.story-card:nth-child(3n) .story-card-visual::before{
+  background:
+    linear-gradient(var(--card-accent),var(--card-accent)) 0 16% / 31% 24% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 56% 0 / 22% 28% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 100% 50% / 34% 20% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 35% 100% / 24% 28% no-repeat;
+}
+
+@media (prefers-reduced-motion:reduce){
+  .story-card-visual::before,
+  .story-card-visual::after{
+    transition:none;
+    transform:none;
+  }
+}
