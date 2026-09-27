@@ -204,6 +204,87 @@
       opacity: 0.65;
     }
 
+
+    /* POINT 4 — SELECTED PUBLICATIONS */
+
+    .selected-publications {
+      padding: 110px 10%;
+      background: #ffffff;
+    }
+
+    .publications-intro {
+      max-width: 760px;
+      margin: -30px 0 55px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    .publications-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 65px 70px;
+    }
+
+    .publication-item {
+      border-top: 1px solid #cfcfcf;
+      padding-top: 24px;
+    }
+
+    .publication-meta {
+      margin: 0 0 16px;
+      font-size: 13px;
+      line-height: 1.5;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #777;
+    }
+
+    .publication-item h3 {
+      margin: 0 0 16px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 27px;
+      font-weight: 500;
+      line-height: 1.25;
+    }
+
+    .publication-tagline {
+      margin: 0 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      line-height: 1.45;
+      color: #2d2d2a;
+    }
+
+    .publication-text {
+      margin: 0 0 20px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .publication-link,
+    .publications-link {
+      display: inline-block;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #1d1d1b;
+      color: #1d1d1b;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .publication-link:hover,
+    .publication-link:focus-visible,
+    .publications-link:hover,
+    .publications-link:focus-visible {
+      opacity: 0.65;
+    }
+
+    .publications-link {
+      margin-top: 60px;
+    }
+
     /* MOBILE */
 
     @media (max-width: 700px) {
@@ -217,12 +298,14 @@
       }
 
       .research-focus,
-      .featured-projects {
+      .featured-projects,
+      .selected-publications {
         padding: 70px 7%;
       }
 
       .research-grid,
-      .projects-list {
+      .projects-list,
+      .publications-list {
         grid-template-columns: 1fr;
       }
 
@@ -232,6 +315,15 @@
 
       .projects-list {
         gap: 45px;
+      }
+
+      .publications-list {
+        gap: 45px;
+      }
+
+      .publications-intro {
+        margin-top: -20px;
+        font-size: 19px;
       }
 
       .section-title {
@@ -412,6 +504,93 @@
         </div>
 
         <a href="#" class="projects-link">View all projects</a>
+
+      </div>
+    </section>
+
+
+    <!-- POINT 4 — SELECTED PUBLICATIONS -->
+
+    <section id="publications" class="selected-publications">
+      <div class="section-inner">
+
+        <p class="section-label">Selected Publications</p>
+
+        <h2 class="section-title">Research in focus</h2>
+
+        <p class="publications-intro">
+          Selected work across digital life, technology evaluation and environmental change.
+        </p>
+
+        <div class="publications-list">
+
+          <article class="publication-item">
+            <p class="publication-meta">2026 · Mobile Media &amp; Communication</p>
+            <h3>Between Screens and Time: Subjective Online Time Perception and Digital Technology Use Among University Students</h3>
+            <p class="publication-tagline">
+              How does continuous digital connectivity reshape the experience of time?
+            </p>
+            <p class="publication-text">
+              This study brings together my research on hyperconnectivity, youth and temporal experience,
+              examining how continuous technology use becomes embedded in everyday life and shapes
+              subjective perceptions of online time.
+            </p>
+            <a class="publication-link" href="https://doi.org/10.1177/20501579261454068" target="_blank" rel="noopener noreferrer">
+              Read publication
+            </a>
+          </article>
+
+          <article class="publication-item">
+            <p class="publication-meta">2026 · Education Sciences</p>
+            <h3>How Should School-Based Educational Digital Games Be Evaluated? A Proposed Framework for Examining Experiences Beyond Isolated Metrics</h3>
+            <p class="publication-tagline">
+              Moving beyond isolated metrics to understand how students actually experience digital games.
+            </p>
+            <p class="publication-text">
+              This conceptual work proposes a critical-participatory framework for evaluating educational
+              digital games, integrating structured evidence with students’ interpretations, participation
+              and the contexts in which gameplay takes place.
+            </p>
+            <a class="publication-link" href="https://doi.org/10.3390/educsci16101579" target="_blank" rel="noopener noreferrer">
+              Read publication
+            </a>
+          </article>
+
+          <article class="publication-item">
+            <p class="publication-meta">2026 · Chronic Stress</p>
+            <h3>Anger as a Bridge: Understanding How Climate Change Anxiety Shapes Well-Being</h3>
+            <p class="publication-tagline">
+              Exploring the emotional pathways connecting climate anxiety and well-being.
+            </p>
+            <p class="publication-text">
+              This research examines how climate change anxiety relates to affect, anger and life
+              satisfaction, extending my work on environmental change towards its behavioural and
+              psychosocial dimensions.
+            </p>
+            <a class="publication-link" href="https://doi.org/10.1177/24705470261468139" target="_blank" rel="noopener noreferrer">
+              Read publication
+            </a>
+          </article>
+
+          <article class="publication-item">
+            <p class="publication-meta">2026 · Discover Sustainability</p>
+            <h3>Turning the Tide on Marine Litter through an Interdisciplinary Ocean Literacy Programme for Student Empowerment</h3>
+            <p class="publication-tagline">
+              Connecting communication, education and environmental action through ocean literacy.
+            </p>
+            <p class="publication-text">
+              This study examines an interdisciplinary school-based ocean literacy intervention,
+              linking communication and education with participation, environmental awareness and
+              student empowerment in response to marine litter.
+            </p>
+            <a class="publication-link" href="https://doi.org/10.1007/s43621-026-03959-3" target="_blank" rel="noopener noreferrer">
+              Read publication
+            </a>
+          </article>
+
+        </div>
+
+        <a href="#" class="publications-link">View all publications</a>
 
       </div>
     </section>
