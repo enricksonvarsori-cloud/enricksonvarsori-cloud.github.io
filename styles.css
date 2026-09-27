@@ -3430,3 +3430,10 @@ body {
   background-size:cover;
   background-repeat:no-repeat;
 }
+
+
+/* RESTORE4Cs artwork — specificity fix */
+.story-card.restore4cs-card.tone-sage .story-card-visual{
+  background:
+    url("assets/restore4cs-atlas.png") center center / cover no-repeat !important;
+}
