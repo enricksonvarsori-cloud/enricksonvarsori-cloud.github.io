@@ -285,6 +285,57 @@
       margin-top: 60px;
     }
 
+
+    /* POINT 5 — RESEARCH IN PRACTICE */
+
+    .research-practice {
+      padding: 110px 10%;
+      background: #f7f6f2;
+    }
+
+    .practice-intro {
+      max-width: 780px;
+      margin: -30px 0 55px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    .practice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 55px 70px;
+    }
+
+    .practice-item {
+      border-top: 1px solid #bdbdb8;
+      padding-top: 24px;
+    }
+
+    .practice-item h3 {
+      margin: 0 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .practice-tagline {
+      margin: 0 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      line-height: 1.45;
+      color: #2d2d2a;
+    }
+
+    .practice-text {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #555;
+    }
+
     /* MOBILE */
 
     @media (max-width: 700px) {
@@ -299,13 +350,15 @@
 
       .research-focus,
       .featured-projects,
-      .selected-publications {
+      .selected-publications,
+      .research-practice {
         padding: 70px 7%;
       }
 
       .research-grid,
       .projects-list,
-      .publications-list {
+      .publications-list,
+      .practice-grid {
         grid-template-columns: 1fr;
       }
 
@@ -321,7 +374,12 @@
         gap: 45px;
       }
 
-      .publications-intro {
+      .practice-grid {
+        gap: 45px;
+      }
+
+      .publications-intro,
+      .practice-intro {
         margin-top: -20px;
         font-size: 19px;
       }
@@ -591,6 +649,74 @@
         </div>
 
         <a href="#" class="publications-link">View all publications</a>
+
+      </div>
+    </section>
+
+
+    <!-- POINT 5 — RESEARCH IN PRACTICE -->
+
+    <section id="practice" class="research-practice">
+      <div class="section-inner">
+
+        <p class="section-label">Research in Practice</p>
+
+        <h2 class="section-title">How research moves beyond the page</h2>
+
+        <p class="practice-intro">
+          My work often sits between research, technology, institutions and the people
+          expected to use, shape or respond to scientific knowledge.
+        </p>
+
+        <div class="practice-grid">
+
+          <article class="practice-item">
+            <h3>Engaging people in research</h3>
+            <p class="practice-tagline">
+              Research becomes stronger when those affected by it help shape it.
+            </p>
+            <p class="practice-text">
+              I design and contribute to stakeholder engagement, co-creation and participatory
+              processes that connect research teams with communities, practitioners and
+              institutional actors.
+            </p>
+          </article>
+
+          <article class="practice-item">
+            <h3>Evaluating technology in context</h3>
+            <p class="practice-tagline">
+              Usability matters most when technologies meet real users and real situations.
+            </p>
+            <p class="practice-text">
+              My work combines human–computer interaction, usability and user experience
+              evaluation with applied settings, including digital platforms, educational games
+              and participatory tools.
+            </p>
+          </article>
+
+          <article class="practice-item">
+            <h3>Translating science into action</h3>
+            <p class="practice-tagline">
+              Research has greater value when findings can travel beyond academic outputs.
+            </p>
+            <p class="practice-text">
+              I work on science communication, exploitation, training and uptake strategies
+              that help scientific results reach decision-makers, professionals and wider publics.
+            </p>
+          </article>
+
+          <article class="practice-item">
+            <h3>Connecting disciplines and institutions</h3>
+            <p class="practice-tagline">
+              Complex problems require research that moves across boundaries.
+            </p>
+            <p class="practice-text">
+              My work spans communication, sustainability, HCI, education and emerging
+              technologies within international and interdisciplinary research environments.
+            </p>
+          </article>
+
+        </div>
 
       </div>
     </section>
