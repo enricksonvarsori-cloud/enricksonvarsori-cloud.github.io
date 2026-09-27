@@ -1873,3 +1873,119 @@ body {
     min-height:340px;
   }
 }
+
+
+/* VISUAL TEST 2 — Oxford-inspired institutional palette */
+:root{
+  --premium-ivory:#F1EEE9;
+  --premium-paper:#F7F5F2;
+  --premium-ink:#211D1C;
+  --premium-navy:#002147;
+  --premium-forest:#15616D;
+  --premium-gold:#1D42A6;
+  --premium-muted:#5F6468;
+  --premium-line:#D7D3CD;
+}
+
+.homepage{
+  background:var(--premium-ivory);
+  color:var(--premium-ink);
+}
+
+.homepage .site-header{
+  background:rgba(241,238,233,.96);
+  border-bottom:1px solid rgba(33,29,28,.12);
+}
+
+.homepage .brand,
+.homepage .nav-links a{
+  color:var(--premium-ink);
+}
+
+.homepage .hero-overline,
+.homepage .premium-heading .label,
+.homepage .project-slide-copy .project-kicker,
+.homepage .premium-publication-row .arrow,
+.homepage .research-territory .territory-tags{
+  color:var(--premium-gold);
+}
+
+.homepage .premium-hero-actions .button:first-child{
+  background:var(--premium-navy);
+  border-color:var(--premium-navy);
+}
+
+.homepage .premium-hero-actions .button:first-child:hover{
+  background:var(--premium-gold);
+  border-color:var(--premium-gold);
+}
+
+.homepage .premium-hero-actions .button:last-child:hover{
+  color:var(--premium-gold);
+  border-color:var(--premium-gold);
+}
+
+.homepage .hero-visual{
+  background:
+    linear-gradient(180deg,rgba(0,33,71,.02),rgba(0,33,71,.24)),
+    linear-gradient(145deg,#E3E8ED 0%,#A8C0C6 44%,#15616D 100%);
+  border:1px solid rgba(0,33,71,.16);
+  box-shadow:0 22px 55px rgba(0,33,71,.14);
+}
+
+.homepage .premium-strip a:hover,
+.homepage .research-territory:hover{
+  background:rgba(29,66,166,.055);
+}
+
+.homepage .carousel-arrow:hover{
+  background:var(--premium-navy);
+  border-color:var(--premium-navy);
+}
+
+.homepage .project-tab[aria-selected="true"]{
+  border-bottom-color:var(--premium-gold);
+}
+
+.homepage .project-slide.theoscope .project-slide-visual{
+  background:linear-gradient(145deg,#B9CED4 0%,#E0E6EA 42%,#002147 100%);
+}
+
+.homepage .project-slide.restore .project-slide-visual{
+  background:linear-gradient(145deg,#CAD8D5 0%,#86A9A1 48%,#15616D 100%);
+}
+
+.homepage .project-slide.aagora .project-slide-visual{
+  background:linear-gradient(145deg,#D1E3E8 0%,#73A7B5 48%,#002147 100%);
+}
+
+.homepage .project-slide.locust .project-slide-visual{
+  background:linear-gradient(145deg,#E1D8CD 0%,#A38F82 48%,#55444A 100%);
+}
+
+.homepage .project-slide.trackin .project-slide-visual{
+  background:linear-gradient(145deg,#E5DDCC 0%,#B8A178 48%,#665844 100%);
+}
+
+.homepage .practice-feature{
+  background:var(--premium-navy);
+}
+
+.homepage .practice-copy .label{
+  color:#AFC1FF;
+}
+
+.homepage .practice-visual{
+  background:
+    linear-gradient(180deg,rgba(0,33,71,.03),rgba(0,33,71,.30)),
+    linear-gradient(135deg,#DDD4C4 0%,#9DB6B1 48%,#15616D 100%);
+}
+
+.homepage .site-footer{
+  background:#0A1420;
+}
+
+.homepage .text-link:hover{
+  color:var(--premium-gold);
+  opacity:1;
+}
