@@ -1,4 +1,6 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f6f2;color:#1d1d1b}a{color:inherit}.wrap{width:min(1200px,80%);margin:0 auto}.site-header{position:sticky;top:0;z-index:20;background:rgba(247,246,242,.96);border-bottom:1px solid #d9d8d2}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{font-family:Georgia,"Times New Roman",serif;font-size:21px;text-decoration:none}.nav-links{display:flex;flex-wrap:wrap;gap:20px}.nav-links a{text-decoration:none;font-size:14px}.nav-links a:hover,.text-link:hover,.footer-links a:hover{opacity:.6}.hero{padding:120px 0 100px}.hero h1,.page-hero h1{margin:0 0 22px;font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1;letter-spacing:-2px}.hero h1{font-size:clamp(52px,7vw,92px)}.page-hero h1{font-size:clamp(46px,6vw,74px)}.tagline{max-width:900px;margin:0 0 28px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(27px,3vw,42px);line-height:1.2}.lead{max-width:780px;margin:0;font-size:18px;line-height:1.75;color:#484844}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:35px}.button{display:inline-block;border:1px solid #1d1d1b;padding:12px 20px;text-decoration:none;font-size:14px}.button:hover{background:#1d1d1b;color:#fff}.section{padding:95px 0}.section.white{background:#fff}.label{margin:0 0 12px;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#777}.title{margin:0 0 48px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(34px,4.5vw,56px);font-weight:400;line-height:1.1}.intro-copy{max-width:820px;margin:-26px 0 48px;font-family:Georgia,"Times New Roman",serif;font-size:21px;line-height:1.5;color:#444}.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:52px 70px}.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px}.card{border-top:1px solid #c9c8c2;padding-top:20px}.card h3{margin:0 0 12px;font-family:Georgia,"Times New Roman",serif;font-size:28px;font-weight:500;line-height:1.2}.meta{margin:0 0 14px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#777;line-height:1.5}.card p{margin:0;font-size:16px;line-height:1.7;color:#555}.card .accent{margin:0 0 15px;font-family:Georgia,"Times New Roman",serif;font-size:19px;line-height:1.45;color:#2c2c29}.text-link{display:inline-block;margin-top:24px;padding-bottom:3px;border-bottom:1px solid #1d1d1b;text-decoration:none;font-size:14px}.page-hero{padding:95px 0 65px}.long-copy{max-width:920px;font-family:Georgia,"Times New Roman",serif;font-size:22px;line-height:1.6;color:#333}.long-copy p{margin:0 0 24px}.ecosystem{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:45px}.entry{margin-bottom:22px}.entry strong{display:block;margin-bottom:5px}.entry span{font-size:15px;line-height:1.55;color:#666}.site-footer{padding:48px 0;background:#1d1d1b;color:#f7f6f2}.footer-grid{display:flex;justify-content:space-between;align-items:center;gap:25px}.footer-name{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:26px}.footer-links{display:flex;flex-wrap:wrap;gap:18px}.footer-links a{font-size:14px;text-decoration:none;border-bottom:1px solid rgba(247,246,242,.45)}@media(max-width:800px){.wrap{width:86%}.nav{align-items:flex-start;flex-direction:column;padding:18px 0}.nav-links{gap:12px 16px}.hero{padding:80px 0 70px}.section{padding:70px 0}.grid-2,.grid-3,.ecosystem{grid-template-columns:1fr}.intro-copy{margin-top:-18px;font-size:19px}.footer-grid{align-items:flex-start;flex-direction:column}}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Manrope",Arial,sans-serif;background:#f7f6f2;color:#1d1d1b}a{color:inherit}.wrap{width:min(1200px,80%);margin:0 auto}.site-header{position:sticky;top:0;z-index:20;background:rgba(247,246,242,.96);border-bottom:1px solid #d9d8d2}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{font-family:"Manrope",Arial,sans-serif;font-size:21px;text-decoration:none}.nav-links{display:flex;flex-wrap:wrap;gap:20px}.nav-links a{text-decoration:none;font-size:14px}.nav-links a:hover,.text-link:hover,.footer-links a:hover{opacity:.6}.hero{padding:120px 0 100px}.hero h1,.page-hero h1{margin:0 0 22px;font-family:"Manrope",Arial,sans-serif;font-weight:500;line-height:1;letter-spacing:-2px}.hero h1{font-size:clamp(52px,7vw,92px)}.page-hero h1{font-size:clamp(46px,6vw,74px)}.tagline{max-width:900px;margin:0 0 28px;font-family:"Manrope",Arial,sans-serif;font-size:clamp(27px,3vw,42px);line-height:1.2}.lead{max-width:780px;margin:0;font-size:18px;line-height:1.75;color:#484844}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:35px}.button{display:inline-block;border:1px solid #1d1d1b;padding:12px 20px;text-decoration:none;font-size:14px}.button:hover{background:#1d1d1b;color:#fff}.section{padding:95px 0}.section.white{background:#fff}.label{margin:0 0 12px;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#777}.title{margin:0 0 48px;font-family:"Manrope",Arial,sans-serif;font-size:clamp(34px,4.5vw,56px);font-weight:400;line-height:1.1}.intro-copy{max-width:820px;margin:-26px 0 48px;font-family:"Manrope",Arial,sans-serif;font-size:21px;line-height:1.5;color:#444}.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:52px 70px}.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px}.card{border-top:1px solid #c9c8c2;padding-top:20px}.card h3{margin:0 0 12px;font-family:"Manrope",Arial,sans-serif;font-size:28px;font-weight:500;line-height:1.2}.meta{margin:0 0 14px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#777;line-height:1.5}.card p{margin:0;font-size:16px;line-height:1.7;color:#555}.card .accent{margin:0 0 15px;font-family:"Manrope",Arial,sans-serif;font-size:19px;line-height:1.45;color:#2c2c29}.text-link{display:inline-block;margin-top:24px;padding-bottom:3px;border-bottom:1px solid #1d1d1b;text-decoration:none;font-size:14px}.page-hero{padding:95px 0 65px}.long-copy{max-width:920px;font-family:"Manrope",Arial,sans-serif;font-size:22px;line-height:1.6;color:#333}.long-copy p{margin:0 0 24px}.ecosystem{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:45px}.entry{margin-bottom:22px}.entry strong{display:block;margin-bottom:5px}.entry span{font-size:15px;line-height:1.55;color:#666}.site-footer{padding:48px 0;background:#1d1d1b;color:#f7f6f2}.footer-grid{display:flex;justify-content:space-between;align-items:center;gap:25px}.footer-name{margin:0;font-family:"Manrope",Arial,sans-serif;font-size:26px}.footer-links{display:flex;flex-wrap:wrap;gap:18px}.footer-links a{font-size:14px;text-decoration:none;border-bottom:1px solid rgba(247,246,242,.45)}@media(max-width:800px){.wrap{width:86%}.nav{align-items:flex-start;flex-direction:column;padding:18px 0}.nav-links{gap:12px 16px}.hero{padding:80px 0 70px}.section{padding:70px 0}.grid-2,.grid-3,.ecosystem{grid-template-columns:1fr}.intro-copy{margin-top:-18px;font-size:19px}.footer-grid{align-items:flex-start;flex-direction:column}}
 
 /* HOMEPAGE REDESIGN — editorial academic system */
 :root{
@@ -23,7 +25,7 @@ body{
 }
 
 .homepage .brand{
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:22px;
   letter-spacing:-.02em;
 }
@@ -71,7 +73,7 @@ body{
 .home-hero h1{
   max-width:900px;
   margin:0;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:clamp(64px,8vw,116px);
   font-weight:400;
   line-height:.9;
@@ -81,7 +83,7 @@ body{
 .hero-statement{
   max-width:900px;
   margin:34px 0 0;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:clamp(27px,3vw,44px);
   line-height:1.14;
   color:#252820;
@@ -138,7 +140,7 @@ body{
 .hero-panel-item strong{
   display:block;
   margin-bottom:4px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:19px;
   font-weight:500;
   line-height:1.25;
@@ -237,7 +239,7 @@ body{
 
 .editorial-card h3{
   margin:0 0 14px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:30px;
   font-weight:500;
   line-height:1.12;
@@ -280,7 +282,7 @@ body{
 
 .project-feature h3{
   margin:0 0 16px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:34px;
   font-weight:500;
 }
@@ -315,7 +317,7 @@ body{
 
 .publication-row h3{
   margin:0;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:24px;
   font-weight:500;
   line-height:1.25;
@@ -336,7 +338,7 @@ body{
 
 .home-callout blockquote{
   margin:0;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:clamp(30px,3.5vw,52px);
   line-height:1.12;
   color:#252820;
@@ -462,7 +464,7 @@ body{
 }
 
 .homepage .brand{
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:23px;
   font-weight:500;
 }
@@ -514,7 +516,7 @@ body{
 .homepage .premium-hero h1{
   max-width:880px;
   margin:0;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:clamp(72px,8.5vw,128px);
   font-weight:400;
   line-height:.88;
@@ -524,7 +526,7 @@ body{
 .homepage .premium-hero .hero-subtitle{
   max-width:820px;
   margin:38px 0 0;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:clamp(28px,3vw,46px);
   line-height:1.13;
   color:#232923;
@@ -610,7 +612,7 @@ body{
 
 .homepage .hero-visual h2{
   margin:0 0 24px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:33px;
   font-weight:400;
   line-height:1.15;
@@ -651,7 +653,7 @@ body{
 
 .homepage .premium-strip span{
   display:block;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:18px;
   line-height:1.25;
 }
@@ -705,14 +707,14 @@ body{
 }
 
 .homepage .research-line .number{
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:22px;
   color:var(--premium-gold);
 }
 
 .homepage .research-line h3{
   margin:0;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:30px;
   font-weight:500;
   line-height:1.15;
@@ -748,7 +750,7 @@ body{
   position:absolute;
   right:-24px;
   top:10px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:110px;
   color:rgba(255,255,255,.04);
   letter-spacing:-.05em;
@@ -762,7 +764,7 @@ body{
   position:relative;
   z-index:1;
   margin:0 0 18px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:52px;
   font-weight:400;
 }
@@ -794,7 +796,7 @@ body{
 
 .homepage .featured-small h3{
   margin:0 0 14px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:30px;
   font-weight:500;
 }
@@ -835,7 +837,7 @@ body{
 
 .homepage .premium-publication-row h3{
   margin:0;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:25px;
   font-weight:500;
   line-height:1.3;
@@ -861,7 +863,7 @@ body{
 
 .homepage .impact-band blockquote{
   margin:0;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:clamp(34px,4vw,60px);
   line-height:1.08;
   font-weight:400;
@@ -893,7 +895,7 @@ body{
 
 .homepage .ecosystem-panel h3{
   margin:0 0 28px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:27px;
   font-weight:500;
 }
@@ -1116,7 +1118,7 @@ body{
 
 .homepage .research-territory h3{
   margin:0;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:31px;
   font-weight:500;
   line-height:1.13;
@@ -1169,7 +1171,7 @@ body{
   left:28px;
   bottom:26px;
   max-width:380px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:21px;
   line-height:1.25;
   color:#fff;
@@ -1184,7 +1186,7 @@ body{
 
 .homepage .feature-story-copy h3{
   margin:0 0 18px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:54px;
   font-weight:400;
   line-height:1;
@@ -1219,7 +1221,7 @@ body{
 
 .homepage .secondary-project h3{
   margin:0 0 12px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:29px;
   font-weight:500;
 }
@@ -1269,7 +1271,7 @@ body{
 .homepage .practice-copy h2{
   margin:0 0 24px;
   max-width:620px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:clamp(38px,4vw,56px);
   font-weight:400;
   line-height:1.08;
@@ -1297,7 +1299,7 @@ body{
 
 .homepage .ecosystem-minimal h3{
   margin:0;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:32px;
   font-weight:500;
   line-height:1.18;
@@ -1438,7 +1440,7 @@ body{
   left:30px;
   bottom:28px;
   max-width:360px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:20px;
   line-height:1.28;
   color:#fff;
@@ -1462,7 +1464,7 @@ body{
 
 .homepage .project-slide-copy h3{
   margin:0 0 20px;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:clamp(43px,4vw,60px);
   font-weight:400;
   line-height:1;
@@ -1553,7 +1555,7 @@ body{
   left:28px;
   bottom:26px;
   z-index:2;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:21px;
   color:#fff;
 }
@@ -1591,4 +1593,101 @@ body{
   .homepage .project-slide-visual{
     min-height:280px;
   }
+}
+
+
+/* TYPOGRAPHY SYSTEM — MANROPE */
+html, body, button, input, textarea, select {
+  font-family:"Manrope",Arial,sans-serif;
+}
+
+body {
+  font-weight:400;
+  letter-spacing:-0.01em;
+}
+
+.site-header .brand,
+.homepage .brand {
+  font-family:"Manrope",Arial,sans-serif;
+  font-weight:600;
+  letter-spacing:-0.035em;
+}
+
+.nav-links a,
+.homepage .nav-links a {
+  font-family:"Manrope",Arial,sans-serif;
+  font-weight:500;
+  letter-spacing:.045em;
+}
+
+.homepage .premium-hero h1 {
+  font-family:"Manrope",Arial,sans-serif;
+  font-weight:300;
+  letter-spacing:-0.065em;
+}
+
+.homepage .premium-hero .hero-subtitle,
+.homepage .premium-heading .title,
+.homepage .research-territory h3,
+.homepage .project-slide-copy h3,
+.homepage .premium-publication-row h3,
+.homepage .practice-copy h2,
+.homepage .ecosystem-minimal h3,
+.page-hero h1,
+.title,
+.card h3,
+.long-copy,
+.footer-name {
+  font-family:"Manrope",Arial,sans-serif;
+  letter-spacing:-0.035em;
+}
+
+.homepage .premium-hero .hero-subtitle,
+.homepage .premium-heading .title,
+.homepage .practice-copy h2,
+.page-hero h1,
+.title {
+  font-weight:300;
+}
+
+.homepage .research-territory h3,
+.homepage .project-slide-copy h3,
+.homepage .premium-publication-row h3,
+.homepage .ecosystem-minimal h3,
+.card h3,
+.footer-name {
+  font-weight:400;
+}
+
+.homepage .hero-overline,
+.homepage .label,
+.homepage .project-kicker,
+.homepage .pub-meta,
+.meta,
+.label {
+  font-family:"Manrope",Arial,sans-serif;
+  font-weight:600;
+  letter-spacing:.12em;
+}
+
+.homepage .hero-lead,
+.homepage .section-note,
+.homepage .research-territory p,
+.homepage .project-slide-copy p,
+.homepage .practice-copy p,
+.card p,
+.lead,
+.entry span {
+  font-family:"Manrope",Arial,sans-serif;
+  font-weight:400;
+  letter-spacing:-0.01em;
+}
+
+.homepage .button,
+.homepage .text-link,
+.button,
+.text-link {
+  font-family:"Manrope",Arial,sans-serif;
+  font-weight:500;
+  letter-spacing:.025em;
 }
