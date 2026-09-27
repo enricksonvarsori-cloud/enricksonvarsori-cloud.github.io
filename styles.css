@@ -3421,3 +3421,12 @@ body {
   background-size:cover;
   background-repeat:no-repeat;
 }
+
+
+/* RESTORE4Cs artwork — use uploaded PNG from repository */
+.restore4cs-card .story-card-visual{
+  background-image:url("assets/restore4cs-atlas.png");
+  background-position:center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
