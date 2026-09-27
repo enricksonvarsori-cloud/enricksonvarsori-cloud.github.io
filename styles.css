@@ -1691,3 +1691,185 @@ body {
   font-weight:500;
   letter-spacing:.025em;
 }
+
+
+/* VISUAL TEST — higher contrast premium palette */
+:root{
+  --premium-ivory:#F5F2EA;
+  --premium-paper:#FCFBF7;
+  --premium-ink:#101512;
+  --premium-navy:#0E2C3A;
+  --premium-forest:#146B5D;
+  --premium-gold:#4169E1;
+  --premium-muted:#626A64;
+  --premium-line:#D8D5CE;
+}
+
+.homepage{
+  background:var(--premium-ivory);
+  color:var(--premium-ink);
+}
+
+.homepage .site-header{
+  background:rgba(245,242,234,.95);
+  border-bottom:1px solid rgba(16,21,18,.11);
+}
+
+.homepage .hero-overline,
+.homepage .premium-heading .label,
+.homepage .project-slide-copy .project-kicker,
+.homepage .premium-publication-row .arrow,
+.homepage .research-territory .territory-tags{
+  color:var(--premium-gold);
+}
+
+.homepage .premium-hero{
+  padding:64px 0 38px;
+}
+
+.homepage .premium-hero-grid{
+  grid-template-columns:minmax(0,1.02fr) minmax(390px,.98fr);
+  gap:64px;
+}
+
+.homepage .premium-hero h1{
+  font-size:clamp(56px,6vw,84px);
+  line-height:.94;
+}
+
+.homepage .premium-hero .hero-subtitle{
+  max-width:700px;
+  margin-top:28px;
+  font-size:clamp(24px,2.35vw,34px);
+  line-height:1.18;
+}
+
+.homepage .premium-hero .hero-lead{
+  max-width:640px;
+  margin-top:24px;
+  font-size:16px;
+  line-height:1.75;
+  color:var(--premium-muted);
+}
+
+.homepage .premium-hero-actions{
+  margin-top:32px;
+}
+
+.homepage .premium-hero-actions .button{
+  padding:12px 20px;
+  font-size:12px;
+}
+
+.homepage .premium-hero-actions .button:first-child{
+  background:var(--premium-navy);
+  border-color:var(--premium-navy);
+}
+
+.homepage .premium-hero-actions .button:first-child:hover{
+  background:var(--premium-forest);
+  border-color:var(--premium-forest);
+}
+
+.homepage .premium-hero-actions .button:last-child:hover{
+  background:transparent;
+  color:var(--premium-forest);
+  border-color:var(--premium-forest);
+}
+
+.homepage .hero-visual{
+  min-height:455px;
+  background:
+    linear-gradient(180deg,rgba(14,44,58,.02),rgba(14,44,58,.2)),
+    linear-gradient(145deg,#DCE4E1 0%,#AFC8C1 44%,#146B5D 100%);
+  border:1px solid rgba(14,44,58,.14);
+  box-shadow:0 22px 55px rgba(14,44,58,.12);
+}
+
+.homepage .hero-visual::before{
+  background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.62),rgba(255,255,255,0) 62%);
+}
+
+.homepage .hero-visual::after{
+  background:rgba(255,255,255,.48);
+}
+
+.homepage .premium-strip{
+  border-top-color:var(--premium-line);
+  border-bottom-color:var(--premium-line);
+}
+
+.homepage .premium-strip a{
+  border-right-color:var(--premium-line);
+}
+
+.homepage .premium-strip a:hover{
+  background:rgba(65,105,225,.045);
+}
+
+.homepage .research-territory:hover{
+  background:rgba(65,105,225,.045);
+}
+
+.homepage .carousel-arrow:hover{
+  background:var(--premium-navy);
+  border-color:var(--premium-navy);
+}
+
+.homepage .project-tab[aria-selected="true"]{
+  color:var(--premium-ink);
+  border-bottom-color:var(--premium-gold);
+}
+
+.homepage .project-slide.theoscope .project-slide-visual{
+  background:linear-gradient(145deg,#A6C5BE 0%,#D4E0DC 42%,#0E2C3A 100%);
+}
+
+.homepage .project-slide.restore .project-slide-visual{
+  background:linear-gradient(145deg,#C7D6C3 0%,#7FA18B 48%,#146B5D 100%);
+}
+
+.homepage .project-slide.aagora .project-slide-visual{
+  background:linear-gradient(145deg,#C9DEE4 0%,#6AA3B7 48%,#0E2C3A 100%);
+}
+
+.homepage .project-slide.locust .project-slide-visual{
+  background:linear-gradient(145deg,#DDD3C7 0%,#A18E83 48%,#52434A 100%);
+}
+
+.homepage .project-slide.trackin .project-slide-visual{
+  background:linear-gradient(145deg,#E1D9C8 0%,#BAA37A 48%,#655844 100%);
+}
+
+.homepage .practice-feature{
+  background:var(--premium-navy);
+}
+
+.homepage .practice-copy .label{
+  color:#90A9FF;
+}
+
+.homepage .practice-visual{
+  background:
+    linear-gradient(180deg,rgba(14,44,58,.04),rgba(14,44,58,.28)),
+    linear-gradient(135deg,#E2D6BF 0%,#9DB8AF 48%,#146B5D 100%);
+}
+
+.homepage .site-footer{
+  background:#0A171C;
+}
+
+.homepage .text-link:hover{
+  color:var(--premium-gold);
+  opacity:1;
+}
+
+@media(max-width:900px){
+  .homepage .premium-hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .homepage .hero-visual{
+    min-height:340px;
+  }
+}
