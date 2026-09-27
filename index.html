@@ -11,11 +11,37 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background: #f7f6f2;
       color: #1d1d1b;
+    }
+
+    .section-inner {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      margin: 0 0 14px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #777;
+    }
+
+    .section-title {
+      margin: 0 0 55px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(36px, 5vw, 58px);
+      font-weight: 400;
+      line-height: 1.1;
     }
 
     /* POINT 1 — INTRO */
@@ -28,6 +54,7 @@
     }
 
     .intro-content {
+      width: 100%;
       max-width: 900px;
     }
 
@@ -51,7 +78,7 @@
 
     .bio {
       max-width: 720px;
-      margin-bottom: 40px;
+      margin: 0 0 40px;
       font-size: 18px;
       line-height: 1.7;
       color: #444;
@@ -67,13 +94,14 @@
       display: inline-block;
       padding: 13px 22px;
       border: 1px solid #1d1d1b;
-      text-decoration: none;
       color: #1d1d1b;
       font-size: 15px;
-      transition: 0.2s ease;
+      text-decoration: none;
+      transition: background 0.2s ease, color 0.2s ease;
     }
 
-    .button:hover {
+    .button:hover,
+    .button:focus-visible {
       background: #1d1d1b;
       color: #ffffff;
     }
@@ -85,29 +113,9 @@
       background: #ffffff;
     }
 
-    .section-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .section-label {
-      margin: 0 0 14px;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: #777;
-    }
-
-    .section-title {
-      margin: 0 0 55px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(36px, 5vw, 58px);
-      font-weight: 400;
-    }
-
     .research-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 50px 70px;
     }
 
@@ -121,6 +129,7 @@
       font-family: Georgia, "Times New Roman", serif;
       font-size: 26px;
       font-weight: 500;
+      line-height: 1.2;
     }
 
     .research-item p {
@@ -130,91 +139,109 @@
       color: #555;
     }
 
+    /* POINT 3 — FEATURED PROJECTS */
+
+    .featured-projects {
+      padding: 110px 10%;
+      background: #f7f6f2;
+    }
+
+    .projects-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 70px;
+    }
+
+    .project-item {
+      border-top: 1px solid #bdbdb8;
+      padding-top: 24px;
+    }
+
+    .project-meta {
+      margin: 0 0 18px;
+      font-size: 13px;
+      line-height: 1.5;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #777;
+    }
+
+    .project-item h3 {
+      margin: 0 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+
+    .project-tagline {
+      margin: 0 0 20px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.4;
+      color: #2d2d2a;
+    }
+
+    .project-text {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .projects-link {
+      display: inline-block;
+      margin-top: 60px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #1d1d1b;
+      color: #1d1d1b;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .projects-link:hover,
+    .projects-link:focus-visible {
+      opacity: 0.65;
+    }
+
     /* MOBILE */
-/* POINT 3 — FEATURED PROJECTS */
 
-.featured-projects {
-  padding: 110px 10%;
-  background: #f7f6f2;
-}
-
-.projects-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 70px;
-}
-
-.project-item {
-  border-top: 1px solid #bdbdb8;
-  padding-top: 24px;
-}
-
-.project-meta {
-  margin: 0 0 18px;
-  font-size: 13px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #777;
-}
-
-.project-item h3 {
-  margin: 0 0 12px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 34px;
-  font-weight: 500;
-}
-
-.project-tagline {
-  margin: 0 0 20px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 21px;
-  line-height: 1.4;
-  color: #2d2d2a;
-}
-
-.project-text {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #555;
-}
-
-.projects-link {
-  display: inline-block;
-  margin-top: 60px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #1d1d1b;
-  color: #1d1d1b;
-  text-decoration: none;
-  font-size: 15px;
-}
     @media (max-width: 700px) {
       .intro {
-        padding: 50px 7%;
+        min-height: auto;
+        padding: 70px 7%;
       }
 
       .bio {
         font-size: 17px;
       }
 
-      .research-focus {
+      .research-focus,
+      .featured-projects {
         padding: 70px 7%;
       }
 
-      .research-grid {
+      .research-grid,
+      .projects-list {
         grid-template-columns: 1fr;
+      }
+
+      .research-grid {
         gap: 38px;
       }
-   .featured-projects {
-  padding: 70px 7%;
-}
 
-.projects-list {
-  grid-template-columns: 1fr;
-  gap: 45px;
-} }
+      .projects-list {
+        gap: 45px;
+      }
 
+      .section-title {
+        margin-bottom: 40px;
+      }
+
+      .project-item h3 {
+        font-size: 30px;
+      }
+    }
   </style>
 </head>
 
@@ -222,14 +249,12 @@
 
   <main>
 
-    <!-- POINT 1 -->
+    <!-- POINT 1 — INTRO -->
 
     <section class="intro">
       <div class="intro-content">
 
-        <h1 class="name">
-          Enrickson Varsori, PhD
-        </h1>
+        <h1 class="name">Enrickson Varsori, PhD</h1>
 
         <h2 class="tagline">
           Communication research across technology, sustainability and human behaviour.
@@ -251,21 +276,19 @@
       </div>
     </section>
 
-    <!-- POINT 2 -->
+    <!-- POINT 2 — RESEARCH FOCUS -->
 
     <section id="research" class="research-focus">
       <div class="section-inner">
 
         <p class="section-label">Research Focus</p>
 
-        <h2 class="section-title">
-          Areas of research
-        </h2>
+        <h2 class="section-title">Areas of research</h2>
 
         <div class="research-grid">
 
           <article class="research-item">
-            <h3>Communication & Digital Media</h3>
+            <h3>Communication &amp; Digital Media</h3>
             <p>
               Research on digital communication and the everyday uses and practices
               of hyperconnected technologies, with particular attention to young people,
@@ -282,7 +305,7 @@
           </article>
 
           <article class="research-item">
-            <h3>Sustainability & Environmental Communication</h3>
+            <h3>Sustainability &amp; Environmental Communication</h3>
             <p>
               Research on communication, engagement and behavioural dimensions of
               climate, ocean and environmental challenges, including participatory
@@ -291,7 +314,7 @@
           </article>
 
           <article class="research-item">
-            <h3>Artificial Intelligence & Ethics</h3>
+            <h3>Artificial Intelligence &amp; Ethics</h3>
             <p>
               Research on the ethical, normative and communicative dimensions of
               artificial intelligence and generative technologies.
@@ -302,95 +325,97 @@
 
       </div>
     </section>
-<section id="projects" class="featured-projects">
-  <div class="section-inner">
 
-    <p class="section-label">Featured Projects</p>
+    <!-- POINT 3 — FEATURED PROJECTS -->
 
-    <h2 class="section-title">
-      Selected research projects
-    </h2>
+    <section id="projects" class="featured-projects">
+      <div class="section-inner">
 
-    <div class="projects-list">
+        <p class="section-label">Featured Projects</p>
 
-      <article class="project-item">
-        <p class="project-meta">2026– · Horizon Europe · University of Coimbra</p>
-        <h3>THEOSCOPE</h3>
-        <p class="project-tagline">
-          Bringing users, stakeholders and research uptake into the development of next-generation Earth observation technologies.
-        </p>
-        <p class="project-text">
-          Within THEOSCOPE, I contribute to bridging advanced Earth observation technologies
-          with the communities expected to use and adopt them. My work focuses on stakeholder
-          engagement, the development of the Early Adopter Programme, and scientific activities
-          across the project, supporting the translation of technological innovation into
-          meaningful uptake and application.
-        </p>
-      </article>
+        <h2 class="section-title">Selected research projects</h2>
 
-      <article class="project-item">
-        <p class="project-meta">2024–2026 · Horizon Europe · University of Aveiro</p>
-        <h3>RESTORE4Cs</h3>
-        <p class="project-tagline">
-          Bridging science, stakeholders and decision-making in European wetland restoration.
-        </p>
-        <p class="project-text">
-          Within RESTORE4Cs, I worked across research management, science communication,
-          stakeholder engagement and user-centred evaluation, contributing to the connection
-          between scientific outputs, decision-making processes and wider societal use.
-          The project consolidated my work at the intersection of communication,
-          sustainability and human–computer interaction within a large European research consortium.
-        </p>
-      </article>
+        <div class="projects-list">
 
-      <article class="project-item">
-        <p class="project-meta">2024–2026 · Horizon Europe · University of Aveiro</p>
-        <h3>A-AAGORA</h3>
-        <p class="project-tagline">
-          Bringing people, communication and digital interaction into coastal restoration.
-        </p>
-        <p class="project-text">
-          Within A-AAGORA, I contributed to the Portuguese demonstrator through science
-          communication, ocean literacy, public engagement and the evaluation of digital
-          and participatory tools for coastal restoration. The project strengthened my work
-          at the intersection of communication, human–computer interaction and sustainability.
-        </p>
-      </article>
+          <article class="project-item">
+            <p class="project-meta">2026– · Horizon Europe · University of Coimbra</p>
+            <h3>THEOSCOPE</h3>
+            <p class="project-tagline">
+              Connecting advanced Earth observation with users, stakeholders and real-world adoption.
+            </p>
+            <p class="project-text">
+              Within THEOSCOPE, I contribute to bridging advanced Earth observation technologies
+              with the communities expected to use and adopt them. My work focuses on stakeholder
+              engagement, the development of the Early Adopter Programme, and scientific activities
+              across the project, supporting the translation of technological innovation into
+              meaningful uptake and application.
+            </p>
+          </article>
 
-      <article class="project-item">
-        <p class="project-meta">2023–2024 · CAPES-PrInt Young Talent Fellowship · PUCRS</p>
-        <h3>LOCUST</h3>
-        <p class="project-tagline">
-          Rethinking digital literacy for a world of continuous and context-dependent technology use.
-        </p>
-        <p class="project-text">
-          I coordinated LOCUST as an international research project focused on the contextual
-          use of hyperconnected technologies. The project examined how everyday digital practices
-          are shaped by continuous technological presence and by the situations in which technologies
-          are used, with growing relevance to AI-mediated environments and other emerging technologies.
-        </p>
-      </article>
+          <article class="project-item">
+            <p class="project-meta">2024–2026 · Horizon Europe · University of Aveiro</p>
+            <h3>RESTORE4Cs</h3>
+            <p class="project-tagline">
+              Bridging science, stakeholders and decision-making in European wetland restoration.
+            </p>
+            <p class="project-text">
+              Within RESTORE4Cs, I worked across research management, science communication,
+              stakeholder engagement and user-centred evaluation, contributing to the connection
+              between scientific outputs, decision-making processes and wider societal use.
+              The project consolidated my work at the intersection of communication,
+              sustainability and human–computer interaction within a large European research consortium.
+            </p>
+          </article>
 
-      <article class="project-item">
-        <p class="project-meta">2023 · Norway Grants · ICS-ULisboa</p>
-        <h3>Track-IN</h3>
-        <p class="project-tagline">
-          Applying communication research to public policy, youth and social inclusion.
-        </p>
-        <p class="project-text">
-          As a postdoctoral researcher at the Institute of Social Sciences of the University
-          of Lisbon, I contributed to the evaluation of public employment services supporting
-          rural young people not in employment, education or training. The project broadened
-          my research into public policy and social inclusion through qualitative and quantitative methods.
-        </p>
-      </article>
+          <article class="project-item">
+            <p class="project-meta">2024–2026 · Horizon Europe · University of Aveiro</p>
+            <h3>A-AAGORA</h3>
+            <p class="project-tagline">
+              Bringing people, communication and digital interaction into coastal restoration.
+            </p>
+            <p class="project-text">
+              Within A-AAGORA, I contributed to the Portuguese demonstrator through science
+              communication, ocean literacy, public engagement and the evaluation of digital
+              and participatory tools for coastal restoration. The project strengthened my work
+              at the intersection of communication, human–computer interaction and sustainability.
+            </p>
+          </article>
 
-    </div>
+          <article class="project-item">
+            <p class="project-meta">2023–2024 · CAPES-PrInt Young Talent Fellowship · PUCRS</p>
+            <h3>LOCUST</h3>
+            <p class="project-tagline">
+              Rethinking digital literacy for a world of continuous and context-dependent technology use.
+            </p>
+            <p class="project-text">
+              I coordinated LOCUST as an international research project focused on the contextual
+              use of hyperconnected technologies. The project examined how everyday digital practices
+              are shaped by continuous technological presence and by the situations in which technologies
+              are used, with growing relevance to AI-mediated environments and other emerging technologies.
+            </p>
+          </article>
 
-    <a href="#" class="projects-link">View all projects</a>
+          <article class="project-item">
+            <p class="project-meta">2023 · Norway Grants · ICS-ULisboa</p>
+            <h3>Track-IN</h3>
+            <p class="project-tagline">
+              Applying communication research to public policy, youth and social inclusion.
+            </p>
+            <p class="project-text">
+              As a postdoctoral researcher at the Institute of Social Sciences of the University
+              of Lisbon, I contributed to the evaluation of public employment services supporting
+              rural young people not in employment, education or training. The project broadened
+              my research into public policy and social inclusion through qualitative and quantitative methods.
+            </p>
+          </article>
 
-  </div>
-</section>
+        </div>
+
+        <a href="#" class="projects-link">View all projects</a>
+
+      </div>
+    </section>
+
   </main>
 
 </body>
