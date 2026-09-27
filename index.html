@@ -336,6 +336,76 @@
       color: #555;
     }
 
+
+    /* POINT 6 — RESEARCH ECOSYSTEM */
+
+    .research-ecosystem {
+      padding: 110px 10%;
+      background: #ffffff;
+    }
+
+    .ecosystem-intro {
+      max-width: 820px;
+      margin: -30px 0 55px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    .ecosystem-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr 1fr;
+      gap: 50px;
+    }
+
+    .ecosystem-block {
+      border-top: 1px solid #cfcfcf;
+      padding-top: 24px;
+    }
+
+    .ecosystem-block h3 {
+      margin: 0 0 20px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .ecosystem-entry {
+      margin-bottom: 24px;
+    }
+
+    .ecosystem-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .ecosystem-entry strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+
+    .ecosystem-entry span {
+      display: block;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #666;
+    }
+
+    .ecosystem-statement {
+      max-width: 900px;
+      margin: 65px 0 0;
+      padding-top: 28px;
+      border-top: 1px solid #cfcfcf;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 24px;
+      line-height: 1.45;
+      color: #2d2d2a;
+    }
+
     /* MOBILE */
 
     @media (max-width: 700px) {
@@ -351,14 +421,16 @@
       .research-focus,
       .featured-projects,
       .selected-publications,
-      .research-practice {
+      .research-practice,
+      .research-ecosystem {
         padding: 70px 7%;
       }
 
       .research-grid,
       .projects-list,
       .publications-list,
-      .practice-grid {
+      .practice-grid,
+      .ecosystem-grid {
         grid-template-columns: 1fr;
       }
 
@@ -379,9 +451,19 @@
       }
 
       .publications-intro,
-      .practice-intro {
+      .practice-intro,
+      .ecosystem-intro {
         margin-top: -20px;
         font-size: 19px;
+      }
+
+      .ecosystem-grid {
+        gap: 40px;
+      }
+
+      .ecosystem-statement {
+        margin-top: 45px;
+        font-size: 21px;
       }
 
       .section-title {
@@ -717,6 +799,76 @@
           </article>
 
         </div>
+
+      </div>
+    </section>
+
+
+    <!-- POINT 6 — RESEARCH ECOSYSTEM -->
+
+    <section id="ecosystem" class="research-ecosystem">
+      <div class="section-inner">
+
+        <p class="section-label">Research Ecosystem</p>
+
+        <h2 class="section-title">Across institutions, research groups and scientific communities</h2>
+
+        <p class="ecosystem-intro">
+          My research develops across institutional, disciplinary and international environments,
+          connecting Communication Sciences with technology, sustainability, human–computer interaction
+          and emerging research challenges.
+        </p>
+
+        <div class="ecosystem-grid">
+
+          <section class="ecosystem-block">
+            <h3>Institutional affiliations</h3>
+
+            <div class="ecosystem-entry">
+              <strong>University of Coimbra</strong>
+              <span>Faculty of Sciences and Technology · Department of Earth Sciences</span>
+            </div>
+
+            <div class="ecosystem-entry">
+              <strong>CECS · University of Minho</strong>
+              <span>Integrated Researcher</span>
+            </div>
+          </section>
+
+          <section class="ecosystem-block">
+            <h3>Research groups</h3>
+
+            <div class="ecosystem-entry">
+              <strong>GRUPEV</strong>
+              <span>Research Group on Education and Violence</span>
+            </div>
+
+            <div class="ecosystem-entry">
+              <strong>CONFEB</strong>
+              <span>Contemporaneities: Philosophy, Education and Bioethics</span>
+            </div>
+
+            <div class="ecosystem-entry">
+              <strong>CIEBRAUS</strong>
+              <span>Brazil–Australia Education Internationalisation Centre</span>
+            </div>
+          </section>
+
+          <section class="ecosystem-block">
+            <h3>Professional &amp; scientific communities</h3>
+
+            <div class="ecosystem-entry">
+              <strong>ACM SIGCHI</strong>
+              <span>Special Interest Group on Computer-Human Interaction</span>
+            </div>
+          </section>
+
+        </div>
+
+        <p class="ecosystem-statement">
+          Working across these environments allows me to connect communication, HCI, sustainability
+          and emerging technologies through collaborative and interdisciplinary research.
+        </p>
 
       </div>
     </section>
