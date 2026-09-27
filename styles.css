@@ -2312,3 +2312,379 @@ body {
   .homepage .hero-node.n4{top:52%;left:16%;}
   .homepage .hero-visual h2{font-size:24px;max-width:290px;}
 }
+
+
+/* HERO REDESIGN — Atalanta-inspired structure, Ray Phoenix warmth */
+.homepage .site-header{
+  background:#34312B;
+  border-bottom:1px solid rgba(244,240,231,.14);
+  color:#F4F0E7;
+}
+
+.homepage .site-header .wrap{
+  max-width:none;
+  padding-left:clamp(24px,4vw,68px);
+  padding-right:clamp(24px,4vw,68px);
+}
+
+.homepage .brand,
+.homepage .nav-links a{
+  color:#F4F0E7;
+}
+
+.homepage .nav-links a{
+  opacity:.78;
+}
+
+.homepage .nav-links a:hover,
+.homepage .nav-links a:focus-visible{
+  opacity:1;
+  color:#F4F0E7;
+}
+
+.homepage .nav-links a::after{
+  background:#C66F4E;
+}
+
+.homepage .atalanta-hero{
+  background:#34312B;
+  color:#F4F0E7;
+  padding:0;
+  border-bottom:1px solid rgba(244,240,231,.15);
+}
+
+.homepage .hero-frame{
+  display:grid;
+  grid-template-columns:86px minmax(0,1fr);
+  max-width:1600px;
+  margin:0 auto;
+  border-left:1px solid rgba(244,240,231,.12);
+  border-right:1px solid rgba(244,240,231,.12);
+}
+
+.homepage .hero-side-rail{
+  position:relative;
+  min-height:760px;
+  border-right:1px solid rgba(244,240,231,.15);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.homepage .hero-rail-mark{
+  margin-top:28px;
+  font-size:16px;
+  font-weight:600;
+  letter-spacing:-.04em;
+}
+
+.homepage .hero-rail-line{
+  width:1px;
+  flex:1;
+  margin:24px 0 18px;
+  background:rgba(244,240,231,.14);
+}
+
+.homepage .hero-rail-caption{
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+  margin-bottom:28px;
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#8F8A80;
+}
+
+.homepage .hero-core{
+  min-width:0;
+}
+
+.homepage .hero-kicker-row{
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  padding:32px 36px 26px;
+  border-bottom:1px solid rgba(244,240,231,.12);
+  color:#F4F0E7;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:.02em;
+}
+
+.homepage .hero-kicker-row span:last-child{
+  color:#918D84;
+  text-align:right;
+}
+
+.homepage .hero-statement{
+  display:flex;
+  flex-direction:column;
+  margin:0;
+  padding:72px 36px 64px;
+  font-family:"Manrope",Arial,sans-serif;
+  font-size:clamp(48px,5vw,82px);
+  line-height:.99;
+  font-weight:300;
+  letter-spacing:-.055em;
+  color:#F4F0E7;
+  border-bottom:1px solid rgba(244,240,231,.12);
+}
+
+.homepage .hero-statement-muted{
+  color:#918D84;
+}
+
+.homepage .hero-media-row{
+  display:grid;
+  grid-template-columns:minmax(250px,28%) minmax(0,72%);
+  min-height:400px;
+}
+
+.homepage .hero-summary{
+  padding:30px 28px 34px 36px;
+  border-right:1px solid rgba(244,240,231,.14);
+  color:#CBC6BC;
+}
+
+.homepage .hero-summary p{
+  margin:0;
+  max-width:320px;
+  font-size:15px;
+  line-height:1.55;
+  font-weight:500;
+}
+
+.homepage .hero-quick-links{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  margin-top:34px;
+  border-top:1px solid rgba(244,240,231,.14);
+}
+
+.homepage .hero-quick-links a{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 0;
+  border-bottom:1px solid rgba(244,240,231,.14);
+  color:#F4F0E7;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+
+.homepage .hero-quick-links a span{
+  color:#C66F4E;
+}
+
+.homepage .hero-video-panel{
+  position:relative;
+  overflow:hidden;
+  min-height:400px;
+  background:#192126;
+}
+
+.homepage .hero-background-video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  filter:saturate(.78) contrast(.94) brightness(.73);
+  transform:scale(1.035);
+}
+
+.homepage .hero-video-shade{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(25,27,27,.35),rgba(25,27,27,.03) 55%,rgba(25,27,27,.16)),
+    linear-gradient(180deg,rgba(17,20,21,.05),rgba(17,20,21,.42));
+  pointer-events:none;
+}
+
+.homepage .hero-video-panel::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(244,240,231,.08) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(244,240,231,.08) 1px,transparent 1px);
+  background-size:82px 82px;
+  opacity:.22;
+  pointer-events:none;
+}
+
+.homepage .hero-video-label{
+  position:absolute;
+  z-index:2;
+  top:24px;
+  left:28px;
+  color:#F4F0E7;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.homepage .hero-video-tags{
+  position:absolute;
+  z-index:2;
+  left:28px;
+  right:28px;
+  bottom:36px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.homepage .hero-video-tags span{
+  padding:8px 10px;
+  border:1px solid rgba(244,240,231,.32);
+  background:rgba(30,32,31,.32);
+  backdrop-filter:blur(8px);
+  color:#F4F0E7;
+  font-size:10px;
+  font-weight:500;
+}
+
+.homepage .hero-video-credit{
+  position:absolute;
+  z-index:3;
+  right:18px;
+  top:20px;
+  color:rgba(244,240,231,.72);
+  text-decoration:none;
+  font-size:9px;
+  letter-spacing:.02em;
+}
+
+.homepage .hero-video-credit:hover{
+  color:#fff;
+}
+
+.homepage .atalanta-hero .premium-strip{
+  margin:0;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-top:1px solid rgba(244,240,231,.12);
+  border-bottom:0;
+  background:#34312B;
+}
+
+.homepage .atalanta-hero .premium-strip a{
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  padding:0 18px;
+  border-right:1px solid rgba(244,240,231,.12);
+  color:#C7C1B6;
+  text-decoration:none;
+  font-size:12px;
+  transition:background .2s ease,color .2s ease;
+}
+
+.homepage .atalanta-hero .premium-strip a:last-child{
+  border-right:0;
+}
+
+.homepage .atalanta-hero .premium-strip a:hover{
+  background:rgba(198,111,78,.08);
+  color:#F4F0E7;
+}
+
+.homepage .premium-section:first-of-type{
+  border-top:0;
+}
+
+@media(max-width:900px){
+  .homepage .hero-frame{
+    grid-template-columns:1fr;
+  }
+
+  .homepage .hero-side-rail{
+    display:none;
+  }
+
+  .homepage .hero-kicker-row{
+    padding:24px;
+    flex-direction:column;
+    gap:6px;
+  }
+
+  .homepage .hero-kicker-row span:last-child{
+    text-align:left;
+  }
+
+  .homepage .hero-statement{
+    padding:52px 24px 48px;
+    font-size:clamp(42px,9vw,64px);
+  }
+
+  .homepage .hero-media-row{
+    grid-template-columns:1fr;
+  }
+
+  .homepage .hero-summary{
+    border-right:0;
+    border-bottom:1px solid rgba(244,240,231,.14);
+    padding:26px 24px;
+  }
+
+  .homepage .hero-summary p{
+    max-width:640px;
+  }
+
+  .homepage .hero-video-panel{
+    min-height:360px;
+  }
+
+  .homepage .atalanta-hero .premium-strip{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .homepage .atalanta-hero .premium-strip a{
+    border-bottom:1px solid rgba(244,240,231,.12);
+  }
+}
+
+@media(max-width:600px){
+  .homepage .hero-statement{
+    font-size:40px;
+  }
+
+  .homepage .hero-video-panel{
+    min-height:310px;
+  }
+
+  .homepage .hero-video-tags{
+    left:18px;
+    right:18px;
+    bottom:20px;
+  }
+
+  .homepage .atalanta-hero .premium-strip{
+    grid-template-columns:1fr;
+  }
+
+  .homepage .atalanta-hero .premium-strip a{
+    border-right:0;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .homepage .hero-background-video{
+    display:none;
+  }
+
+  .homepage .hero-video-panel{
+    background:
+      linear-gradient(180deg,rgba(17,20,21,.12),rgba(17,20,21,.42)),
+      url("https://svs.gsfc.nasa.gov/vis/a000000/a002200/a002255/a002255.00005_print.png") center/cover no-repeat;
+  }
+}
