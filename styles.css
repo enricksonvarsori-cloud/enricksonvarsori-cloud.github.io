@@ -3389,3 +3389,26 @@ body {
     aspect-ratio:16/11;
   }
 }
+
+
+/* RESTORE4Cs — botanical scientific artwork test */
+.restore4cs-card{
+  --card-accent:#7FA9A2;
+}
+
+.restore4cs-card .story-card-visual{
+  background:
+    linear-gradient(rgba(245,243,234,.025),rgba(245,243,234,.025)),
+    url("assets/restore4cs-atlas.webp") center center / cover no-repeat;
+}
+
+.restore4cs-card .story-card-mark{
+  color:rgba(47,58,54,.54);
+  text-shadow:0 1px 0 rgba(255,255,255,.18);
+}
+
+.restore4cs-card .story-card-index{
+  background:rgba(246,243,235,.88);
+  color:#38433F;
+  backdrop-filter:blur(5px);
+}
