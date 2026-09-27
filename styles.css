@@ -3240,3 +3240,76 @@ body {
   transform:translateX(0);
   opacity:.92;
 }
+
+
+/* GEOMETRIC CARD HOVER — four-block composition based on user mockup */
+.story-card-visual::before,
+.story-card:nth-child(even) .story-card-visual::before,
+.story-card:nth-child(3n) .story-card-visual::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  width:auto;
+  height:auto;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  background:
+    linear-gradient(var(--card-accent),var(--card-accent)) 0 0 / 29% 33% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 0 73% / 50% 24% no-repeat;
+  opacity:0;
+  transform:translateX(-7%);
+  transition:
+    transform .52s cubic-bezier(.22,1,.36,1),
+    opacity .35s ease;
+  pointer-events:none;
+}
+
+.story-card-visual::after,
+.story-card:nth-child(even) .story-card-visual::after,
+.story-card:nth-child(3n) .story-card-visual::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  width:auto;
+  height:auto;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  background:
+    linear-gradient(var(--card-accent),var(--card-accent)) 100% 35% / 50% 17% no-repeat,
+    linear-gradient(var(--card-accent),var(--card-accent)) 100% 100% / 14% 14% no-repeat;
+  opacity:0;
+  transform:translateX(7%);
+  transition:
+    transform .52s cubic-bezier(.22,1,.36,1),
+    opacity .35s ease;
+  pointer-events:none;
+}
+
+.story-card:hover .story-card-visual::before,
+.story-card:focus-within .story-card-visual::before,
+.story-card:hover .story-card-visual::after,
+.story-card:focus-within .story-card-visual::after{
+  opacity:.92;
+  transform:translateX(0);
+}
+
+.story-card-mark{
+  z-index:3;
+}
+
+.story-card-index{
+  z-index:5;
+}
+
+@media (prefers-reduced-motion:reduce){
+  .story-card-visual::before,
+  .story-card-visual::after{
+    transition:none;
+  }
+}
