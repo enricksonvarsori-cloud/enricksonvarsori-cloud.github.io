@@ -7782,3 +7782,16 @@ body {
     min-height:44px !important;
   }
 }
+
+
+/* IMPACT — final editorial text hierarchy */
+.impact-pathway-stage[data-pathway="connections"] h3{
+  font-size:clamp(52px,6.15vw,82px);
+  letter-spacing:-.055em;
+}
+
+@media(max-width:900px){
+  .impact-pathway-stage[data-pathway="connections"] h3{
+    font-size:clamp(46px,11vw,68px);
+  }
+}
