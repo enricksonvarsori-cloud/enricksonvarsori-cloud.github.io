@@ -5161,3 +5161,67 @@ body {
     border-bottom:1px solid rgba(244,240,231,.10);
   }
 }
+
+
+/* Research constellation — refined desktop composition */
+@media(min-width:901px){
+  .research-constellation{
+    padding:62px 0 76px;
+  }
+
+  .research-constellation-intro{
+    margin-bottom:12px;
+  }
+
+  .research-constellation-map{
+    width:min(1100px,100%);
+    min-height:400px;
+    margin:0 auto;
+  }
+
+  .research-constellation-lines{
+    color:rgba(244,240,231,.26);
+  }
+
+  .research-constellation-lines .research-constellation-cross{
+    stroke:rgba(217,122,99,.23);
+  }
+
+  .research-constellation-core{
+    width:230px;
+  }
+
+  .research-constellation-core strong{
+    font-size:19px;
+    line-height:1.4;
+  }
+
+  .research-constellation-node{
+    width:220px;
+  }
+
+  .research-constellation-node p{
+    font-size:12px;
+    line-height:1.5;
+  }
+
+  .node-digital{
+    left:0;
+    top:4%;
+  }
+
+  .node-hci{
+    right:0;
+    top:4%;
+  }
+
+  .node-sustainability{
+    left:0;
+    bottom:2%;
+  }
+
+  .node-ai{
+    right:0;
+    bottom:2%;
+  }
+}
