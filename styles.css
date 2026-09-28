@@ -3502,3 +3502,75 @@ body {
     font-size:clamp(28px,10vw,42px);
   }
 }
+
+
+/* THEOSCOPE — Earth observation artwork test */
+.theoscope-card{
+  --card-accent:#7897AA;
+}
+
+.story-card.theoscope-card.tone-blue .story-card-visual{
+  background:
+    url("assets/theoscope-earth.webp") center center / cover no-repeat !important;
+}
+
+.theoscope-card .story-card-index{
+  background:rgba(244,240,231,.90);
+  color:#34312B;
+  backdrop-filter:blur(5px);
+}
+
+.theoscope-card .theoscope-wash{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:rgba(38,40,37,.52);
+  opacity:0;
+  transition:opacity .42s ease;
+  pointer-events:none;
+}
+
+.theoscope-card .theoscope-hover-title{
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:4;
+  transform:translate(-50%,-44%);
+  opacity:0;
+  color:#F4F0E7;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(34px,4.2vw,64px);
+  font-weight:600;
+  letter-spacing:-.055em;
+  line-height:.95;
+  white-space:nowrap;
+  text-shadow:0 1px 16px rgba(20,22,21,.18);
+  transition:
+    opacity .32s ease .10s,
+    transform .52s cubic-bezier(.22,1,.36,1);
+  pointer-events:none;
+}
+
+.theoscope-card:hover .theoscope-wash,
+.theoscope-card:focus-within .theoscope-wash{
+  opacity:1;
+}
+
+.theoscope-card:hover .story-card-visual::before,
+.theoscope-card:focus-within .story-card-visual::before,
+.theoscope-card:hover .story-card-visual::after,
+.theoscope-card:focus-within .story-card-visual::after{
+  opacity:1;
+}
+
+.theoscope-card:hover .theoscope-hover-title,
+.theoscope-card:focus-within .theoscope-hover-title{
+  opacity:1;
+  transform:translate(-50%,-50%);
+}
+
+@media(max-width:650px){
+  .theoscope-card .theoscope-hover-title{
+    font-size:clamp(28px,10vw,42px);
+  }
+}
