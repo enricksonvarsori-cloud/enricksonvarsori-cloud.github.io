@@ -3446,3 +3446,59 @@ body {
 .restore4cs-card:focus-within .story-card-visual::after{
   opacity:.80;
 }
+
+
+/* RESTORE4Cs hover identity test */
+.restore4cs-card .restore4cs-wash{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:rgba(244,240,231,.50);
+  opacity:0;
+  transition:opacity .42s ease;
+  pointer-events:none;
+}
+
+.restore4cs-card .restore4cs-hover-title{
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:4;
+  transform:translate(-50%,-44%);
+  opacity:0;
+  color:#34312B;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(34px,4.2vw,64px);
+  font-weight:600;
+  letter-spacing:-.055em;
+  line-height:.95;
+  white-space:nowrap;
+  transition:
+    opacity .32s ease .10s,
+    transform .52s cubic-bezier(.22,1,.36,1);
+  pointer-events:none;
+}
+
+.restore4cs-card:hover .restore4cs-wash,
+.restore4cs-card:focus-within .restore4cs-wash{
+  opacity:1;
+}
+
+.restore4cs-card:hover .story-card-visual::before,
+.restore4cs-card:focus-within .story-card-visual::before,
+.restore4cs-card:hover .story-card-visual::after,
+.restore4cs-card:focus-within .story-card-visual::after{
+  opacity:1;
+}
+
+.restore4cs-card:hover .restore4cs-hover-title,
+.restore4cs-card:focus-within .restore4cs-hover-title{
+  opacity:1;
+  transform:translate(-50%,-50%);
+}
+
+@media(max-width:650px){
+  .restore4cs-card .restore4cs-hover-title{
+    font-size:clamp(28px,10vw,42px);
+  }
+}
