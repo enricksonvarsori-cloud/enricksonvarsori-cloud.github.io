@@ -5225,3 +5225,11 @@ body {
     bottom:2%;
   }
 }
+
+
+/* Research constellation — endpoint refinement */
+.research-constellation-lines .research-constellation-endpoint{
+  fill:#B9B2A7;
+  stroke:none;
+  opacity:.9;
+}
