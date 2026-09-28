@@ -4461,7 +4461,7 @@ body {
 }
 
 .about-trajectory-step.is-current{
-  background:linear-gradient(180deg,rgba(182,95,77,.045),rgba(182,95,77,0));
+  background:none;
 }
 
 .about-trajectory-step.is-current h3{
@@ -4520,7 +4520,7 @@ body {
   background:
     linear-gradient(rgba(244,240,231,.20),rgba(244,240,231,.20)),
     url("assets/academic-trajectory-lines.png") center center / cover no-repeat;
-  opacity:.32;
+  opacity:.25;
   pointer-events:none;
 }
 
