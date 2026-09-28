@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Impact — Enrickson Varsori</title>
-  <link rel="stylesheet" href="styles.css?v=20260928-impact-four-photos">
+  <link rel="stylesheet" href="styles.css?v=20260928-impact-subject-focus">
 </head>
 <body class="editorial-page impact-page">
 <header class="site-header">
@@ -195,7 +195,8 @@
       image: "url('assets/impact-people.png')",
       position: '56% 50%',
       size: 'cover',
-      overlayStop: '58%'
+      overlayStop: '58%',
+      maskOpacity: '1'
     },
     {
       label: 'Evaluation',
@@ -205,7 +206,8 @@
       image: "url('assets/impact-photo-a.jpg')",
       position: '96% 8%',
       size: 'auto 118%',
-      overlayStop: '48%'
+      overlayStop: '48%',
+      maskOpacity: '1'
     },
     {
       label: 'Translation',
@@ -213,9 +215,10 @@
       text: 'Helping research outputs move towards decision-making and practice.',
       accent: '#8FB1A6',
       image: "url('assets/impact-uptake.jpg')",
-      position: '66% 50%',
-      size: 'auto 100%',
-      overlayStop: '42%'
+      position: '80% 50%',
+      size: 'auto 96%',
+      overlayStop: '42%',
+      maskOpacity: '.78'
     },
     {
       label: 'Interdisciplinarity',
@@ -223,9 +226,10 @@
       text: 'Creating links across disciplines, institutions and research environments.',
       accent: '#B8A98B',
       image: "url('assets/impact-connections.jpg')",
-      position: '68% 46%',
-      size: 'auto 100%',
-      overlayStop: '44%'
+      position: '84% 44%',
+      size: 'auto 96%',
+      overlayStop: '44%',
+      maskOpacity: '.68'
     }
   ];
 
@@ -247,6 +251,7 @@
     root.style.setProperty('--impact-stage-position', item.position);
     root.style.setProperty('--impact-photo-size', item.size || 'cover');
     root.style.setProperty('--impact-overlay-stop', item.overlayStop || '58%');
+    root.style.setProperty('--impact-mask-opacity', item.maskOpacity || '1');
     label.textContent = item.label;
     title.textContent = item.title;
     text.textContent = item.text;
