@@ -7532,3 +7532,113 @@ body {
     right:20px;
   }
 }
+
+
+/* IMPACT — image framing v2: preserve source photos, prioritise subject visibility */
+.impact-pathway-stage{
+  --impact-photo-size:cover;
+  --impact-stage-position:50% 50%;
+  --impact-overlay-stop:58%;
+  position:relative;
+  isolation:isolate;
+  min-height:clamp(500px,38vw,620px);
+  background:#25221e;
+}
+
+/* Soft full-bleed atmosphere only; the original photo remains unmodified in the layer above. */
+.impact-pathway-stage::after{
+  content:"";
+  position:absolute;
+  inset:-4%;
+  z-index:0;
+  background-image:var(--impact-stage-image);
+  background-size:cover;
+  background-position:var(--impact-stage-position);
+  filter:blur(24px) saturate(.78) brightness(.64);
+  transform:scale(1.06);
+  opacity:.72;
+  pointer-events:none;
+}
+
+.impact-pathway-photo{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background-image:var(--impact-stage-image);
+  background-repeat:no-repeat;
+  background-size:var(--impact-photo-size);
+  background-position:var(--impact-stage-position);
+  transition:
+    background-position .55s cubic-bezier(.22,1,.36,1),
+    background-size .55s cubic-bezier(.22,1,.36,1),
+    opacity .25s ease;
+}
+
+/* Cinematic mask only — it does not alter the underlying file. */
+.impact-pathway-stage::before{
+  z-index:2;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(24,22,19,.94) 0%,
+      rgba(24,22,19,.84) 12%,
+      rgba(24,22,19,.63) 26%,
+      rgba(24,22,19,.30) 38%,
+      rgba(24,22,19,.08) var(--impact-overlay-stop),
+      rgba(24,22,19,0) 66%,
+      rgba(24,22,19,.06) 82%,
+      rgba(24,22,19,.28) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(20,18,16,.14) 0%,
+      rgba(20,18,16,0) 46%,
+      rgba(20,18,16,.28) 100%
+    );
+  box-shadow:
+    inset 34px 0 46px -34px rgba(12,11,10,.68),
+    inset -34px 0 46px -34px rgba(12,11,10,.52);
+}
+
+.impact-pathway-stage-copy,
+.impact-pathway-stage-footer{
+  position:relative;
+  z-index:3;
+}
+
+/* Keep copy slightly narrower so the photographed subject remains visually dominant. */
+.impact-pathway-stage-copy{
+  width:min(430px,38%);
+}
+
+@media(max-width:1100px){
+  .impact-pathway-stage{
+    min-height:520px;
+  }
+  .impact-pathway-stage-copy{
+    width:min(430px,45%);
+  }
+}
+
+@media(max-width:900px){
+  .impact-pathway-stage{
+    min-height:520px;
+  }
+  .impact-pathway-photo{
+    background-size:cover;
+    background-position:center;
+  }
+  .impact-pathway-stage::after{
+    background-position:center;
+  }
+  .impact-pathway-stage::before{
+    background:
+      linear-gradient(180deg,rgba(24,22,19,.12) 0%,rgba(24,22,19,.10) 36%,rgba(24,22,19,.72) 70%,rgba(24,22,19,.93) 100%);
+  }
+}
+
+@media(max-width:620px){
+  .impact-pathway-stage{
+    min-height:540px;
+  }
+}
