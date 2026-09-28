@@ -4879,3 +4879,285 @@ body {
     flex-direction:column;
   }
 }
+
+
+/* Research — visual constellation */
+.research-constellation{
+  padding:70px 0 88px;
+  background:#2D2B26;
+  border-bottom:1px solid rgba(244,240,231,.12);
+  overflow:hidden;
+}
+
+.research-constellation-intro{
+  display:grid;
+  grid-template-columns:minmax(180px,.34fr) minmax(0,1fr);
+  gap:62px;
+  align-items:start;
+  margin-bottom:28px;
+}
+
+.research-constellation-intro h2{
+  margin:0;
+  max-width:760px;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(34px,4.2vw,56px);
+  font-weight:300;
+  line-height:1.04;
+  letter-spacing:-.045em;
+  color:var(--research-paper);
+}
+
+.research-constellation-map{
+  position:relative;
+  min-height:500px;
+  margin-top:10px;
+}
+
+.research-constellation-lines{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  overflow:visible;
+  color:rgba(244,240,231,.20);
+  pointer-events:none;
+}
+
+.research-constellation-lines path,
+.research-constellation-lines circle{
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1;
+  vector-effect:non-scaling-stroke;
+}
+
+.research-constellation-lines .research-constellation-cross{
+  stroke:rgba(217,122,99,.18);
+  stroke-dasharray:3 8;
+}
+
+.research-constellation-lines .research-constellation-core-dot{
+  fill:#D97A63;
+  stroke:none;
+}
+
+.research-constellation-core{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:250px;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  z-index:2;
+}
+
+.research-constellation-core span{
+  display:block;
+  margin-bottom:10px;
+  font-size:9px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#D97A63;
+}
+
+.research-constellation-core strong{
+  display:block;
+  font-family:"Manrope",sans-serif;
+  font-size:18px;
+  font-weight:400;
+  line-height:1.45;
+  color:#D9D3C8;
+}
+
+.research-constellation-node{
+  position:absolute;
+  width:255px;
+  z-index:3;
+  transition:transform .35s cubic-bezier(.22,1,.36,1);
+}
+
+.research-constellation-node:hover{
+  transform:translateY(-4px);
+}
+
+.research-constellation-node h3{
+  margin:0 0 8px;
+  font-family:"Manrope",sans-serif;
+  font-size:23px;
+  font-weight:400;
+  line-height:1.08;
+  letter-spacing:-.03em;
+  color:var(--research-paper);
+}
+
+.research-constellation-node p{
+  margin:0;
+  max-width:240px;
+  font-size:11px;
+  line-height:1.55;
+  color:#928D84;
+}
+
+.node-digital{left:7%;top:10%}
+.node-hci{right:7%;top:10%;text-align:right}
+.node-sustainability{left:8%;bottom:7%}
+.node-ai{right:8%;bottom:7%;text-align:right}
+
+.node-hci p,
+.node-ai p{
+  margin-left:auto;
+}
+
+.research-node-shape{
+  position:relative;
+  display:inline-block;
+  width:14px;
+  height:14px;
+  margin-bottom:16px;
+  color:#B9B2A7;
+  transition:color .25s ease,transform .35s ease;
+}
+
+.research-constellation-node:hover .research-node-shape{
+  color:#D97A63;
+  transform:scale(1.12);
+}
+
+.shape-circle{
+  border:1px solid currentColor;
+  border-radius:50%;
+}
+
+.shape-square{
+  border:1px solid currentColor;
+}
+
+.shape-diamond{
+  border:1px solid currentColor;
+  transform:rotate(45deg);
+}
+
+.research-constellation-node:hover .shape-diamond{
+  transform:rotate(45deg) scale(1.12);
+}
+
+.shape-cross::before,
+.shape-cross::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  background:currentColor;
+  transform:translate(-50%,-50%);
+}
+
+.shape-cross::before{width:14px;height:1px}
+.shape-cross::after{width:1px;height:14px}
+
+/* Replace numeric markers with geometry in detailed research domains */
+.research-domain-index{
+  display:none;
+}
+
+.research-domain-symbol{
+  position:relative;
+  display:block;
+  flex:0 0 auto;
+  width:13px;
+  height:13px;
+  color:#9A756A;
+}
+
+.symbol-circle{
+  border:1px solid currentColor;
+  border-radius:50%;
+}
+
+.symbol-square{
+  border:1px solid currentColor;
+}
+
+.symbol-diamond{
+  border:1px solid currentColor;
+  transform:rotate(45deg);
+}
+
+.symbol-cross::before,
+.symbol-cross::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  background:currentColor;
+  transform:translate(-50%,-50%);
+}
+
+.symbol-cross::before{width:13px;height:1px}
+.symbol-cross::after{width:1px;height:13px}
+
+@media(max-width:900px){
+  .research-constellation-intro{
+    grid-template-columns:1fr;
+    gap:12px;
+    margin-bottom:38px;
+  }
+
+  .research-constellation-map{
+    min-height:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:38px 28px;
+    padding:34px 0 10px;
+  }
+
+  .research-constellation-lines{
+    display:none;
+  }
+
+  .research-constellation-core{
+    position:relative;
+    left:auto;
+    top:auto;
+    width:auto;
+    transform:none;
+    text-align:left;
+    grid-column:1/-1;
+    padding-bottom:26px;
+    border-bottom:1px solid rgba(244,240,231,.14);
+  }
+
+  .research-constellation-node{
+    position:relative;
+    width:auto;
+    left:auto;
+    right:auto;
+    top:auto;
+    bottom:auto;
+    text-align:left;
+  }
+
+  .node-hci p,
+  .node-ai p{
+    margin-left:0;
+  }
+}
+
+@media(max-width:600px){
+  .research-constellation{
+    padding:62px 0 68px;
+  }
+
+  .research-constellation-map{
+    grid-template-columns:1fr;
+  }
+
+  .research-constellation-core{
+    grid-column:auto;
+  }
+
+  .research-constellation-node{
+    padding-bottom:24px;
+    border-bottom:1px solid rgba(244,240,231,.10);
+  }
+}
