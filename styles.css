@@ -4503,3 +4503,28 @@ body {
     background:none;
   }
 }
+
+
+/* About me — Academic Background visual test 1: Trajectory Lines */
+.about-background{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+}
+
+.about-background::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:
+    linear-gradient(rgba(244,240,231,.20),rgba(244,240,231,.20)),
+    url("assets/academic-trajectory-lines.png") center center / cover no-repeat;
+  opacity:.32;
+  pointer-events:none;
+}
+
+.about-background>.wrap{
+  position:relative;
+  z-index:1;
+}
