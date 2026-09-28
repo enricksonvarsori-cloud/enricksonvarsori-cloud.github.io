@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Impact — Enrickson Varsori</title>
-  <link rel="stylesheet" href="styles.css?v=20260928-impact-nav-fix2">
+  <link rel="stylesheet" href="styles.css?v=20260928-impact-copy-coherence">
 </head>
 <body class="editorial-page impact-page">
 <header class="site-header">
@@ -30,7 +30,7 @@
       </div>
       <div class="impact-hero-side">
         <p>My work often sits between research, technology, institutions and the people expected to use, shape or respond to scientific knowledge.</p>
-        <p class="impact-hero-note">Impact is not a single endpoint. It emerges through participation, evaluation, translation and connection.</p>
+        <p class="impact-hero-note">Impact is not a single endpoint. It emerges through participation, evaluation, translation and interdisciplinarity.</p>
       </div>
     </div>
   </section>
@@ -39,7 +39,7 @@
     <div class="wrap">
       <div class="impact-section-head">
         <p class="impact-kicker">How research travels</p>
-        <h2>Four pathways from research to use.</h2>
+        <h2>Four pathways from research into practice.</h2>
       </div>
 
       <div class="impact-pathway-carousel" data-impact-carousel style="--impact-stage-image:url('assets/impact-people.png')">
@@ -67,7 +67,7 @@
           <div class="impact-pathway-stage-copy">
             <p class="impact-pathway-stage-label" data-impact-label>Participation</p>
             <h3 data-impact-title>People</h3>
-            <p class="impact-pathway-stage-text" data-impact-text>Bringing communities, stakeholders and practitioners into research processes.</p>
+            <p class="impact-pathway-stage-text" data-impact-text>Bringing communities, stakeholders and practitioners into the research process.</p>
           </div>
 
           <div class="impact-pathway-stage-footer">
@@ -110,7 +110,7 @@
           </div>
           <div class="impact-practice-main">
             <h3>Engaging people in research</h3>
-            <p class="impact-practice-accent">Research becomes stronger when the people expected to use or respond to it can help shape the process.</p>
+            <p class="impact-practice-accent">Research becomes stronger when the people expected to use, shape or respond to it are part of the process.</p>
           </div>
           <div class="impact-practice-detail">
             <p>I contribute to stakeholder engagement, co-creation, workshops and early-adopter activities that connect research teams with communities, practitioners and institutional actors.</p>
@@ -120,12 +120,12 @@
 
         <article class="impact-practice-row impact-tone-blue">
           <div class="impact-practice-side">
-            <span class="impact-practice-type">HCI &amp; UX</span>
+            <span class="impact-practice-type">Evaluation</span>
             <span class="impact-practice-word">Evaluate</span>
           </div>
           <div class="impact-practice-main">
             <h3>Evaluating technology in context</h3>
-            <p class="impact-practice-accent">Usability matters most when technologies meet real users, tasks and environments.</p>
+            <p class="impact-practice-accent">Usability matters most when technologies meet real users, tasks and contexts.</p>
           </div>
           <div class="impact-practice-detail">
             <p>My work combines usability, user experience and contextual evaluation across digital platforms, educational games, interfaces and participatory technologies.</p>
@@ -135,12 +135,12 @@
 
         <article class="impact-practice-row impact-tone-sage">
           <div class="impact-practice-side">
-            <span class="impact-practice-type">Science communication</span>
+            <span class="impact-practice-type">Translation</span>
             <span class="impact-practice-word">Translate</span>
           </div>
           <div class="impact-practice-main">
             <h3>Translating research into use</h3>
-            <p class="impact-practice-accent">Scientific outputs gain value when they can travel beyond academic publication.</p>
+            <p class="impact-practice-accent">Research outputs gain value when they travel beyond academic publication and inform practice.</p>
           </div>
           <div class="impact-practice-detail">
             <p>I contribute to science communication, exploitation, training and uptake activities that help research reach decision-makers, professionals and wider publics.</p>
@@ -158,7 +158,7 @@
             <p class="impact-practice-accent">Complex problems often require research to move across disciplinary and institutional boundaries.</p>
           </div>
           <div class="impact-practice-detail">
-            <p>My work spans communication, sustainability, HCI, education and emerging technologies within European and international research environments.</p>
+            <p>My work connects communication, sustainability, HCI, education and emerging technologies across European and international research environments.</p>
             <p class="impact-practice-examples">Communication · Sustainability · HCI · Emerging technologies</p>
           </div>
         </article>
@@ -220,7 +220,7 @@
     {
       label: 'Translation',
       title: 'Uptake',
-      text: 'Helping research outputs move towards decision-making and practice.',
+      text: 'Helping research outputs move into decision-making and practice.',
       accent: '#8FB1A6',
       image: "url('assets/impact-photo-a.jpg')",
       position: '96% 8%',
@@ -231,7 +231,7 @@
     {
       label: 'Interdisciplinarity',
       title: 'Connections',
-      text: 'Creating links across disciplines, institutions and research environments.',
+      text: 'Connecting disciplines, institutions and research environments.',
       accent: '#B8A98B',
       image: "url('assets/impact-connections.jpg')",
       position: '98% 42%',
@@ -260,6 +260,7 @@
     root.style.setProperty('--impact-photo-size', item.size || 'cover');
     root.style.setProperty('--impact-overlay-stop', item.overlayStop || '58%');
     root.style.setProperty('--impact-mask-opacity', item.maskOpacity || '1');
+    stage.dataset.pathway = item.title.toLowerCase();
     label.textContent = item.label;
     title.textContent = item.title;
     text.textContent = item.text;
