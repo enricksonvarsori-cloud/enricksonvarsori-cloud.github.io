@@ -7124,3 +7124,298 @@ body {
     align-items:flex-start;
   }
 }
+
+
+/* IMPACT — human-centred pathway carousel */
+.impact-pathway-carousel{
+  --impact-active-accent:var(--impact-coral);
+  --impact-stage-position:50% 50%;
+}
+
+.impact-pathway-tabs{
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  margin-top:6px;
+  border-top:1px solid rgba(52,49,43,.22);
+}
+
+.impact-pathway-tab{
+  --pathway-accent:#D97A63;
+  position:relative;
+  appearance:none;
+  border:0;
+  background:transparent;
+  padding:30px 24px 24px 0;
+  min-height:92px;
+  font-family:"Manrope",Arial,sans-serif;
+  font-size:19px;
+  font-weight:400;
+  letter-spacing:-.025em;
+  text-align:left;
+  color:#8A847A;
+  cursor:pointer;
+  transition:color .25s ease;
+}
+
+.impact-pathway-tab+.impact-pathway-tab{
+  padding-left:28px;
+}
+
+.impact-pathway-tab::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:14px;
+  width:52px;
+  height:2px;
+  background:var(--pathway-accent);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .28s ease;
+}
+
+.impact-pathway-tab+.impact-pathway-tab::after{
+  left:28px;
+}
+
+.impact-pathway-tab.is-active{
+  color:var(--impact-ink);
+}
+
+.impact-pathway-tab.is-active::after{
+  transform:scaleX(1);
+}
+
+.impact-pathway-tab .impact-pathway-marker{
+  top:-8px;
+  left:0;
+}
+
+.impact-pathway-tab+.impact-pathway-tab .impact-pathway-marker{
+  left:28px;
+}
+
+.impact-pathway-stage{
+  position:relative;
+  min-height:470px;
+  margin-top:16px;
+  overflow:hidden;
+  border:1px solid rgba(52,49,43,.11);
+  background-image:
+    linear-gradient(90deg,rgba(39,35,30,.88) 0%,rgba(39,35,30,.73) 24%,rgba(39,35,30,.42) 48%,rgba(39,35,30,.12) 78%,rgba(39,35,30,.08) 100%),
+    var(--impact-stage-image);
+  background-size:cover;
+  background-position:var(--impact-stage-position);
+  color:var(--impact-paper);
+  transition:background-position .55s cubic-bezier(.22,1,.36,1);
+}
+
+.impact-pathway-stage::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(180deg,rgba(52,49,43,.02),rgba(52,49,43,.25)),
+    radial-gradient(circle at 18% 36%,color-mix(in srgb,var(--impact-active-accent) 16%,transparent),transparent 30%);
+  pointer-events:none;
+}
+
+.impact-pathway-stage-copy{
+  position:relative;
+  z-index:2;
+  width:min(470px,52%);
+  padding:72px 0 118px 64px;
+}
+
+.impact-pathway-stage-label{
+  margin:0 0 20px;
+  color:var(--impact-active-accent);
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+
+.impact-pathway-stage h3{
+  margin:0;
+  font-family:"Manrope",Arial,sans-serif;
+  font-size:clamp(58px,7vw,92px);
+  font-weight:300;
+  line-height:.92;
+  letter-spacing:-.06em;
+}
+
+.impact-pathway-stage-text{
+  margin:28px 0 0;
+  max-width:430px;
+  font-size:17px;
+  line-height:1.62;
+  color:#E1DAD0;
+}
+
+.impact-pathway-stage-footer{
+  position:absolute;
+  z-index:3;
+  left:64px;
+  right:46px;
+  bottom:36px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:32px;
+}
+
+.impact-pathway-progress{
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+
+.impact-pathway-count{
+  font-size:12px;
+  letter-spacing:.08em;
+  color:#D3CBC0;
+}
+
+.impact-pathway-progress-bars{
+  display:flex;
+  gap:8px;
+}
+
+.impact-pathway-progress-bars span{
+  width:48px;
+  height:2px;
+  background:rgba(244,240,231,.34);
+  transition:background .25s ease;
+}
+
+.impact-pathway-progress-bars span.is-active{
+  background:var(--impact-active-accent);
+}
+
+.impact-pathway-controls{
+  display:flex;
+  gap:10px;
+}
+
+.impact-pathway-control{
+  width:50px;
+  height:50px;
+  border:1px solid rgba(244,240,231,.72);
+  border-radius:50%;
+  background:rgba(52,49,43,.18);
+  color:var(--impact-paper);
+  font-family:"Manrope",Arial,sans-serif;
+  font-size:20px;
+  cursor:pointer;
+  transition:background .25s ease,border-color .25s ease,transform .25s ease;
+}
+
+.impact-pathway-control:hover,
+.impact-pathway-control:focus-visible{
+  border-color:var(--impact-active-accent);
+  background:color-mix(in srgb,var(--impact-active-accent) 22%,rgba(52,49,43,.52));
+  transform:translateY(-2px);
+}
+
+.impact-pathway-stage.is-switching .impact-pathway-stage-copy{
+  animation:impactPathwayIn .42s cubic-bezier(.22,1,.36,1);
+}
+
+@keyframes impactPathwayIn{
+  from{opacity:.25;transform:translateY(10px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+@media(max-width:900px){
+  .impact-pathway-tabs{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    border-top:0;
+    gap:0;
+  }
+
+  .impact-pathway-tab,
+  .impact-pathway-tab+.impact-pathway-tab{
+    padding:26px 18px 22px 0;
+    border-top:1px solid rgba(52,49,43,.18);
+  }
+
+  .impact-pathway-tab:nth-child(even){
+    padding-left:22px;
+  }
+
+  .impact-pathway-tab:nth-child(even) .impact-pathway-marker,
+  .impact-pathway-tab:nth-child(even)::after{
+    left:22px;
+  }
+
+  .impact-pathway-stage{
+    min-height:520px;
+  }
+
+  .impact-pathway-stage-copy{
+    width:min(520px,72%);
+    padding-left:42px;
+  }
+
+  .impact-pathway-stage-footer{
+    left:42px;
+    right:32px;
+  }
+}
+
+@media(max-width:620px){
+  .impact-pathway-tabs{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .impact-pathway-tab{
+    font-size:16px;
+  }
+
+  .impact-pathway-stage{
+    min-height:530px;
+    background-image:
+      linear-gradient(180deg,rgba(39,35,30,.44) 0%,rgba(39,35,30,.32) 32%,rgba(39,35,30,.78) 67%,rgba(39,35,30,.92) 100%),
+      var(--impact-stage-image);
+    background-position:62% center;
+  }
+
+  .impact-pathway-stage-copy{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:104px;
+    width:auto;
+    padding:0 24px;
+  }
+
+  .impact-pathway-stage h3{
+    font-size:clamp(46px,15vw,70px);
+  }
+
+  .impact-pathway-stage-text{
+    margin-top:16px;
+    font-size:15px;
+  }
+
+  .impact-pathway-stage-footer{
+    left:24px;
+    right:20px;
+    bottom:22px;
+  }
+
+  .impact-pathway-progress{
+    gap:14px;
+  }
+
+  .impact-pathway-progress-bars span{
+    width:24px;
+  }
+
+  .impact-pathway-control{
+    width:42px;
+    height:42px;
+  }
+}
