@@ -2943,7 +2943,7 @@ body {
 .story-card.tone-coral{--card-accent:#D97A63;}
 .story-card.tone-sage{--card-accent:#8FB1A6;}
 .story-card.tone-acid{--card-accent:#D8DE54;}
-.story-card.tone-blue{--card-accent:#7897AA;}
+.story-card.tone-blue{--card-accent:#6F858E;}
 .story-card.tone-sand{--card-accent:#C9B894;}
 .story-card.tone-rust{--card-accent:#B76D50;}
 
@@ -3468,7 +3468,7 @@ body {
   opacity:0;
   color:#34312B;
   font-family:"Manrope",sans-serif;
-  font-size:clamp(34px,4.2vw,64px);
+  font-size:clamp(32px,3.6vw,56px);
   font-weight:600;
   letter-spacing:-.055em;
   line-height:.95;
@@ -3499,7 +3499,7 @@ body {
 
 @media(max-width:650px){
   .restore4cs-card .restore4cs-hover-title{
-    font-size:clamp(28px,10vw,42px);
+    font-size:clamp(27px,9vw,38px);
   }
 }
 
