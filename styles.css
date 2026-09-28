@@ -4519,7 +4519,7 @@ body {
   z-index:-1;
   background:
     linear-gradient(rgba(244,240,231,.20),rgba(244,240,231,.20)),
-    url("assets/academic-trajectory-lines.png") center center / cover no-repeat;
+    url("assets/academic-cartography.png") center center / cover no-repeat;
   opacity:.25;
   pointer-events:none;
 }
