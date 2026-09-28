@@ -3646,3 +3646,19 @@ body {
     font-size:clamp(26px,8.5vw,38px);
   }
 }
+
+
+/* A-AAGORA refinement — warmer dune/olive hover */
+.story-card.aagora-card{
+  --card-accent:#9D9278;
+}
+
+.aagora-card .aagora-hover-title{
+  font-size:clamp(29px,3.15vw,48px);
+}
+
+@media(max-width:650px){
+  .aagora-card .aagora-hover-title{
+    font-size:clamp(25px,8vw,36px);
+  }
+}
