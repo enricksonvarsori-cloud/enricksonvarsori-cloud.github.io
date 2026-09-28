@@ -7795,3 +7795,15 @@ body {
     font-size:clamp(46px,11vw,68px);
   }
 }
+
+
+/* HOME — align hero title scale with internal page titles */
+.homepage .hero-statement{
+  font-size:clamp(52px,6vw,86px);
+}
+
+@media(max-width:900px){
+  .homepage .hero-statement{
+    font-size:clamp(44px,13vw,64px);
+  }
+}
