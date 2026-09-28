@@ -7807,3 +7807,33 @@ body {
     font-size:clamp(44px,13vw,64px);
   }
 }
+
+
+/* GLOBAL HEADER CONSISTENCY — Home matches internal pages */
+.homepage .site-header .wrap{
+  width:min(1200px,80%);
+  max-width:none;
+  padding-left:0;
+  padding-right:0;
+}
+
+.homepage .nav{
+  min-height:70px;
+}
+
+.homepage .brand{
+  font-size:21px;
+  font-weight:500;
+  letter-spacing:-.02em;
+}
+
+.homepage .nav-links{
+  gap:20px;
+}
+
+.homepage .nav-links a{
+  font-size:14px;
+  font-weight:500;
+  letter-spacing:.02em;
+  text-transform:none;
+}
