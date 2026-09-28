@@ -3819,3 +3819,83 @@ body {
     font-size:clamp(24px,7.6vw,34px);
   }
 }
+
+
+/* ULTRATV — interactive television / HCI artwork */
+.ultratv-card{
+  --card-accent:#A96C52;
+}
+
+.story-card.ultratv-card.tone-rust .story-card-visual{
+  background:
+    url("assets/ultratv-interface.png") center center / cover no-repeat !important;
+  border:0;
+  box-shadow:none;
+}
+
+.ultratv-card .story-card-index{
+  background:rgba(244,240,231,.90);
+  color:#34312B;
+  backdrop-filter:blur(5px);
+}
+
+.ultratv-card .ultratv-wash{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:rgba(42,38,37,.46);
+  opacity:0;
+  transition:opacity .42s ease;
+  pointer-events:none;
+}
+
+.ultratv-card .ultratv-hover-title{
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:4;
+  transform:translate(-50%,-44%);
+  opacity:0;
+  color:#F4F0E7;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(34px,4.2vw,60px);
+  font-weight:600;
+  letter-spacing:-.05em;
+  line-height:.94;
+  white-space:nowrap;
+  text-shadow:0 1px 18px rgba(20,22,21,.20);
+  transition:
+    opacity .32s ease .10s,
+    transform .52s cubic-bezier(.22,1,.36,1);
+  pointer-events:none;
+}
+
+.ultratv-card:hover .ultratv-wash,
+.ultratv-card:focus-within .ultratv-wash{
+  opacity:1;
+}
+
+.ultratv-card:hover .story-card-visual::before,
+.ultratv-card:focus-within .story-card-visual::before,
+.ultratv-card:hover .story-card-visual::after,
+.ultratv-card:focus-within .story-card-visual::after{
+  opacity:1;
+}
+
+.ultratv-card:hover .ultratv-hover-title,
+.ultratv-card:focus-within .ultratv-hover-title{
+  opacity:1;
+  transform:translate(-50%,-50%);
+}
+
+@media(max-width:900px){
+  .ultratv-card .ultratv-hover-title{
+    font-size:clamp(30px,8vw,46px);
+  }
+}
+
+@media(max-width:650px){
+  .ultratv-card .ultratv-hover-title{
+    font-size:clamp(27px,9vw,40px);
+  }
+}
