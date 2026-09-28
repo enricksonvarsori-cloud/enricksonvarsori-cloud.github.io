@@ -4528,3 +4528,14 @@ body {
   position:relative;
   z-index:1;
 }
+
+
+/* About me — research ecosystem locations */
+.about-entry .about-entry-location{
+  margin-top:7px;
+  font-size:10px;
+  line-height:1.3;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#C97A65;
+}
