@@ -6537,3 +6537,27 @@ body {
     font-size:clamp(26px,8vw,36px);
   }
 }
+
+
+/* Publications — final card refinements */
+@media(min-width:901px){
+  .publication-card-visual{
+    aspect-ratio:16/11;
+  }
+}
+
+/* Keep the first card's hover slightly calmer than the other publication cards */
+.pub-card-time:hover .pub-hover-block,
+.pub-card-time:focus-within .pub-hover-block{
+  opacity:.86;
+}
+
+.pub-card-time:hover .publication-card-wash,
+.pub-card-time:focus-within .publication-card-wash{
+  opacity:.52;
+}
+
+.pub-card-time .publication-hover-title{
+  width:80%;
+  font-size:clamp(32px,3.7vw,54px);
+}
