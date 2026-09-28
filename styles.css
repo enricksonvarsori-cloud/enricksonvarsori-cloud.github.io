@@ -3574,3 +3574,75 @@ body {
     font-size:clamp(28px,10vw,42px);
   }
 }
+
+
+/* A-AAGORA — coastal research artwork test */
+.aagora-card{
+  --card-accent:#A88E73;
+}
+
+.story-card.aagora-card.tone-blue .story-card-visual{
+  background:
+    url("assets/a-aagora-coast.png") center center / cover no-repeat !important;
+}
+
+.aagora-card .story-card-index{
+  background:rgba(244,240,231,.90);
+  color:#34312B;
+  backdrop-filter:blur(5px);
+}
+
+.aagora-card .aagora-wash{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:rgba(43,47,46,.44);
+  opacity:0;
+  transition:opacity .42s ease;
+  pointer-events:none;
+}
+
+.aagora-card .aagora-hover-title{
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:4;
+  transform:translate(-50%,-44%);
+  opacity:0;
+  color:#F4F0E7;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(30px,3.4vw,52px);
+  font-weight:600;
+  letter-spacing:-.05em;
+  line-height:.95;
+  white-space:nowrap;
+  text-shadow:0 1px 16px rgba(20,22,21,.18);
+  transition:
+    opacity .32s ease .10s,
+    transform .52s cubic-bezier(.22,1,.36,1);
+  pointer-events:none;
+}
+
+.aagora-card:hover .aagora-wash,
+.aagora-card:focus-within .aagora-wash{
+  opacity:1;
+}
+
+.aagora-card:hover .story-card-visual::before,
+.aagora-card:focus-within .story-card-visual::before,
+.aagora-card:hover .story-card-visual::after,
+.aagora-card:focus-within .story-card-visual::after{
+  opacity:1;
+}
+
+.aagora-card:hover .aagora-hover-title,
+.aagora-card:focus-within .aagora-hover-title{
+  opacity:1;
+  transform:translate(-50%,-50%);
+}
+
+@media(max-width:650px){
+  .aagora-card .aagora-hover-title{
+    font-size:clamp(26px,8.5vw,38px);
+  }
+}
