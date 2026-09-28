@@ -2897,7 +2897,7 @@ body {
 .story-card .story-accent{
   margin:0 0 11px;
   color:#D9D3C9;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:17px;
   line-height:1.45;
 }
@@ -2926,7 +2926,7 @@ body {
   padding-bottom:3px;
   border-bottom:1px solid rgba(244,240,231,.65);
   color:#F4F0E7;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:"Manrope",Arial,sans-serif;
   font-size:16px;
   text-decoration:none;
 }
