@@ -3437,3 +3437,12 @@ body {
   background:
     url("assets/restore4cs-atlas.png") center center / cover no-repeat !important;
 }
+
+
+/* RESTORE4Cs artwork — cleaner editorial treatment */
+.restore4cs-card:hover .story-card-visual::before,
+.restore4cs-card:focus-within .story-card-visual::before,
+.restore4cs-card:hover .story-card-visual::after,
+.restore4cs-card:focus-within .story-card-visual::after{
+  opacity:.80;
+}
