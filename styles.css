@@ -7837,3 +7837,694 @@ body {
   letter-spacing:.02em;
   text-transform:none;
 }
+
+
+/* =========================================================
+   HOME FINAL ALIGNMENT — mirrors the visual language of the
+   About, Research, Projects, Publications and Impact pages.
+   ========================================================= */
+
+.homepage{
+  --home-dark:#34312B;
+  --home-paper:#F4F0E7;
+  --home-coral:#D97A63;
+  --home-sage:#8FB1A6;
+  --home-blue:#7897AA;
+  --home-sand:#B8A98B;
+  --home-ink:#34312B;
+  --home-muted:#8F8A80;
+  --home-line-dark:rgba(244,240,231,.15);
+  --home-line-light:rgba(52,49,43,.17);
+}
+
+/* Shared editorial heading rhythm */
+.homepage .home-territories-section,
+.homepage .home-publications-section,
+.homepage .home-ecosystem-section{
+  background:var(--home-paper);
+  color:var(--home-ink);
+}
+
+.homepage .home-projects-section,
+.homepage .home-practice-section{
+  background:var(--home-dark);
+  color:var(--home-paper);
+}
+
+.homepage .home-territories-section,
+.homepage .home-projects-section,
+.homepage .home-publications-section,
+.homepage .home-practice-section,
+.homepage .home-ecosystem-section{
+  padding:96px 0 104px;
+}
+
+.homepage .premium-heading{
+  grid-template-columns:minmax(240px,.56fr) minmax(0,1fr);
+  gap:80px;
+  align-items:end;
+  margin-bottom:58px;
+}
+
+.homepage .premium-heading .label{
+  margin-bottom:18px;
+  color:var(--home-coral);
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.16em;
+}
+
+.homepage .premium-heading .title{
+  max-width:720px;
+  font-size:clamp(46px,5vw,66px);
+  font-weight:300;
+  line-height:1.01;
+  letter-spacing:-.052em;
+}
+
+.homepage .premium-heading .section-note{
+  max-width:520px;
+  margin:0 0 5px auto;
+  font-size:15px;
+  line-height:1.7;
+  color:#777269;
+}
+
+.homepage .home-projects-section .premium-heading .section-note{
+  color:#AAA59B;
+}
+
+/* 1. Research territories — constellation-like editorial cards */
+.homepage .research-territories{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  border-top:1px solid var(--home-line-light);
+  border-left:1px solid var(--home-line-light);
+}
+
+.homepage .research-territory{
+  position:relative;
+  min-height:290px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-end;
+  gap:0;
+  padding:38px 42px 36px;
+  border-right:1px solid var(--home-line-light);
+  border-bottom:1px solid var(--home-line-light);
+  background:transparent;
+  overflow:hidden;
+  text-decoration:none;
+  transition:background .25s ease;
+}
+
+.homepage .research-territory:hover{
+  padding-left:42px;
+  padding-right:42px;
+  background:rgba(217,122,99,.045);
+}
+
+.homepage .research-territory::before{
+  content:"";
+  position:absolute;
+  width:160px;
+  height:160px;
+  border:1px solid rgba(52,49,43,.13);
+  border-radius:50%;
+  top:34px;
+  right:42px;
+  transition:transform .35s cubic-bezier(.22,1,.36,1),border-color .25s ease;
+}
+
+.homepage .research-territory::after{
+  content:"";
+  position:absolute;
+  width:8px;
+  height:8px;
+  top:56px;
+  left:42px;
+  border:1px solid var(--home-coral);
+  border-radius:50%;
+}
+
+.homepage .research-territory:nth-child(2)::after{
+  border-radius:0;
+  border-color:var(--home-blue);
+}
+
+.homepage .research-territory:nth-child(3)::after{
+  width:12px;
+  height:12px;
+  border:0;
+  background:
+    linear-gradient(var(--home-sage),var(--home-sage)) center/1px 12px no-repeat,
+    linear-gradient(90deg,var(--home-sage),var(--home-sage)) center/12px 1px no-repeat;
+}
+
+.homepage .research-territory:nth-child(4)::after{
+  transform:rotate(45deg);
+  border-radius:0;
+  border-color:var(--home-sand);
+}
+
+.homepage .research-territory:hover::before{
+  transform:scale(1.08) translate(-7px,6px);
+  border-color:rgba(217,122,99,.27);
+}
+
+.homepage .research-territory h3{
+  position:relative;
+  z-index:1;
+  max-width:420px;
+  margin:0 0 15px;
+  font-size:clamp(29px,2.6vw,38px);
+  font-weight:400;
+  line-height:1.04;
+  letter-spacing:-.045em;
+}
+
+.homepage .research-territory p{
+  position:relative;
+  z-index:1;
+  max-width:520px;
+  margin:0 0 26px;
+  font-size:14px;
+  line-height:1.6;
+  color:#6F6A62;
+}
+
+.homepage .research-territory .territory-tags{
+  position:relative;
+  z-index:1;
+  margin-top:auto;
+  font-size:9px;
+  letter-spacing:.12em;
+  color:var(--home-coral);
+}
+
+/* 2. Featured work — real project visuals and dark editorial context */
+.homepage .home-projects-section .premium-heading .title{
+  color:var(--home-paper);
+}
+
+.homepage .home-projects-section .project-carousel-frame{
+  border:1px solid var(--home-line-dark);
+  background:#2D2A25;
+  box-shadow:none;
+}
+
+.homepage .home-projects-section .project-slide{
+  grid-template-columns:minmax(0,1.16fr) minmax(360px,.84fr);
+  min-height:540px;
+}
+
+.homepage .home-projects-section .project-slide-visual{
+  min-height:540px;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  filter:none;
+}
+
+.homepage .project-slide.theoscope .project-slide-visual{
+  background-image:url('assets/theoscope-earth.png') !important;
+  background-position:center 48%;
+}
+
+.homepage .project-slide.restore .project-slide-visual{
+  background-image:url('assets/restore4cs-atlas.png') !important;
+  background-position:center;
+}
+
+.homepage .project-slide.aagora .project-slide-visual{
+  background-image:url('assets/a-aagora-coast.png') !important;
+  background-position:center;
+}
+
+.homepage .project-slide.locust .project-slide-visual{
+  background-image:url('assets/locust-digital-context.png') !important;
+  background-position:center;
+}
+
+.homepage .project-slide.trackin .project-slide-visual{
+  background-image:url('assets/trackin-rural-pathways.png') !important;
+  background-position:center;
+}
+
+.homepage .home-projects-section .project-slide-visual::before{
+  width:auto;
+  height:auto;
+  inset:0;
+  border:0;
+  border-radius:0;
+  background:
+    linear-gradient(90deg,rgba(31,29,25,.05),rgba(31,29,25,0) 52%,rgba(31,29,25,.18)),
+    linear-gradient(180deg,rgba(31,29,25,.05),rgba(31,29,25,.42));
+  transform:none;
+}
+
+.homepage .home-projects-section .project-slide-visual::after{
+  width:100%;
+  height:100%;
+  inset:0;
+  transform:none;
+  background:
+    linear-gradient(var(--card-accent,#7897AA),var(--card-accent,#7897AA)) 0 0/29% 33% no-repeat,
+    linear-gradient(var(--card-accent,#7897AA),var(--card-accent,#7897AA)) 0 73%/50% 24% no-repeat,
+    linear-gradient(var(--card-accent,#7897AA),var(--card-accent,#7897AA)) 100% 35%/50% 17% no-repeat,
+    linear-gradient(var(--card-accent,#7897AA),var(--card-accent,#7897AA)) 100% 100%/14% 14% no-repeat;
+  opacity:0;
+  transition:opacity .32s ease;
+}
+
+.homepage .home-projects-section .project-slide:hover .project-slide-visual::after{
+  opacity:.84;
+}
+
+.homepage .project-slide.theoscope{--card-accent:#6F858E;}
+.homepage .project-slide.restore{--card-accent:#8FB1A6;}
+.homepage .project-slide.aagora{--card-accent:#739D9B;}
+.homepage .project-slide.locust{--card-accent:#C9B894;}
+.homepage .project-slide.trackin{--card-accent:#B76D50;}
+
+.homepage .home-projects-section .project-visual-label{
+  z-index:3;
+  left:28px;
+  bottom:26px;
+  max-width:420px;
+  padding:9px 11px;
+  background:rgba(36,33,29,.46);
+  backdrop-filter:blur(7px);
+  border:1px solid rgba(244,240,231,.22);
+  color:var(--home-paper);
+  font-size:10px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.homepage .home-projects-section .project-slide-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:52px 48px;
+  background:var(--home-paper);
+  color:var(--home-ink);
+}
+
+.homepage .home-projects-section .project-slide-copy h3{
+  margin:13px 0 21px;
+  font-size:clamp(42px,4.3vw,66px);
+  font-weight:300;
+  line-height:.95;
+  letter-spacing:-.055em;
+}
+
+.homepage .home-projects-section .project-slide-copy p:not(.project-kicker){
+  max-width:470px;
+  font-size:14px;
+  line-height:1.68;
+  color:#6D6860;
+}
+
+.homepage .home-projects-section .project-kicker{
+  color:var(--home-coral);
+  font-size:9px;
+  line-height:1.5;
+}
+
+.homepage .home-projects-section .project-carousel-nav,
+.homepage .home-projects-section .project-carousel-status{
+  color:#BDB7AC;
+}
+
+.homepage .home-projects-section .project-tab{
+  color:#AFA99E;
+}
+
+.homepage .home-projects-section .project-tab[aria-selected="true"]{
+  color:var(--home-paper);
+  border-bottom-color:var(--home-coral);
+}
+
+.homepage .home-projects-section .carousel-arrow{
+  color:var(--home-paper);
+  border-color:rgba(244,240,231,.26);
+}
+
+.homepage .home-projects-section > .wrap > .text-link{
+  color:var(--home-paper);
+  border-bottom-color:rgba(244,240,231,.55);
+}
+
+/* 3. Publications — condensed version of the Publications page */
+.homepage .home-publications-section .premium-publications{
+  border-top:1px solid var(--home-line-light);
+}
+
+.homepage .home-publications-section .premium-publication-row{
+  position:relative;
+  grid-template-columns:150px minmax(0,1fr) 46px;
+  gap:34px;
+  min-height:128px;
+  padding:26px 0;
+  border-bottom:1px solid var(--home-line-light);
+  background:transparent;
+}
+
+.homepage .home-publications-section .premium-publication-row::before{
+  content:"";
+  position:absolute;
+  left:150px;
+  top:50%;
+  width:42px;
+  height:42px;
+  border:1px solid rgba(217,122,99,.22);
+  border-radius:50%;
+  transform:translate(-68px,-50%);
+  opacity:.7;
+}
+
+.homepage .home-publications-section .premium-publication-row:nth-child(2)::before{
+  border-radius:0;
+  border-color:rgba(120,151,170,.26);
+}
+
+.homepage .home-publications-section .premium-publication-row:nth-child(3)::before{
+  width:46px;
+  height:22px;
+  border-radius:50% 50% 0 0 / 100% 100% 0 0;
+  border-color:rgba(217,122,99,.26);
+  border-bottom:0;
+}
+
+.homepage .home-publications-section .pub-meta{
+  color:#7F796F;
+  font-size:8px;
+  line-height:1.6;
+}
+
+.homepage .home-publications-section .premium-publication-row h3{
+  max-width:830px;
+  font-size:clamp(20px,2vw,28px);
+  line-height:1.13;
+  letter-spacing:-.035em;
+}
+
+.homepage .home-publications-section .arrow{
+  align-self:center;
+  color:var(--home-coral);
+  font-size:21px;
+}
+
+/* 4. Research in practice — dark photographic bridge into Impact */
+.homepage .home-practice-section{
+  border-top:1px solid var(--home-line-dark);
+  border-bottom:1px solid var(--home-line-dark);
+}
+
+.homepage .home-practice-section .practice-feature{
+  position:relative;
+  min-height:560px;
+  display:block;
+  overflow:hidden;
+  border:1px solid var(--home-line-dark);
+  background:#25221E;
+}
+
+.homepage .home-practice-section .practice-visual{
+  position:absolute;
+  inset:0;
+  min-height:0;
+  background:
+    linear-gradient(90deg,rgba(27,25,22,.93) 0%,rgba(27,25,22,.78) 25%,rgba(27,25,22,.32) 49%,rgba(27,25,22,.04) 72%),
+    linear-gradient(180deg,rgba(27,25,22,.05),rgba(27,25,22,.32)),
+    url('assets/impact-people.png') 70% 50%/cover no-repeat !important;
+}
+
+.homepage .home-practice-section .practice-visual::before,
+.homepage .home-practice-section .practice-visual::after{
+  display:none;
+}
+
+.homepage .home-practice-section .practice-copy{
+  position:relative;
+  z-index:2;
+  width:min(520px,43%);
+  min-height:560px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:60px 0 60px 54px;
+  background:transparent;
+  color:var(--home-paper);
+}
+
+.homepage .home-practice-section .practice-copy .label{
+  margin-bottom:21px;
+  color:var(--home-coral);
+}
+
+.homepage .home-practice-section .practice-copy h2{
+  margin:0 0 24px;
+  font-size:clamp(42px,4.5vw,62px);
+  font-weight:300;
+  line-height:1.01;
+  letter-spacing:-.052em;
+  color:var(--home-paper);
+}
+
+.homepage .home-practice-section .practice-copy p{
+  margin:0 0 30px;
+  max-width:470px;
+  color:#C1BBB0;
+  font-size:14px;
+  line-height:1.67;
+}
+
+.homepage .home-practice-section .practice-copy .text-link{
+  color:var(--home-paper);
+  border-bottom-color:rgba(244,240,231,.55);
+}
+
+/* 5. Ecosystem — condensed version of About's research ecosystem */
+.homepage .home-ecosystem-section{
+  position:relative;
+  overflow:hidden;
+}
+
+.homepage .home-ecosystem-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,transparent 0 23%,rgba(52,49,43,.035) 23.05%,transparent 23.1%),
+    linear-gradient(90deg,transparent 0 66%,rgba(52,49,43,.025) 66.05%,transparent 66.1%);
+  pointer-events:none;
+}
+
+.homepage .home-ecosystem-section > .wrap{
+  position:relative;
+  z-index:1;
+}
+
+.homepage .home-ecosystem-grid{
+  display:grid;
+  grid-template-columns:1.08fr 1.08fr .84fr;
+  gap:0;
+  border-top:1px solid var(--home-line-light);
+  border-bottom:1px solid var(--home-line-light);
+}
+
+.homepage .home-ecosystem-column{
+  min-height:320px;
+  padding:30px 34px 38px 0;
+  border-right:1px solid var(--home-line-light);
+}
+
+.homepage .home-ecosystem-column + .home-ecosystem-column{
+  padding-left:34px;
+}
+
+.homepage .home-ecosystem-column:last-child{
+  border-right:0;
+}
+
+.homepage .home-ecosystem-type{
+  margin:0 0 26px;
+  font-size:10px;
+  line-height:1.3;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--home-coral);
+}
+
+.homepage .home-ecosystem-entry{
+  padding:18px 0;
+  border-top:1px solid rgba(52,49,43,.10);
+}
+
+.homepage .home-ecosystem-entry:first-of-type{
+  padding-top:0;
+  border-top:0;
+}
+
+.homepage .home-ecosystem-entry h3{
+  margin:0 0 7px;
+  font-size:20px;
+  font-weight:400;
+  line-height:1.22;
+  letter-spacing:-.035em;
+}
+
+.homepage .home-ecosystem-entry p{
+  margin:0;
+  max-width:360px;
+  font-size:13px;
+  line-height:1.55;
+  color:#777269;
+}
+
+.homepage .home-ecosystem-section > .wrap > .text-link{
+  display:inline-block;
+  margin-top:28px;
+}
+
+/* Responsive alignment */
+@media(max-width:1000px){
+  .homepage .premium-heading{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .homepage .premium-heading .section-note{
+    margin:0;
+  }
+
+  .homepage .home-projects-section .project-slide{
+    grid-template-columns:1fr;
+  }
+
+  .homepage .home-projects-section .project-slide-visual{
+    min-height:420px;
+  }
+
+  .homepage .home-projects-section .project-slide-copy{
+    padding:40px;
+  }
+
+  .homepage .home-practice-section .practice-copy{
+    width:54%;
+  }
+
+  .homepage .home-ecosystem-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .homepage .home-ecosystem-column:nth-child(2){
+    border-right:0;
+  }
+
+  .homepage .home-ecosystem-column:last-child{
+    grid-column:1/-1;
+    border-top:1px solid var(--home-line-light);
+    padding-left:0;
+  }
+}
+
+@media(max-width:720px){
+  .homepage .home-territories-section,
+  .homepage .home-projects-section,
+  .homepage .home-publications-section,
+  .homepage .home-practice-section,
+  .homepage .home-ecosystem-section{
+    padding:70px 0 76px;
+  }
+
+  .homepage .research-territories{
+    grid-template-columns:1fr;
+  }
+
+  .homepage .research-territory{
+    min-height:245px;
+    padding:32px 28px 30px;
+  }
+
+  .homepage .research-territory:hover{
+    padding-left:28px;
+    padding-right:28px;
+  }
+
+  .homepage .research-territory::after{
+    left:28px;
+    top:42px;
+  }
+
+  .homepage .research-territory::before{
+    width:130px;
+    height:130px;
+    right:28px;
+    top:28px;
+  }
+
+  .homepage .home-projects-section .project-slide-visual{
+    min-height:330px;
+  }
+
+  .homepage .home-projects-section .project-slide-copy{
+    padding:32px 28px 36px;
+  }
+
+  .homepage .home-publications-section .premium-publication-row{
+    grid-template-columns:1fr 30px;
+    gap:12px;
+    padding:24px 0;
+  }
+
+  .homepage .home-publications-section .premium-publication-row::before{
+    display:none;
+  }
+
+  .homepage .home-publications-section .pub-meta{
+    grid-column:1/-1;
+  }
+
+  .homepage .home-practice-section .practice-feature{
+    min-height:620px;
+  }
+
+  .homepage .home-practice-section .practice-visual{
+    background:
+      linear-gradient(180deg,rgba(27,25,22,.06) 0%,rgba(27,25,22,.16) 42%,rgba(27,25,22,.93) 73%,rgba(27,25,22,.98) 100%),
+      url('assets/impact-people.png') 66% 20%/cover no-repeat !important;
+  }
+
+  .homepage .home-practice-section .practice-copy{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    width:auto;
+    min-height:0;
+    padding:34px 28px 36px;
+    justify-content:flex-end;
+  }
+
+  .homepage .home-ecosystem-grid{
+    grid-template-columns:1fr;
+  }
+
+  .homepage .home-ecosystem-column,
+  .homepage .home-ecosystem-column + .home-ecosystem-column,
+  .homepage .home-ecosystem-column:last-child{
+    min-height:0;
+    grid-column:auto;
+    padding:28px 0;
+    border-right:0;
+    border-top:1px solid var(--home-line-light);
+  }
+
+  .homepage .home-ecosystem-column:first-child{
+    border-top:0;
+  }
+}
