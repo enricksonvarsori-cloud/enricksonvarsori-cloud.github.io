@@ -3671,3 +3671,77 @@ body {
   border:0;
   box-shadow:none;
 }
+
+
+/* LOCUST — contextual technology artwork */
+.locust-card{
+  --card-accent:#B47869;
+}
+
+.story-card.locust-card.tone-coral .story-card-visual{
+  background:
+    url("assets/locust-digital-context.png") center center / cover no-repeat !important;
+  border:0;
+  box-shadow:none;
+}
+
+.locust-card .story-card-index{
+  background:rgba(244,240,231,.90);
+  color:#34312B;
+  backdrop-filter:blur(5px);
+}
+
+.locust-card .locust-wash{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:rgba(48,42,40,.46);
+  opacity:0;
+  transition:opacity .42s ease;
+  pointer-events:none;
+}
+
+.locust-card .locust-hover-title{
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:4;
+  transform:translate(-50%,-44%);
+  opacity:0;
+  color:#F4F0E7;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(30px,3.15vw,48px);
+  font-weight:600;
+  letter-spacing:-.05em;
+  line-height:.95;
+  white-space:nowrap;
+  text-shadow:0 1px 16px rgba(20,22,21,.18);
+  transition:
+    opacity .32s ease .10s,
+    transform .52s cubic-bezier(.22,1,.36,1);
+  pointer-events:none;
+}
+
+.locust-card:hover .locust-wash,
+.locust-card:focus-within .locust-wash{
+  opacity:1;
+}
+
+.locust-card:hover .story-card-visual::before,
+.locust-card:focus-within .story-card-visual::before,
+.locust-card:hover .story-card-visual::after,
+.locust-card:focus-within .story-card-visual::after{
+  opacity:1;
+}
+
+.locust-card:hover .locust-hover-title,
+.locust-card:focus-within .locust-hover-title{
+  opacity:1;
+  transform:translate(-50%,-50%);
+}
+
+@media(max-width:650px){
+  .locust-card .locust-hover-title{
+    font-size:clamp(25px,8vw,36px);
+  }
+}
