@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Impact — Enrickson Varsori</title>
-  <link rel="stylesheet" href="styles.css?v=20260928-impact-photo-carousel">
+  <link rel="stylesheet" href="styles.css?v=20260928-impact-carousel-3photos">
 </head>
 <body class="editorial-page impact-page">
 <header class="site-header">
@@ -42,7 +42,7 @@
         <h2>Four pathways from research to use.</h2>
       </div>
 
-      <div class="impact-pathway-carousel" data-impact-carousel style="--impact-stage-image:url('assets/Imagem ChatGPT 28_09_2026, 18_03_36.png')">
+      <div class="impact-pathway-carousel" data-impact-carousel style="--impact-stage-image:url('assets/impact-people.png')">
         <div class="impact-pathway-tabs" role="tablist" aria-label="Four impact pathways">
           <button class="impact-pathway-tab pathway-people is-active" type="button" role="tab" aria-selected="true" data-impact-index="0">
             <span class="impact-pathway-marker" aria-hidden="true"></span>
@@ -191,6 +191,7 @@
       title: 'People',
       text: 'Bringing communities, stakeholders and practitioners into research processes.',
       accent: '#D97A63',
+      image: "url('assets/impact-people.png')",
       position: '50% 50%'
     },
     {
@@ -198,21 +199,24 @@
       title: 'Use',
       text: 'Testing how technologies work in situated, real-world contexts.',
       accent: '#7897AA',
-      position: '57% 48%'
+      image: "url('assets/impact-photo-a.jpg')",
+      position: '50% 50%'
     },
     {
       label: 'Translation',
       title: 'Uptake',
       text: 'Helping research outputs move towards decision-making and practice.',
       accent: '#8FB1A6',
-      position: '48% 52%'
+      image: "url('assets/impact-photo-b.jpg')",
+      position: '50% 50%'
     },
     {
       label: 'Interdisciplinarity',
       title: 'Connections',
       text: 'Creating links across disciplines, institutions and research environments.',
       accent: '#B8A98B',
-      position: '53% 46%'
+      image: "url('assets/impact-people.png')",
+      position: '50% 50%'
     }
   ];
 
@@ -230,6 +234,7 @@
     const item = items[active];
 
     root.style.setProperty('--impact-active-accent', item.accent);
+    root.style.setProperty('--impact-stage-image', item.image);
     root.style.setProperty('--impact-stage-position', item.position);
     label.textContent = item.label;
     title.textContent = item.title;
