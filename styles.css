@@ -6561,3 +6561,123 @@ body {
   width:80%;
   font-size:clamp(32px,3.7vw,54px);
 }
+
+
+/* Publications — refine normal-state illustrations */
+.publication-art-ux::before{
+  content:"";
+  position:absolute;
+  width:54%;
+  aspect-ratio:1;
+  left:23%;
+  top:18%;
+  border:1px dashed rgba(120,151,170,.20);
+  border-radius:50%;
+  pointer-events:none;
+}
+
+.publication-art-ux::after{
+  content:"";
+  position:absolute;
+  right:10%;
+  top:13%;
+  width:42px;
+  height:42px;
+  border:1px solid rgba(120,151,170,.24);
+  border-radius:50%;
+  background:
+    linear-gradient(rgba(120,151,170,.28),rgba(120,151,170,.28)) center/1px 56px no-repeat,
+    linear-gradient(90deg,rgba(120,151,170,.28),rgba(120,151,170,.28)) center/56px 1px no-repeat;
+  pointer-events:none;
+}
+
+.publication-art-ux span::before,
+.publication-art-ux span::after{
+  content:"";
+  position:absolute;
+  background:rgba(120,151,170,.26);
+}
+
+.publication-art-ux span::before{
+  width:13px;
+  height:1px;
+  left:10px;
+  bottom:11px;
+  box-shadow:0 -5px 0 rgba(120,151,170,.17);
+}
+
+.publication-art-ux span::after{
+  width:5px;
+  height:5px;
+  right:-3px;
+  top:-3px;
+  background:#7897AA;
+}
+
+.publication-art-climate::before{
+  content:"";
+  position:absolute;
+  width:64%;
+  height:30%;
+  left:18%;
+  bottom:20%;
+  border-top:1px dashed rgba(183,109,80,.34);
+  border-radius:50%;
+  transform:scaleY(.7);
+  pointer-events:none;
+}
+
+.publication-art-climate::after{
+  content:"";
+  position:absolute;
+  width:54%;
+  aspect-ratio:1;
+  left:23%;
+  top:10%;
+  border:1px dashed rgba(183,109,80,.14);
+  border-radius:50%;
+  pointer-events:none;
+}
+
+.pub-card-climate .climate-dot{
+  box-shadow:0 0 0 6px rgba(183,109,80,.08);
+}
+
+.pub-card-climate .climate-line{
+  box-shadow:
+    -1px 0 0 rgba(183,109,80,.05),
+    1px 0 0 rgba(183,109,80,.05);
+}
+
+.publication-art-ocean::before{
+  content:"";
+  position:absolute;
+  width:66%;
+  aspect-ratio:1;
+  left:17%;
+  top:5%;
+  border:1px dashed rgba(143,177,166,.16);
+  border-radius:50%;
+  pointer-events:none;
+}
+
+.publication-art-ocean::after{
+  content:"";
+  position:absolute;
+  left:18%;
+  right:18%;
+  top:31%;
+  height:38%;
+  background:
+    radial-gradient(circle at 8% 62%,rgba(143,177,166,.34) 0 2px,transparent 2.5px),
+    radial-gradient(circle at 32% 45%,rgba(143,177,166,.25) 0 1.5px,transparent 2px),
+    radial-gradient(circle at 64% 57%,rgba(143,177,166,.28) 0 1.5px,transparent 2px),
+    radial-gradient(circle at 88% 38%,rgba(143,177,166,.34) 0 2px,transparent 2.5px);
+  pointer-events:none;
+}
+
+.publication-art-ocean .wave{
+  box-shadow:
+    0 12px 0 -11px rgba(143,177,166,.14),
+    0 -12px 0 -11px rgba(143,177,166,.10);
+}
