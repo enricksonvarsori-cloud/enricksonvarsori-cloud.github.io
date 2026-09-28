@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Impact — Enrickson Varsori</title>
-  <link rel="stylesheet" href="styles.css?v=20260928-impact-carousel-3photos">
+  <link rel="stylesheet" href="styles.css?v=20260928-impact-framing-v2">
 </head>
 <body class="editorial-page impact-page">
 <header class="site-header">
@@ -63,6 +63,7 @@
         </div>
 
         <div class="impact-pathway-stage" role="tabpanel" tabindex="0" aria-live="polite">
+          <div class="impact-pathway-photo" aria-hidden="true"></div>
           <div class="impact-pathway-stage-copy">
             <p class="impact-pathway-stage-label" data-impact-label>Participation</p>
             <h3 data-impact-title>People</h3>
@@ -192,7 +193,9 @@
       text: 'Bringing communities, stakeholders and practitioners into research processes.',
       accent: '#D97A63',
       image: "url('assets/impact-people.png')",
-      position: '50% 50%'
+      position: '56% 50%',
+      size: 'cover',
+      overlayStop: '58%'
     },
     {
       label: 'Evaluation',
@@ -200,7 +203,9 @@
       text: 'Testing how technologies work in situated, real-world contexts.',
       accent: '#7897AA',
       image: "url('assets/impact-photo-a.jpg')",
-      position: '50% 50%'
+      position: '96% 51%',
+      size: 'auto 118%',
+      overlayStop: '48%'
     },
     {
       label: 'Translation',
@@ -208,7 +213,9 @@
       text: 'Helping research outputs move towards decision-making and practice.',
       accent: '#8FB1A6',
       image: "url('assets/impact-photo-b.jpg')",
-      position: '50% 50%'
+      position: '94% 48%',
+      size: 'auto 112%',
+      overlayStop: '43%'
     },
     {
       label: 'Interdisciplinarity',
@@ -216,7 +223,9 @@
       text: 'Creating links across disciplines, institutions and research environments.',
       accent: '#B8A98B',
       image: "url('assets/impact-people.png')",
-      position: '50% 50%'
+      position: '56% 50%',
+      size: 'cover',
+      overlayStop: '58%'
     }
   ];
 
@@ -236,6 +245,8 @@
     root.style.setProperty('--impact-active-accent', item.accent);
     root.style.setProperty('--impact-stage-image', item.image);
     root.style.setProperty('--impact-stage-position', item.position);
+    root.style.setProperty('--impact-photo-size', item.size || 'cover');
+    root.style.setProperty('--impact-overlay-stop', item.overlayStop || '58%');
     label.textContent = item.label;
     title.textContent = item.title;
     text.textContent = item.text;
