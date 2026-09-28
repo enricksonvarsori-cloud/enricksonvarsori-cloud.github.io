@@ -7642,3 +7642,13 @@ body {
     min-height:540px;
   }
 }
+
+
+/* IMPACT — subject visibility tuning for documentary group photographs */
+.impact-pathway-stage{
+  --impact-mask-opacity:1;
+}
+.impact-pathway-stage::before{
+  opacity:var(--impact-mask-opacity);
+  transition:opacity .35s ease;
+}
