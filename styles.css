@@ -7419,3 +7419,116 @@ body {
     height:42px;
   }
 }
+
+
+/* IMPACT — final single-photo carousel test */
+.impact-pathway-stage{
+  min-height:500px;
+  border:0;
+  border-radius:20px;
+  background-image:var(--impact-stage-image);
+  background-size:cover;
+  background-position:50% 50%;
+  box-shadow:
+    inset 26px 0 34px -30px rgba(29,26,22,.58),
+    inset -26px 0 34px -30px rgba(29,26,22,.48);
+}
+
+/* Lateral cinematic shadows: strong enough for copy, soft enough to keep the photo visible. */
+.impact-pathway-stage::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(31,28,24,.90) 0%,
+      rgba(31,28,24,.76) 13%,
+      rgba(31,28,24,.48) 27%,
+      rgba(31,28,24,.18) 40%,
+      rgba(31,28,24,0) 57%,
+      rgba(31,28,24,.04) 72%,
+      rgba(31,28,24,.18) 88%,
+      rgba(31,28,24,.42) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(31,28,24,.04) 0%,
+      rgba(31,28,24,0) 56%,
+      rgba(31,28,24,.20) 100%
+    );
+  pointer-events:none;
+}
+
+.impact-pathway-stage-copy,
+.impact-pathway-stage-footer{
+  z-index:2;
+}
+
+.impact-pathway-stage-copy{
+  width:min(440px,44%);
+  padding:74px 0 120px 58px;
+}
+
+.impact-pathway-stage-text{
+  max-width:360px;
+}
+
+.impact-pathway-stage-footer{
+  left:58px;
+  right:34px;
+  bottom:32px;
+}
+
+@media(max-width:900px){
+  .impact-pathway-stage{
+    min-height:500px;
+    background-position:54% 50%;
+  }
+
+  .impact-pathway-stage-copy{
+    width:min(500px,66%);
+    padding-left:40px;
+  }
+
+  .impact-pathway-stage-footer{
+    left:40px;
+    right:28px;
+  }
+}
+
+@media(max-width:620px){
+  .impact-pathway-stage{
+    min-height:520px;
+    background-image:var(--impact-stage-image);
+    background-position:55% center;
+  }
+
+  .impact-pathway-stage::before{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(31,28,24,.10) 0%,
+        rgba(31,28,24,.05) 32%,
+        rgba(31,28,24,.58) 63%,
+        rgba(31,28,24,.88) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(31,28,24,.22) 0%,
+        rgba(31,28,24,0) 50%,
+        rgba(31,28,24,.20) 100%
+      );
+  }
+
+  .impact-pathway-stage-copy{
+    width:auto;
+    padding:0 24px;
+  }
+
+  .impact-pathway-stage-footer{
+    left:24px;
+    right:20px;
+  }
+}
