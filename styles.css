@@ -3662,3 +3662,12 @@ body {
     font-size:clamp(25px,8vw,36px);
   }
 }
+
+
+/* Image project cards — remove visual frame for edge-to-edge artwork */
+.theoscope-card .story-card-visual,
+.restore4cs-card .story-card-visual,
+.aagora-card .story-card-visual{
+  border:0;
+  box-shadow:none;
+}
