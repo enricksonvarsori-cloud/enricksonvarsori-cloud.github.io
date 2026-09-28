@@ -8669,3 +8669,76 @@ body {
     padding:72px 0 78px;
   }
 }
+
+
+/* HOME GRID FIX — 2026-09-28 */
+/* The Home hero now sits on exactly the same content axis as the internal pages. */
+.homepage .hero-frame{
+  width:min(1200px,80%);
+  max-width:none;
+  margin:0 auto;
+  display:block;
+  border:0;
+}
+
+.homepage .hero-core{
+  width:100%;
+  min-width:0;
+}
+
+.homepage .hero-side-rail{
+  display:none !important;
+}
+
+/* Reduce the segmented feel of the old experimental hero. */
+.homepage .hero-kicker-row{
+  border-bottom:1px solid rgba(244,240,231,.10);
+}
+
+.homepage .hero-statement{
+  border-bottom:1px solid rgba(244,240,231,.10);
+}
+
+.homepage .hero-media-row{
+  border-bottom:0;
+}
+
+.homepage .hero-summary{
+  border-right:1px solid rgba(244,240,231,.10);
+}
+
+.homepage .atalanta-hero .premium-strip{
+  border-top:1px solid rgba(244,240,231,.12);
+  border-bottom:0;
+}
+
+/* Give the final Home heading enough measure to avoid the cramped four-line break. */
+.homepage .home-ecosystem-section .premium-heading{
+  grid-template-columns:minmax(340px,.56fr) minmax(0,1fr);
+  gap:72px;
+}
+
+.homepage .home-ecosystem-section .premium-heading .title{
+  max-width:410px;
+}
+
+@media(max-width:1000px){
+  .homepage .home-ecosystem-section .premium-heading{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .homepage .home-ecosystem-section .premium-heading .title{
+    max-width:720px;
+  }
+
+  .homepage .hero-summary{
+    border-right:0;
+  }
+}
+
+@media(max-width:800px){
+  .homepage .hero-frame{
+    width:86%;
+  }
+}
