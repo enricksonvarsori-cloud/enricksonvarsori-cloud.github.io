@@ -4336,3 +4336,47 @@ body {
     flex-direction:column;
   }
 }
+
+
+/* About me — current affiliation profile links */
+.about-current-heading{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:18px;
+}
+
+.about-current-heading>span{
+  margin-bottom:6px;
+}
+
+.about-current-heading a{
+  flex:0 0 auto;
+  color:#C9C3B8;
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  text-decoration:none;
+  border-bottom:1px solid rgba(244,240,231,.28);
+  padding-bottom:2px;
+  transition:color .2s ease,border-color .2s ease;
+}
+
+.about-current-heading a span{
+  display:inline;
+  margin:0 0 0 3px;
+}
+
+.about-current-heading a:hover,
+.about-current-heading a:focus-visible{
+  color:#F4F0E7;
+  border-bottom-color:#D97A63;
+}
+
+@media(max-width:520px){
+  .about-current-heading{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:4px;
+  }
+}
