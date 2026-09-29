@@ -9658,3 +9658,21 @@ body {
     background-position:var(--impact-stage-position-mobile, var(--impact-stage-position));
   }
 }
+
+
+/* MOBILE NAV AFFORDANCE — 2026-09-29 */
+@media(max-width:1050px){
+  .site-header .nav-links,
+  .homepage .nav-links{
+    scroll-snap-type:x proximity;
+    scroll-padding-inline:18px;
+    overscroll-behavior-inline:contain;
+    -webkit-mask-image:linear-gradient(to right,#000 0,#000 calc(100% - 34px),transparent 100%);
+    mask-image:linear-gradient(to right,#000 0,#000 calc(100% - 34px),transparent 100%);
+  }
+
+  .site-header .nav-links a,
+  .homepage .nav-links a{
+    scroll-snap-align:center;
+  }
+}
