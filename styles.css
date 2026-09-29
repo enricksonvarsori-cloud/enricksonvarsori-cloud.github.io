@@ -9007,3 +9007,56 @@ body {
     bottom:22px;
   }
 }
+
+
+/* HOME STATIC EARTH TEST — 2026-09-29 */
+.homepage .hero-video-panel{
+  isolation:isolate;
+}
+
+.homepage .hero-earth-still{
+  position:absolute;
+  inset:-3%;
+  z-index:0;
+  width:106%;
+  height:106%;
+  object-fit:cover;
+  object-position:58% 49%;
+  transform:scale(1.035);
+  animation:homeEarthDrift 24s ease-in-out infinite alternate;
+}
+
+.homepage .hero-video-shade{
+  z-index:1;
+  background:
+    linear-gradient(90deg,rgba(18,20,19,.18) 0%,rgba(18,20,19,.04) 45%,rgba(18,20,19,.18) 100%),
+    linear-gradient(180deg,rgba(18,20,19,.04) 0%,rgba(18,20,19,.14) 100%);
+}
+
+.homepage .hero-video-label,
+.homepage .hero-video-tags,
+.homepage .hero-video-credit{
+  z-index:2;
+}
+
+@keyframes homeEarthDrift{
+  0%{
+    transform:scale(1.035) translate3d(0,0,0);
+  }
+  100%{
+    transform:scale(1.075) translate3d(-1.4%,.8%,0);
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .homepage .hero-earth-still{
+    animation:none;
+    transform:scale(1.045);
+  }
+}
+
+@media(max-width:900px){
+  .homepage .hero-earth-still{
+    object-position:58% 50%;
+  }
+}
