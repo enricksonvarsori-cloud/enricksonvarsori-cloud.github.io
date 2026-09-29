@@ -79,8 +79,8 @@
           <div class="hero-summary">
             <p>I work across digital media, human–computer interaction, sustainability and emerging technologies, connecting rigorous research with real-world contexts, institutions and communities.</p>
             <div class="hero-quick-links">
-              <a href="/research/">Explore research <span>↗</span></a>
-              <a href="/projects/">Selected projects <span>↗</span></a>
+              <a href="/research/">Explore research <span>↗︎</span></a>
+              <a href="/projects/">Selected projects <span>↗︎</span></a>
             </div>
           </div>
 
@@ -256,17 +256,17 @@
         <a class="premium-publication-row" href="https://doi.org/10.1177/20501579261454068" target="_blank" rel="noopener noreferrer">
           <div class="pub-meta">2026<br>Mobile Media &amp; Communication</div>
           <h3>Between Screens and Time: Subjective Online Time Perception and Digital Technology Use Among University Students</h3>
-          <span class="arrow">↗</span>
+          <span class="arrow">↗︎</span>
         </a>
         <a class="premium-publication-row" href="https://doi.org/10.3390/educsci16101579" target="_blank" rel="noopener noreferrer">
           <div class="pub-meta">2026<br>Education Sciences</div>
           <h3>How Should School-Based Educational Digital Games Be Evaluated?</h3>
-          <span class="arrow">↗</span>
+          <span class="arrow">↗︎</span>
         </a>
         <a class="premium-publication-row" href="https://doi.org/10.1177/24705470261468139" target="_blank" rel="noopener noreferrer">
           <div class="pub-meta">2026<br>Chronic Stress</div>
           <h3>Anger as a Bridge: Understanding How Climate Change Anxiety Shapes Well-Being</h3>
-          <span class="arrow">↗</span>
+          <span class="arrow">↗︎</span>
         </a>
       </div>
 
@@ -375,7 +375,9 @@
   const prev = carousel.querySelector('[data-carousel-prev]');
   const next = carousel.querySelector('[data-carousel-next]');
   const status = carousel.querySelector('[data-carousel-status]');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let index = 0;
+  let timer = null;
 
   function showProject(nextIndex) {
     index = (nextIndex + slides.length) % slides.length;
@@ -384,13 +386,24 @@
     status.textContent = tabs[index].textContent + ' · ' + (index + 1) + ' of ' + slides.length;
   }
 
-  prev.addEventListener('click', () => showProject(index - 1));
-  next.addEventListener('click', () => showProject(index + 1));
-  tabs.forEach((tab, i) => tab.addEventListener('click', () => showProject(i)));
+  function stopAuto() {
+    if (timer) window.clearInterval(timer);
+    timer = null;
+  }
+
+  function startAuto() {
+    if (reduceMotion) return;
+    stopAuto();
+    timer = window.setInterval(() => showProject(index + 1), 6500);
+  }
+
+  prev.addEventListener('click', () => { showProject(index - 1); startAuto(); });
+  next.addEventListener('click', () => { showProject(index + 1); startAuto(); });
+  tabs.forEach((tab, i) => tab.addEventListener('click', () => { showProject(i); startAuto(); }));
 
   carousel.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowLeft') showProject(index - 1);
-    if (event.key === 'ArrowRight') showProject(index + 1);
+    if (event.key === 'ArrowLeft') { showProject(index - 1); startAuto(); }
+    if (event.key === 'ArrowRight') { showProject(index + 1); startAuto(); }
   });
 
   let startX = null;
@@ -400,9 +413,19 @@
   carousel.addEventListener('touchend', (event) => {
     if (startX === null) return;
     const delta = event.changedTouches[0].clientX - startX;
-    if (Math.abs(delta) > 50) showProject(delta > 0 ? index - 1 : index + 1);
+    if (Math.abs(delta) > 50) {
+      showProject(delta > 0 ? index - 1 : index + 1);
+      startAuto();
+    }
     startX = null;
   }, {passive:true});
+
+  carousel.addEventListener('mouseenter', stopAuto);
+  carousel.addEventListener('mouseleave', startAuto);
+  document.addEventListener('visibilitychange', () => document.hidden ? stopAuto() : startAuto());
+
+  showProject(0);
+  startAuto();
 })();
 </script>
 
