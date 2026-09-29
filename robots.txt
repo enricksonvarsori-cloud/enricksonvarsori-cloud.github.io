@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://enricksonvarsori-cloud.github.io/sitemap.xml
+Sitemap: https://varsori.com/sitemap.xml
