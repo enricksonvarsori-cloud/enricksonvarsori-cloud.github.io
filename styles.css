@@ -8977,3 +8977,33 @@ body {
     transition:none;
   }
 }
+
+
+/* HOME TERRITORY ORNAMENT FIX — 2026-09-29 */
+/* Keep the architectural motif, but move it away from headings and body copy. */
+.homepage .research-territory::before{
+  width:122px;
+  height:78px;
+  top:auto;
+  right:30px;
+  bottom:28px;
+  opacity:.78;
+  pointer-events:none;
+}
+
+/* Remove the small square markers that were colliding with the first letters. */
+.homepage .research-territory::after,
+.homepage .research-territory:nth-child(2)::after,
+.homepage .research-territory:nth-child(3)::after,
+.homepage .research-territory:nth-child(4)::after{
+  display:none;
+}
+
+@media(max-width:720px){
+  .homepage .research-territory::before{
+    width:96px;
+    height:62px;
+    right:22px;
+    bottom:22px;
+  }
+}
