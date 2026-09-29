@@ -9633,3 +9633,28 @@ body {
 .not-found-actions a:focus-visible{
   border-bottom-color:#D97A63;
 }
+
+
+/* MOBILE POLISH — arrows, impact framing */
+.link-arrow,
+.arrow,
+.hero-quick-links span,
+.impact-next a span,
+.about-next a span,
+.research-next a span,
+.contact-profile-link span:last-child,
+.contact-email span{
+  font-family:"Manrope",Arial,sans-serif;
+  font-variant-emoji:text;
+}
+
+@media(max-width:900px){
+  .impact-pathway-photo{
+    background-size:var(--impact-photo-size-mobile, var(--impact-photo-size));
+    background-position:var(--impact-stage-position-mobile, var(--impact-stage-position));
+  }
+
+  .impact-pathway-stage::after{
+    background-position:var(--impact-stage-position-mobile, var(--impact-stage-position));
+  }
+}
