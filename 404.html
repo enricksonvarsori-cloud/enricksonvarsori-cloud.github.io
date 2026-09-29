@@ -7,7 +7,7 @@
   <meta name="robots" content="noindex,follow">
   <meta name="theme-color" content="#34312B">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css?v=20260929-mobile-polish">
+  <link rel="stylesheet" href="/styles.css?v=20260929-mobile-nav">
 </head>
 <body class="editorial-page">
 <header class="site-header">
@@ -51,5 +51,16 @@
     </nav>
   </div>
 </footer>
+<script data-mobile-nav-centre>
+(() => {
+  const nav = document.querySelector('.site-header .nav-links');
+  const active = nav?.querySelector('[aria-current="page"]');
+  if (!nav || !active || !window.matchMedia('(max-width: 1050px)').matches) return;
+  requestAnimationFrame(() => {
+    const target = active.offsetLeft - (nav.clientWidth - active.offsetWidth) / 2;
+    nav.scrollTo({ left: Math.max(0, target), behavior: 'auto' });
+  });
+})();
+</script>
 </body>
 </html>
