@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Collaborative research projects across technology, sustainability, participation and public policy.">
   <meta name="twitter:image" content="https://varsori.com/assets/theoscope-earth.png">
 
-  <link rel="stylesheet" href="/styles.css?v=20260929-mobile-polish">
+  <link rel="stylesheet" href="/styles.css?v=20260929-mobile-nav">
 </head>
 <body class="editorial-page projects-page">
 <header class="site-header">
@@ -150,5 +150,16 @@
   </section>
 </main>
 <footer class="site-footer"><div class="wrap footer-grid"><p class="footer-name">Enrickson Varsori, PhD</p><nav class="footer-links" aria-label="Academic profiles"><a href="https://orcid.org/0000-0002-8875-9278" target="_blank" rel="noopener noreferrer">ORCID</a><a href="https://www.linkedin.com/in/enrickson-varsori/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://scholar.google.com.br/citations?user=7Izm7M0AAAAJ&hl=pt-BR" target="_blank" rel="noopener noreferrer">Google Scholar</a><a href="https://www.researchgate.net/profile/Enrickson-Varsori-2" target="_blank" rel="noopener noreferrer">ResearchGate</a></nav></div></footer>
+<script data-mobile-nav-centre>
+(() => {
+  const nav = document.querySelector('.site-header .nav-links');
+  const active = nav?.querySelector('[aria-current="page"]');
+  if (!nav || !active || !window.matchMedia('(max-width: 1050px)').matches) return;
+  requestAnimationFrame(() => {
+    const target = active.offsetLeft - (nav.clientWidth - active.offsetWidth) / 2;
+    nav.scrollTo({ left: Math.max(0, target), behavior: 'auto' });
+  });
+})();
+</script>
 </body>
 </html>
