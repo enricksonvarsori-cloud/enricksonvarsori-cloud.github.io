@@ -9016,14 +9016,14 @@ body {
 
 .homepage .hero-earth-still{
   position:absolute;
-  inset:-3%;
+  inset:-4%;
   z-index:0;
-  width:106%;
-  height:106%;
+  width:108%;
+  height:108%;
   object-fit:cover;
   object-position:58% 49%;
-  transform:scale(1.035);
-  animation:homeEarthDrift 24s ease-in-out infinite alternate;
+  transform:scale(1.05);
+  animation:homeEarthDrift 18s ease-in-out infinite alternate;
 }
 
 .homepage .hero-video-shade{
@@ -9041,17 +9041,17 @@ body {
 
 @keyframes homeEarthDrift{
   0%{
-    transform:scale(1.035) translate3d(0,0,0);
+    transform:scale(1.05) translate3d(0,0,0);
   }
   100%{
-    transform:scale(1.075) translate3d(-1.4%,.8%,0);
+    transform:scale(1.11) translate3d(-2.2%,1.2%,0);
   }
 }
 
 @media(prefers-reduced-motion:reduce){
   .homepage .hero-earth-still{
     animation:none;
-    transform:scale(1.045);
+    transform:scale(1.06);
   }
 }
 
