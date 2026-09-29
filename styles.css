@@ -2685,7 +2685,7 @@ body {
   .homepage .hero-video-panel{
     background:
       linear-gradient(180deg,rgba(17,20,21,.12),rgba(17,20,21,.42)),
-      url("https://svs.gsfc.nasa.gov/vis/a000000/a002200/a002255/a002255.00005_print.png") center/cover no-repeat;
+      url("https://svs.gsfc.nasa.gov/vis/a000000/a005500/a005570/Earth_wAtmos_spin_02.01000.preview.jpg") center/cover no-repeat;
   }
 }
 
@@ -8740,5 +8740,240 @@ body {
 @media(max-width:800px){
   .homepage .hero-frame{
     width:86%;
+  }
+}
+
+
+/* HOME REFINEMENT — 2026-09-29 */
+
+/* 1. Make the landing page read immediately as a researcher profile. */
+.homepage .hero-kicker-row span:first-child{
+  color:#F4F0E7;
+  font-weight:600;
+  letter-spacing:.035em;
+}
+
+.homepage .hero-kicker-row span:last-child{
+  color:#918D84;
+}
+
+/* 3. Research territories: replace circular ornaments with architectural rectangles. */
+.homepage .research-territory::before{
+  width:154px;
+  height:104px;
+  top:34px;
+  right:38px;
+  border:1px solid rgba(52,49,43,.14);
+  border-radius:0;
+  background:
+    linear-gradient(rgba(52,49,43,.08),rgba(52,49,43,.08)) 50% 0/1px 100% no-repeat,
+    linear-gradient(90deg,rgba(52,49,43,.08),rgba(52,49,43,.08)) 0 50%/100% 1px no-repeat;
+  transform:none;
+}
+
+.homepage .research-territory::after,
+.homepage .research-territory:nth-child(2)::after,
+.homepage .research-territory:nth-child(3)::after,
+.homepage .research-territory:nth-child(4)::after{
+  width:9px;
+  height:9px;
+  top:52px;
+  left:42px;
+  border:1px solid var(--home-coral);
+  border-radius:0;
+  background:none;
+  transform:none;
+}
+
+.homepage .research-territory:nth-child(2)::after{border-color:var(--home-blue);}
+.homepage .research-territory:nth-child(3)::after{border-color:var(--home-sage);}
+.homepage .research-territory:nth-child(4)::after{border-color:var(--home-sand);}
+
+.homepage .research-territory:hover::before{
+  transform:translate(-7px,7px);
+  border-color:rgba(217,122,99,.30);
+}
+
+/* 4. Publications: stronger editorial interaction than a simple colour change. */
+.homepage .home-publications-section .premium-publication-row{
+  overflow:hidden;
+  transition:
+    background .26s ease,
+    box-shadow .26s ease,
+    color .26s ease;
+}
+
+.homepage .home-publications-section .premium-publication-row h3,
+.homepage .home-publications-section .premium-publication-row .arrow,
+.homepage .home-publications-section .premium-publication-row .pub-meta{
+  transition:transform .28s cubic-bezier(.22,1,.36,1),color .24s ease,opacity .24s ease;
+}
+
+.homepage .home-publications-section .premium-publication-row:hover,
+.homepage .home-publications-section .premium-publication-row:focus-visible{
+  padding-left:0;
+  background:rgba(217,122,99,.055);
+  box-shadow:inset 3px 0 0 var(--home-coral);
+  color:var(--home-ink);
+}
+
+.homepage .home-publications-section .premium-publication-row:hover h3,
+.homepage .home-publications-section .premium-publication-row:focus-visible h3{
+  transform:translateX(10px);
+}
+
+.homepage .home-publications-section .premium-publication-row:hover .arrow,
+.homepage .home-publications-section .premium-publication-row:focus-visible .arrow{
+  transform:translate(5px,-5px);
+}
+
+.homepage .home-publications-section .premium-publication-row:hover .pub-meta,
+.homepage .home-publications-section .premium-publication-row:focus-visible .pub-meta{
+  color:#5F5A52;
+}
+
+/* Keep publication ornaments rectilinear too. */
+.homepage .home-publications-section .premium-publication-row::before,
+.homepage .home-publications-section .premium-publication-row:nth-child(2)::before,
+.homepage .home-publications-section .premium-publication-row:nth-child(3)::before{
+  width:38px;
+  height:26px;
+  border-radius:0;
+  border:1px solid rgba(217,122,99,.24);
+  border-bottom:1px solid rgba(217,122,99,.24);
+}
+
+/* 5. Research in practice: restore a real carousel using existing project/impact imagery. */
+.homepage .home-practice-section .practice-feature{
+  position:relative;
+}
+
+.homepage .home-practice-section .practice-visual-stack{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+}
+
+.homepage .home-practice-section .practice-visual{
+  position:absolute;
+  inset:0;
+  min-height:0;
+  opacity:0;
+  transform:scale(1.025);
+  transition:opacity .65s ease,transform 1.1s cubic-bezier(.22,1,.36,1);
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.homepage .home-practice-section .practice-visual.is-active{
+  opacity:1;
+  transform:scale(1);
+}
+
+.homepage .home-practice-section .practice-visual-people{
+  background:
+    linear-gradient(90deg,rgba(27,25,22,.93) 0%,rgba(27,25,22,.78) 25%,rgba(27,25,22,.32) 49%,rgba(27,25,22,.04) 72%),
+    linear-gradient(180deg,rgba(27,25,22,.05),rgba(27,25,22,.32)),
+    url('assets/impact-people.png') 70% 50%/cover no-repeat !important;
+}
+
+.homepage .home-practice-section .practice-visual-uptake{
+  background:
+    linear-gradient(90deg,rgba(27,25,22,.93) 0%,rgba(27,25,22,.76) 27%,rgba(27,25,22,.28) 51%,rgba(27,25,22,.05) 75%),
+    linear-gradient(180deg,rgba(27,25,22,.04),rgba(27,25,22,.28)),
+    url('assets/impact-uptake.jpg') 76% 50%/cover no-repeat !important;
+}
+
+.homepage .home-practice-section .practice-visual-evaluation{
+  background:
+    linear-gradient(90deg,rgba(27,25,22,.94) 0%,rgba(27,25,22,.78) 28%,rgba(27,25,22,.30) 52%,rgba(27,25,22,.04) 76%),
+    linear-gradient(180deg,rgba(27,25,22,.04),rgba(27,25,22,.30)),
+    url('assets/impact-photo-a.jpg') 70% 44%/cover no-repeat !important;
+}
+
+.homepage .home-practice-section .practice-visual-connections{
+  background:
+    linear-gradient(90deg,rgba(27,25,22,.94) 0%,rgba(27,25,22,.77) 26%,rgba(27,25,22,.30) 52%,rgba(27,25,22,.04) 76%),
+    linear-gradient(180deg,rgba(27,25,22,.04),rgba(27,25,22,.30)),
+    url('assets/impact-connections.jpg') 74% 50%/cover no-repeat !important;
+}
+
+.homepage .home-practice-section .practice-carousel-nav{
+  position:absolute;
+  z-index:4;
+  right:20px;
+  bottom:18px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.homepage .home-practice-section .practice-carousel-count{
+  margin-right:5px;
+  font-size:9px;
+  letter-spacing:.13em;
+  color:rgba(244,240,231,.75);
+}
+
+.homepage .home-practice-section .practice-carousel-nav button{
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(244,240,231,.42);
+  background:rgba(34,31,27,.36);
+  color:#F4F0E7;
+  font:inherit;
+  cursor:pointer;
+  transition:background .2s ease,border-color .2s ease;
+}
+
+.homepage .home-practice-section .practice-carousel-nav button:hover,
+.homepage .home-practice-section .practice-carousel-nav button:focus-visible{
+  background:rgba(217,122,99,.82);
+  border-color:#D97A63;
+  outline:none;
+}
+
+/* 6. Restore the subtle architectural background in Research Ecosystem. */
+.homepage .home-ecosystem-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(rgba(244,240,231,.55),rgba(244,240,231,.55)),
+    url("assets/academic-architectural-v3.png") center center / cover no-repeat;
+  opacity:.18;
+  pointer-events:none;
+}
+
+@media(max-width:720px){
+  .homepage .research-territory::before{
+    width:118px;
+    height:82px;
+    right:28px;
+    top:28px;
+  }
+
+  .homepage .research-territory::after,
+  .homepage .research-territory:nth-child(2)::after,
+  .homepage .research-territory:nth-child(3)::after,
+  .homepage .research-territory:nth-child(4)::after{
+    left:28px;
+    top:42px;
+  }
+
+  .homepage .home-practice-section .practice-carousel-nav{
+    right:14px;
+    bottom:14px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .homepage .home-practice-section .practice-visual,
+  .homepage .home-publications-section .premium-publication-row h3,
+  .homepage .home-publications-section .premium-publication-row .arrow{
+    transition:none;
   }
 }
