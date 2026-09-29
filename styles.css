@@ -9279,3 +9279,14 @@ body {
     padding-bottom:38px;
   }
 }
+
+
+/* CONTACT REFINEMENT — 2026-09-29 */
+.contact-location{
+  margin:12px 0 0;
+  font-size:11px;
+  line-height:1.4;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#9A9388;
+}
