@@ -9060,3 +9060,222 @@ body {
     object-position:58% 50%;
   }
 }
+
+
+/* CONTACT PAGE — 2026-09-29 */
+.contact-page{
+  background:#34312B;
+  color:#F4F0E7;
+}
+
+.contact-hero{
+  padding:96px 0 90px;
+  border-bottom:1px solid rgba(244,240,231,.14);
+}
+
+.contact-hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.4fr) minmax(300px,.6fr);
+  gap:84px;
+  align-items:end;
+}
+
+.contact-hero .label{
+  margin-bottom:22px;
+  color:#D97A63;
+}
+
+.contact-hero h1{
+  margin:0;
+  max-width:900px;
+  font-size:clamp(52px,6.1vw,86px);
+  font-weight:300;
+  line-height:.96;
+  letter-spacing:-.058em;
+  color:#F4F0E7;
+}
+
+.contact-hero-side{
+  padding-bottom:7px;
+}
+
+.contact-hero-side p{
+  margin:0;
+  max-width:470px;
+  font-size:17px;
+  line-height:1.72;
+  color:#B7B1A7;
+}
+
+.contact-details{
+  position:relative;
+  overflow:hidden;
+  padding:92px 0 110px;
+  background:#F4F0E7;
+  color:#34312B;
+}
+
+.contact-details::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(rgba(244,240,231,.64),rgba(244,240,231,.64)),
+    url("assets/academic-architectural-v3.png") center center / cover no-repeat;
+  opacity:.13;
+  pointer-events:none;
+}
+
+.contact-details>.wrap{
+  position:relative;
+  z-index:1;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+  gap:0;
+  border-top:1px solid rgba(52,49,43,.18);
+  border-bottom:1px solid rgba(52,49,43,.18);
+}
+
+.contact-primary,
+.contact-profiles{
+  min-height:430px;
+  padding:42px 46px 46px 0;
+}
+
+.contact-primary{
+  border-right:1px solid rgba(52,49,43,.18);
+}
+
+.contact-profiles{
+  padding-left:46px;
+}
+
+.contact-kicker{
+  margin:0 0 34px;
+  font-size:10px;
+  line-height:1.3;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#D97A63;
+}
+
+.contact-primary h2,
+.contact-profiles h2{
+  margin:0 0 24px;
+  font-size:clamp(36px,4vw,56px);
+  font-weight:300;
+  line-height:1;
+  letter-spacing:-.05em;
+}
+
+.contact-email{
+  display:inline-block;
+  margin-top:4px;
+  padding-bottom:5px;
+  border-bottom:1px solid rgba(52,49,43,.55);
+  color:#34312B;
+  text-decoration:none;
+  font-size:clamp(20px,2.4vw,30px);
+  line-height:1.25;
+  letter-spacing:-.035em;
+  transition:color .2s ease,border-color .2s ease,transform .2s ease;
+}
+
+.contact-email:hover,
+.contact-email:focus-visible{
+  color:#D97A63;
+  border-bottom-color:#D97A63;
+  transform:translateX(4px);
+}
+
+.contact-affiliation{
+  margin:34px 0 0;
+  max-width:430px;
+  font-size:14px;
+  line-height:1.65;
+  color:#777168;
+}
+
+.contact-profile-list{
+  margin-top:30px;
+  border-top:1px solid rgba(52,49,43,.16);
+}
+
+.contact-profile-link{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:24px;
+  align-items:center;
+  min-height:72px;
+  padding:16px 0;
+  border-bottom:1px solid rgba(52,49,43,.16);
+  color:#34312B;
+  text-decoration:none;
+  transition:padding .22s ease,color .22s ease,background .22s ease;
+}
+
+.contact-profile-link span:first-child{
+  font-size:18px;
+  letter-spacing:-.025em;
+}
+
+.contact-profile-link span:last-child{
+  color:#D97A63;
+  font-size:18px;
+  transition:transform .22s ease;
+}
+
+.contact-profile-link:hover,
+.contact-profile-link:focus-visible{
+  padding-left:12px;
+  padding-right:8px;
+  color:#D97A63;
+  background:rgba(217,122,99,.045);
+}
+
+.contact-profile-link:hover span:last-child,
+.contact-profile-link:focus-visible span:last-child{
+  transform:translate(4px,-4px);
+}
+
+@media(max-width:900px){
+  .contact-hero-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .contact-hero-grid{
+    gap:34px;
+  }
+
+  .contact-primary{
+    min-height:0;
+    border-right:0;
+    border-bottom:1px solid rgba(52,49,43,.18);
+    padding-right:0;
+  }
+
+  .contact-profiles{
+    min-height:0;
+    padding-left:0;
+  }
+}
+
+@media(max-width:720px){
+  .contact-hero{
+    padding:72px 0 68px;
+  }
+
+  .contact-details{
+    padding:72px 0 84px;
+  }
+
+  .contact-primary,
+  .contact-profiles{
+    padding-top:34px;
+    padding-bottom:38px;
+  }
+}
