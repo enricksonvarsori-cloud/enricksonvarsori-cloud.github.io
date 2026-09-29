@@ -2,7 +2,7 @@
 
 Personal academic website of **Enrickson Varsori, PhD**, researcher in Communication Sciences working across digital media, human–computer interaction, sustainability and emerging technologies.
 
-**Live site:** https://enricksonvarsori-cloud.github.io/
+**Live site:** https://varsori.com/
 
 ## Website structure
 
