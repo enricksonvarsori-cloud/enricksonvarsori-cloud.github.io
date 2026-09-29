@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Contact details and academic and professional profiles for Enrickson Varsori.">
   <meta name="twitter:image" content="https://varsori.com/foto.jpg">
 
-    <link rel="stylesheet" href="/styles.css?v=20260929-mobile-polish">
+    <link rel="stylesheet" href="/styles.css?v=20260929-mobile-nav">
 </head>
 <body class="editorial-page contact-page">
 
@@ -101,5 +101,16 @@
   </div>
 </footer>
 
+<script data-mobile-nav-centre>
+(() => {
+  const nav = document.querySelector('.site-header .nav-links');
+  const active = nav?.querySelector('[aria-current="page"]');
+  if (!nav || !active || !window.matchMedia('(max-width: 1050px)').matches) return;
+  requestAnimationFrame(() => {
+    const target = active.offsetLeft - (nav.clientWidth - active.offsetWidth) / 2;
+    nav.scrollTo({ left: Math.max(0, target), behavior: 'auto' });
+  });
+})();
+</script>
 </body>
 </html>
