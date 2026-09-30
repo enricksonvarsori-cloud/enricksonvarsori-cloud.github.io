@@ -10060,3 +10060,14 @@ button:focus-visible,
 .publications-record .publications-kicker{
   color:#F0A08D !important;
 }
+
+
+/* ACCESSMONITOR PUBLICATIONS HOVER VISIBILITY FIX — 2026-09-30 */
+/* Hidden hover-only text should not be exposed in its non-visible state. */
+.publication-hover-title{
+  visibility:hidden !important;
+}
+.publication-card:hover .publication-hover-title,
+.publication-card:focus-within .publication-hover-title{
+  visibility:visible !important;
+}
