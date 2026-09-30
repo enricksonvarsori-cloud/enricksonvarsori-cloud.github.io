@@ -9870,3 +9870,24 @@ button:focus-visible,
     scroll-behavior:auto !important;
   }
 }
+
+
+/* ACCESSMONITOR AA CONTRAST FIX — 2026-09-30
+   Home: 4 territory tags + 5 project kickers + 3 publication meta labels
+   + 3 publication arrows = 15 reported low-contrast combinations. */
+.homepage .research-territory .territory-tags,
+.homepage .home-projects-section .project-kicker,
+.homepage .home-publications-section .premium-publication-row .arrow{
+  color:#8A4336 !important;
+}
+
+.homepage .home-publications-section .pub-meta{
+  color:#5F5A52 !important;
+}
+
+/* Keep the compact editorial treatment while meeting the normal-text AA target. */
+.homepage .research-territory .territory-tags,
+.homepage .home-projects-section .project-kicker,
+.homepage .home-publications-section .pub-meta{
+  font-size:12px !important;
+}
