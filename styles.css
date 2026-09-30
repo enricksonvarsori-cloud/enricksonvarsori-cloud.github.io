@@ -10118,3 +10118,33 @@ button:focus-visible,
 .contact-hero .label{
   color:#F0A08D !important;
 }
+
+
+/* ACCESSMONITOR RESEARCH AA CONTRAST FIX — 2026-09-30 */
+/* 1 — hero label on dark background */
+.research-hero .label{
+  color:#F0A08D !important;
+}
+
+/* 2–5 — constellation descriptors on dark background */
+.research-constellation-node p{
+  color:#D8D2C8 !important;
+  opacity:1 !important;
+}
+
+/* 6 — Research landscape kicker on light background */
+.research-landscape .research-kicker{
+  color:#7A3F34 !important;
+}
+
+/* 7 — Across these areas kicker on dark background */
+.research-crosscut .research-kicker{
+  color:#F0A08D !important;
+}
+
+/* 8–10 — Experience / Evaluation / Translation labels on dark background */
+.research-crosscut .research-question-list span{
+  color:#F0A08D !important;
+  opacity:1 !important;
+  font-size:12px !important;
+}
