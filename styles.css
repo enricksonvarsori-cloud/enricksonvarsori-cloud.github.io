@@ -9676,3 +9676,197 @@ body {
     scroll-snap-align:center;
   }
 }
+
+
+/* =========================================================
+   ACCESSIBILITY & USABILITY PASS — 2026-09-30
+   Keyboard access, contrast, semantic navigation and motion.
+   ========================================================= */
+
+/* Skip navigation */
+.skip-link{
+  position:fixed;
+  top:12px;
+  left:12px;
+  z-index:10000;
+  padding:11px 16px;
+  background:#F4F0E7;
+  color:#34312B;
+  border:2px solid #34312B;
+  border-radius:3px;
+  font-size:14px;
+  font-weight:600;
+  text-decoration:none;
+  transform:translateY(-180%);
+  transition:transform .16s ease;
+}
+.skip-link:focus{
+  transform:translateY(0);
+}
+
+/* Semantic navigation lists without changing the desktop visual language. */
+.nav-list,
+.footer-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  align-items:center;
+}
+.nav-list{
+  gap:20px;
+}
+.footer-list{
+  flex-wrap:wrap;
+  gap:18px 28px;
+}
+.site-header .nav-links,
+.homepage .nav-links{
+  display:block;
+}
+.footer-links{
+  display:block;
+}
+
+/* Highly visible focus treatment on both light and dark surfaces. */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible{
+  outline:none !important;
+  box-shadow:
+    0 0 0 2px #F4F0E7,
+    0 0 0 5px #34312B !important;
+  border-radius:3px;
+}
+
+/* Preserve clear link affordance for text links. */
+.text-link,
+.contact-email,
+.not-found-actions a{
+  text-underline-offset:4px;
+  text-decoration-thickness:1px;
+}
+
+/* Contrast corrections on warm-paper surfaces. */
+.homepage .home-territories-section .premium-heading .label,
+.homepage .home-publications-section .premium-heading .label,
+.homepage .home-ecosystem-section .premium-heading .label,
+.homepage .home-ecosystem-type,
+.publications-kicker,
+.impact-kicker,
+.contact-kicker,
+.contact-location{
+  color:#8A4336 !important;
+}
+.homepage .premium-heading .section-note,
+.contact-affiliation,
+.publication-secondary-journal,
+.publication-card-body>p:not(.publication-card-meta),
+.impact-pathway>p:last-child{
+  color:#6B665D !important;
+}
+
+/* Equivalent accessible accent on dark surfaces. */
+.homepage .home-projects-section .premium-heading .label,
+.homepage .home-practice-section .label,
+.not-found-code{
+  color:#E08A76 !important;
+}
+
+/* Avoid overly small secondary information. */
+.homepage .premium-heading .label,
+.homepage .home-ecosystem-type,
+.publications-kicker,
+.impact-kicker,
+.contact-kicker,
+.contact-location,
+.not-found-code,
+.publication-card-label,
+.publication-card-meta,
+.impact-pathway-label,
+.impact-practice-type,
+.impact-pathway-stage-label,
+.homepage .home-projects-section .project-visual-label{
+  font-size:12px !important;
+}
+
+/* User-controlled autoplay. */
+.project-carousel-status{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+}
+.carousel-toggle,
+.practice-carousel-toggle{
+  appearance:none;
+  border:1px solid currentColor;
+  background:transparent;
+  color:inherit;
+  min-height:38px;
+  padding:7px 12px;
+  border-radius:2px;
+  font:inherit;
+  font-size:12px;
+  font-weight:600;
+  cursor:pointer;
+}
+.homepage .home-practice-section .practice-carousel-nav{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.homepage .home-practice-section .practice-carousel-toggle{
+  width:auto;
+  min-width:62px;
+  padding-inline:10px;
+}
+.impact-pathway-toggle{
+  font-family:"Manrope",Arial,sans-serif !important;
+  font-size:9px !important;
+  font-weight:600 !important;
+  letter-spacing:-.02em;
+}
+
+/* Mobile: all navigation items remain visible without horizontal swiping. */
+@media(max-width:1050px){
+  .site-header .nav-links,
+  .homepage .nav-links{
+    overflow:visible !important;
+    width:100%;
+    padding-bottom:2px;
+    white-space:normal;
+    -webkit-mask-image:none !important;
+    mask-image:none !important;
+  }
+  .nav-list{
+    width:100%;
+    max-width:100%;
+    flex-wrap:wrap;
+    gap:10px 18px;
+  }
+  .site-header .nav-links a,
+  .homepage .nav-links a{
+    white-space:nowrap;
+  }
+}
+
+@media(max-width:650px){
+  .nav-list{
+    gap:9px 15px;
+  }
+  .homepage .home-practice-section .practice-carousel-toggle{
+    width:auto !important;
+    min-width:62px !important;
+    height:44px;
+  }
+}
+
+/* Motion preference always wins over carousel animation. */
+@media(prefers-reduced-motion:reduce){
+  *,
+  *::before,
+  *::after{
+    scroll-behavior:auto !important;
+  }
+}
