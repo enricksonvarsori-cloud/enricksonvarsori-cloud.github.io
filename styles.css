@@ -10044,3 +10044,19 @@ button:focus-visible,
 .publications-kicker{
   color:#7A3F34 !important;
 }
+
+
+/* ACCESSMONITOR PUBLICATIONS FINAL AA CONTRAST — 2026-09-30 */
+/* Hover titles require their own opaque contrast surface because the artwork varies underneath. */
+.publication-hover-title{
+  color:#FFFFFF !important;
+  background:#34312B !important;
+  padding:.18em .28em !important;
+  box-decoration-break:clone;
+  -webkit-box-decoration-break:clone;
+}
+
+/* "Full record" sits on the dark record section, not on the light publication index. */
+.publications-record .publications-kicker{
+  color:#F0A08D !important;
+}
