@@ -10071,3 +10071,44 @@ button:focus-visible,
 .publication-card:focus-within .publication-hover-title{
   visibility:visible !important;
 }
+
+
+/* ACCESSMONITOR IMPACT AA CONTRAST FIX — 2026-09-30 */
+/* 1 — hero label on dark background */
+.impact-hero .label{
+  color:#F0A08D !important;
+}
+
+/* 2 — hero note on dark background */
+.impact-hero-note{
+  color:#D8D2C8 !important;
+  opacity:1 !important;
+}
+
+/* 3–5 — inactive pathway tabs on light background */
+.impact-pathway-tab{
+  color:#625D55 !important;
+}
+.impact-pathway-tab.is-active{
+  color:#34312B !important;
+}
+
+/* 6 — Pause control over photographic stage */
+.impact-pathway-toggle{
+  color:#FFFFFF !important;
+  background:#34312B !important;
+  border-color:#F4F0E7 !important;
+  opacity:1 !important;
+  font-size:12px !important;
+}
+
+/* 7 — In practice kicker on dark section */
+.impact-practice .impact-kicker{
+  color:#F0A08D !important;
+}
+
+/* 8–11 — practice words on dark background */
+.impact-practice-word{
+  color:#D8D2C8 !important;
+  opacity:1 !important;
+}
