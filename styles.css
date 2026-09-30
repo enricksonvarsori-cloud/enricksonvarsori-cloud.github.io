@@ -9970,3 +9970,24 @@ button:focus-visible,
 .about-entry-location{
   opacity:1 !important;
 }
+
+
+/* ACCESSMONITOR ABOUT FINAL AA CONTRAST — 2026-09-30 */
+/* Dark hero: stronger light terracotta */
+.about-hero .label{
+  color:#F0A08D !important;
+}
+
+/* Light sections: dark terracotta */
+.about-themes .about-kicker,
+.about-background .about-kicker{
+  color:#7A3F34 !important;
+}
+
+/* Dark ecosystem section: light labels and locations */
+.about-ecosystem .about-ecosystem-type{
+  color:#F0A08D !important;
+}
+.about-ecosystem .about-entry-location{
+  color:#D8D2C8 !important;
+}
