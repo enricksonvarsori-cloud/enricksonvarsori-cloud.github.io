@@ -9937,3 +9937,36 @@ button:focus-visible,
   border-color:#F4F0E7 !important;
   opacity:1 !important;
 }
+
+
+/* ACCESSMONITOR ABOUT AA CONTRAST FIX — 2026-09-30 */
+/* Dark-background labels/kickers */
+.about-page .page-hero .label,
+.about-current-label,
+.about-kicker{
+  color:#E08A76 !important;
+}
+
+/* Academic trajectory stage labels on the light section */
+.about-trajectory-stage{
+  color:#7A3F34 !important;
+}
+
+/* Ecosystem category labels on the light section */
+.about-ecosystem-type{
+  color:#7A3F34 !important;
+}
+
+/* Location metadata on the light section */
+.about-entry-location{
+  color:#625D55 !important;
+}
+
+/* Keep compact editorial labels readable */
+.about-current-label,
+.about-kicker,
+.about-trajectory-stage,
+.about-ecosystem-type,
+.about-entry-location{
+  opacity:1 !important;
+}
