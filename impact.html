@@ -98,6 +98,7 @@
               </div>
             </div>
             <div class="impact-pathway-controls" aria-label="Carousel navigation">
+              <button type="button" class="impact-pathway-control impact-pathway-toggle" data-impact-toggle aria-pressed="false" aria-label="Pause pathway carousel">Pause</button>
               <button type="button" class="impact-pathway-control" data-impact-prev aria-label="Previous pathway">
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                   <path d="M15 5 8 12l7 7"></path>
@@ -278,9 +279,11 @@
   const title = root.querySelector('[data-impact-title]');
   const text = root.querySelector('[data-impact-text]');
   const count = root.querySelector('[data-impact-count]');
+  const toggle = root.querySelector('[data-impact-toggle]');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let active = 0;
   let timer = null;
+  let paused = false;
 
   function render(index, moveFocus = false) {
     active = (index + items.length) % items.length;
@@ -320,13 +323,27 @@
     timer = null;
   }
 
+  function updateToggle() {
+    if (!toggle) return;
+    toggle.setAttribute('aria-pressed', String(paused));
+    toggle.setAttribute('aria-label', paused ? 'Resume pathway carousel' : 'Pause pathway carousel');
+    toggle.textContent = paused ? 'Play' : 'Pause';
+  }
+
   function startAuto() {
-    if (reduceMotion) return;
+    if (reduceMotion || paused) return;
     stopAuto();
     timer = window.setInterval(() => render(active + 1), 6500);
   }
 
   tabs.forEach((tab, i) => tab.addEventListener('click', () => { render(i); startAuto(); }));
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      paused = !paused;
+      if (paused) stopAuto(); else startAuto();
+      updateToggle();
+    });
+  }
   root.querySelector('[data-impact-prev]').addEventListener('click', () => { render(active - 1); startAuto(); });
   root.querySelector('[data-impact-next]').addEventListener('click', () => { render(active + 1); startAuto(); });
 
@@ -348,6 +365,7 @@
   document.addEventListener('visibilitychange', () => document.hidden ? stopAuto() : startAuto());
 
   render(0);
+  updateToggle();
   startAuto();
 })();
 </script>
