@@ -10018,3 +10018,29 @@ button:focus-visible,
   color:#F4F0E7 !important;
   text-shadow:0 1px 12px rgba(0,0,0,.38);
 }
+
+
+/* ACCESSMONITOR PUBLICATIONS AA CONTRAST FIX — 2026-09-30 */
+.publications-hero .label{
+  color:#F0A08D !important;
+}
+.publications-theme-line span{
+  color:#D8D2C8 !important;
+  opacity:1 !important;
+  font-size:12px !important;
+}
+.publication-card .publication-card-wash{
+  background:rgba(244,240,231,.90) !important;
+}
+.publication-hover-title{
+  color:#34312B !important;
+  text-shadow:none !important;
+}
+.publication-card-meta{
+  color:#6A4037 !important;
+  opacity:1 !important;
+}
+.publications-record .publications-kicker,
+.publications-kicker{
+  color:#7A3F34 !important;
+}
