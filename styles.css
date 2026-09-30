@@ -10304,3 +10304,17 @@ button:focus-visible,
   .accessibility-hero{padding:68px 0 62px}
   .evidence-table{display:block;overflow-x:auto}
 }
+
+
+/* SELO U+A — CONTENT 2.2: secondary information minimum size */
+.story-card-meta,
+.publication-card-meta,
+.contact-location,
+.footer-meta,
+.publication-card-label,
+.impact-pathway-stage-label,
+.impact-practice-type,
+.homepage .home-publications-section .pub-meta,
+.homepage .home-projects-section .project-kicker{
+  font-size:14px !important;
+}
