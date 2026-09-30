@@ -238,7 +238,7 @@
           </div>
           <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next project">→</button>
         </div>
-        <div class="project-carousel-status" aria-live="polite"><span data-carousel-status>THEOSCOPE · 1 of 5</span></div>
+        <div class="project-carousel-status"><span data-carousel-status aria-live="polite">THEOSCOPE · 1 of 5</span><button class="carousel-toggle" type="button" data-carousel-toggle aria-pressed="false" aria-label="Pause project carousel">Pause</button></div>
       </div>
 
       <a class="text-link" href="/projects/">View all projects</a>
@@ -294,6 +294,7 @@
         </div>
         <div class="practice-carousel-nav" aria-label="Research in practice images">
           <span class="practice-carousel-count" data-practice-count aria-live="polite">01 / 04</span>
+          <button type="button" class="practice-carousel-toggle" data-practice-toggle aria-pressed="false" aria-label="Pause research in practice carousel">Pause</button>
           <button type="button" data-practice-prev aria-label="Previous image">←</button>
           <button type="button" data-practice-next aria-label="Next image">→</button>
         </div>
@@ -380,9 +381,11 @@
   const prev = carousel.querySelector('[data-carousel-prev]');
   const next = carousel.querySelector('[data-carousel-next]');
   const status = carousel.querySelector('[data-carousel-status]');
+  const toggle = carousel.querySelector('[data-carousel-toggle]');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let index = 0;
   let timer = null;
+  let paused = false;
 
   function showProject(nextIndex) {
     index = (nextIndex + slides.length) % slides.length;
@@ -396,8 +399,15 @@
     timer = null;
   }
 
+  function updateToggle() {
+    if (!toggle) return;
+    toggle.setAttribute('aria-pressed', String(paused));
+    toggle.setAttribute('aria-label', paused ? 'Resume project carousel' : 'Pause project carousel');
+    toggle.textContent = paused ? 'Play' : 'Pause';
+  }
+
   function startAuto() {
-    if (reduceMotion) return;
+    if (reduceMotion || paused) return;
     stopAuto();
     timer = window.setInterval(() => showProject(index + 1), 6500);
   }
@@ -405,6 +415,13 @@
   prev.addEventListener('click', () => { showProject(index - 1); startAuto(); });
   next.addEventListener('click', () => { showProject(index + 1); startAuto(); });
   tabs.forEach((tab, i) => tab.addEventListener('click', () => { showProject(i); startAuto(); }));
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      paused = !paused;
+      if (paused) stopAuto(); else startAuto();
+      updateToggle();
+    });
+  }
 
   carousel.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowLeft') { showProject(index - 1); startAuto(); }
@@ -430,6 +447,7 @@
   document.addEventListener('visibilitychange', () => document.hidden ? stopAuto() : startAuto());
 
   showProject(0);
+  updateToggle();
   startAuto();
 })();
 </script>
@@ -443,9 +461,11 @@
   const count = root.querySelector('[data-practice-count]');
   const prev = root.querySelector('[data-practice-prev]');
   const next = root.querySelector('[data-practice-next]');
+  const toggle = root.querySelector('[data-practice-toggle]');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let active = 0;
   let timer = null;
+  let paused = false;
 
   function render(index) {
     active = (index + slides.length) % slides.length;
@@ -458,20 +478,35 @@
     timer = null;
   }
 
+  function updateToggle() {
+    if (!toggle) return;
+    toggle.setAttribute('aria-pressed', String(paused));
+    toggle.setAttribute('aria-label', paused ? 'Resume research in practice carousel' : 'Pause research in practice carousel');
+    toggle.textContent = paused ? 'Play' : 'Pause';
+  }
+
   function startAuto() {
-    if (reduceMotion) return;
+    if (reduceMotion || paused) return;
     stopAuto();
     timer = window.setInterval(() => render(active + 1), 7000);
   }
 
   prev.addEventListener('click', () => { render(active - 1); startAuto(); });
   next.addEventListener('click', () => { render(active + 1); startAuto(); });
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      paused = !paused;
+      if (paused) stopAuto(); else startAuto();
+      updateToggle();
+    });
+  }
   root.addEventListener('mouseenter', stopAuto);
   root.addEventListener('mouseleave', startAuto);
   root.addEventListener('focusin', stopAuto);
   root.addEventListener('focusout', startAuto);
 
   render(0);
+  updateToggle();
   startAuto();
 })();
 </script>
