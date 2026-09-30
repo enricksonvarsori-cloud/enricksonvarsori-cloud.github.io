@@ -9891,3 +9891,21 @@ button:focus-visible,
 .homepage .home-publications-section .pub-meta{
   font-size:12px !important;
 }
+
+
+/* ACCESSMONITOR FINAL HOME AA CONTRAST — 2026-09-30 */
+/* Secondary ecosystem copy was #777269 on #F4F0E7 (≈4.2:1). */
+.homepage .home-ecosystem-entry p{
+  color:#625D55 !important;
+}
+
+/* Small terracotta arrow accents on the dark hero need the light variant. */
+.homepage .hero-quick-links a span{
+  color:#E08A76 !important;
+}
+
+/* Carousel counter must remain readable independently of the photograph behind it. */
+.homepage .home-practice-section .practice-carousel-count{
+  color:#F4F0E7 !important;
+  opacity:1;
+}
