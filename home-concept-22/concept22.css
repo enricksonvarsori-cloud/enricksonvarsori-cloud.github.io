@@ -277,3 +277,71 @@
     font-size:13px;
   }
 }
+
+
+/* HOME 2.2 corrective layer — shared page grid + integrated research strip */
+body.concept-home-22 .concept-hero-shell.wrap{
+  width:80% !important;
+  max-width:1200px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+body.concept-home-22 .concept-orbit figcaption{
+  justify-content:flex-end;
+}
+
+body.concept-home-22 .concept-domain-strip{
+  grid-template-columns:minmax(150px,.62fr) repeat(4,minmax(0,1fr));
+}
+
+body.concept-home-22 .concept-domain-intro{
+  min-height:76px;
+  padding:16px 18px;
+  display:flex;
+  align-items:center;
+  border-right:1px solid rgba(244,240,231,.13);
+  color:#B8B1A6;
+}
+
+body.concept-home-22 .concept-domain-intro span{
+  max-width:120px;
+  color:#B8B1A6;
+  font-size:9px;
+  font-weight:650;
+  line-height:1.45;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+
+@media(max-width:1050px){
+  body.concept-home-22 .concept-hero-shell.wrap{
+    width:88% !important;
+    max-width:none !important;
+  }
+
+  body.concept-home-22 .concept-domain-strip{
+    grid-template-columns:1fr 1fr;
+  }
+
+  body.concept-home-22 .concept-domain-intro{
+    grid-column:1/-1;
+    min-height:48px;
+    border-right:0;
+    border-bottom:1px solid rgba(244,240,231,.13);
+  }
+
+  body.concept-home-22 .concept-domain-intro span{
+    max-width:none;
+  }
+}
+
+@media(max-width:480px){
+  body.concept-home-22 .concept-hero-shell.wrap{
+    width:90% !important;
+  }
+
+  body.concept-home-22 .concept-domain-strip{
+    grid-template-columns:1fr;
+  }
+}
