@@ -1,0 +1,261 @@
+/* HOME 2.2 — hierarchy and balance refinement — 2026-10-02 */
+
+/* 1. Hero proportions: retain the 2.1 architecture, reduce headline dominance */
+.concept-home-22 .concept-hero-grid{
+  grid-template-columns:minmax(0,1.04fr) minmax(420px,.96fr);
+  min-height:560px;
+}
+
+.concept-home-22 .concept-hero-copy{
+  padding:44px 44px 36px 42px;
+}
+
+.concept-home-22 .concept-hero-index{
+  margin-bottom:32px;
+  color:#F0A08D;
+  letter-spacing:.12em;
+}
+
+.concept-home-22 .concept-hero h1{
+  max-width:740px;
+  font-size:clamp(44px,4.35vw,68px);
+  line-height:.995;
+  letter-spacing:-.048em;
+}
+
+/* 2. Give the explanatory paragraph enough visual authority to remain part of the hero */
+.concept-home-22 .concept-hero-lower{
+  margin-top:46px;
+  padding-top:30px;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:32px;
+}
+
+.concept-home-22 .concept-hero-lower p{
+  max-width:590px;
+  color:#E1DBD1;
+  font-size:17px;
+  font-weight:400;
+  line-height:1.62;
+}
+
+.concept-home-22 .concept-primary-link{
+  min-width:0;
+  min-height:44px;
+  padding:0 2px 5px;
+  border:0;
+  border-bottom:1px solid rgba(244,240,231,.7);
+  background:transparent;
+  justify-content:flex-start;
+  gap:14px;
+  font-size:11px;
+  letter-spacing:.055em;
+}
+
+.concept-home-22 .concept-primary-link span{
+  color:#F0A08D;
+}
+
+.concept-home-22 .concept-primary-link:hover,
+.concept-home-22 .concept-primary-link:focus-visible{
+  background:transparent;
+  color:#F4F0E7;
+  transform:translateX(4px);
+  border-bottom-color:#F0A08D;
+}
+
+/* 3. Globe: remove floating copy and restore breathing room around the visual */
+.concept-home-22 .concept-orbit{
+  min-height:560px;
+  background:
+    radial-gradient(circle at 50% 48%,rgba(114,133,126,.09),transparent 47%),
+    linear-gradient(145deg,#302E29,#292822);
+}
+
+.concept-home-22 .concept-orbit-grid{
+  opacity:.20;
+  background-size:88px 88px;
+}
+
+.concept-home-22 .concept-earth{
+  width:min(79%,550px);
+  box-shadow:
+    0 0 0 1px rgba(244,240,231,.16),
+    0 28px 68px rgba(0,0,0,.31);
+}
+
+.concept-home-22 .concept-orbit-ring-a{
+  width:84%;
+  height:46%;
+  border-color:rgba(240,160,141,.26);
+}
+
+.concept-home-22 .concept-orbit-ring-b{
+  display:none;
+}
+
+.concept-home-22 .concept-orbit-axis-x{
+  left:11%;
+  right:11%;
+  background:rgba(244,240,231,.09);
+}
+
+.concept-home-22 .concept-orbit-axis-y{
+  top:12%;
+  bottom:12%;
+  background:rgba(244,240,231,.09);
+}
+
+.concept-home-22 .concept-orbit-note{
+  display:none;
+}
+
+.concept-home-22 .concept-orbit figcaption{
+  bottom:18px;
+  font-size:8px;
+}
+
+/* 4. Research-territory navigation: treat labels as primary navigation, not metadata */
+.concept-home-22 .concept-domain-strip a{
+  min-height:76px;
+  padding:16px 18px;
+  grid-template-columns:28px minmax(0,1fr);
+  gap:10px;
+}
+
+.concept-home-22 .concept-domain-strip span{
+  font-size:10px;
+}
+
+.concept-home-22 .concept-domain-strip strong{
+  font-size:13px;
+  font-weight:550;
+  line-height:1.34;
+}
+
+/* 5. Rebalance the rest of the Home: retain editorial scale without oversized section headings */
+.concept-home-22 .premium-heading .title{
+  max-width:700px;
+  font-size:clamp(42px,4.5vw,60px);
+  line-height:1.025;
+  letter-spacing:-.048em;
+}
+
+.concept-home-22 .premium-heading .section-note{
+  font-size:16px;
+  line-height:1.68;
+  color:#68645D;
+}
+
+.concept-home-22 .home-projects-section .premium-heading .section-note{
+  color:#B9B4AA;
+}
+
+.concept-home-22 .practice-copy h2{
+  font-size:clamp(35px,3.65vw,52px);
+  line-height:1.1;
+}
+
+/* Preview controls remain deliberately secondary */
+.concept-home-22 .concept-preview-switch{
+  gap:6px;
+}
+
+.concept-home-22 .concept-preview-switch a{
+  min-height:34px;
+  padding:0 9px;
+  font-size:9px;
+}
+
+@media(max-width:1050px){
+  .concept-home-22 .concept-hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .concept-home-22 .concept-hero-copy{
+    min-height:auto;
+  }
+
+  .concept-home-22 .concept-orbit{
+    min-height:520px;
+  }
+
+  .concept-home-22 .concept-earth{
+    width:min(64%,480px);
+  }
+}
+
+@media(max-width:720px){
+  .concept-home-22 .concept-hero-copy{
+    padding:36px 22px 30px;
+  }
+
+  .concept-home-22 .concept-hero-index{
+    margin-bottom:24px;
+  }
+
+  .concept-home-22 .concept-hero h1{
+    font-size:clamp(38px,9.9vw,52px);
+    line-height:1.02;
+  }
+
+  .concept-home-22 .concept-hero-lower{
+    margin-top:38px;
+    padding-top:25px;
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .concept-home-22 .concept-hero-lower p{
+    font-size:16px;
+    line-height:1.62;
+  }
+
+  .concept-home-22 .concept-primary-link{
+    width:max-content;
+    min-width:170px;
+  }
+
+  .concept-home-22 .concept-orbit{
+    min-height:430px;
+  }
+
+  .concept-home-22 .concept-earth{
+    width:min(74%,340px);
+  }
+
+  .concept-home-22 .concept-domain-strip a{
+    min-height:68px;
+    padding:15px 16px;
+  }
+
+  .concept-home-22 .concept-domain-strip strong{
+    font-size:12.5px;
+  }
+
+  .concept-home-22 .premium-heading .title{
+    font-size:clamp(38px,9.2vw,52px);
+  }
+
+  .concept-home-22 .premium-heading .section-note{
+    font-size:16px;
+  }
+}
+
+@media(max-width:430px){
+  .concept-home-22 .concept-hero h1{
+    font-size:38px;
+  }
+
+  .concept-home-22 .concept-orbit{
+    min-height:380px;
+  }
+
+  .concept-home-22 .concept-earth{
+    width:76%;
+  }
+
+  .concept-home-22 .concept-domain-strip strong{
+    font-size:13px;
+  }
+}
