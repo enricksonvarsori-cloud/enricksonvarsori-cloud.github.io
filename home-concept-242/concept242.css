@@ -815,3 +815,44 @@ body.concept-home-242 .c24-line-v2{
     width:90%;
   }
 }
+
+
+/* =========================================================
+   HOME 2.4.2 — definitive 01–04 grid correction
+   The shell, not the nav itself, owns the shared page width.
+   ========================================================= */
+body.concept-home-242 .concept24-domain-shell{
+  width:min(1200px,80%) !important;
+  max-width:1200px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  box-sizing:border-box;
+}
+
+body.concept-home-242 .concept24-domain-shell .concept24-domain-strip{
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  box-sizing:border-box;
+}
+
+body.concept-home-242 .concept24-domain-shell .concept24-domain-strip > a{
+  min-width:0;
+  box-sizing:border-box;
+}
+
+@media(max-width:1050px){
+  body.concept-home-242 .concept24-domain-shell{
+    width:88% !important;
+  }
+
+  body.concept-home-242 .concept24-domain-strip{
+    width:100% !important;
+  }
+}
+
+@media(max-width:480px){
+  body.concept-home-242 .concept24-domain-shell{
+    width:90% !important;
+  }
+}
