@@ -1,0 +1,369 @@
+/* HOME 2.3.1 — hybrid hero + animated Earth architecture — 2026-10-02
+   Base composition: Home 2.3.
+   Only the hero is refined; the five content sections below remain untouched.
+*/
+
+/* Preserve 2.3 typographic balance */
+body.concept-home-231 .hero-statement{
+  max-width:1060px;
+  padding:60px 0 54px;
+  font-size:clamp(49px,5.45vw,79px);
+  line-height:.975;
+  letter-spacing:-.054em;
+}
+
+body.concept-home-231 .hero-summary{
+  padding-top:32px;
+  padding-bottom:34px;
+}
+
+body.concept-home-231 .hero-summary p{
+  max-width:370px;
+  color:#DDD7CD;
+  font-size:16.5px;
+  line-height:1.64;
+  font-weight:400;
+}
+
+body.concept-home-231 .hero-media-row{
+  grid-template-columns:minmax(300px,.37fr) minmax(0,.63fr);
+  min-height:390px;
+}
+
+/* Quick links: still editorial, but no longer disappear beneath the body copy */
+body.concept-home-231 .hero-quick-links{
+  margin-top:30px;
+}
+
+body.concept-home-231 .hero-quick-links a{
+  padding:15px 0;
+  color:#F1ECE3;
+  font-size:12.5px;
+  font-weight:600;
+  letter-spacing:.045em;
+}
+
+/* =========================================================
+   Animated Earth architecture
+   Fixed: panel/grid/axes/orbit
+   Moving: NASA Earth only
+   ========================================================= */
+body.concept-home-231 .hero-video-panel.hero-earth-architecture{
+  position:relative;
+  isolation:isolate;
+  min-height:390px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  border-left:1px solid rgba(244,240,231,.08);
+  border-right:1px solid rgba(244,240,231,.08);
+  background:
+    radial-gradient(circle at 50% 50%,rgba(116,125,115,.10),transparent 49%),
+    linear-gradient(145deg,#302E29,#292822);
+}
+
+body.concept-home-231 .hero-earth-architecture::before,
+body.concept-home-231 .hero-earth-architecture::after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:rgba(244,240,231,.08);
+  pointer-events:none;
+}
+
+body.concept-home-231 .hero-earth-architecture::before{left:18%;}
+body.concept-home-231 .hero-earth-architecture::after{right:18%;}
+
+body.concept-home-231 .earth-architecture-grid{
+  position:absolute;
+  z-index:0;
+  inset:0;
+  background:
+    linear-gradient(rgba(244,240,231,.047) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(244,240,231,.047) 1px,transparent 1px);
+  background-size:86px 86px;
+  opacity:.56;
+  pointer-events:none;
+}
+
+body.concept-home-231 .earth-architecture-axis{
+  position:absolute;
+  z-index:1;
+  pointer-events:none;
+  background:rgba(244,240,231,.11);
+}
+
+body.concept-home-231 .earth-axis-x{
+  left:0;
+  right:0;
+  top:50%;
+  height:1px;
+}
+
+body.concept-home-231 .earth-axis-y{
+  top:0;
+  bottom:0;
+  left:50%;
+  width:1px;
+}
+
+body.concept-home-231 .earth-globe-shell{
+  position:relative;
+  z-index:2;
+  width:min(84%,352px);
+  aspect-ratio:1;
+  overflow:hidden;
+  border-radius:50%;
+  background:#050708;
+  box-shadow:
+    0 0 0 1px rgba(244,240,231,.16),
+    0 24px 58px rgba(0,0,0,.35);
+}
+
+body.concept-home-231 .earth-static-fallback,
+body.concept-home-231 .earth-motion-video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+body.concept-home-231 .earth-static-fallback{
+  z-index:0;
+  filter:saturate(.80) contrast(.98) brightness(.88);
+}
+
+body.concept-home-231 .earth-motion-video{
+  z-index:1;
+  transform:scale(1.035);
+  filter:saturate(.80) contrast(.98) brightness(.88);
+}
+
+body.concept-home-231 .earth-orbit-ring{
+  position:absolute;
+  z-index:3;
+  left:50%;
+  top:50%;
+  width:min(92%,404px);
+  height:min(62%,245px);
+  border:1px solid rgba(217,122,99,.48);
+  border-radius:50%;
+  transform:translate(-50%,-50%) rotate(15deg);
+  pointer-events:none;
+}
+
+body.concept-home-231 .hero-video-credit{
+  z-index:5;
+  top:auto;
+  right:16px;
+  bottom:14px;
+  color:rgba(244,240,231,.66);
+  font-size:9px;
+}
+
+body.concept-home-231 .earth-motion-toggle{
+  position:absolute;
+  z-index:5;
+  left:16px;
+  bottom:12px;
+  min-height:28px;
+  padding:0 8px;
+  border:1px solid rgba(244,240,231,.24);
+  background:rgba(38,35,31,.58);
+  backdrop-filter:blur(7px);
+  color:#D8D2C8;
+  font:inherit;
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:.065em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+
+body.concept-home-231 .earth-motion-toggle:hover,
+body.concept-home-231 .earth-motion-toggle:focus-visible{
+  border-color:#D97A63;
+  color:#F4F0E7;
+}
+
+body.concept-home-231 .hero-earth-architecture.is-motion-paused .earth-motion-video{
+  visibility:hidden;
+}
+
+/* Research territories: compact index, with the names more legible than in 2.3 */
+body.concept-home-231 .atalanta-hero .hybrid-domain-strip{
+  margin-top:0;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  border-top:1px solid rgba(244,240,231,.13);
+  background:#34312B;
+}
+
+body.concept-home-231 .atalanta-hero .hybrid-domain-strip a{
+  min-height:66px;
+  padding:12px 17px;
+  display:grid;
+  grid-template-columns:27px minmax(0,1fr);
+  gap:10px;
+  align-items:center;
+  color:#DCD6CC;
+}
+
+body.concept-home-231 .atalanta-hero .hybrid-domain-strip small{
+  display:block;
+  margin:0;
+  color:#D97A63;
+  font-size:9.5px;
+  font-weight:650;
+  line-height:1;
+  letter-spacing:.08em;
+}
+
+body.concept-home-231 .atalanta-hero .hybrid-domain-strip span{
+  font-size:14.5px;
+  font-weight:500;
+  line-height:1.28;
+  letter-spacing:-.014em;
+}
+
+body.concept-home-231 .atalanta-hero .hybrid-domain-strip a:hover,
+body.concept-home-231 .atalanta-hero .hybrid-domain-strip a:focus-visible{
+  background:rgba(217,122,99,.065);
+  color:#F4F0E7;
+}
+
+/* Preview-only control */
+.concept231-preview-switch{
+  position:fixed;
+  z-index:80;
+  right:18px;
+  bottom:18px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:7px 8px 7px 12px;
+  border:1px solid rgba(244,240,231,.22);
+  background:rgba(29,28,25,.92);
+  backdrop-filter:blur(14px);
+  color:#D8D2C8;
+  box-shadow:0 10px 30px rgba(0,0,0,.22);
+  font-size:9px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+
+.concept231-preview-switch a{
+  min-height:34px;
+  display:inline-flex;
+  align-items:center;
+  padding:0 9px;
+  background:#F4F0E7;
+  color:#34312B;
+  text-decoration:none;
+  font-weight:700;
+}
+
+/* Respect the visitor's motion preference: the still remains underneath. */
+@media(prefers-reduced-motion:reduce){
+  body.concept-home-231 .earth-motion-video{
+    display:none !important;
+  }
+
+  body.concept-home-231 .earth-motion-toggle{
+    display:none;
+  }
+}
+
+@media(max-width:1000px){
+  body.concept-home-231 .hero-media-row{
+    grid-template-columns:1fr;
+  }
+
+  body.concept-home-231 .hero-summary p{
+    max-width:680px;
+  }
+
+  body.concept-home-231 .hero-video-panel.hero-earth-architecture{
+    min-height:430px;
+  }
+
+  body.concept-home-231 .earth-globe-shell{
+    width:min(74%,360px);
+  }
+}
+
+@media(max-width:900px){
+  body.concept-home-231 .hero-statement{
+    font-size:clamp(43px,11vw,61px);
+    padding:48px 0 44px;
+  }
+
+  body.concept-home-231 .atalanta-hero .hybrid-domain-strip{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:720px){
+  body.concept-home-231 .hero-statement{
+    padding:40px 0 36px;
+    font-size:clamp(39px,10.7vw,54px);
+    line-height:.99;
+  }
+
+  body.concept-home-231 .hero-summary p{
+    font-size:16px;
+    line-height:1.64;
+  }
+
+  body.concept-home-231 .hero-video-panel.hero-earth-architecture{
+    min-height:350px;
+  }
+
+  body.concept-home-231 .earth-globe-shell{
+    width:min(74%,286px);
+  }
+
+  body.concept-home-231 .earth-orbit-ring{
+    width:min(82%,330px);
+    height:48%;
+  }
+
+  body.concept-home-231 .atalanta-hero .hybrid-domain-strip a{
+    min-height:64px;
+    padding:12px 14px;
+  }
+
+  body.concept-home-231 .atalanta-hero .hybrid-domain-strip span{
+    font-size:13.5px;
+  }
+
+  .concept231-preview-switch{
+    left:10px;
+    right:10px;
+    bottom:10px;
+    justify-content:space-between;
+  }
+}
+
+@media(max-width:480px){
+  body.concept-home-231 .atalanta-hero .hybrid-domain-strip{
+    grid-template-columns:1fr;
+  }
+
+  body.concept-home-231 .atalanta-hero .hybrid-domain-strip a{
+    border-right:0;
+  }
+
+  body.concept-home-231 .hero-video-panel.hero-earth-architecture{
+    min-height:320px;
+  }
+
+  body.concept-home-231 .earth-globe-shell{
+    width:min(78%,250px);
+  }
+}
