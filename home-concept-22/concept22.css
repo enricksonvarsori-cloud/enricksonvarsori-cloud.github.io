@@ -1,5 +1,11 @@
 /* HOME 2.2 — hierarchy and balance refinement — 2026-10-02 */
 
+
+/* 0. Align the hero content block with the same horizontal grid as the five sections below */
+.concept-home-22 .concept-hero-shell{
+  width:min(1200px,80%);
+}
+
 /* 1. Hero proportions: retain the 2.1 architecture, reduce headline dominance */
 .concept-home-22 .concept-hero-grid{
   grid-template-columns:minmax(0,1.04fr) minmax(420px,.96fr);
@@ -168,6 +174,12 @@
 }
 
 @media(max-width:1050px){
+  .concept-home-22 .concept-hero-shell{
+    width:88%;
+    border-left:1px solid rgba(244,240,231,.12);
+    border-right:1px solid rgba(244,240,231,.12);
+  }
+
   .concept-home-22 .concept-hero-grid{
     grid-template-columns:1fr;
   }
@@ -239,6 +251,12 @@
 
   .concept-home-22 .premium-heading .section-note{
     font-size:16px;
+  }
+}
+
+@media(max-width:480px){
+  .concept-home-22 .concept-hero-shell{
+    width:90%;
   }
 }
 
