@@ -351,7 +351,7 @@ body.concept-home-257 .concept24-domain-strip a:focus-visible{
 }
 
 /* Preview-only control */
-.concept254-preview-switch{
+.concept257-preview-switch{
   position:fixed;
   z-index:80;
   right:18px;
@@ -370,7 +370,7 @@ body.concept-home-257 .concept24-domain-strip a:focus-visible{
   text-transform:uppercase;
 }
 
-.concept254-preview-switch a{
+.concept257-preview-switch a{
   min-height:34px;
   display:inline-flex;
   align-items:center;
@@ -512,7 +512,7 @@ body.concept-home-257 .concept24-domain-strip a:focus-visible{
     border-bottom:1px solid rgba(244,240,231,.11);
   }
 
-  .concept254-preview-switch{
+  .concept257-preview-switch{
     left:10px;
     right:10px;
     bottom:10px;
