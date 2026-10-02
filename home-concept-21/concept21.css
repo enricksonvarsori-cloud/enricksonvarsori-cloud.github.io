@@ -1,0 +1,207 @@
+/* HOME 2.1 — restrained editorial refinement — 2026-10-02 */
+
+.concept-home-21 .concept-hero-grid{
+  grid-template-columns:minmax(0,1.06fr) minmax(420px,.94fr);
+  min-height:560px;
+}
+
+.concept-home-21 .concept-hero-copy{
+  padding:42px 44px 34px 42px;
+}
+
+.concept-home-21 .concept-hero-index{
+  margin-bottom:34px;
+  color:#F0A08D;
+  letter-spacing:.12em;
+}
+
+.concept-home-21 .concept-hero h1{
+  max-width:760px;
+  font-size:clamp(48px,5vw,78px);
+  line-height:.985;
+  letter-spacing:-.052em;
+}
+
+.concept-home-21 .concept-hero-lower{
+  margin-top:42px;
+  padding-top:28px;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:30px;
+}
+
+.concept-home-21 .concept-hero-lower p{
+  max-width:560px;
+  font-size:14px;
+  line-height:1.65;
+}
+
+.concept-home-21 .concept-primary-link{
+  min-width:0;
+  min-height:44px;
+  padding:0 2px 5px;
+  border:0;
+  border-bottom:1px solid rgba(244,240,231,.7);
+  background:transparent;
+  justify-content:flex-start;
+  gap:14px;
+  font-size:11px;
+  letter-spacing:.055em;
+}
+
+.concept-home-21 .concept-primary-link span{
+  color:#F0A08D;
+}
+
+.concept-home-21 .concept-primary-link:hover,
+.concept-home-21 .concept-primary-link:focus-visible{
+  background:transparent;
+  color:#F4F0E7;
+  transform:translateX(4px);
+  border-bottom-color:#F0A08D;
+}
+
+.concept-home-21 .concept-orbit{
+  min-height:560px;
+  background:
+    radial-gradient(circle at 50% 44%,rgba(114,133,126,.10),transparent 46%),
+    linear-gradient(145deg,#302E29,#292822);
+}
+
+.concept-home-21 .concept-orbit-grid{
+  opacity:.24;
+  background-size:88px 88px;
+}
+
+.concept-home-21 .concept-earth{
+  width:min(86%,600px);
+  box-shadow:
+    0 0 0 1px rgba(244,240,231,.16),
+    0 28px 68px rgba(0,0,0,.31);
+}
+
+.concept-home-21 .concept-orbit-ring-a{
+  width:88%;
+  height:48%;
+  border-color:rgba(240,160,141,.28);
+}
+
+.concept-home-21 .concept-orbit-ring-b{
+  display:none;
+}
+
+.concept-home-21 .concept-orbit-axis-x{
+  left:9%;
+  right:9%;
+  background:rgba(244,240,231,.10);
+}
+
+.concept-home-21 .concept-orbit-axis-y{
+  top:10%;
+  bottom:10%;
+  background:rgba(244,240,231,.10);
+}
+
+.concept-home-21 .concept-orbit-note{
+  max-width:116px;
+  color:#B0A99E;
+  font-size:9px;
+  letter-spacing:.11em;
+}
+
+.concept-home-21 .concept-orbit-note.note-a{
+  left:5%;
+  top:28%;
+}
+
+.concept-home-21 .concept-orbit-note.note-b{
+  display:none;
+}
+
+.concept-home-21 .concept-orbit figcaption{
+  bottom:18px;
+  font-size:8px;
+}
+
+.concept-home-21 .concept-domain-strip a{
+  min-height:66px;
+}
+
+.concept-home-21 .concept-preview-switch{
+  gap:6px;
+}
+
+.concept-home-21 .concept-preview-switch a{
+  min-height:34px;
+  padding:0 9px;
+  font-size:9px;
+}
+
+@media(max-width:1050px){
+  .concept-home-21 .concept-hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .concept-home-21 .concept-hero-copy{
+    min-height:auto;
+  }
+
+  .concept-home-21 .concept-orbit{
+    min-height:520px;
+  }
+
+  .concept-home-21 .concept-earth{
+    width:min(68%,520px);
+  }
+}
+
+@media(max-width:720px){
+  .concept-home-21 .concept-hero-copy{
+    padding:36px 22px 28px;
+  }
+
+  .concept-home-21 .concept-hero-index{
+    margin-bottom:24px;
+  }
+
+  .concept-home-21 .concept-hero h1{
+    font-size:clamp(40px,10.7vw,58px);
+    line-height:1;
+  }
+
+  .concept-home-21 .concept-hero-lower{
+    margin-top:36px;
+    padding-top:24px;
+    grid-template-columns:1fr;
+  }
+
+  .concept-home-21 .concept-primary-link{
+    width:max-content;
+    min-width:170px;
+  }
+
+  .concept-home-21 .concept-orbit{
+    min-height:430px;
+  }
+
+  .concept-home-21 .concept-earth{
+    width:min(80%,360px);
+  }
+
+  .concept-home-21 .concept-domain-strip a{
+    min-height:62px;
+  }
+}
+
+@media(max-width:430px){
+  .concept-home-21 .concept-hero h1{
+    font-size:40px;
+  }
+
+  .concept-home-21 .concept-orbit{
+    min-height:380px;
+  }
+
+  .concept-home-21 .concept-earth{
+    width:82%;
+  }
+}
