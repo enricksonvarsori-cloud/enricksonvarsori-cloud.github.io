@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 160">
+  <defs>
+    <radialGradient id="fade" cx="58%" cy="55%" r="60%">
+      <stop offset="0" stop-color="white"/>
+      <stop offset=".72" stop-color="white" stop-opacity=".72"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse">
+      <circle cx="1.8" cy="1.8" r="1.05" fill="#B96A56" fill-opacity=".36"/>
+    </pattern>
+    <mask id="dotfade">
+      <rect width="300" height="160" fill="url(#fade)"/>
+    </mask>
+    <clipPath id="hemisphere">
+      <path d="M112 154A106 106 0 0 1 218 48v106Z"/>
+    </clipPath>
+  </defs>
+  <g mask="url(#dotfade)" clip-path="url(#hemisphere)">
+    <rect x="95" y="30" width="150" height="130" fill="url(#dots)"/>
+  </g>
+  <g fill="none" stroke="#B96A56" stroke-width=".7" stroke-linecap="round">
+    <path d="M88 144L242 28" stroke-opacity=".23"/>
+    <path d="M210 17V35M201 26h18" stroke-opacity=".32"/>
+    <path d="M228 47l10-10 10 10" stroke-opacity=".18"/>
+    <path d="M226 118A76 76 0 0 0 150 42" stroke-opacity=".08"/>
+  </g>
+</svg>
