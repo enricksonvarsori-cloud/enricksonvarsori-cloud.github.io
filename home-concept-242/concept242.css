@@ -856,3 +856,15 @@ body.concept-home-242 .concept24-domain-shell .concept24-domain-strip > a{
     width:90% !important;
   }
 }
+
+
+/* HOME 2.4.2 — restore research territory numbers in aligned strip */
+body.concept-home-242 .concept24-domain-strip small{
+  display:block !important;
+  margin:0 !important;
+  color:#D97A63;
+  font-size:9px;
+  font-weight:650;
+  line-height:1;
+  letter-spacing:.08em;
+}
