@@ -1,0 +1,198 @@
+/* HOME 2.3 — hybrid refinement
+   Base: current/original Home.
+   Goal: preserve editorial narrative; import only proven hierarchy improvements.
+   2026-10-02
+*/
+
+/* HERO — preserve the original open composition; reduce only excess scale */
+body.concept-home-23 .hero-statement{
+  max-width:1060px;
+  padding:60px 0 54px;
+  font-size:clamp(49px,5.45vw,79px);
+  line-height:.975;
+  letter-spacing:-.054em;
+}
+
+/* Explanatory copy remains visibly part of the hero instead of becoming metadata */
+body.concept-home-23 .hero-summary{
+  padding-top:32px;
+  padding-bottom:34px;
+}
+
+body.concept-home-23 .hero-summary p{
+  max-width:370px;
+  color:#DDD7CD;
+  font-size:16.5px;
+  line-height:1.64;
+  font-weight:400;
+}
+
+/* Keep the asymmetric text/image relationship from the original Home */
+body.concept-home-23 .hero-media-row{
+  grid-template-columns:minmax(300px,.37fr) minmax(0,.63fr);
+  min-height:380px;
+}
+
+body.concept-home-23 .hero-video-panel{
+  min-height:380px;
+}
+
+/* The Earth now works as image/evidence, not as another labelled content card */
+body.concept-home-23 .hero-video-panel::after{
+  opacity:.12;
+}
+
+body.concept-home-23 .hero-earth-still{
+  filter:saturate(.80) contrast(.98) brightness(.90);
+}
+
+body.concept-home-23 .hero-video-credit{
+  top:auto;
+  right:18px;
+  bottom:16px;
+  color:rgba(244,240,231,.68);
+  font-size:9px;
+}
+
+/* Four research territories become one coherent navigation unit.
+   No additional "Research across disciplines" label is needed. */
+body.concept-home-23 .atalanta-hero .hybrid-domain-strip{
+  margin-top:0;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  border-top:1px solid rgba(244,240,231,.13);
+  background:#34312B;
+}
+
+body.concept-home-23 .atalanta-hero .hybrid-domain-strip a{
+  min-height:70px;
+  padding:13px 18px;
+  display:grid;
+  grid-template-columns:27px minmax(0,1fr);
+  gap:10px;
+  align-items:center;
+  color:#D7D1C7;
+}
+
+body.concept-home-23 .atalanta-hero .hybrid-domain-strip small{
+  display:block;
+  margin:0;
+  color:#D97A63;
+  font-size:9.5px;
+  font-weight:650;
+  line-height:1;
+  letter-spacing:.08em;
+}
+
+body.concept-home-23 .atalanta-hero .hybrid-domain-strip span{
+  font-size:13.5px;
+  font-weight:500;
+  line-height:1.32;
+  letter-spacing:-.012em;
+}
+
+body.concept-home-23 .atalanta-hero .hybrid-domain-strip a:hover,
+body.concept-home-23 .atalanta-hero .hybrid-domain-strip a:focus-visible{
+  background:rgba(217,122,99,.065);
+  color:#F4F0E7;
+}
+
+/* Do not redesign the five content sections below: retain the proven current Home system. */
+
+/* Preview-only control */
+.concept23-preview-switch{
+  position:fixed;
+  z-index:80;
+  right:18px;
+  bottom:18px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:7px 8px 7px 12px;
+  border:1px solid rgba(244,240,231,.22);
+  background:rgba(29,28,25,.92);
+  backdrop-filter:blur(14px);
+  color:#D8D2C8;
+  box-shadow:0 10px 30px rgba(0,0,0,.22);
+  font-size:9px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+
+.concept23-preview-switch a{
+  min-height:34px;
+  display:inline-flex;
+  align-items:center;
+  padding:0 9px;
+  background:#F4F0E7;
+  color:#34312B;
+  text-decoration:none;
+  font-weight:700;
+}
+
+@media(max-width:1000px){
+  body.concept-home-23 .hero-media-row{
+    grid-template-columns:1fr;
+  }
+
+  body.concept-home-23 .hero-summary p{
+    max-width:680px;
+  }
+
+  body.concept-home-23 .hero-video-panel{
+    min-height:360px;
+  }
+}
+
+@media(max-width:900px){
+  body.concept-home-23 .hero-statement{
+    font-size:clamp(43px,11vw,61px);
+    padding:48px 0 44px;
+  }
+
+  body.concept-home-23 .atalanta-hero .hybrid-domain-strip{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:720px){
+  body.concept-home-23 .hero-statement{
+    padding:40px 0 36px;
+    font-size:clamp(39px,10.7vw,54px);
+    line-height:.99;
+  }
+
+  body.concept-home-23 .hero-summary p{
+    font-size:16px;
+    line-height:1.64;
+  }
+
+  body.concept-home-23 .hero-video-panel{
+    min-height:300px;
+  }
+
+  body.concept-home-23 .atalanta-hero .hybrid-domain-strip a{
+    min-height:66px;
+    padding:13px 14px;
+  }
+
+  body.concept-home-23 .atalanta-hero .hybrid-domain-strip span{
+    font-size:13px;
+  }
+
+  .concept23-preview-switch{
+    left:10px;
+    right:10px;
+    bottom:10px;
+    justify-content:space-between;
+  }
+}
+
+@media(max-width:480px){
+  body.concept-home-23 .atalanta-hero .hybrid-domain-strip{
+    grid-template-columns:1fr;
+  }
+
+  body.concept-home-23 .atalanta-hero .hybrid-domain-strip a{
+    border-right:0;
+  }
+}
