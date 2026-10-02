@@ -1659,3 +1659,22 @@ body.concept-home-254 .territory-art-dots img{
   transform:scale(1.38);
   transform-origin:66% 40%;
 }
+
+
+/* HOME 2.5.4 — artwork size calibration against approved mockup
+   Size only: no layout, position, typography or spacing changes. */
+body.concept-home-254 .territory-art-wave img{
+  transform:scale(1.14);
+}
+
+body.concept-home-254 .territory-art-radar img{
+  transform:scale(1.68);
+}
+
+body.concept-home-254 .territory-art-topography img{
+  transform:scale(2.12);
+}
+
+body.concept-home-254 .territory-art-dots img{
+  transform:scale(1.88);
+}
