@@ -1678,3 +1678,22 @@ body.concept-home-254 .territory-art-topography img{
 body.concept-home-254 .territory-art-dots img{
   transform:scale(1.88);
 }
+
+
+/* HOME 2.5.4 — final artwork scale correction from screenshot
+   Size only: match the mockup without overlapping card titles. */
+body.concept-home-254 .territory-art-wave img{
+  transform:scale(1.04);
+}
+
+body.concept-home-254 .territory-art-radar img{
+  transform:scale(1.18);
+}
+
+body.concept-home-254 .territory-art-topography img{
+  transform:scale(1.34);
+}
+
+body.concept-home-254 .territory-art-dots img{
+  transform:scale(1.52);
+}
