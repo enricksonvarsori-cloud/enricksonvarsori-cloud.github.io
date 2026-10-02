@@ -400,7 +400,13 @@
   if (!panel || !video || !toggle) return;
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const earthPlaybackRate = 0.5;
   let userPaused = false;
+
+  function setEarthSpeed() {
+    video.defaultPlaybackRate = earthPlaybackRate;
+    video.playbackRate = earthPlaybackRate;
+  }
 
   function setState(paused) {
     toggle.setAttribute('aria-pressed', String(paused));
@@ -410,6 +416,7 @@
   }
 
   function applyMotionPreference() {
+    setEarthSpeed();
     if (reduceMotion.matches || userPaused) {
       video.pause();
       setState(true);
@@ -421,6 +428,9 @@
     }
     setState(false);
   }
+
+  video.addEventListener('loadedmetadata', setEarthSpeed);
+  video.addEventListener('play', setEarthSpeed);
 
   toggle.addEventListener('click', () => {
     userPaused = !video.paused ? true : false;
