@@ -1,0 +1,2451 @@
+/* RESEARCH CONCEPT 2.0 — hero implementation test */
+
+.research-concept-211 .site-header,
+.research-concept-211 .research20-hero{
+  background:#1F201A;
+}
+
+.research-concept-211 .site-header{
+  border-bottom-color:rgba(244,240,231,.10);
+}
+
+.research-concept-211 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  padding:58px 0 0;
+  color:#F4F0E7;
+  border-bottom:1px solid rgba(244,240,231,.12);
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.02) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.018) 1px,transparent 1px),
+    #1F201A;
+  background-size:132px 132px,132px 132px,auto;
+}
+
+.research-concept-211 .research20-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 86% 20%,rgba(220,126,92,.08),transparent 27%),
+    linear-gradient(90deg,rgba(31,32,26,.82) 0%,rgba(31,32,26,.38) 42%,transparent 64%);
+}
+
+.research-concept-211 .research20-hero-shell{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:minmax(0,.93fr) minmax(520px,1.07fr);
+  gap:34px;
+  align-items:center;
+  min-height:590px;
+}
+
+.research-concept-211 .research20-copy{
+  position:relative;
+  z-index:3;
+  min-width:0;
+  padding:28px 0 44px;
+}
+
+.research-concept-211 .research20-copy .label{
+  margin:0 0 18px;
+  font-size:10px;
+  line-height:1;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#E6927B;
+}
+
+.research-concept-211 .research20-copy h1{
+  max-width:720px;
+  margin:0;
+  font-size:clamp(48px,4.7vw,70px);
+  line-height:.96;
+  letter-spacing:-.055em;
+  font-weight:400;
+  color:#F4F0E7;
+  text-wrap:balance;
+}
+
+.research-concept-211 .research20-lead{
+  max-width:600px;
+  margin:26px 0 0;
+  font-size:15.5px;
+  line-height:1.62;
+  color:#D4CEC4;
+}
+
+.research-concept-211 .research20-actions{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  margin-top:30px;
+}
+
+.research-concept-211 .research20-actions a{
+  display:inline-flex;
+  align-items:center;
+  gap:18px;
+  min-height:42px;
+  font-size:12px;
+  text-decoration:none;
+  transition:transform .25s ease,border-color .25s ease,color .25s ease,background-color .25s ease;
+}
+
+.research-concept-211 .research20-primary{
+  padding:0 18px;
+  border:1px solid rgba(230,146,123,.72);
+  background:rgba(182,95,77,.17);
+  color:#F4F0E7;
+}
+
+.research-concept-211 .research20-secondary{
+  padding:0 0 4px;
+  border-bottom:1px solid rgba(230,146,123,.54);
+  color:#DED7CD;
+}
+
+.research-concept-211 .research20-actions a:hover{
+  transform:translateY(-2px);
+}
+
+.research-concept-211 .research20-primary:hover{
+  background:rgba(182,95,77,.28);
+  border-color:#E6927B;
+}
+
+.research-concept-211 .research20-secondary:hover{
+  color:#F4F0E7;
+  border-color:#E6927B;
+}
+
+.research-concept-211 .research20-visual{
+  position:relative;
+  align-self:stretch;
+  min-height:590px;
+  overflow:visible;
+}
+
+.research-concept-211 .research20-visual::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,#1F201A 0%,rgba(31,32,26,.84) 4%,rgba(31,32,26,.26) 17%,transparent 30%),
+    linear-gradient(270deg,#1F201A 0%,rgba(31,32,26,.24) 5%,transparent 15%),
+    linear-gradient(180deg,#1F201A 0%,transparent 12%,transparent 88%,rgba(31,32,26,.45) 96%,#1F201A 100%);
+}
+
+.research-concept-211 .research20-visual img{
+  position:absolute;
+  z-index:1;
+  top:50%;
+  left:50%;
+  width:150%;
+  max-width:none;
+  height:auto;
+  transform:translate(-49%,-50%);
+  filter:saturate(.95) contrast(1.02) brightness(.92);
+  opacity:.98;
+  user-select:none;
+  pointer-events:none;
+}
+
+.research-concept-211 .research20-meta{
+  position:relative;
+  z-index:3;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  border-top:1px solid rgba(244,240,231,.13);
+}
+
+.research-concept-211 .research20-meta span{
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  padding:0 18px;
+  border-right:1px solid rgba(244,240,231,.11);
+  font-size:9px;
+  line-height:1.35;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:#BDB6AC;
+}
+
+.research-concept-211 .research20-meta span:first-child{
+  padding-left:0;
+}
+
+.research-concept-211 .research20-meta span:last-child{
+  border-right:0;
+}
+
+.research211-preview-switch{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:90;
+  display:flex;
+  gap:6px;
+  align-items:center;
+  padding:6px;
+  border:1px solid rgba(244,240,231,.18);
+  background:#2F2C27;
+  box-shadow:0 10px 28px rgba(0,0,0,.18);
+}
+
+.research211-preview-switch span,
+.research211-preview-switch a{
+  min-height:34px;
+  display:inline-flex;
+  align-items:center;
+  padding:0 10px;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  color:#F4F0E7;
+  text-decoration:none;
+}
+
+.research211-preview-switch a{
+  background:#F4F0E7;
+  color:#34312B;
+}
+
+@media(max-width:1100px){
+  .research-concept-211 .research20-hero-shell{
+    grid-template-columns:minmax(0,1fr) minmax(430px,.95fr);
+    gap:18px;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(46px,5.1vw,64px);
+  }
+
+  .research-concept-211 .research20-visual img{
+    width:142%;
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-211 .research20-hero{
+    padding-top:48px;
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    grid-template-columns:1fr;
+    gap:6px;
+    min-height:0;
+  }
+
+  .research-concept-211 .research20-copy{
+    padding-bottom:14px;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    max-width:780px;
+  }
+
+  .research-concept-211 .research20-visual{
+    min-height:390px;
+  }
+
+  .research-concept-211 .research20-visual img{
+    width:min(126%,860px);
+    transform:translate(-50%,-50%);
+  }
+
+  .research-concept-211 .research20-meta{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .research-concept-211 .research20-meta span:nth-child(2){
+    border-right:0;
+  }
+
+  .research-concept-211 .research20-meta span:nth-child(-n+2){
+    border-bottom:1px solid rgba(244,240,231,.11);
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-211 .research20-hero{
+    padding-top:38px;
+  }
+
+  .research-concept-211 .research20-copy{
+    padding:12px 0 8px;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(38px,10.9vw,50px);
+    line-height:.985;
+    text-wrap:pretty;
+  }
+
+  .research-concept-211 .research20-lead{
+    margin-top:18px;
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .research-concept-211 .research20-actions{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+    margin-top:22px;
+  }
+
+  .research-concept-211 .research20-visual{
+    min-height:280px;
+  }
+
+  .research-concept-211 .research20-visual img{
+    width:132%;
+  }
+
+  .research-concept-211 .research20-meta{
+    grid-template-columns:1fr;
+    margin-top:0;
+  }
+
+  .research-concept-211 .research20-meta span{
+    min-height:44px;
+    padding:0;
+    border-right:0;
+    border-bottom:1px solid rgba(244,240,231,.09);
+  }
+
+  .research-concept-211 .research20-meta span:last-child{
+    border-bottom:0;
+  }
+
+  .research211-preview-switch{
+    right:8px;
+    bottom:8px;
+    transform:scale(.86);
+    transform-origin:right bottom;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .research-concept-211 .research20-actions a{
+    transition:none;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.1 — hero integration correction
+   Use the approved artwork as one continuous hero background.
+   ========================================================= */
+
+.research-concept-211 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  padding:58px 0 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20,20,16,.94) 0%,
+      rgba(20,20,16,.82) 28%,
+      rgba(20,20,16,.48) 47%,
+      rgba(20,20,16,.12) 66%,
+      rgba(20,20,16,.06) 100%
+    ),
+    url("/assets/paisagem_de_dados_em_cobre_e_luz.png") center center / cover no-repeat !important;
+  color:#F4F0E7;
+}
+
+.research-concept-211 .research20-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg,rgba(16,16,13,.10),transparent 20%,transparent 80%,rgba(16,16,13,.34)),
+    linear-gradient(90deg,rgba(244,240,231,.018) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.014) 1px,transparent 1px);
+  background-size:auto,132px 132px,132px 132px;
+}
+
+.research-concept-211 .research20-hero-shell{
+  position:relative;
+  z-index:2;
+  display:block;
+  min-height:590px;
+}
+
+.research-concept-211 .research20-copy{
+  width:min(56%,700px);
+  padding:44px 0 56px;
+}
+
+.research-concept-211 .research20-copy h1{
+  max-width:690px;
+  font-size:clamp(48px,4.65vw,68px);
+  line-height:.965;
+  letter-spacing:-.052em;
+}
+
+.research-concept-211 .research20-lead{
+  max-width:560px;
+  color:#D9D2C8;
+}
+
+.research-concept-211 .research20-visual{
+  display:none !important;
+}
+
+.research-concept-211 .research20-meta{
+  position:relative;
+  z-index:3;
+  background:linear-gradient(90deg,rgba(20,20,16,.26),rgba(20,20,16,.12));
+  backdrop-filter:blur(1.5px);
+}
+
+.research-concept-211 .research20-meta span{
+  color:#C9C1B7;
+}
+
+@media(max-width:1100px){
+  .research-concept-211 .research20-copy{
+    width:min(62%,650px);
+  }
+
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(46px,5vw,62px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-211 .research20-hero{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(20,20,16,.92) 0%,
+        rgba(20,20,16,.78) 42%,
+        rgba(20,20,16,.24) 72%,
+        rgba(20,20,16,.12) 100%
+      ),
+      url("/assets/paisagem_de_dados_em_cobre_e_luz.png") 62% center / cover no-repeat !important;
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    min-height:650px;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(100%,690px);
+    padding:28px 0 250px;
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-211 .research20-hero{
+    padding-top:34px;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(20,20,16,.95) 0%,
+        rgba(20,20,16,.90) 48%,
+        rgba(20,20,16,.34) 73%,
+        rgba(20,20,16,.14) 100%
+      ),
+      url("/assets/paisagem_de_dados_em_cobre_e_luz.png") 66% center / cover no-repeat !important;
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    min-height:610px;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:100%;
+    padding:12px 0 230px;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(38px,10.8vw,48px);
+    line-height:.99;
+  }
+
+  .research-concept-211 .research20-actions{
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:16px;
+  }
+
+  .research-concept-211 .research20-meta{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .research-concept-211 .research20-meta span{
+    min-height:50px;
+    padding:0 12px;
+    border-bottom:1px solid rgba(244,240,231,.09);
+  }
+
+  .research-concept-211 .research20-meta span:nth-child(odd){
+    padding-left:0;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.2 — hero premium refinement
+   ========================================================= */
+
+/* Slightly calmer left reading field, more visual focus to the right */
+.research-concept-211 .research20-hero{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20,20,16,.95) 0%,
+      rgba(20,20,16,.87) 27%,
+      rgba(20,20,16,.56) 43%,
+      rgba(20,20,16,.18) 59%,
+      rgba(20,20,16,.05) 100%
+    ),
+    url("/assets/paisagem_de_dados_em_cobre_e_luz.png") 58% center / cover no-repeat !important;
+}
+
+.research-concept-211 .research20-hero-shell{
+  min-height:600px;
+}
+
+/* Headline: less dominant, tighter editorial measure */
+.research-concept-211 .research20-copy{
+  width:min(52%,640px);
+  padding:52px 0 62px;
+}
+
+.research-concept-211 .research20-copy h1{
+  max-width:610px;
+  font-size:clamp(46px,4.25vw,62px);
+  line-height:.985;
+  letter-spacing:-.048em;
+  text-wrap:balance;
+}
+
+.research-concept-211 .research20-lead{
+  max-width:535px;
+  margin-top:32px;
+  font-size:15.5px;
+  line-height:1.64;
+}
+
+/* Give title -> body -> CTA sequence more breathing room */
+.research-concept-211 .research20-actions{
+  margin-top:34px;
+  gap:28px;
+}
+
+.research-concept-211 .research20-primary{
+  min-height:44px;
+  padding:0 20px;
+}
+
+.research-concept-211 .research20-secondary{
+  padding-bottom:5px;
+}
+
+/* More editorial lower descriptor band */
+.research-concept-211 .research20-meta{
+  min-height:76px;
+  background:
+    linear-gradient(90deg,rgba(18,18,15,.38),rgba(18,18,15,.18));
+  border-top:1px solid rgba(244,240,231,.15);
+}
+
+.research-concept-211 .research20-meta span{
+  min-height:76px;
+  padding:0 24px;
+  font-size:9.5px;
+  line-height:1.42;
+  letter-spacing:.16em;
+}
+
+.research-concept-211 .research20-meta span:first-child{
+  padding-left:0;
+}
+
+/* Slightly soften artwork near the centre-left, preserve right-side impact */
+.research-concept-211 .research20-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(20,20,16,.06) 34%,
+      rgba(20,20,16,.16) 47%,
+      rgba(20,20,16,.04) 60%,
+      transparent 72%
+    );
+}
+
+.research-concept-211 .research20-copy,
+.research-concept-211 .research20-meta{
+  position:relative;
+  z-index:4;
+}
+
+@media(max-width:1100px){
+  .research-concept-211 .research20-hero{
+    background-position:62% center !important;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(58%,610px);
+  }
+
+  .research-concept-211 .research20-copy h1{
+    max-width:580px;
+    font-size:clamp(44px,4.8vw,58px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-211 .research20-hero{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(20,20,16,.94) 0%,
+        rgba(20,20,16,.84) 44%,
+        rgba(20,20,16,.30) 72%,
+        rgba(20,20,16,.13) 100%
+      ),
+      url("/assets/paisagem_de_dados_em_cobre_e_luz.png") 68% center / cover no-repeat !important;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(100%,660px);
+    padding:34px 0 260px;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    max-width:640px;
+  }
+
+  .research-concept-211 .research20-meta{
+    min-height:0;
+  }
+
+  .research-concept-211 .research20-meta span{
+    min-height:58px;
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-211 .research20-hero{
+    background-position:70% center !important;
+  }
+
+  .research-concept-211 .research20-copy{
+    padding:14px 0 228px;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(36px,10.4vw,46px);
+    line-height:1;
+  }
+
+  .research-concept-211 .research20-lead{
+    margin-top:22px;
+  }
+
+  .research-concept-211 .research20-actions{
+    margin-top:26px;
+  }
+
+  .research-concept-211 .research20-meta{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .research-concept-211 .research20-meta span{
+    min-height:54px;
+    padding:0 10px;
+    font-size:8.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.3 — corrected hero proportion + labels
+   ========================================================= */
+
+.research-concept-211 .research20-hero{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20,20,16,.98) 0%,
+      rgba(20,20,16,.92) 30%,
+      rgba(20,20,16,.66) 47%,
+      rgba(20,20,16,.18) 64%,
+      rgba(20,20,16,.02) 100%
+    ),
+    #1F201A !important;
+}
+
+.research-concept-211 .research20-hero-shell{
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(0,.88fr) minmax(560px,1.12fr);
+  gap:20px;
+  align-items:center;
+  min-height:560px;
+}
+
+.research-concept-211 .research20-copy{
+  width:auto;
+  max-width:610px;
+  padding:44px 0 54px;
+  position:relative;
+  z-index:5;
+}
+
+.research-concept-211 .research20-copy h1{
+  max-width:600px;
+  font-size:clamp(44px,4.05vw,60px);
+  line-height:.99;
+  letter-spacing:-.047em;
+}
+
+.research-concept-211 .research20-lead{
+  max-width:520px;
+  margin-top:30px;
+}
+
+.research-concept-211 .research20-actions{
+  margin-top:32px;
+}
+
+/* Restore image as a real visual column so its full aspect ratio is respected */
+.research-concept-211 .research20-visual{
+  display:block !important;
+  position:relative;
+  align-self:stretch;
+  min-height:560px;
+  overflow:visible;
+}
+
+.research-concept-211 .research20-visual::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,#1F201A 0%,rgba(31,32,26,.62) 7%,rgba(31,32,26,.14) 19%,transparent 34%),
+    linear-gradient(180deg,#1F201A 0%,transparent 10%,transparent 90%,rgba(31,32,26,.28) 97%,#1F201A 100%);
+}
+
+.research-concept-211 .research20-visual img{
+  display:block;
+  position:absolute;
+  z-index:1;
+  top:50%;
+  right:-13%;
+  left:auto;
+  width:auto;
+  height:96%;
+  max-width:none;
+  transform:translateY(-50%);
+  object-fit:contain;
+  opacity:.98;
+  filter:saturate(.93) contrast(1.02) brightness(.94);
+  user-select:none;
+  pointer-events:none;
+}
+
+/* Editorial words over the image — HTML/CSS, not baked into the artwork */
+.research-concept-211 .research203-word{
+  position:absolute;
+  z-index:4;
+  font-size:8px;
+  line-height:1.25;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:rgba(244,240,231,.76);
+  white-space:nowrap;
+  text-shadow:0 1px 8px rgba(0,0,0,.45);
+}
+
+.research-concept-211 .word-people{
+  top:9%;
+  left:49%;
+}
+
+.research-concept-211 .word-technology{
+  top:41%;
+  left:11%;
+}
+
+.research-concept-211 .word-society{
+  top:44%;
+  right:4%;
+}
+
+.research-concept-211 .word-environment{
+  bottom:14%;
+  left:18%;
+}
+
+.research-concept-211 .word-impact{
+  right:2%;
+  bottom:13%;
+  white-space:normal;
+  text-align:left;
+}
+
+.research-concept-211 .research20-meta{
+  min-height:72px;
+}
+
+.research-concept-211 .research20-meta span{
+  min-height:72px;
+}
+
+@media(max-width:1100px){
+  .research-concept-211 .research20-hero-shell{
+    grid-template-columns:minmax(0,.95fr) minmax(470px,1.05fr);
+    min-height:540px;
+  }
+
+  .research-concept-211 .research20-visual{
+    min-height:540px;
+  }
+
+  .research-concept-211 .research20-visual img{
+    right:-18%;
+    height:92%;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(42px,4.7vw,56px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-211 .research20-hero-shell{
+    grid-template-columns:1fr;
+    gap:0;
+    min-height:0;
+  }
+
+  .research-concept-211 .research20-copy{
+    max-width:680px;
+    padding:28px 0 10px;
+  }
+
+  .research-concept-211 .research20-visual{
+    min-height:370px;
+  }
+
+  .research-concept-211 .research20-visual img{
+    right:50%;
+    height:auto;
+    width:min(118%,900px);
+    transform:translate(50%,-50%);
+  }
+
+  .research-concept-211 .research20-visual::before{
+    background:
+      linear-gradient(180deg,#1F201A 0%,rgba(31,32,26,.30) 10%,transparent 25%,transparent 84%,#1F201A 100%);
+  }
+
+  .research-concept-211 .word-people{top:7%;left:54%}
+  .research-concept-211 .word-technology{top:40%;left:8%}
+  .research-concept-211 .word-society{top:44%;right:7%}
+  .research-concept-211 .word-environment{bottom:10%;left:16%}
+  .research-concept-211 .word-impact{right:6%;bottom:9%}
+}
+
+@media(max-width:620px){
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(36px,10.4vw,46px);
+  }
+
+  .research-concept-211 .research20-visual{
+    min-height:300px;
+  }
+
+  .research-concept-211 .research20-visual img{
+    width:126%;
+  }
+
+  .research-concept-211 .research203-word{
+    font-size:6.8px;
+    letter-spacing:.13em;
+  }
+
+  .research-concept-211 .word-impact{
+    right:2%;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.4 — hero composition alignment
+   ========================================================= */
+
+.research-concept-211 .research20-hero-shell{
+  grid-template-columns:minmax(0,.92fr) minmax(540px,1.08fr);
+  gap:28px;
+  min-height:548px;
+}
+
+.research-concept-211 .research20-copy{
+  max-width:590px;
+  padding:40px 0 50px;
+}
+
+.research-concept-211 .research20-copy h1{
+  max-width:570px;
+  font-size:clamp(43px,3.9vw,58px);
+  line-height:.995;
+}
+
+.research-concept-211 .research20-lead{
+  max-width:500px;
+  margin-top:28px;
+}
+
+.research-concept-211 .research20-visual{
+  min-height:548px;
+}
+
+/* Slightly smaller artwork, pushed right for more breathing room */
+.research-concept-211 .research20-visual img{
+  right:-8%;
+  height:90%;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+/* Labels aligned to visible geometry/nodes in the approved artwork */
+.research-concept-211 .research203-word{
+  font-size:7.5px;
+  letter-spacing:.17em;
+  color:rgba(244,240,231,.72);
+}
+
+.research-concept-211 .word-people{
+  top:7%;
+  left:54%;
+}
+
+.research-concept-211 .word-technology{
+  top:38%;
+  left:7%;
+}
+
+.research-concept-211 .word-society{
+  top:41%;
+  right:5%;
+}
+
+.research-concept-211 .word-environment{
+  bottom:10%;
+  left:25%;
+}
+
+.research-concept-211 .word-impact{
+  right:3%;
+  bottom:9%;
+  line-height:1.35;
+}
+
+/* Keep copy clearly separated from the visual */
+.research-concept-211 .research20-visual::before{
+  background:
+    linear-gradient(90deg,#1F201A 0%,rgba(31,32,26,.72) 6%,rgba(31,32,26,.20) 17%,transparent 30%),
+    linear-gradient(180deg,#1F201A 0%,transparent 10%,transparent 91%,rgba(31,32,26,.30) 97%,#1F201A 100%);
+}
+
+.research-concept-211 .research20-meta{
+  min-height:74px;
+}
+
+.research-concept-211 .research20-meta span{
+  min-height:74px;
+  font-size:9px;
+}
+
+@media(max-width:1100px){
+  .research-concept-211 .research20-hero-shell{
+    grid-template-columns:minmax(0,.97fr) minmax(460px,1.03fr);
+    min-height:530px;
+  }
+
+  .research-concept-211 .research20-visual{
+    min-height:530px;
+  }
+
+  .research-concept-211 .research20-visual img{
+    right:-13%;
+    height:88%;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    max-width:550px;
+    font-size:clamp(41px,4.5vw,55px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-211 .research20-hero-shell{
+    grid-template-columns:1fr;
+    min-height:0;
+  }
+
+  .research-concept-211 .research20-copy{
+    max-width:650px;
+    padding:26px 0 8px;
+  }
+
+  .research-concept-211 .research20-visual{
+    min-height:360px;
+  }
+
+  .research-concept-211 .research20-visual img{
+    right:50%;
+    width:min(112%,850px);
+    height:auto;
+    transform:translate(50%,-50%);
+  }
+
+  .research-concept-211 .word-people{top:6%;left:55%}
+  .research-concept-211 .word-technology{top:38%;left:7%}
+  .research-concept-211 .word-society{top:42%;right:6%}
+  .research-concept-211 .word-environment{bottom:8%;left:18%}
+  .research-concept-211 .word-impact{right:5%;bottom:7%}
+}
+
+@media(max-width:620px){
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(35px,10vw,45px);
+  }
+
+  .research-concept-211 .research20-visual{
+    min-height:290px;
+  }
+
+  .research-concept-211 .research20-visual img{
+    width:120%;
+  }
+
+  .research-concept-211 .research203-word{
+    font-size:6.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.5 — implementation with final hero base artwork
+   ========================================================= */
+
+/* One continuous visual field: artwork is the hero itself, not a boxed image */
+.research-concept-211 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  padding:58px 0 0;
+  background-color:#171813 !important;
+  background-image:url("/assets/research-hero-labelled.png") !important;
+  background-repeat:no-repeat !important;
+  background-position:right center !important;
+  background-size:auto 100% !important;
+  color:#F4F0E7;
+}
+
+/* Calm reading field on the left; fades into the artwork without a visible edge */
+.research-concept-211 .research20-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(23,24,19,.98) 0%,
+      rgba(23,24,19,.97) 19%,
+      rgba(23,24,19,.91) 31%,
+      rgba(23,24,19,.68) 41%,
+      rgba(23,24,19,.30) 51%,
+      rgba(23,24,19,.08) 61%,
+      transparent 72%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(23,24,19,.18) 0%,
+      transparent 16%,
+      transparent 84%,
+      rgba(23,24,19,.24) 100%
+    );
+}
+
+/* Very subtle site grid over the entire hero so image + page read as one system */
+.research-concept-211 .research20-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  opacity:.38;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.025) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.018) 1px,transparent 1px);
+  background-size:132px 132px;
+}
+
+.research-concept-211 .research20-hero-shell{
+  position:relative;
+  z-index:3;
+  display:block;
+  min-height:590px;
+}
+
+.research-concept-211 .research20-copy{
+  position:relative;
+  z-index:4;
+  width:min(48%,610px);
+  max-width:610px;
+  padding:46px 0 58px;
+}
+
+.research-concept-211 .research20-copy h1{
+  max-width:585px;
+  font-size:clamp(43px,3.95vw,59px);
+  line-height:.99;
+  letter-spacing:-.048em;
+  text-wrap:balance;
+}
+
+.research-concept-211 .research20-lead{
+  max-width:515px;
+  margin-top:30px;
+  color:#D8D2C8;
+}
+
+.research-concept-211 .research20-actions{
+  margin-top:32px;
+}
+
+/* Artwork is supplied by the section background */
+.research-concept-211 .research20-visual{
+  display:none !important;
+}
+
+/* Editorial footer band remains separate HTML, not baked into the artwork */
+.research-concept-211 .research20-meta{
+  position:relative;
+  z-index:4;
+  min-height:74px;
+  background:rgba(18,19,15,.34);
+  backdrop-filter:blur(1.5px);
+  border-top:1px solid rgba(244,240,231,.14);
+}
+
+.research-concept-211 .research20-meta span{
+  min-height:74px;
+  color:#C8C1B7;
+  font-size:9px;
+  letter-spacing:.16em;
+}
+
+/* Ensure no legacy label overlays remain visible */
+.research-concept-211 .research203-word{
+  display:none !important;
+}
+
+@media(max-width:1180px){
+  .research-concept-211 .research20-hero{
+    background-position:62% center !important;
+    background-size:auto 100% !important;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(52%,590px);
+  }
+
+  .research-concept-211 .research20-copy h1{
+    max-width:555px;
+    font-size:clamp(41px,4.4vw,55px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-211 .research20-hero{
+    padding-top:44px;
+    background-position:68% bottom !important;
+    background-size:auto 66% !important;
+  }
+
+  .research-concept-211 .research20-hero::before{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(23,24,19,.98) 0%,
+        rgba(23,24,19,.95) 42%,
+        rgba(23,24,19,.56) 58%,
+        rgba(23,24,19,.12) 76%,
+        transparent 100%
+      );
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    min-height:690px;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(100%,680px);
+    max-width:680px;
+    padding:28px 0 320px;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    max-width:640px;
+  }
+
+  .research-concept-211 .research20-meta{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-211 .research20-hero{
+    padding-top:34px;
+    background-position:70% bottom !important;
+    background-size:auto 55% !important;
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    min-height:650px;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:100%;
+    padding:12px 0 290px;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(35px,10vw,45px);
+    line-height:1;
+  }
+
+  .research-concept-211 .research20-lead{
+    margin-top:22px;
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .research-concept-211 .research20-actions{
+    margin-top:26px;
+  }
+
+  .research-concept-211 .research20-meta span{
+    min-height:54px;
+    font-size:8.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.6 — CSS background + semantic SVG overlay
+   ========================================================= */
+
+.research-concept-211 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  padding:58px 0 0;
+  background-color:#171813 !important;
+  background-image:url("/assets/Paisagem Futurista de Dados.png") !important;
+  background-repeat:no-repeat !important;
+  background-position:center center !important;
+  background-size:cover !important;
+  color:#F4F0E7;
+}
+
+/* Unified dark veil: keeps the hero reading as one field rather than an image block */
+.research-concept-211 .research20-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(23,24,19,.97) 0%,
+      rgba(23,24,19,.94) 18%,
+      rgba(23,24,19,.84) 28%,
+      rgba(23,24,19,.58) 39%,
+      rgba(23,24,19,.24) 50%,
+      rgba(23,24,19,.06) 63%,
+      rgba(23,24,19,.02) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(23,24,19,.08) 0%,
+      transparent 18%,
+      transparent 82%,
+      rgba(23,24,19,.22) 100%
+    );
+}
+
+/* Site-wide editorial grid across both text and artwork */
+.research-concept-211 .research20-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  opacity:.22;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.025) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.016) 1px,transparent 1px);
+  background-size:132px 132px;
+}
+
+.research-concept-211 .research20-hero-shell{
+  position:relative;
+  z-index:3;
+  display:block;
+  min-height:600px;
+}
+
+.research-concept-211 .research20-copy{
+  width:min(46%,590px);
+  max-width:590px;
+  padding:48px 0 60px;
+  position:relative;
+  z-index:4;
+}
+
+.research-concept-211 .research20-copy h1{
+  max-width:570px;
+  font-size:clamp(43px,3.9vw,58px);
+  line-height:.99;
+  letter-spacing:-.047em;
+  text-wrap:balance;
+}
+
+.research-concept-211 .research20-lead{
+  max-width:500px;
+  margin-top:30px;
+  color:#D8D2C8;
+}
+
+.research-concept-211 .research20-actions{
+  margin-top:32px;
+}
+
+.research-concept-211 .research20-visual{
+  display:none !important;
+}
+
+/* Transparent overlay surface used for semantic mapping.
+   Content is visually hidden because labels are already baked into the supplied artwork. */
+.research-concept-211 .research207-overlay{
+  position:absolute;
+  z-index:2;
+  inset:58px 0 74px;
+  pointer-events:none;
+}
+
+.research-concept-211 .research207-overlay-svg{
+  width:100%;
+  height:100%;
+  overflow:visible;
+}
+
+.research-concept-211 .research207-label circle,
+.research-concept-211 .research207-label text{
+  opacity:0;
+}
+
+.research-concept-211 .research20-meta{
+  position:relative;
+  z-index:4;
+  min-height:74px;
+  background:rgba(18,19,15,.34);
+  backdrop-filter:blur(1.4px);
+  border-top:1px solid rgba(244,240,231,.14);
+}
+
+.research-concept-211 .research20-meta span{
+  min-height:74px;
+  color:#C8C1B7;
+  font-size:9px;
+  letter-spacing:.16em;
+}
+
+@media(max-width:1180px){
+  .research-concept-211 .research20-hero{
+    background-position:58% center !important;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(50%,570px);
+  }
+
+  .research-concept-211 .research20-copy h1{
+    max-width:545px;
+    font-size:clamp(41px,4.35vw,55px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-211 .research20-hero{
+    padding-top:44px;
+    background-position:66% bottom !important;
+    background-size:auto 66% !important;
+  }
+
+  .research-concept-211 .research20-hero::before{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(23,24,19,.98) 0%,
+        rgba(23,24,19,.94) 41%,
+        rgba(23,24,19,.56) 58%,
+        rgba(23,24,19,.14) 76%,
+        transparent 100%
+      );
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    min-height:700px;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(100%,670px);
+    max-width:670px;
+    padding:28px 0 326px;
+  }
+
+  .research-concept-211 .research207-overlay{
+    display:none;
+  }
+
+  .research-concept-211 .research20-meta{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-211 .research20-hero{
+    padding-top:34px;
+    background-position:69% bottom !important;
+    background-size:auto 55% !important;
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    min-height:650px;
+  }
+
+  .research-concept-211 .research20-copy{
+    padding:12px 0 290px;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(35px,10vw,45px);
+    line-height:1;
+  }
+
+  .research-concept-211 .research20-lead{
+    margin-top:22px;
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .research-concept-211 .research20-actions{
+    margin-top:26px;
+  }
+
+  .research-concept-211 .research20-meta span{
+    min-height:54px;
+    font-size:8.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.7 — clean art + precise vector labels
+   ========================================================= */
+
+.research-concept-211 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  padding:58px 0 0;
+  background:#171813 !important;
+  color:#F4F0E7;
+}
+
+/* Clean image: independent layer so crop and label coordinates can match */
+.research-concept-211 .research20-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-3;
+  background-image:url("/assets/Paisagem Futurista de Dados.png?v=20261003-clean-1");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  filter:saturate(.78) contrast(.96) brightness(.82);
+  transform:scale(1.002);
+}
+
+/* Premium tonal integration: matte left field + soft edge falloff */
+.research-concept-211 .research20-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(23,24,19,.995) 0%,
+      rgba(23,24,19,.985) 15%,
+      rgba(23,24,19,.94) 24%,
+      rgba(23,24,19,.78) 33%,
+      rgba(23,24,19,.45) 43%,
+      rgba(23,24,19,.15) 53%,
+      rgba(23,24,19,.025) 65%,
+      transparent 78%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(10,11,9,.13) 0%,
+      transparent 14%,
+      transparent 82%,
+      rgba(10,11,9,.24) 100%
+    ),
+    radial-gradient(
+      ellipse at 71% 47%,
+      transparent 0%,
+      transparent 43%,
+      rgba(10,11,9,.08) 72%,
+      rgba(10,11,9,.20) 100%
+    );
+}
+
+/* Main hero dimensions */
+.research-concept-211 .research20-hero-shell{
+  position:relative;
+  z-index:3;
+  display:block;
+  min-height:590px;
+}
+
+.research-concept-211 .research20-copy{
+  position:relative;
+  z-index:5;
+  width:min(45%,575px);
+  max-width:575px;
+  padding:44px 0 58px;
+}
+
+.research-concept-211 .research20-copy h1{
+  max-width:555px;
+  font-size:clamp(42px,3.8vw,57px);
+  line-height:.995;
+  letter-spacing:-.046em;
+}
+
+.research-concept-211 .research20-lead{
+  max-width:490px;
+  margin-top:30px;
+  color:#D9D3C9;
+}
+
+.research-concept-211 .research20-actions{
+  margin-top:32px;
+}
+
+/* The labels share the exact source-image coordinate system. */
+.research-concept-211 .research207-overlay{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+}
+
+.research-concept-211 .research207-overlay-svg{
+  display:block;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+.research-concept-211 .research207-label line{
+  stroke:rgba(226,165,147,.62);
+  stroke-width:1;
+  vector-effect:non-scaling-stroke;
+}
+
+.research-concept-211 .research207-label text{
+  fill:rgba(244,240,231,.78);
+  font-family:"Manrope",system-ui,sans-serif;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:3.4px;
+  paint-order:stroke;
+  stroke:rgba(15,16,13,.34);
+  stroke-width:.9px;
+}
+
+.research-concept-211 .research207-impact text{
+  fill:rgba(226,165,147,.86);
+}
+
+/* Keep labels behind the editorial copy area if the viewport narrows */
+.research-concept-211 .research20-copy{
+  background:linear-gradient(90deg,rgba(23,24,19,.12),transparent);
+}
+
+.research-concept-211 .research20-meta{
+  position:relative;
+  z-index:5;
+  min-height:74px;
+  background:rgba(18,19,15,.36);
+  backdrop-filter:blur(1.6px);
+  border-top:1px solid rgba(244,240,231,.13);
+}
+
+.research-concept-211 .research20-meta span{
+  min-height:74px;
+  font-size:9px;
+  letter-spacing:.16em;
+  color:#C8C1B7;
+}
+
+/* remove any legacy semantic-map rules */
+.research-concept-211 .research207-label circle{
+  display:none;
+}
+
+@media(max-width:1180px){
+  .research-concept-211 .research20-hero::before{
+    background-position:58% center;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(49%,555px);
+  }
+
+  .research-concept-211 .research20-copy h1{
+    max-width:535px;
+    font-size:clamp(40px,4.25vw,54px);
+  }
+
+  .research-concept-211 .research207-overlay-svg{
+    transform:translateX(2%);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-211 .research20-hero{
+    padding-top:44px;
+  }
+
+  .research-concept-211 .research20-hero::before{
+    background-position:68% bottom;
+    background-size:auto 66%;
+  }
+
+  .research-concept-211 .research20-hero::after{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(23,24,19,.99) 0%,
+        rgba(23,24,19,.95) 40%,
+        rgba(23,24,19,.58) 58%,
+        rgba(23,24,19,.16) 76%,
+        transparent 100%
+      );
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    min-height:700px;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(100%,660px);
+    max-width:660px;
+    padding:28px 0 325px;
+  }
+
+  .research-concept-211 .research207-overlay{
+    display:none;
+  }
+
+  .research-concept-211 .research20-meta{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-211 .research20-hero{
+    padding-top:34px;
+  }
+
+  .research-concept-211 .research20-hero::before{
+    background-position:70% bottom;
+    background-size:auto 55%;
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    min-height:650px;
+  }
+
+  .research-concept-211 .research20-copy{
+    padding:12px 0 290px;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(35px,10vw,45px);
+    line-height:1;
+  }
+
+  .research-concept-211 .research20-lead{
+    margin-top:22px;
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .research-concept-211 .research20-actions{
+    margin-top:26px;
+  }
+
+  .research-concept-211 .research20-meta span{
+    min-height:54px;
+    font-size:8.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.8
+   One 1916 × 821 stage for BOTH artwork and vector labels.
+   ========================================================= */
+
+.research-concept-211 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  padding:58px 0 0;
+  background:#171813 !important;
+  color:#F4F0E7;
+}
+
+/* Disable all legacy hero background artwork. */
+.research-concept-211 .research20-hero::before,
+.research-concept-211 .research20-hero::after{
+  content:none !important;
+}
+
+/* The single responsive stage. Image and SVG occupy exactly the same box. */
+.research-concept-211 .research211-stage{
+  position:absolute;
+  z-index:0;
+  inset:0 0 74px;
+  overflow:hidden;
+  pointer-events:none;
+}
+
+.research-concept-211 .research211-art,
+.research-concept-211 .research211-map{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.research-concept-211 .research211-art{
+  object-fit:cover;
+  object-position:center center;
+  filter:saturate(.72) contrast(.94) brightness(.78);
+  transform:translateZ(0);
+}
+
+.research-concept-211 .research211-map{
+  z-index:2;
+  overflow:hidden;
+}
+
+/* Premium tonal field, independent from the artwork crop. */
+.research-concept-211 .research211-tone{
+  position:absolute;
+  z-index:1;
+  inset:0 0 74px;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(22,23,18,.995) 0%,
+      rgba(22,23,18,.99) 14%,
+      rgba(22,23,18,.955) 22%,
+      rgba(22,23,18,.84) 30%,
+      rgba(22,23,18,.59) 39%,
+      rgba(22,23,18,.29) 48%,
+      rgba(22,23,18,.08) 58%,
+      transparent 69%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(10,11,9,.12) 0%,
+      transparent 16%,
+      transparent 82%,
+      rgba(10,11,9,.24) 100%
+    ),
+    radial-gradient(
+      ellipse at 73% 47%,
+      transparent 0%,
+      transparent 42%,
+      rgba(8,9,7,.06) 68%,
+      rgba(8,9,7,.18) 100%
+    );
+}
+
+/* Vector typography — exact Manrope family used across the site. */
+.research-concept-211 .research211-label line{
+  stroke:rgba(219,132,105,.56);
+  stroke-width:1;
+  vector-effect:non-scaling-stroke;
+}
+
+.research-concept-211 .research211-label text{
+  fill:rgba(244,240,231,.74);
+  font-family:"Manrope",system-ui,sans-serif;
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:3.2px;
+  paint-order:stroke;
+  stroke:rgba(13,14,11,.28);
+  stroke-width:.75px;
+}
+
+.research-concept-211 .research211-impact text{
+  fill:rgba(225,153,128,.82);
+}
+
+/* Content sits over the unified image/SVG stage. */
+.research-concept-211 .research20-hero-shell{
+  position:relative;
+  z-index:4;
+  display:block;
+  min-height:590px;
+}
+
+.research-concept-211 .research20-copy{
+  position:relative;
+  z-index:5;
+  width:min(44%,565px);
+  max-width:565px;
+  padding:44px 0 58px;
+  background:none;
+}
+
+.research-concept-211 .research20-copy h1{
+  max-width:550px;
+  font-size:clamp(42px,3.75vw,56px);
+  line-height:.995;
+  letter-spacing:-.046em;
+  text-wrap:balance;
+}
+
+.research-concept-211 .research20-lead{
+  max-width:485px;
+  margin-top:30px;
+  color:#D9D3C9;
+}
+
+.research-concept-211 .research20-actions{
+  margin-top:32px;
+}
+
+/* Remove all legacy overlay/visual layers inherited from older concepts. */
+.research-concept-211 .research20-visual,
+.research-concept-211 .research207-overlay,
+.research-concept-211 .research207-overlay-svg,
+.research-concept-211 .research207-label{
+  display:none !important;
+}
+
+.research-concept-211 .research20-meta{
+  position:relative;
+  z-index:5;
+  min-height:74px;
+  background:rgba(18,19,15,.39);
+  backdrop-filter:blur(1.8px);
+  border-top:1px solid rgba(244,240,231,.13);
+}
+
+.research-concept-211 .research20-meta span{
+  min-height:74px;
+  color:#C8C1B7;
+  font-size:9px;
+  letter-spacing:.16em;
+}
+
+/* Desktop refinement: calm left side, retain full landscape logic. */
+@media(min-width:1181px){
+  .research-concept-211 .research211-art{
+    object-position:51% 50%;
+  }
+}
+
+/* Tablet: image and SVG still share the exact same crop. */
+@media(max-width:1180px){
+  .research-concept-211 .research20-copy{
+    width:min(49%,550px);
+  }
+
+  .research-concept-211 .research20-copy h1{
+    max-width:530px;
+    font-size:clamp(40px,4.2vw,53px);
+  }
+
+  .research-concept-211 .research211-art{
+    object-position:57% center;
+  }
+
+  .research-concept-211 .research211-map{
+    transform:translateX(0);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-211 .research20-hero{
+    padding-top:44px;
+  }
+
+  .research-concept-211 .research211-stage,
+  .research-concept-211 .research211-tone{
+    inset:0 0 116px;
+  }
+
+  .research-concept-211 .research211-art{
+    object-position:67% center;
+  }
+
+  .research-concept-211 .research211-map{
+    display:none;
+  }
+
+  .research-concept-211 .research211-tone{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(22,23,18,.995) 0%,
+        rgba(22,23,18,.96) 40%,
+        rgba(22,23,18,.62) 57%,
+        rgba(22,23,18,.18) 76%,
+        transparent 100%
+      );
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    min-height:700px;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(100%,655px);
+    max-width:655px;
+    padding:28px 0 325px;
+  }
+
+  .research-concept-211 .research20-meta{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-211 .research20-hero{
+    padding-top:34px;
+  }
+
+  .research-concept-211 .research211-stage,
+  .research-concept-211 .research211-tone{
+    inset:0 0 216px;
+  }
+
+  .research-concept-211 .research211-art{
+    object-position:70% center;
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    min-height:650px;
+  }
+
+  .research-concept-211 .research20-copy{
+    padding:12px 0 290px;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(35px,10vw,45px);
+    line-height:1;
+  }
+
+  .research-concept-211 .research20-lead{
+    margin-top:22px;
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .research-concept-211 .research20-actions{
+    margin-top:26px;
+  }
+
+  .research-concept-211 .research20-meta span{
+    min-height:54px;
+    font-size:8.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.9
+   Fixed 1916×821 canvas, right anchored, no vertical crop.
+   ========================================================= */
+
+.research-concept-211 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  padding:58px 0 0;
+  background:#171813 !important;
+  color:#F4F0E7;
+}
+
+.research-concept-211 .research20-hero::before,
+.research-concept-211 .research20-hero::after{
+  content:none !important;
+}
+
+/* Hero art stage. */
+.research-concept-211 .research211-stage{
+  position:absolute;
+  z-index:0;
+  inset:0 0 74px;
+  overflow:hidden;
+  pointer-events:none;
+}
+
+/* Critical correction:
+   image + SVG use one immutable 1916:821 canvas.
+   The canvas scales as one object and is anchored to the right. */
+.research-concept-211 .research211-canvas{
+  position:absolute;
+  top:50%;
+  right:0;
+  height:100%;
+  aspect-ratio:1916 / 821;
+  transform:translateY(-50%);
+  transform-origin:right center;
+}
+
+.research-concept-211 .research211-art,
+.research-concept-211 .research211-map{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.research-concept-211 .research211-art{
+  object-fit:fill;
+  filter:saturate(.68) contrast(.93) brightness(.76);
+}
+
+.research-concept-211 .research211-map{
+  z-index:2;
+  overflow:visible;
+}
+
+/* Softer editorial integration. */
+.research-concept-211 .research211-tone{
+  position:absolute;
+  z-index:1;
+  inset:0 0 74px;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(22,23,18,.998) 0%,
+      rgba(22,23,18,.995) 15%,
+      rgba(22,23,18,.965) 23%,
+      rgba(22,23,18,.86) 31%,
+      rgba(22,23,18,.64) 39%,
+      rgba(22,23,18,.35) 47%,
+      rgba(22,23,18,.13) 56%,
+      rgba(22,23,18,.035) 65%,
+      transparent 76%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(8,9,7,.12) 0%,
+      transparent 16%,
+      transparent 84%,
+      rgba(8,9,7,.22) 100%
+    );
+}
+
+.research-concept-211 .research211-label line{
+  stroke:rgba(220,137,111,.56);
+  stroke-width:1;
+  vector-effect:non-scaling-stroke;
+}
+
+.research-concept-211 .research211-label text{
+  fill:rgba(244,240,231,.72);
+  font-family:"Manrope",system-ui,sans-serif;
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:3.15px;
+  paint-order:stroke;
+  stroke:rgba(13,14,11,.26);
+  stroke-width:.7px;
+}
+
+.research-concept-211 .research211-impact text{
+  fill:rgba(226,156,132,.82);
+}
+
+/* Ensure every label remains inside the artwork's safe zone. */
+.research-concept-211 .research211-people text,
+.research-concept-211 .research211-society text{
+  dominant-baseline:middle;
+}
+
+.research-concept-211 .research20-hero-shell{
+  position:relative;
+  z-index:4;
+  display:block;
+  min-height:590px;
+}
+
+.research-concept-211 .research20-copy{
+  position:relative;
+  z-index:5;
+  width:min(43%,555px);
+  max-width:555px;
+  padding:44px 0 58px;
+  background:none;
+}
+
+.research-concept-211 .research20-copy h1{
+  max-width:540px;
+  font-size:clamp(41px,3.65vw,55px);
+  line-height:.998;
+  letter-spacing:-.045em;
+}
+
+.research-concept-211 .research20-lead{
+  max-width:480px;
+  margin-top:30px;
+  color:#D9D3C9;
+}
+
+.research-concept-211 .research20-actions{
+  margin-top:32px;
+}
+
+.research-concept-211 .research20-meta{
+  position:relative;
+  z-index:5;
+  min-height:74px;
+  background:rgba(18,19,15,.42);
+  backdrop-filter:blur(1.8px);
+  border-top:1px solid rgba(244,240,231,.13);
+}
+
+.research-concept-211 .research20-meta span{
+  min-height:74px;
+  color:#C8C1B7;
+  font-size:9px;
+  letter-spacing:.16em;
+}
+
+/* Tablet */
+@media(max-width:1180px){
+  .research-concept-211 .research211-canvas{
+    right:-4%;
+    height:96%;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(48%,540px);
+  }
+
+  .research-concept-211 .research20-copy h1{
+    max-width:520px;
+    font-size:clamp(39px,4.15vw,52px);
+  }
+}
+
+/* Mobile/tablet stack:
+   preserve artwork ratio, no SVG labels where they would become too small. */
+@media(max-width:900px){
+  .research-concept-211 .research20-hero{
+    padding-top:44px;
+  }
+
+  .research-concept-211 .research211-stage,
+  .research-concept-211 .research211-tone{
+    inset:0 0 116px;
+  }
+
+  .research-concept-211 .research211-canvas{
+    top:auto;
+    right:-22%;
+    bottom:0;
+    height:55%;
+    transform:none;
+  }
+
+  .research-concept-211 .research211-map{
+    display:none;
+  }
+
+  .research-concept-211 .research211-tone{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(22,23,18,.998) 0%,
+        rgba(22,23,18,.965) 42%,
+        rgba(22,23,18,.66) 58%,
+        rgba(22,23,18,.18) 76%,
+        transparent 100%
+      );
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    min-height:700px;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(100%,650px);
+    max-width:650px;
+    padding:28px 0 325px;
+  }
+
+  .research-concept-211 .research20-meta{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-211 .research20-hero{
+    padding-top:34px;
+  }
+
+  .research-concept-211 .research211-stage,
+  .research-concept-211 .research211-tone{
+    inset:0 0 216px;
+  }
+
+  .research-concept-211 .research211-canvas{
+    right:-48%;
+    height:48%;
+  }
+
+  .research-concept-211 .research20-hero-shell{
+    min-height:650px;
+  }
+
+  .research-concept-211 .research20-copy{
+    padding:12px 0 290px;
+  }
+
+  .research-concept-211 .research20-copy h1{
+    font-size:clamp(35px,10vw,44px);
+    line-height:1;
+  }
+
+  .research-concept-211 .research20-lead{
+    margin-top:22px;
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .research-concept-211 .research20-actions{
+    margin-top:26px;
+  }
+
+  .research-concept-211 .research20-meta span{
+    min-height:54px;
+    font-size:8.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.10
+   Premium finishing pass — structure preserved from 2.0.9.
+   ========================================================= */
+
+/* Slightly calmer artwork: less glow, less render-like contrast. */
+.research-concept-211 .research211-art{
+  filter:saturate(.62) contrast(.91) brightness(.72);
+}
+
+/* Softer and longer left-to-right tonal transition. */
+.research-concept-211 .research211-tone{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(22,23,18,.998) 0%,
+      rgba(22,23,18,.995) 14%,
+      rgba(22,23,18,.975) 22%,
+      rgba(22,23,18,.90) 30%,
+      rgba(22,23,18,.72) 38%,
+      rgba(22,23,18,.49) 46%,
+      rgba(22,23,18,.27) 54%,
+      rgba(22,23,18,.11) 62%,
+      rgba(22,23,18,.035) 69%,
+      transparent 78%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(8,9,7,.14) 0%,
+      transparent 18%,
+      transparent 82%,
+      rgba(8,9,7,.24) 100%
+    ),
+    radial-gradient(
+      ellipse at 71% 48%,
+      transparent 0%,
+      transparent 43%,
+      rgba(8,9,7,.05) 68%,
+      rgba(8,9,7,.15) 100%
+    );
+}
+
+/* More editorial labels: slightly smaller, quieter, more refined. */
+.research-concept-211 .research211-label text{
+  font-size:10.4px;
+  letter-spacing:3px;
+  font-weight:500;
+  fill:rgba(244,240,231,.66);
+  stroke:rgba(13,14,11,.22);
+  stroke-width:.62px;
+}
+
+.research-concept-211 .research211-label line{
+  stroke:rgba(211,132,108,.48);
+}
+
+/* Technology should read as a quiet annotation, not compete with H1. */
+.research-concept-211 .research211-technology text{
+  fill:rgba(244,240,231,.56);
+}
+
+/* Less saturated terracotta on the lower-right annotation. */
+.research-concept-211 .research211-impact text{
+  fill:rgba(211,145,123,.70);
+}
+
+/* A touch more openness around the headline/visual handoff. */
+.research-concept-211 .research20-copy{
+  width:min(42.5%,550px);
+  max-width:550px;
+}
+
+.research-concept-211 .research20-copy h1{
+  max-width:535px;
+}
+
+/* More breathing room in the bottom editorial descriptor band. */
+.research-concept-211 .research20-meta{
+  min-height:82px;
+  background:rgba(18,19,15,.39);
+}
+
+.research-concept-211 .research20-meta span{
+  min-height:82px;
+  padding-top:4px;
+  padding-bottom:4px;
+  letter-spacing:.155em;
+}
+
+/* Keep the artwork fractionally farther right without changing ratio/crop logic. */
+@media(min-width:1181px){
+  .research-concept-211 .research211-canvas{
+    right:-1.4%;
+    height:99%;
+  }
+}
+
+@media(max-width:1180px){
+  .research-concept-211 .research211-canvas{
+    right:-5%;
+    height:95%;
+  }
+
+  .research-concept-211 .research20-copy{
+    width:min(47.5%,535px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-211 .research20-meta{
+    min-height:0;
+  }
+
+  .research-concept-211 .research20-meta span{
+    min-height:58px;
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-211 .research20-meta span{
+    min-height:54px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.11
+   Final hero micro-refinement.
+   ========================================================= */
+
+/* Restore a touch of dimensionality to the landscape without reintroducing glare. */
+.research-concept-211 .research211-art{
+  filter:saturate(.64) contrast(.945) brightness(.745);
+}
+
+/* SOCIETY should read as a local annotation, not an edge label. */
+.research-concept-211 .research211-society text{
+  fill:rgba(244,240,231,.64);
+}
+
+/* Lower-right triad becomes quieter and more editorial. */
+.research-concept-211 .research211-impact text{
+  fill:rgba(202,139,119,.60);
+  font-size:10px;
+  letter-spacing:2.85px;
+}
+
+.research-concept-211 .research211-impact line{
+  stroke:rgba(201,126,103,.38);
+}
+
+/* Keep overall annotation hierarchy calm. */
+.research-concept-211 .research211-label text{
+  text-shadow:none;
+}
+
+/* Preserve all 2.0.10 spacing and structure exactly. */
