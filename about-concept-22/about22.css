@@ -1,0 +1,542 @@
+/* ABOUT CONCEPT 2.0 — hero-only premium test — 2026-10-03 */
+
+.about-concept-22 .about-hero{
+  position:relative;
+  overflow:hidden;
+  padding:78px 0 74px;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.035) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.025) 1px,transparent 1px),
+    #2F2C27;
+  background-size:120px 120px,120px 120px,auto;
+}
+
+.about-concept-22 .about-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(135deg,transparent 0 73%,rgba(217,122,99,.08) 73% 73.1%,transparent 73.1%),
+    radial-gradient(circle at 86% 18%,rgba(244,240,231,.055) 0 1px,transparent 1.5px);
+  background-size:auto,48px 48px;
+  opacity:.9;
+}
+
+.about-concept-22 .about-hero-grid{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(430px,.95fr);
+  gap:64px;
+  align-items:center;
+  min-height:560px;
+}
+
+.about-concept-22 .about-hero-copy{
+  align-self:center;
+}
+
+.about-concept-22 .about-hero .label{
+  margin-bottom:18px;
+  font-size:11px !important;
+  letter-spacing:.14em;
+}
+
+.about-concept-22 .about-hero h1{
+  max-width:780px;
+  font-size:clamp(52px,5.7vw,80px);
+  line-height:.955;
+  letter-spacing:-.058em;
+}
+
+.about-concept-22 .about-lead{
+  max-width:690px;
+  margin-top:28px;
+  font-size:16px;
+  line-height:1.65;
+  color:#D0CAC0;
+}
+
+.about-concept-22 .about20-visual{
+  position:relative;
+  min-height:510px;
+  align-self:stretch;
+}
+
+.about-concept-22 .about20-grid{
+  position:absolute;
+  inset:5% 0 2% 3%;
+  opacity:.25;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.16) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.12) 1px,transparent 1px);
+  background-size:76px 76px;
+  mask-image:linear-gradient(to left,#000 70%,transparent 100%);
+  -webkit-mask-image:linear-gradient(to left,#000 70%,transparent 100%);
+}
+
+.about-concept-22 .about20-sphere{
+  position:absolute;
+  width:min(62%,330px);
+  aspect-ratio:1;
+  right:14%;
+  top:50%;
+  transform:translateY(-50%);
+  border-radius:50%;
+  border:1px solid rgba(244,240,231,.24);
+  background:
+    radial-gradient(circle at 35% 34%,rgba(244,240,231,.34) 0 2%,transparent 3%),
+    radial-gradient(circle at 64% 58%,rgba(217,122,99,.17),transparent 28%),
+    repeating-radial-gradient(circle at 54% 50%,rgba(244,240,231,.07) 0 1px,transparent 1px 5px),
+    conic-gradient(from 145deg,rgba(244,240,231,.17),rgba(244,240,231,.035) 23%,rgba(217,122,99,.13) 42%,rgba(244,240,231,.05) 67%,rgba(244,240,231,.20));
+  box-shadow:
+    inset -36px -20px 54px rgba(0,0,0,.30),
+    inset 18px 12px 36px rgba(244,240,231,.05),
+    0 0 0 28px rgba(244,240,231,.018);
+}
+
+.about-concept-22 .about20-sphere::before,
+.about-concept-22 .about20-sphere::after{
+  content:"";
+  position:absolute;
+  inset:12%;
+  border-radius:50%;
+  border:1px solid rgba(244,240,231,.10);
+  transform:rotate(28deg);
+}
+
+.about-concept-22 .about20-sphere::after{
+  inset:24% 8%;
+  border-color:rgba(217,122,99,.20);
+  transform:rotate(-18deg);
+}
+
+.about-concept-22 .about20-orbit{
+  position:absolute;
+  right:6%;
+  top:50%;
+  border:1px solid rgba(217,122,99,.50);
+  border-radius:50%;
+  transform-origin:center;
+}
+
+.about-concept-22 .about20-orbit-a{
+  width:78%;
+  height:42%;
+  transform:translateY(-50%) rotate(18deg);
+}
+
+.about-concept-22 .about20-orbit-b{
+  width:66%;
+  height:54%;
+  right:12%;
+  transform:translateY(-50%) rotate(-28deg);
+  border-color:rgba(244,240,231,.22);
+}
+
+.about-concept-22 .about20-orbit-c{
+  width:58%;
+  height:70%;
+  right:16%;
+  transform:translateY(-50%) rotate(42deg);
+  border-color:rgba(217,122,99,.28);
+}
+
+.about-concept-22 .about20-node{
+  position:absolute;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#D97A63;
+  box-shadow:0 0 0 4px rgba(217,122,99,.08);
+}
+
+.about-concept-22 .about20-node-a{right:30%;top:16%}
+.about-concept-22 .about20-node-b{right:9%;top:52%}
+.about-concept-22 .about20-node-c{right:43%;bottom:11%}
+
+.about-concept-22 .about20-word{
+  position:absolute;
+  font-size:10px;
+  line-height:1.25;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#BEB8AE;
+}
+
+.about-concept-22 .about20-word-a{right:29%;top:8%}
+.about-concept-22 .about20-word-b{left:2%;top:43%}
+.about-concept-22 .about20-word-c{right:0;top:47%}
+.about-concept-22 .about20-word-d{right:3%;bottom:12%}
+
+/* Preview control */
+.about22-preview-switch{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:50;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:6px;
+  background:#2F2C27;
+  border:1px solid rgba(244,240,231,.18);
+  box-shadow:0 10px 28px rgba(0,0,0,.18);
+}
+.about22-preview-switch span,
+.about22-preview-switch a{
+  min-height:34px;
+  display:inline-flex;
+  align-items:center;
+  padding:0 10px;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  color:#F4F0E7;
+  text-decoration:none;
+}
+.about22-preview-switch a{
+  background:#F4F0E7;
+  color:#34312B;
+}
+
+@media(max-width:1000px){
+  .about-concept-22 .about-hero-grid{
+    grid-template-columns:1fr;
+    gap:26px;
+    min-height:0;
+  }
+
+  .about-concept-22 .about20-visual{
+    min-height:380px;
+  }
+
+  .about-concept-22 .about20-sphere{
+    width:min(54%,300px);
+    right:24%;
+  }
+
+  .about-concept-22 .about20-word-b{left:12%}
+}
+
+@media(max-width:700px){
+  .about-concept-22 .about-hero{
+    padding:54px 0 42px;
+  }
+
+  .about-concept-22 .about-hero h1{
+    font-size:clamp(42px,12vw,58px);
+  }
+
+  .about-concept-22 .about-lead{
+    margin-top:22px;
+    font-size:15px;
+    line-height:1.62;
+  }
+
+  .about-concept-22 .about20-visual{
+    min-height:310px;
+  }
+
+  .about-concept-22 .about20-sphere{
+    width:min(58%,240px);
+    right:20%;
+  }
+
+  .about-concept-22 .about20-grid{
+    background-size:58px 58px;
+  }
+
+  .about-concept-22 .about20-word{
+    font-size:8px;
+  }
+
+  .about22-preview-switch{
+    right:8px;
+    bottom:8px;
+  }
+}
+
+
+/* =========================================================
+   ABOUT CONCEPT 2.1 — editorial hero artwork integration
+   Replaces only the right-side CSS-generated diagram.
+   ========================================================= */
+
+.about-concept-22 .about21-visual{
+  position:relative;
+  min-height:510px;
+  align-self:stretch;
+  overflow:visible;
+}
+
+.about-concept-22 .about21-art{
+  position:absolute;
+  inset:50% auto auto 50%;
+  width:112%;
+  max-width:none;
+  height:auto;
+  transform:translate(-50%,-50%);
+  display:block;
+  object-fit:contain;
+  opacity:.96;
+  mix-blend-mode:normal;
+  filter:saturate(.92) contrast(.98);
+  pointer-events:none;
+  user-select:none;
+}
+
+.about-concept-22 .about21-visual::before{
+  content:"";
+  position:absolute;
+  inset:3% 1% 2% 0;
+  z-index:2;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(47,44,39,.94) 0%,rgba(47,44,39,.46) 13%,transparent 34%),
+    linear-gradient(180deg,rgba(47,44,39,.16),transparent 18%,transparent 82%,rgba(47,44,39,.12));
+}
+
+.about-concept-22 .about21-word{
+  position:absolute;
+  z-index:3;
+  font-size:10px;
+  line-height:1.25;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#C5BFB5;
+  text-shadow:0 1px 12px rgba(0,0,0,.34);
+  white-space:nowrap;
+}
+
+.about-concept-22 .about21-word-a{
+  top:8%;
+  left:53%;
+}
+
+.about-concept-22 .about21-word-b{
+  top:44%;
+  left:4%;
+}
+
+.about-concept-22 .about21-word-c{
+  top:48%;
+  right:0;
+}
+
+.about-concept-22 .about21-word-d{
+  right:1%;
+  bottom:10%;
+  text-align:left;
+}
+
+@media(max-width:1000px){
+  .about-concept-22 .about21-visual{
+    min-height:400px;
+  }
+
+  .about-concept-22 .about21-art{
+    width:min(108%,720px);
+  }
+
+  .about-concept-22 .about21-word-a{
+    left:57%;
+  }
+
+  .about-concept-22 .about21-word-b{
+    left:8%;
+  }
+}
+
+@media(max-width:700px){
+  .about-concept-22 .about21-visual{
+    min-height:320px;
+  }
+
+  .about-concept-22 .about21-art{
+    width:116%;
+  }
+
+  .about-concept-22 .about21-visual::before{
+    background:
+      linear-gradient(90deg,rgba(47,44,39,.78) 0%,rgba(47,44,39,.22) 12%,transparent 28%),
+      linear-gradient(180deg,rgba(47,44,39,.16),transparent 18%,transparent 82%,rgba(47,44,39,.12));
+  }
+
+  .about-concept-22 .about21-word{
+    font-size:8px;
+    letter-spacing:.12em;
+  }
+
+  .about-concept-22 .about21-word-a{top:5%;left:56%}
+  .about-concept-22 .about21-word-b{top:45%;left:2%}
+  .about-concept-22 .about21-word-c{top:50%;right:1%}
+  .about-concept-22 .about21-word-d{right:2%;bottom:7%}
+}
+
+
+/* =========================================================
+   ABOUT CONCEPT 2.2 — premium hero integration refinement
+   Uses the same approved artwork, but blends it into the hero.
+   ========================================================= */
+
+.about-concept-22 .about-hero{
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.022) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.020) 1px,transparent 1px),
+    #22221C;
+  background-size:132px 132px,132px 132px,auto;
+  padding:72px 0 68px;
+}
+
+.about-concept-22 .about-hero::before{
+  background:
+    linear-gradient(135deg,transparent 0 74.2%,rgba(217,122,99,.055) 74.2% 74.3%,transparent 74.3%),
+    radial-gradient(circle at 86% 18%,rgba(244,240,231,.045) 0 1px,transparent 1.5px);
+  background-size:auto,52px 52px;
+  opacity:.68;
+}
+
+.about-concept-22 .about-hero-grid{
+  grid-template-columns:minmax(0,.96fr) minmax(520px,1.04fr);
+  gap:34px;
+  min-height:610px;
+}
+
+.about-concept-22 .about-hero h1{
+  max-width:760px;
+  font-size:clamp(50px,5.45vw,78px);
+  line-height:.955;
+}
+
+.about-concept-22 .about-lead{
+  max-width:700px;
+  margin-top:30px;
+  color:#D8D2C8;
+  font-size:16px;
+  line-height:1.62;
+}
+
+/* Artwork becomes part of the hero field rather than a framed picture */
+.about-concept-22 .about21-visual{
+  min-height:580px;
+  overflow:visible;
+}
+
+.about-concept-22 .about21-art{
+  left:50%;
+  top:50%;
+  width:137%;
+  max-width:none;
+  transform:translate(-49%,-50%);
+  opacity:1;
+  filter:saturate(.96) contrast(1.01) brightness(.98);
+}
+
+/* Edge blending only — no visible rectangular overlay */
+.about-concept-22 .about21-visual::before{
+  inset:-3% -8% -3% -8%;
+  z-index:2;
+  background:
+    linear-gradient(90deg,#22221C 0%,rgba(34,34,28,.78) 5%,rgba(34,34,28,.22) 16%,transparent 28%),
+    linear-gradient(270deg,#22221C 0%,rgba(34,34,28,.30) 5%,transparent 14%),
+    linear-gradient(180deg,#22221C 0%,rgba(34,34,28,.10) 7%,transparent 15%,transparent 88%,rgba(34,34,28,.12) 95%,#22221C 100%);
+  pointer-events:none;
+}
+
+/* Editorial labels positioned in the quieter outer field */
+.about-concept-22 .about21-word{
+  z-index:4;
+  color:#CFC8BE;
+  font-size:9.5px;
+  letter-spacing:.16em;
+  text-shadow:none;
+}
+
+.about-concept-22 .about21-word-a{
+  top:5%;
+  left:58%;
+}
+
+.about-concept-22 .about21-word-b{
+  top:47%;
+  left:-2%;
+}
+
+.about-concept-22 .about21-word-c{
+  top:50%;
+  right:-1%;
+}
+
+.about-concept-22 .about21-word-d{
+  right:0;
+  bottom:8%;
+}
+
+/* Slightly calmer navigation/hero relationship */
+.about-concept-22 .about-hero .label{
+  margin-bottom:20px;
+}
+
+@media(max-width:1100px){
+  .about-concept-22 .about-hero-grid{
+    grid-template-columns:minmax(0,1fr) minmax(430px,.95fr);
+    gap:26px;
+  }
+
+  .about-concept-22 .about21-art{
+    width:132%;
+  }
+}
+
+@media(max-width:1000px){
+  .about-concept-22 .about-hero-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .about-concept-22 .about21-visual{
+    min-height:430px;
+  }
+
+  .about-concept-22 .about21-art{
+    width:min(122%,780px);
+    transform:translate(-50%,-50%);
+  }
+
+  .about-concept-22 .about21-word-b{
+    left:8%;
+  }
+
+  .about-concept-22 .about21-word-c{
+    right:7%;
+  }
+}
+
+@media(max-width:700px){
+  .about-concept-22 .about-hero{
+    padding:52px 0 38px;
+  }
+
+  .about-concept-22 .about-hero h1{
+    font-size:clamp(42px,11.8vw,56px);
+  }
+
+  .about-concept-22 .about21-visual{
+    min-height:330px;
+  }
+
+  .about-concept-22 .about21-art{
+    width:128%;
+  }
+
+  .about-concept-22 .about21-word{
+    font-size:7.5px;
+  }
+
+  .about-concept-22 .about21-word-a{left:58%;top:4%}
+  .about-concept-22 .about21-word-b{left:0;top:48%}
+  .about-concept-22 .about21-word-c{right:0;top:51%}
+  .about-concept-22 .about21-word-d{right:0;bottom:6%}
+}
