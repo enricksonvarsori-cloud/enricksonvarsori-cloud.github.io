@@ -1,0 +1,1453 @@
+/* ABOUT CONCEPT 2.0 — hero-only premium test — 2026-10-03 */
+
+.about-concept-27 .about-hero{
+  position:relative;
+  overflow:hidden;
+  padding:78px 0 74px;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.035) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.025) 1px,transparent 1px),
+    #2F2C27;
+  background-size:120px 120px,120px 120px,auto;
+}
+
+.about-concept-27 .about-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(135deg,transparent 0 73%,rgba(217,122,99,.08) 73% 73.1%,transparent 73.1%),
+    radial-gradient(circle at 86% 18%,rgba(244,240,231,.055) 0 1px,transparent 1.5px);
+  background-size:auto,48px 48px;
+  opacity:.9;
+}
+
+.about-concept-27 .about-hero-grid{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(430px,.95fr);
+  gap:64px;
+  align-items:center;
+  min-height:560px;
+}
+
+.about-concept-27 .about-hero-copy{
+  align-self:center;
+}
+
+.about-concept-27 .about-hero .label{
+  margin-bottom:18px;
+  font-size:11px !important;
+  letter-spacing:.14em;
+}
+
+.about-concept-27 .about-hero h1{
+  max-width:780px;
+  font-size:clamp(52px,5.7vw,80px);
+  line-height:.955;
+  letter-spacing:-.058em;
+}
+
+.about-concept-27 .about-lead{
+  max-width:690px;
+  margin-top:28px;
+  font-size:16px;
+  line-height:1.65;
+  color:#D0CAC0;
+}
+
+.about-concept-27 .about20-visual{
+  position:relative;
+  min-height:510px;
+  align-self:stretch;
+}
+
+.about-concept-27 .about20-grid{
+  position:absolute;
+  inset:5% 0 2% 3%;
+  opacity:.25;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.16) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.12) 1px,transparent 1px);
+  background-size:76px 76px;
+  mask-image:linear-gradient(to left,#000 70%,transparent 100%);
+  -webkit-mask-image:linear-gradient(to left,#000 70%,transparent 100%);
+}
+
+.about-concept-27 .about20-sphere{
+  position:absolute;
+  width:min(62%,330px);
+  aspect-ratio:1;
+  right:14%;
+  top:50%;
+  transform:translateY(-50%);
+  border-radius:50%;
+  border:1px solid rgba(244,240,231,.24);
+  background:
+    radial-gradient(circle at 35% 34%,rgba(244,240,231,.34) 0 2%,transparent 3%),
+    radial-gradient(circle at 64% 58%,rgba(217,122,99,.17),transparent 28%),
+    repeating-radial-gradient(circle at 54% 50%,rgba(244,240,231,.07) 0 1px,transparent 1px 5px),
+    conic-gradient(from 145deg,rgba(244,240,231,.17),rgba(244,240,231,.035) 23%,rgba(217,122,99,.13) 42%,rgba(244,240,231,.05) 67%,rgba(244,240,231,.20));
+  box-shadow:
+    inset -36px -20px 54px rgba(0,0,0,.30),
+    inset 18px 12px 36px rgba(244,240,231,.05),
+    0 0 0 28px rgba(244,240,231,.018);
+}
+
+.about-concept-27 .about20-sphere::before,
+.about-concept-27 .about20-sphere::after{
+  content:"";
+  position:absolute;
+  inset:12%;
+  border-radius:50%;
+  border:1px solid rgba(244,240,231,.10);
+  transform:rotate(28deg);
+}
+
+.about-concept-27 .about20-sphere::after{
+  inset:24% 8%;
+  border-color:rgba(217,122,99,.20);
+  transform:rotate(-18deg);
+}
+
+.about-concept-27 .about20-orbit{
+  position:absolute;
+  right:6%;
+  top:50%;
+  border:1px solid rgba(217,122,99,.50);
+  border-radius:50%;
+  transform-origin:center;
+}
+
+.about-concept-27 .about20-orbit-a{
+  width:78%;
+  height:42%;
+  transform:translateY(-50%) rotate(18deg);
+}
+
+.about-concept-27 .about20-orbit-b{
+  width:66%;
+  height:54%;
+  right:12%;
+  transform:translateY(-50%) rotate(-28deg);
+  border-color:rgba(244,240,231,.22);
+}
+
+.about-concept-27 .about20-orbit-c{
+  width:58%;
+  height:70%;
+  right:16%;
+  transform:translateY(-50%) rotate(42deg);
+  border-color:rgba(217,122,99,.28);
+}
+
+.about-concept-27 .about20-node{
+  position:absolute;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#D97A63;
+  box-shadow:0 0 0 4px rgba(217,122,99,.08);
+}
+
+.about-concept-27 .about20-node-a{right:30%;top:16%}
+.about-concept-27 .about20-node-b{right:9%;top:52%}
+.about-concept-27 .about20-node-c{right:43%;bottom:11%}
+
+.about-concept-27 .about20-word{
+  position:absolute;
+  font-size:10px;
+  line-height:1.25;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#BEB8AE;
+}
+
+.about-concept-27 .about20-word-a{right:29%;top:8%}
+.about-concept-27 .about20-word-b{left:2%;top:43%}
+.about-concept-27 .about20-word-c{right:0;top:47%}
+.about-concept-27 .about20-word-d{right:3%;bottom:12%}
+
+/* Preview control */
+.about27-preview-switch{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:50;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:6px;
+  background:#2F2C27;
+  border:1px solid rgba(244,240,231,.18);
+  box-shadow:0 10px 28px rgba(0,0,0,.18);
+}
+.about27-preview-switch span,
+.about27-preview-switch a{
+  min-height:34px;
+  display:inline-flex;
+  align-items:center;
+  padding:0 10px;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  color:#F4F0E7;
+  text-decoration:none;
+}
+.about27-preview-switch a{
+  background:#F4F0E7;
+  color:#34312B;
+}
+
+@media(max-width:1000px){
+  .about-concept-27 .about-hero-grid{
+    grid-template-columns:1fr;
+    gap:26px;
+    min-height:0;
+  }
+
+  .about-concept-27 .about20-visual{
+    min-height:380px;
+  }
+
+  .about-concept-27 .about20-sphere{
+    width:min(54%,300px);
+    right:24%;
+  }
+
+  .about-concept-27 .about20-word-b{left:12%}
+}
+
+@media(max-width:700px){
+  .about-concept-27 .about-hero{
+    padding:54px 0 42px;
+  }
+
+  .about-concept-27 .about-hero h1{
+    font-size:clamp(42px,12vw,58px);
+  }
+
+  .about-concept-27 .about-lead{
+    margin-top:22px;
+    font-size:15px;
+    line-height:1.62;
+  }
+
+  .about-concept-27 .about20-visual{
+    min-height:310px;
+  }
+
+  .about-concept-27 .about20-sphere{
+    width:min(58%,240px);
+    right:20%;
+  }
+
+  .about-concept-27 .about20-grid{
+    background-size:58px 58px;
+  }
+
+  .about-concept-27 .about20-word{
+    font-size:8px;
+  }
+
+  .about27-preview-switch{
+    right:8px;
+    bottom:8px;
+  }
+}
+
+
+/* =========================================================
+   ABOUT CONCEPT 2.1 — editorial hero artwork integration
+   Replaces only the right-side CSS-generated diagram.
+   ========================================================= */
+
+.about-concept-27 .about21-visual{
+  position:relative;
+  min-height:510px;
+  align-self:stretch;
+  overflow:visible;
+}
+
+.about-concept-27 .about21-art{
+  position:absolute;
+  inset:50% auto auto 50%;
+  width:112%;
+  max-width:none;
+  height:auto;
+  transform:translate(-50%,-50%);
+  display:block;
+  object-fit:contain;
+  opacity:.96;
+  mix-blend-mode:normal;
+  filter:saturate(.92) contrast(.98);
+  pointer-events:none;
+  user-select:none;
+}
+
+.about-concept-27 .about21-visual::before{
+  content:"";
+  position:absolute;
+  inset:3% 1% 2% 0;
+  z-index:2;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(47,44,39,.94) 0%,rgba(47,44,39,.46) 13%,transparent 34%),
+    linear-gradient(180deg,rgba(47,44,39,.16),transparent 18%,transparent 82%,rgba(47,44,39,.12));
+}
+
+.about-concept-27 .about21-word{
+  position:absolute;
+  z-index:3;
+  font-size:10px;
+  line-height:1.25;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#C5BFB5;
+  text-shadow:0 1px 12px rgba(0,0,0,.34);
+  white-space:nowrap;
+}
+
+.about-concept-27 .about21-word-a{
+  top:8%;
+  left:53%;
+}
+
+.about-concept-27 .about21-word-b{
+  top:44%;
+  left:4%;
+}
+
+.about-concept-27 .about21-word-c{
+  top:48%;
+  right:0;
+}
+
+.about-concept-27 .about21-word-d{
+  right:1%;
+  bottom:10%;
+  text-align:left;
+}
+
+@media(max-width:1000px){
+  .about-concept-27 .about21-visual{
+    min-height:400px;
+  }
+
+  .about-concept-27 .about21-art{
+    width:min(108%,720px);
+  }
+
+  .about-concept-27 .about21-word-a{
+    left:57%;
+  }
+
+  .about-concept-27 .about21-word-b{
+    left:8%;
+  }
+}
+
+@media(max-width:700px){
+  .about-concept-27 .about21-visual{
+    min-height:320px;
+  }
+
+  .about-concept-27 .about21-art{
+    width:116%;
+  }
+
+  .about-concept-27 .about21-visual::before{
+    background:
+      linear-gradient(90deg,rgba(47,44,39,.78) 0%,rgba(47,44,39,.22) 12%,transparent 28%),
+      linear-gradient(180deg,rgba(47,44,39,.16),transparent 18%,transparent 82%,rgba(47,44,39,.12));
+  }
+
+  .about-concept-27 .about21-word{
+    font-size:8px;
+    letter-spacing:.12em;
+  }
+
+  .about-concept-27 .about21-word-a{top:5%;left:56%}
+  .about-concept-27 .about21-word-b{top:45%;left:2%}
+  .about-concept-27 .about21-word-c{top:50%;right:1%}
+  .about-concept-27 .about21-word-d{right:2%;bottom:7%}
+}
+
+
+/* =========================================================
+   ABOUT CONCEPT 2.2 — premium hero integration refinement
+   Uses the same approved artwork, but blends it into the hero.
+   ========================================================= */
+
+.about-concept-27 .about-hero{
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.022) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.020) 1px,transparent 1px),
+    #22221C;
+  background-size:132px 132px,132px 132px,auto;
+  padding:72px 0 68px;
+}
+
+.about-concept-27 .about-hero::before{
+  background:
+    linear-gradient(135deg,transparent 0 74.2%,rgba(217,122,99,.055) 74.2% 74.3%,transparent 74.3%),
+    radial-gradient(circle at 86% 18%,rgba(244,240,231,.045) 0 1px,transparent 1.5px);
+  background-size:auto,52px 52px;
+  opacity:.68;
+}
+
+.about-concept-27 .about-hero-grid{
+  grid-template-columns:minmax(0,.96fr) minmax(520px,1.04fr);
+  gap:34px;
+  min-height:610px;
+}
+
+.about-concept-27 .about-hero h1{
+  max-width:760px;
+  font-size:clamp(50px,5.45vw,78px);
+  line-height:.955;
+}
+
+.about-concept-27 .about-lead{
+  max-width:700px;
+  margin-top:30px;
+  color:#D8D2C8;
+  font-size:16px;
+  line-height:1.62;
+}
+
+/* Artwork becomes part of the hero field rather than a framed picture */
+.about-concept-27 .about21-visual{
+  min-height:580px;
+  overflow:visible;
+}
+
+.about-concept-27 .about21-art{
+  left:50%;
+  top:50%;
+  width:137%;
+  max-width:none;
+  transform:translate(-49%,-50%);
+  opacity:1;
+  filter:saturate(.96) contrast(1.01) brightness(.98);
+}
+
+/* Edge blending only — no visible rectangular overlay */
+.about-concept-27 .about21-visual::before{
+  inset:-3% -8% -3% -8%;
+  z-index:2;
+  background:
+    linear-gradient(90deg,#22221C 0%,rgba(34,34,28,.78) 5%,rgba(34,34,28,.22) 16%,transparent 28%),
+    linear-gradient(270deg,#22221C 0%,rgba(34,34,28,.30) 5%,transparent 14%),
+    linear-gradient(180deg,#22221C 0%,rgba(34,34,28,.10) 7%,transparent 15%,transparent 88%,rgba(34,34,28,.12) 95%,#22221C 100%);
+  pointer-events:none;
+}
+
+/* Editorial labels positioned in the quieter outer field */
+.about-concept-27 .about21-word{
+  z-index:4;
+  color:#CFC8BE;
+  font-size:9.5px;
+  letter-spacing:.16em;
+  text-shadow:none;
+}
+
+.about-concept-27 .about21-word-a{
+  top:5%;
+  left:58%;
+}
+
+.about-concept-27 .about21-word-b{
+  top:47%;
+  left:-2%;
+}
+
+.about-concept-27 .about21-word-c{
+  top:50%;
+  right:-1%;
+}
+
+.about-concept-27 .about21-word-d{
+  right:0;
+  bottom:8%;
+}
+
+/* Slightly calmer navigation/hero relationship */
+.about-concept-27 .about-hero .label{
+  margin-bottom:20px;
+}
+
+@media(max-width:1100px){
+  .about-concept-27 .about-hero-grid{
+    grid-template-columns:minmax(0,1fr) minmax(430px,.95fr);
+    gap:26px;
+  }
+
+  .about-concept-27 .about21-art{
+    width:132%;
+  }
+}
+
+@media(max-width:1000px){
+  .about-concept-27 .about-hero-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .about-concept-27 .about21-visual{
+    min-height:430px;
+  }
+
+  .about-concept-27 .about21-art{
+    width:min(122%,780px);
+    transform:translate(-50%,-50%);
+  }
+
+  .about-concept-27 .about21-word-b{
+    left:8%;
+  }
+
+  .about-concept-27 .about21-word-c{
+    right:7%;
+  }
+}
+
+@media(max-width:700px){
+  .about-concept-27 .about-hero{
+    padding:52px 0 38px;
+  }
+
+  .about-concept-27 .about-hero h1{
+    font-size:clamp(42px,11.8vw,56px);
+  }
+
+  .about-concept-27 .about21-visual{
+    min-height:330px;
+  }
+
+  .about-concept-27 .about21-art{
+    width:128%;
+  }
+
+  .about-concept-27 .about21-word{
+    font-size:7.5px;
+  }
+
+  .about-concept-27 .about21-word-a{left:58%;top:4%}
+  .about-concept-27 .about21-word-b{left:0;top:48%}
+  .about-concept-27 .about21-word-c{right:0;top:51%}
+  .about-concept-27 .about21-word-d{right:0;bottom:6%}
+}
+
+
+/* =========================================================
+   ABOUT CONCEPT 2.3 — hero integration corrections
+   Fixes clipped headline, rectangular overlay and colour mismatch.
+   ========================================================= */
+
+/* One continuous dark surface from navigation through the hero */
+.about-concept-27 .site-header,
+.about-concept-27 .about-hero{
+  background-color:#22221C !important;
+}
+
+.about-concept-27 .site-header{
+  border-bottom-color:rgba(244,240,231,.10);
+}
+
+/* Remove the extra colour wash that was visually separating the menu/hero */
+.about-concept-27 .about-hero::before{
+  opacity:.26;
+}
+
+/* Give the copy enough room and prevent any clipping at the grid boundary */
+.about-concept-27 .about-hero-grid{
+  grid-template-columns:minmax(0,1.06fr) minmax(500px,.94fr);
+  gap:42px;
+  overflow:visible;
+}
+
+.about-concept-27 .about-hero-copy{
+  position:relative;
+  z-index:5;
+  min-width:0;
+  overflow:visible;
+}
+
+.about-concept-27 .about-hero h1{
+  max-width:760px;
+  font-size:clamp(50px,5.15vw,74px);
+  line-height:.96;
+  overflow:visible;
+  text-wrap:balance;
+}
+
+.about-concept-27 .about-lead{
+  max-width:690px;
+}
+
+/* Remove the rectangular blending layer entirely */
+.about-concept-27 .about21-visual::before{
+  display:none !important;
+}
+
+/* Blend the artwork itself into the hero, so there is no visible rectangle */
+.about-concept-27 .about21-visual{
+  min-height:570px;
+  overflow:visible;
+  background:transparent !important;
+}
+
+.about-concept-27 .about21-art{
+  width:132%;
+  left:50%;
+  top:50%;
+  transform:translate(-48.5%,-50%);
+  opacity:.98;
+  filter:saturate(.96) contrast(1.01) brightness(.99);
+  -webkit-mask-image:
+    linear-gradient(90deg,transparent 0%,rgba(0,0,0,.58) 9%,#000 22%,#000 88%,rgba(0,0,0,.74) 95%,transparent 100%),
+    linear-gradient(180deg,transparent 0%,#000 8%,#000 92%,transparent 100%);
+  -webkit-mask-composite:source-in;
+  mask-image:
+    linear-gradient(90deg,transparent 0%,rgba(0,0,0,.58) 9%,#000 22%,#000 88%,rgba(0,0,0,.74) 95%,transparent 100%),
+    linear-gradient(180deg,transparent 0%,#000 8%,#000 92%,transparent 100%);
+  mask-composite:intersect;
+}
+
+/* Keep labels clear of the artwork's strongest lines */
+.about-concept-27 .about21-word-a{top:6%;left:59%}
+.about-concept-27 .about21-word-b{top:47%;left:1%}
+.about-concept-27 .about21-word-c{top:50%;right:1%}
+.about-concept-27 .about21-word-d{right:1%;bottom:9%}
+
+@media(max-width:1100px){
+  .about-concept-27 .about-hero-grid{
+    grid-template-columns:minmax(0,1fr) minmax(430px,.92fr);
+    gap:30px;
+  }
+
+  .about-concept-27 .about-hero h1{
+    font-size:clamp(48px,5vw,68px);
+  }
+
+  .about-concept-27 .about21-art{
+    width:128%;
+  }
+}
+
+@media(max-width:1000px){
+  .about-concept-27 .about-hero-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .about-concept-27 .about-hero h1{
+    max-width:820px;
+  }
+
+  .about-concept-27 .about21-visual{
+    min-height:420px;
+  }
+
+  .about-concept-27 .about21-art{
+    width:min(118%,760px);
+    transform:translate(-50%,-50%);
+  }
+}
+
+@media(max-width:700px){
+  .about-concept-27 .about-hero h1{
+    max-width:100%;
+    font-size:clamp(41px,11.4vw,54px);
+    text-wrap:pretty;
+  }
+
+  .about-concept-27 .about21-visual{
+    min-height:320px;
+  }
+
+  .about-concept-27 .about21-art{
+    width:122%;
+  }
+}
+
+
+/* =========================================================
+   ABOUT CONCEPT 2.4 — hero micro-adjustments only
+   ========================================================= */
+
+.about-concept-27 .about21-art{
+  width:145%;
+  transform:translate(-53%,-47.5%);
+}
+
+.about-concept-27 .about21-word{
+  font-size:10.5px;
+  letter-spacing:.15em;
+  color:#D8D2C8;
+}
+
+.about-concept-27 .about21-word-a{
+  top:8%;
+  left:56%;
+}
+
+.about-concept-27 .about21-word-b{
+  top:46%;
+  left:4%;
+}
+
+.about-concept-27 .about21-word-c{
+  top:49%;
+  right:3%;
+}
+
+.about-concept-27 .about21-word-d{
+  right:3%;
+  bottom:11%;
+}
+
+@media(max-width:1100px){
+  .about-concept-27 .about21-art{
+    width:138%;
+    transform:translate(-52%,-48%);
+  }
+}
+
+@media(max-width:1000px){
+  .about-concept-27 .about21-art{
+    width:min(126%,800px);
+    transform:translate(-50%,-49%);
+  }
+}
+
+@media(max-width:700px){
+  .about-concept-27 .about21-art{
+    width:128%;
+    transform:translate(-50%,-49%);
+  }
+
+  .about-concept-27 .about21-word{
+    font-size:8.2px;
+  }
+}
+
+
+/* =========================================================
+   ABOUT CONCEPT 2.5 — tonal rhythm test
+   Alternating chapter backgrounds only; no structural redesign.
+   ========================================================= */
+
+/* Hero stays the darkest anchor */
+.about-concept-27 .about-hero{
+  background-color:#22221C !important;
+}
+
+/* Previously agreed hero label micro-adjustment */
+.about-concept-27 .about21-word{
+  font-size:11.5px;
+  letter-spacing:.15em;
+}
+
+/* 01 — Research trajectory: warm paper */
+.about-concept-27 .about-story{
+  background:#F2EDE4;
+  color:#34312B;
+  border-bottom:1px solid rgba(52,49,43,.12);
+}
+
+.about-concept-27 .about-story h2{
+  color:#34312B;
+}
+
+.about-concept-27 .about-story-copy{
+  color:#625D55;
+}
+
+.about-concept-27 .about-story .about-kicker{
+  color:#7A3F34 !important;
+}
+
+/* 02 — Lines of enquiry: differentiated dark, slightly warmer than hero */
+.about-concept-27 .about-themes{
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.018) 1px,transparent 1px),
+    #2D2A25;
+  background-size:132px 132px,auto;
+  color:#F4F0E7;
+  border-bottom:1px solid rgba(244,240,231,.10);
+}
+
+.about-concept-27 .about-themes .about-kicker{
+  color:#F0A08D !important;
+}
+
+.about-concept-27 .about-themes .about-section-head h2,
+.about-concept-27 .about-themes .about-theme-card h3{
+  color:#F4F0E7;
+}
+
+.about-concept-27 .about-themes .about-theme-card{
+  border-color:rgba(244,240,231,.13);
+}
+
+.about-concept-27 .about-themes .about-theme-card p{
+  color:#C8C1B7;
+}
+
+.about-concept-27 .about-themes .about-theme-card>span{
+  color:#E69A87;
+}
+
+/* 03 — Methods: soft editorial stone */
+.about-concept-27 .about-methods{
+  background:#E9E4DB;
+  color:#34312B;
+  border-bottom:1px solid rgba(52,49,43,.12);
+}
+
+.about-concept-27 .about-methods h2{
+  color:#34312B;
+}
+
+.about-concept-27 .about-methods .about-kicker{
+  color:#7A3F34 !important;
+}
+
+.about-concept-27 .about-method-list>div{
+  border-color:rgba(52,49,43,.15);
+}
+
+.about-concept-27 .about-method-list strong{
+  color:#34312B;
+}
+
+.about-concept-27 .about-method-list span{
+  color:#625D55;
+}
+
+/* 04 — Academic background: warm charcoal rather than identical hero dark */
+.about-concept-27 .about-background{
+  background:
+    radial-gradient(circle at 82% 22%,rgba(217,122,99,.055),transparent 26%),
+    linear-gradient(90deg,rgba(244,240,231,.018) 1px,transparent 1px),
+    #322E29;
+  background-size:auto,128px 128px,auto;
+  color:#F4F0E7;
+  border-bottom:1px solid rgba(244,240,231,.10);
+}
+
+.about-concept-27 .about-background .about-kicker{
+  color:#F0A08D !important;
+}
+
+.about-concept-27 .about-background .about-section-head h2,
+.about-concept-27 .about-background .about-trajectory-step h3{
+  color:#F4F0E7;
+}
+
+.about-concept-27 .about-background .about-trajectory::before{
+  background:rgba(244,240,231,.22);
+}
+
+.about-concept-27 .about-background .about-trajectory-node{
+  border-color:#A9A196;
+  background:#322E29;
+}
+
+.about-concept-27 .about-background .about-trajectory-stage{
+  color:#F0A08D !important;
+}
+
+.about-concept-27 .about-background .about-trajectory-place{
+  color:#C7C0B6;
+}
+
+.about-concept-27 .about-background .about-trajectory-step.is-current h3{
+  color:#F0A08D;
+}
+
+/* 05 — Ecosystem: light close, quiet and spacious */
+.about-concept-27 .about-ecosystem{
+  background:#F4F0E7;
+  color:#34312B;
+  border-bottom:1px solid rgba(52,49,43,.12);
+}
+
+.about-concept-27 .about-ecosystem .about-kicker,
+.about-concept-27 .about-ecosystem .about-ecosystem-type{
+  color:#7A3F34 !important;
+}
+
+.about-concept-27 .about-ecosystem .about-section-head h2,
+.about-concept-27 .about-ecosystem .about-entry strong{
+  color:#34312B;
+}
+
+.about-concept-27 .about-ecosystem .about-entry span{
+  color:#625D55;
+}
+
+.about-concept-27 .about-ecosystem .about-entry-location{
+  color:#6B625A !important;
+}
+
+.about-concept-27 .about-ecosystem-grid article{
+  border-color:rgba(52,49,43,.13);
+}
+
+.about-concept-27 .about-next{
+  border-color:rgba(52,49,43,.16);
+}
+
+.about-concept-27 .about-next p{
+  color:#34312B;
+}
+
+.about-concept-27 .about-next a{
+  color:#34312B;
+  border-bottom-color:rgba(52,49,43,.35);
+}
+
+.about-concept-27 .about-next a:hover,
+.about-concept-27 .about-next a:focus-visible{
+  border-bottom-color:#B65F4D;
+}
+
+/* Footer stays dark, giving the page a clean terminal edge */
+.about-concept-27 .site-footer{
+  background:#171815;
+}
+
+@media(max-width:700px){
+  .about-concept-27 .about21-word{
+    font-size:8.7px;
+  }
+}
+
+
+/* =========================================================
+   ABOUT CONCEPT 2.6 — Research trajectory editorial refinement
+   Only the Research trajectory section changes.
+   ========================================================= */
+
+.about-concept-27 .about-story{
+  position:relative;
+  overflow:hidden;
+  padding:82px 0 86px;
+  background:
+    linear-gradient(90deg,rgba(52,49,43,.028) 1px,transparent 1px),
+    linear-gradient(rgba(52,49,43,.018) 1px,transparent 1px),
+    #F2EDE4;
+  background-size:132px 132px,132px 132px,auto;
+}
+
+.about-concept-27 .about-story::before{
+  content:"";
+  position:absolute;
+  right:7%;
+  top:13%;
+  width:360px;
+  height:360px;
+  border:1px solid rgba(182,95,77,.10);
+  border-radius:50%;
+  pointer-events:none;
+}
+
+.about-concept-27 .about-story::after{
+  content:"";
+  position:absolute;
+  right:12%;
+  top:20%;
+  width:220px;
+  height:220px;
+  border-left:1px solid rgba(52,49,43,.08);
+  border-top:1px solid rgba(52,49,43,.08);
+  transform:rotate(18deg);
+  pointer-events:none;
+}
+
+.about-concept-27 .about-story-grid{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:minmax(270px,.72fr) minmax(0,1.28fr);
+  gap:74px;
+  align-items:start;
+}
+
+.about-concept-27 .about-story-grid > div:first-child{
+  position:relative;
+  padding-right:42px;
+}
+
+.about-concept-27 .about-story-grid > div:first-child::after{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  width:1px;
+  height:100%;
+  min-height:300px;
+  background:linear-gradient(
+    to bottom,
+    #B65F4D 0 18%,
+    rgba(52,49,43,.16) 18% 100%
+  );
+}
+
+.about-concept-27 .about-story .about-kicker{
+  margin-bottom:18px;
+  font-size:10.5px;
+  letter-spacing:.15em;
+}
+
+.about-concept-27 .about-story h2{
+  max-width:390px;
+  font-size:clamp(42px,4.2vw,58px);
+  line-height:1.02;
+  letter-spacing:-.048em;
+}
+
+.about-concept-27 .about-story-copy{
+  max-width:760px;
+  padding-top:2px;
+  color:#5F5A52;
+  font-size:16px;
+  line-height:1.72;
+}
+
+.about-concept-27 .about-story-copy p{
+  max-width:720px;
+  margin:0 0 22px;
+}
+
+.about-concept-27 .about-story-copy p:first-child{
+  font-size:17.5px;
+  line-height:1.68;
+  color:#4F4A43;
+}
+
+.about-concept-27 .about-story-copy p:last-child{
+  margin-bottom:0;
+}
+
+/* Small editorial marker, no iconography */
+.about-concept-27 .about-story-copy::before{
+  content:"COMMUNICATION · DIGITAL EXPERIENCE · APPLIED RESEARCH";
+  display:block;
+  margin:0 0 22px;
+  font-size:9px;
+  line-height:1.3;
+  letter-spacing:.14em;
+  color:#8A5B50;
+}
+
+@media(max-width:900px){
+  .about-concept-27 .about-story-grid{
+    grid-template-columns:1fr;
+    gap:38px;
+  }
+
+  .about-concept-27 .about-story-grid > div:first-child{
+    padding-right:0;
+    padding-bottom:30px;
+  }
+
+  .about-concept-27 .about-story-grid > div:first-child::after{
+    top:auto;
+    right:auto;
+    left:0;
+    bottom:0;
+    width:120px;
+    height:1px;
+    min-height:0;
+    background:linear-gradient(to right,#B65F4D 0 28%,rgba(52,49,43,.16) 28% 100%);
+  }
+
+  .about-concept-27 .about-story h2{
+    max-width:620px;
+  }
+
+  .about-concept-27 .about-story::before,
+  .about-concept-27 .about-story::after{
+    opacity:.55;
+  }
+}
+
+@media(max-width:700px){
+  .about-concept-27 .about-story{
+    padding:58px 0 62px;
+    background-size:96px 96px,96px 96px,auto;
+  }
+
+  .about-concept-27 .about-story h2{
+    font-size:clamp(36px,10.5vw,48px);
+  }
+
+  .about-concept-27 .about-story-copy{
+    font-size:15px;
+    line-height:1.68;
+  }
+
+  .about-concept-27 .about-story-copy p:first-child{
+    font-size:16px;
+  }
+
+  .about-concept-27 .about-story-copy::before{
+    font-size:8.5px;
+    margin-bottom:18px;
+  }
+}
+
+
+/* =========================================================
+   ABOUT CONCEPT 2.6.1 — typographic system harmonisation
+   Layout, colour and content remain unchanged.
+   ========================================================= */
+
+/* Section labels / kickers */
+.about-concept-27 .about-kicker,
+.about-concept-27 .about-ecosystem-type{
+  font-size:10px !important;
+  line-height:1.25;
+  letter-spacing:.15em;
+}
+
+/* Main section headings: one shared editorial scale */
+.about-concept-27 .about-story h2,
+.about-concept-27 .about-section-head h2,
+.about-concept-27 .about-methods h2{
+  font-size:clamp(40px,3.7vw,52px);
+  line-height:1.02;
+  letter-spacing:-.045em;
+}
+
+/* Research trajectory headline: same system, slightly narrower measure */
+.about-concept-27 .about-story h2{
+  max-width:380px;
+}
+
+/* Narrative body */
+.about-concept-27 .about-story-copy{
+  font-size:16px;
+  line-height:1.68;
+}
+
+.about-concept-27 .about-story-copy p:first-child{
+  font-size:16.5px;
+  line-height:1.66;
+}
+
+/* Theme cards */
+.about-concept-27 .about-theme-card h3{
+  font-size:18px;
+  line-height:1.14;
+  letter-spacing:-.025em;
+}
+
+.about-concept-27 .about-theme-card p{
+  font-size:12px;
+  line-height:1.5;
+}
+
+.about-concept-27 .about-theme-card>span{
+  font-size:9.5px;
+}
+
+/* Methods */
+.about-concept-27 .about-method-list strong{
+  font-size:13px;
+  line-height:1.25;
+}
+
+.about-concept-27 .about-method-list span{
+  font-size:12px;
+  line-height:1.45;
+}
+
+/* Academic background */
+.about-concept-27 .about-trajectory-stage{
+  font-size:9.5px;
+  letter-spacing:.15em;
+}
+
+.about-concept-27 .about-trajectory-step h3{
+  font-size:18px;
+  line-height:1.16;
+  letter-spacing:-.02em;
+}
+
+.about-concept-27 .about-trajectory-place{
+  font-size:11.5px;
+  line-height:1.45;
+}
+
+/* Ecosystem */
+.about-concept-27 .about-entry strong{
+  font-size:14px;
+  line-height:1.2;
+}
+
+.about-concept-27 .about-entry span{
+  font-size:11.5px;
+  line-height:1.45;
+}
+
+.about-concept-27 .about-entry-location{
+  font-size:9.5px !important;
+}
+
+/* Closing links */
+.about-concept-27 .about-next p,
+.about-concept-27 .about-next a{
+  font-size:11.5px;
+}
+
+/* Keep Hero as the only intentionally oversized typographic moment */
+.about-concept-27 .about-hero h1{
+  font-size:clamp(50px,5.15vw,74px);
+}
+
+.about-concept-27 .about-lead{
+  font-size:16px;
+  line-height:1.62;
+}
+
+@media(max-width:700px){
+  .about-concept-27 .about-story h2,
+  .about-concept-27 .about-section-head h2,
+  .about-concept-27 .about-methods h2{
+    font-size:clamp(34px,9.7vw,44px);
+  }
+
+  .about-concept-27 .about-theme-card h3{
+    font-size:18px;
+  }
+
+  .about-concept-27 .about-story-copy,
+  .about-concept-27 .about-story-copy p:first-child{
+    font-size:15px;
+  }
+}
+
+
+/* =========================================================
+   ABOUT CONCEPT 2.6.2 — narrative paragraph consistency
+   ========================================================= */
+
+.about-concept-27 .about-story-copy,
+.about-concept-27 .about-story-copy p,
+.about-concept-27 .about-story-copy p:first-child{
+  font-size:16px;
+  line-height:1.68;
+  font-weight:400;
+  color:#5F5A52;
+}
+
+.about-concept-27 .about-story-copy p{
+  margin:0 0 22px;
+}
+
+.about-concept-27 .about-story-copy p:last-child{
+  margin-bottom:0;
+}
+
+@media(max-width:700px){
+  .about-concept-27 .about-story-copy,
+  .about-concept-27 .about-story-copy p,
+  .about-concept-27 .about-story-copy p:first-child{
+    font-size:15px;
+    line-height:1.66;
+  }
+}
+
+
+/* =========================================================
+   ABOUT CONCEPT 2.7 — Four recurring lines of enquiry
+   Editorial continuous grid, not card-based.
+   ========================================================= */
+
+.about-concept-27 .about-themes{
+  padding:82px 0 86px;
+}
+
+.about-concept-27 .about-themes .about-section-head{
+  display:grid;
+  grid-template-columns:minmax(220px,.55fr) minmax(0,1.45fr);
+  gap:72px;
+  align-items:end;
+  margin-bottom:38px;
+}
+
+.about-concept-27 .about-themes .about-section-head .about-kicker{
+  margin:0;
+  align-self:start;
+}
+
+.about-concept-27 .about-themes .about-section-head h2{
+  max-width:760px;
+  font-size:clamp(42px,4.2vw,58px);
+}
+
+.about-concept-27 .about27-theme-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  border-top:1px solid rgba(244,240,231,.14);
+  border-bottom:1px solid rgba(244,240,231,.11);
+}
+
+.about-concept-27 .about27-theme{
+  position:relative;
+  min-height:330px;
+  padding:18px 26px 30px;
+  border-right:1px solid rgba(244,240,231,.12);
+  border-bottom:0 !important;
+  overflow:hidden;
+}
+
+.about-concept-27 .about27-theme:last-child{
+  border-right:0;
+}
+
+.about-concept-27 .about27-index{
+  display:block;
+  margin-bottom:14px;
+  color:#E69A87;
+  font-size:9px;
+  line-height:1;
+  letter-spacing:.16em;
+}
+
+.about-concept-27 .about27-mark{
+  position:relative;
+  height:92px;
+  margin:0 -4px 22px;
+  opacity:.62;
+}
+
+/* 01: flowing temporal field */
+.about-concept-27 .about27-mark-wave{
+  background:
+    repeating-radial-gradient(ellipse at 32% 52%,
+      transparent 0 10px,
+      rgba(240,160,141,.24) 11px 12px,
+      transparent 13px 19px);
+  transform:scaleY(.42) rotate(-6deg);
+  transform-origin:center;
+}
+
+/* 02: interaction / concentric evaluation */
+.about-concept-27 .about27-mark-rings{
+  background:
+    repeating-radial-gradient(circle at 58% 50%,
+      transparent 0 9px,
+      rgba(240,160,141,.24) 10px 11px,
+      transparent 12px 18px);
+}
+.about-concept-27 .about27-mark-rings::after{
+  content:"";
+  position:absolute;
+  left:18%;
+  right:10%;
+  top:50%;
+  height:1px;
+  background:rgba(240,160,141,.26);
+  transform:rotate(-34deg);
+}
+
+/* 03: layered environmental field */
+.about-concept-27 .about27-mark-field{
+  background:
+    repeating-linear-gradient(
+      168deg,
+      transparent 0 8px,
+      rgba(240,160,141,.18) 9px 10px,
+      transparent 11px 16px
+    );
+  clip-path:polygon(0 72%,18% 60%,32% 66%,46% 38%,60% 50%,72% 26%,100% 18%,100% 100%,0 100%);
+}
+
+/* 04: AI / matrix field */
+.about-concept-27 .about27-mark-matrix{
+  background-image:radial-gradient(circle,rgba(240,160,141,.34) 1.2px,transparent 1.4px);
+  background-size:10px 10px;
+  clip-path:polygon(34% 10%,100% 10%,100% 100%,62% 100%);
+}
+.about-concept-27 .about27-mark-matrix::after{
+  content:"";
+  position:absolute;
+  left:12%;
+  right:2%;
+  top:52%;
+  height:1px;
+  background:rgba(240,160,141,.30);
+  transform:rotate(-38deg);
+}
+
+.about-concept-27 .about27-theme h3{
+  max-width:220px;
+  margin:0 0 12px;
+  font-size:20px;
+  line-height:1.12;
+  letter-spacing:-.025em;
+  color:#F4F0E7;
+}
+
+.about-concept-27 .about27-theme p{
+  max-width:230px;
+  margin:0;
+  font-size:12px;
+  line-height:1.5;
+  color:#C8C1B7;
+}
+
+@media(max-width:900px){
+  .about-concept-27 .about-themes .about-section-head{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+  .about-concept-27 .about27-theme-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .about-concept-27 .about27-theme:nth-child(2){
+    border-right:0;
+  }
+
+  .about-concept-27 .about27-theme:nth-child(-n+2){
+    border-bottom:1px solid rgba(244,240,231,.12) !important;
+  }
+}
+
+@media(max-width:620px){
+  .about-concept-27 .about-themes{
+    padding:60px 0 64px;
+  }
+
+  .about-concept-27 .about27-theme-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-concept-27 .about27-theme,
+  .about-concept-27 .about27-theme:nth-child(2){
+    min-height:0;
+    padding:18px 0 26px;
+    border-right:0;
+    border-bottom:1px solid rgba(244,240,231,.12) !important;
+  }
+
+  .about-concept-27 .about27-theme:last-child{
+    border-bottom:0 !important;
+  }
+
+  .about-concept-27 .about27-mark{
+    width:min(78%,280px);
+    height:76px;
+    margin-bottom:16px;
+  }
+}
