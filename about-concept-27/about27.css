@@ -1451,3 +1451,77 @@
     margin-bottom:16px;
   }
 }
+
+
+/* =========================================================
+   ABOUT CONCEPT 2.7 — original asset integration test
+   Uses the approved assets directly, without redesigning them.
+   ========================================================= */
+
+.about-concept-27 .about27-theme{
+  min-height:390px;
+}
+
+.about-concept-27 .about27-art{
+  width:100%;
+  height:150px;
+  margin:2px 0 20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:transparent;
+}
+
+.about-concept-27 .about27-art img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  max-width:100%;
+  opacity:.82;
+}
+
+/* Slightly different scale per original artwork, without cropping */
+.about-concept-27 .about27-theme:nth-child(1) .about27-art img{
+  width:106%;
+}
+
+.about-concept-27 .about27-theme:nth-child(2) .about27-art img{
+  width:82%;
+}
+
+.about-concept-27 .about27-theme:nth-child(3) .about27-art img{
+  width:104%;
+}
+
+.about-concept-27 .about27-theme:nth-child(4) .about27-art img{
+  width:84%;
+}
+
+/* Disable the CSS-generated placeholder artwork */
+.about-concept-27 .about27-mark{
+  display:none !important;
+}
+
+@media(max-width:900px){
+  .about-concept-27 .about27-art{
+    height:165px;
+  }
+}
+
+@media(max-width:620px){
+  .about-concept-27 .about27-art{
+    width:100%;
+    height:145px;
+    margin:4px 0 18px;
+  }
+
+  .about-concept-27 .about27-theme:nth-child(1) .about27-art img,
+  .about-concept-27 .about27-theme:nth-child(2) .about27-art img,
+  .about-concept-27 .about27-theme:nth-child(3) .about27-art img,
+  .about-concept-27 .about27-theme:nth-child(4) .about27-art img{
+    width:100%;
+  }
+}
