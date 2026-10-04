@@ -7120,3 +7120,79 @@
     -webkit-tap-highlight-color:transparent;
   }
 }
+
+
+/* =========================================================
+   MOBILE SHARED TERRITORY INTERLUDE — 4 October 2026
+   Clarifies that Shared territory is a connector, not item 03.
+   ========================================================= */
+
+.research-concept-228 .research228-core em{
+  display:block;
+  margin:0 0 9px;
+  font-family:"Manrope",sans-serif;
+  font-size:10px;
+  font-style:normal;
+  font-weight:500;
+  line-height:1.35;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#9D978D;
+}
+
+@media(max-width:900px){
+  .research-concept-228 .research228-core{
+    position:relative !important;
+    padding:18px 0 20px 18px !important;
+    border-bottom:0 !important;
+  }
+
+  .research-concept-228 .research228-core::before{
+    content:"" !important;
+    display:block !important;
+    position:absolute;
+    left:0;
+    top:18px;
+    bottom:20px;
+    width:2px;
+    opacity:1 !important;
+    background:linear-gradient(
+      180deg,
+      rgba(211,126,101,.92),
+      rgba(211,126,101,.18)
+    ) !important;
+    box-shadow:none !important;
+    filter:none !important;
+  }
+
+  .research-concept-228 .research228-core span{
+    margin-bottom:7px !important;
+    font-size:8.5px !important;
+    letter-spacing:.18em !important;
+  }
+
+  .research-concept-228 .research228-core em{
+    margin-bottom:8px;
+    font-size:9px;
+    letter-spacing:.11em;
+    color:#8E887F;
+  }
+
+  .research-concept-228 .research228-core strong{
+    font-size:16px !important;
+    line-height:1.45 !important;
+    color:#D7D0C6 !important;
+  }
+
+  .research-concept-228 .research228-core b{
+    width:28px !important;
+    margin-top:13px !important;
+    opacity:.8;
+  }
+}
+
+@media(max-width:600px){
+  .research-concept-228 .research228-core{
+    margin:2px 0 4px !important;
+  }
+}
