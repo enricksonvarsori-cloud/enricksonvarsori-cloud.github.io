@@ -3932,3 +3932,13 @@ body.home-final .site-header .nav-links a[aria-current="page"]::after{
     width:90% !important;
   }
 }
+
+
+/* Home uses the canonical header from styles.css; no local geometry. */
+body.home-final .site-header .wrap.nav,
+body.home-final .site-header .brand,
+body.home-final .site-header .nav-links,
+body.home-final .site-header .nav-list,
+body.home-final .site-header .nav-links a{
+  all:revert-layer;
+}
