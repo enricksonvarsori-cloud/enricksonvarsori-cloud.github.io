@@ -1,0 +1,392 @@
+/* =========================================================
+   PROJECT INVOLVEMENT — CONCEPT 2.2.3
+   Full-bleed integrated hero. Validation version only.
+   ========================================================= */
+
+.projects-page .site-header{
+  background:#34312B !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+  border-bottom:1px solid rgba(244,240,231,.10) !important;
+}
+
+.projects-page .concept222-hero{
+  position:relative;
+  min-height:560px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  padding:72px 0 68px;
+  background:#34312B !important;
+  border-bottom:1px solid rgba(244,240,231,.13);
+}
+
+.projects-page .concept222-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,
+      #34312B 0%,
+      #34312B 30%,
+      rgba(52,49,43,.98) 36%,
+      rgba(52,49,43,.88) 43%,
+      rgba(52,49,43,.62) 50%,
+      rgba(52,49,43,.30) 58%,
+      rgba(52,49,43,.09) 67%,
+      rgba(52,49,43,0) 76%),
+    linear-gradient(180deg,
+      rgba(52,49,43,.88) 0%,
+      rgba(52,49,43,.30) 8%,
+      rgba(52,49,43,.02) 20%,
+      rgba(52,49,43,.00) 72%,
+      rgba(52,49,43,.24) 88%,
+      rgba(52,49,43,.82) 100%);
+}
+
+.projects-page .concept222-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse at 76% 50%,
+      rgba(52,49,43,0) 0%,
+      rgba(52,49,43,0) 42%,
+      rgba(52,49,43,.05) 58%,
+      rgba(52,49,43,.17) 72%,
+      rgba(52,49,43,.40) 88%,
+      rgba(52,49,43,.66) 100%);
+}
+
+.projects-page .concept222-art{
+  position:absolute;
+  z-index:0;
+  inset:-4% -7% -4% 36%;
+  background:
+    url("/assets/Atlas Geométrico da Terra ao Amanhecer.png")
+    68% 50% / cover no-repeat;
+  opacity:.82;
+  filter:saturate(.72) contrast(.90) brightness(.84);
+  transform:scale(1.035);
+  transform-origin:70% 50%;
+  pointer-events:none;
+}
+
+.projects-page .concept222-hero-inner{
+  position:relative;
+  z-index:2;
+}
+
+.projects-page .concept222-copy{
+  width:min(52%,720px);
+}
+
+.projects-page .concept222-hero .label{
+  margin:0 0 20px;
+  color:#F0A08D !important;
+}
+
+.projects-page .concept222-hero h1{
+  max-width:720px;
+  margin:0;
+  color:#F4F0E7;
+  font-family:"Manrope",Arial,sans-serif;
+  font-size:clamp(50px,5.2vw,76px);
+  font-weight:300;
+  line-height:.965;
+  letter-spacing:-.052em;
+  text-wrap:balance;
+}
+
+.projects-page .concept222-hero .lead{
+  max-width:660px;
+  margin:26px 0 0;
+  color:#B6B0A6;
+  font-size:16px;
+  line-height:1.72;
+}
+
+@media(max-width:1180px){
+  .projects-page .concept222-hero{
+    min-height:530px;
+  }
+
+  .projects-page .concept222-art{
+    inset:-3% -10% -3% 34%;
+    background-position:70% 50%;
+  }
+
+  .projects-page .concept222-copy{
+    width:55%;
+  }
+
+  .projects-page .concept222-hero h1{
+    font-size:clamp(48px,5.4vw,70px);
+  }
+}
+
+@media(max-width:900px){
+  .projects-page .concept222-hero{
+    min-height:500px;
+    padding:66px 0 60px;
+  }
+
+  .projects-page .concept222-art{
+    inset:0 -16% 0 38%;
+    opacity:.76;
+  }
+
+  .projects-page .concept222-copy{
+    width:58%;
+  }
+
+  .projects-page .concept222-hero h1{
+    font-size:clamp(44px,6.8vw,62px);
+  }
+}
+
+@media(max-width:760px){
+  .projects-page .concept222-hero{
+    min-height:0;
+    display:block;
+    padding:62px 0 0;
+  }
+
+  .projects-page .concept222-hero::before{
+    background:
+      linear-gradient(180deg,
+        #34312B 0%,
+        rgba(52,49,43,.96) 44%,
+        rgba(52,49,43,.72) 58%,
+        rgba(52,49,43,.22) 72%,
+        rgba(52,49,43,.42) 100%);
+  }
+
+  .projects-page .concept222-hero::after{
+    display:none;
+  }
+
+  .projects-page .concept222-copy{
+    width:100%;
+    padding-bottom:245px;
+  }
+
+  .projects-page .concept222-art{
+    inset:auto -18% -2% -18%;
+    height:300px;
+    opacity:.78;
+    background-size:cover;
+    background-position:68% 50%;
+    filter:saturate(.70) contrast(.88) brightness(.82);
+    transform:none;
+  }
+
+  .projects-page .concept222-hero h1{
+    max-width:620px;
+    font-size:clamp(42px,12vw,58px);
+    line-height:.98;
+  }
+
+  .projects-page .concept222-hero .lead{
+    max-width:620px;
+    margin-top:22px;
+    font-size:15px;
+    line-height:1.68;
+  }
+}
+
+@media(max-width:520px){
+  .projects-page .concept222-copy{
+    padding-bottom:220px;
+  }
+
+  .projects-page .concept222-art{
+    height:270px;
+    inset:auto -28% -2% -22%;
+  }
+
+  .projects-page .concept222-hero h1{
+    font-size:clamp(38px,11.5vw,50px);
+  }
+}
+
+
+/* Concept 2.2.3 — grid alignment correction.
+   Keep the full-bleed artwork, but restore the approved site wrap. */
+.projects-page .concept222-hero-inner{
+  width:min(1200px,80%) !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+@media(max-width:800px){
+  .projects-page .concept222-hero-inner{
+    width:86% !important;
+  }
+}
+
+
+/* =========================================================
+   PROJECT INVOLVEMENT — CONCEPT 2.2.4 refinement
+   Softer artwork, smaller H1, tighter hero.
+   Validation version only.
+   ========================================================= */
+
+.projects-page .concept222-hero{
+  min-height:520px !important;
+  padding:64px 0 56px !important;
+}
+
+.projects-page .concept222-hero::before{
+  background:
+    linear-gradient(90deg,
+      #34312B 0%,
+      #34312B 32%,
+      rgba(52,49,43,.985) 39%,
+      rgba(52,49,43,.93) 45%,
+      rgba(52,49,43,.78) 51%,
+      rgba(52,49,43,.54) 57%,
+      rgba(52,49,43,.25) 64%,
+      rgba(52,49,43,.08) 71%,
+      rgba(52,49,43,0) 78%),
+    linear-gradient(180deg,
+      rgba(52,49,43,.82) 0%,
+      rgba(52,49,43,.24) 10%,
+      rgba(52,49,43,.02) 22%,
+      rgba(52,49,43,0) 72%,
+      rgba(52,49,43,.18) 88%,
+      rgba(52,49,43,.72) 100%) !important;
+}
+
+.projects-page .concept222-hero::after{
+  background:
+    radial-gradient(ellipse at 77% 50%,
+      rgba(52,49,43,0) 0%,
+      rgba(52,49,43,0) 40%,
+      rgba(52,49,43,.04) 55%,
+      rgba(52,49,43,.12) 69%,
+      rgba(52,49,43,.28) 83%,
+      rgba(52,49,43,.50) 100%) !important;
+}
+
+.projects-page .concept222-art{
+  inset:-3% -8% -3% 39% !important;
+  background-position:69% 50% !important;
+  opacity:.72 !important;
+  filter:saturate(.66) contrast(.86) brightness(.80) !important;
+  transform:scale(1.02) !important;
+  transform-origin:72% 50% !important;
+}
+
+.projects-page .concept222-copy{
+  width:min(50%,700px) !important;
+}
+
+.projects-page .concept222-hero h1{
+  max-width:690px !important;
+  font-size:clamp(47px,4.9vw,71px) !important;
+  line-height:.97 !important;
+  letter-spacing:-.05em !important;
+}
+
+.projects-page .concept222-hero .lead{
+  max-width:620px !important;
+  margin-top:24px !important;
+  color:#B2ADA3 !important;
+  font-size:15.5px !important;
+  line-height:1.72 !important;
+}
+
+@media(max-width:1180px){
+  .projects-page .concept222-hero{
+    min-height:500px !important;
+    padding:60px 0 52px !important;
+  }
+
+  .projects-page .concept222-art{
+    inset:-2% -10% -2% 40% !important;
+    background-position:71% 50% !important;
+    opacity:.70 !important;
+  }
+
+  .projects-page .concept222-copy{
+    width:54% !important;
+  }
+
+  .projects-page .concept222-hero h1{
+    font-size:clamp(45px,5.1vw,66px) !important;
+  }
+}
+
+@media(max-width:900px){
+  .projects-page .concept222-hero{
+    min-height:470px !important;
+    padding:58px 0 50px !important;
+  }
+
+  .projects-page .concept222-art{
+    inset:0 -16% 0 43% !important;
+    opacity:.68 !important;
+  }
+
+  .projects-page .concept222-copy{
+    width:57% !important;
+  }
+
+  .projects-page .concept222-hero h1{
+    font-size:clamp(42px,6.5vw,58px) !important;
+  }
+}
+
+@media(max-width:760px){
+  .projects-page .concept222-hero{
+    min-height:0 !important;
+    padding:60px 0 0 !important;
+  }
+
+  .projects-page .concept222-copy{
+    width:100% !important;
+    padding-bottom:228px !important;
+  }
+
+  .projects-page .concept222-art{
+    inset:auto -18% -2% -18% !important;
+    height:286px !important;
+    opacity:.74 !important;
+    background-position:68% 50% !important;
+    filter:saturate(.68) contrast(.86) brightness(.81) !important;
+    transform:none !important;
+  }
+
+  .projects-page .concept222-hero h1{
+    max-width:620px !important;
+    font-size:clamp(40px,11.6vw,54px) !important;
+    line-height:.98 !important;
+  }
+
+  .projects-page .concept222-hero .lead{
+    max-width:620px !important;
+    margin-top:20px !important;
+    font-size:15px !important;
+    line-height:1.68 !important;
+  }
+}
+
+@media(max-width:520px){
+  .projects-page .concept222-copy{
+    padding-bottom:210px !important;
+  }
+
+  .projects-page .concept222-art{
+    height:255px !important;
+    inset:auto -28% -2% -22% !important;
+  }
+
+  .projects-page .concept222-hero h1{
+    font-size:clamp(37px,11.2vw,48px) !important;
+  }
+}
