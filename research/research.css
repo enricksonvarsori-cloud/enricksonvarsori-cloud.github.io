@@ -7003,3 +7003,48 @@
     text-shadow:none !important;
   }
 }
+
+
+/* =========================================================
+   MOBILE POLISH — Part 5
+   Neutral Shared territory, single Methods marker,
+   typographic Continue exploring arrows.
+   ========================================================= */
+
+.research-concept-228 .research228-next-arrow{
+  font-family:"Manrope","Helvetica Neue",Arial,sans-serif;
+  font-style:normal;
+  font-variant-emoji:text;
+  text-rendering:geometricPrecision;
+}
+
+@media(max-width:760px){
+  /* Shared territory is contextual, not an active/selected card. */
+  .research-concept-228 .research228-core{
+    background:transparent !important;
+    box-shadow:none !important;
+    border-left:0 !important;
+    border-right:0 !important;
+    border-top:1px solid rgba(244,240,231,.12) !important;
+    border-bottom:1px solid rgba(244,240,231,.09) !important;
+  }
+
+  .research-concept-228 .research228-core span,
+  .research-concept-228 .research228-core strong,
+  .research-concept-228 .research228-core b{
+    text-shadow:none !important;
+    box-shadow:none !important;
+  }
+
+  /* The row marker is enough; remove the second point behind Quantitative. */
+  .research-concept-228 .research228-method-axis span{
+    display:none !important;
+  }
+
+  /* Keep closing-link arrows strictly typographic on touch/mobile. */
+  .research-concept-228 .research228-next-arrow{
+    font-family:"Helvetica Neue",Arial,sans-serif !important;
+    font-variant-emoji:text;
+    color:#999289;
+  }
+}
