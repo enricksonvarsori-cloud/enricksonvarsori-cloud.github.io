@@ -7048,3 +7048,75 @@
     color:#999289;
   }
 }
+
+
+/* =========================================================
+   MOBILE SHARED TERRITORY RESET — 4 October 2026
+   Force the constellation core into a neutral editorial state
+   on tablet/mobile and eliminate any inherited desktop halo.
+   ========================================================= */
+
+@media(max-width:900px){
+  .research-concept-228 .research228-core{
+    position:relative !important;
+    left:auto !important;
+    top:auto !important;
+    width:auto !important;
+    min-height:0 !important;
+    transform:none !important;
+    display:block !important;
+    grid-column:1 / -1 !important;
+
+    padding:22px 0 24px !important;
+    text-align:left !important;
+
+    border:0 !important;
+    border-bottom:1px solid rgba(244,240,231,.14) !important;
+    border-radius:0 !important;
+
+    background:none !important;
+    background-image:none !important;
+    box-shadow:none !important;
+    filter:none !important;
+    outline:0 !important;
+  }
+
+  .research-concept-228 .research228-core::before,
+  .research-concept-228 .research228-core::after{
+    content:none !important;
+    display:none !important;
+    opacity:0 !important;
+    background:none !important;
+    box-shadow:none !important;
+    filter:none !important;
+  }
+
+  .research-concept-228 .research228-core span,
+  .research-concept-228 .research228-core strong,
+  .research-concept-228 .research228-core b{
+    text-shadow:none !important;
+    box-shadow:none !important;
+    filter:none !important;
+    transform:none !important;
+  }
+
+  .research-concept-228 .research228-core b{
+    background:#D78362 !important;
+  }
+}
+
+@media(max-width:900px) and (hover:none),
+       (max-width:900px) and (pointer:coarse){
+  .research-concept-228 .research228-core,
+  .research-concept-228 .research228-core:hover,
+  .research-concept-228 .research228-core:focus,
+  .research-concept-228 .research228-core:focus-within,
+  .research-concept-228 .research228-core:active{
+    background:none !important;
+    background-image:none !important;
+    box-shadow:none !important;
+    filter:none !important;
+    transform:none !important;
+    -webkit-tap-highlight-color:transparent;
+  }
+}
