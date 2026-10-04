@@ -204,3 +204,131 @@
     transform:none!important;
   }
 }
+
+
+/* =========================================================
+   PROJECT INVOLVEMENT CONCEPT 2.2 — integration pass
+   Unifies header/hero tone and dissolves the artwork into
+   the page background. Validation version only.
+   ========================================================= */
+
+.projects-concept-22 .site-header,
+.projects-page .site-header{
+  background:#34312B !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+  border-bottom-color:rgba(244,240,231,.10) !important;
+}
+
+.projects-page .projects-hero{
+  background:#34312B !important;
+}
+
+.projects-page .projects-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 74% 46%,rgba(217,122,99,.018),transparent 30%),
+    linear-gradient(180deg,rgba(244,240,231,.008),transparent 28%);
+}
+
+.projects-page .projects-hero-visual{
+  overflow:visible;
+  -webkit-mask-image:none !important;
+  mask-image:none !important;
+}
+
+.projects-page .projects-hero-visual::before{
+  inset:-8% -8% -12% -14%;
+  background:
+    linear-gradient(90deg,
+      #34312B 0%,
+      rgba(52,49,43,.96) 8%,
+      rgba(52,49,43,.72) 16%,
+      rgba(52,49,43,.22) 28%,
+      rgba(52,49,43,0) 42%,
+      rgba(52,49,43,0) 78%,
+      rgba(52,49,43,.34) 90%,
+      #34312B 100%),
+    linear-gradient(180deg,
+      #34312B 0%,
+      rgba(52,49,43,.66) 7%,
+      rgba(52,49,43,0) 20%,
+      rgba(52,49,43,0) 72%,
+      rgba(52,49,43,.34) 86%,
+      #34312B 100%);
+  filter:blur(10px);
+}
+
+.projects-page .projects-hero-visual::after{
+  inset:-4% -4% -8% -6%;
+  background:
+    radial-gradient(ellipse at 68% 48%,
+      rgba(52,49,43,0) 0%,
+      rgba(52,49,43,.02) 46%,
+      rgba(52,49,43,.12) 66%,
+      rgba(52,49,43,.42) 92%,
+      #34312B 100%);
+  filter:blur(8px);
+}
+
+.projects-page .projects-hero-visual img{
+  width:108%;
+  height:108%;
+  left:-4%;
+  top:-4%;
+  opacity:.82;
+  filter:saturate(.74) contrast(.92) brightness(.86);
+}
+
+@media(max-width:900px){
+  .projects-page .projects-hero-visual::before{
+    inset:-8% -10% -12% -12%;
+  }
+
+  .projects-page .projects-hero-visual img{
+    width:112%;
+    height:112%;
+    left:-6%;
+    top:-6%;
+    opacity:.80;
+  }
+}
+
+@media(max-width:760px){
+  .projects-page .projects-hero-visual{
+    overflow:hidden;
+  }
+
+  .projects-page .projects-hero-visual::before{
+    inset:-10% -8% -14% -8%;
+    background:
+      linear-gradient(180deg,
+        #34312B 0%,
+        rgba(52,49,43,.72) 10%,
+        rgba(52,49,43,0) 28%,
+        rgba(52,49,43,0) 72%,
+        rgba(52,49,43,.38) 88%,
+        #34312B 100%),
+      linear-gradient(90deg,
+        rgba(52,49,43,.34) 0%,
+        rgba(52,49,43,0) 18%,
+        rgba(52,49,43,0) 82%,
+        rgba(52,49,43,.28) 100%);
+  }
+
+  .projects-page .projects-hero-visual::after{
+    inset:-6%;
+  }
+
+  .projects-page .projects-hero-visual img{
+    width:116%;
+    height:116%;
+    left:-8%;
+    top:-8%;
+    opacity:.80;
+    filter:saturate(.72) contrast(.90) brightness(.86);
+  }
+}
