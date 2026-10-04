@@ -6814,3 +6814,100 @@
     background:transparent;
   }
 }
+
+
+/* =========================================================
+   MOBILE VISUAL CORRECTION — screenshot audit
+   Fix hero crop and suppress desktop-only glow geometry.
+   ========================================================= */
+
+@media(max-width:760px){
+  /* Hero: keep the artwork inside the viewport instead of pushing it off-screen. */
+  .research-concept-228 .research228-canvas{
+    right:-8% !important;
+    left:auto !important;
+    bottom:0 !important;
+    height:46% !important;
+    transform:none !important;
+  }
+
+  .research-concept-228 .research228-art{
+    object-fit:fill;
+    opacity:.92;
+  }
+
+  /* Desktop glow geometry is not useful on touch/mobile and can render as
+     oversized circular fields in long screenshots. Keep colour coding only. */
+  .research-concept-228 .research228-domain::after,
+  .research-concept-228 .research228-domain-meta::before,
+  .research-concept-228 .research228-area-top::before,
+  .research-concept-228 .research228-area-top::after,
+  .research-concept-228 .research228-question::after,
+  .research-concept-228 .research228-question-main::before,
+  .research-concept-228 .research228-question-main::after,
+  .research-concept-228 .research228-method-row::after,
+  .research-concept-228 .research228-next-link::before{
+    content:none !important;
+    display:none !important;
+  }
+
+  /* Keep only small structural markers in Methods. */
+  .research-concept-228 .research228-method-row::before{
+    width:7px !important;
+    height:7px !important;
+    left:6px !important;
+    top:31px !important;
+    border-radius:50% !important;
+    transform:translate(-50%,-50%) !important;
+    box-shadow:none !important;
+  }
+
+  .research-concept-228 .research228-synthesis::after{
+    width:38px !important;
+    height:38px !important;
+    right:18px !important;
+    border-radius:50% !important;
+    box-shadow:none !important;
+    background:transparent !important;
+  }
+
+  .research-concept-228 .research228-context-fit::after{
+    width:54px !important;
+    height:1px !important;
+    right:18px !important;
+    bottom:20px !important;
+    border-radius:0 !important;
+  }
+
+  /* No hover lift/translation on touch layout. */
+  .research-concept-228 .research228-domain,
+  .research-concept-228 .research228-area,
+  .research-concept-228 .research228-question,
+  .research-concept-228 .research228-method-row,
+  .research-concept-228 .research228-next-link,
+  .research-concept-228 .research228-domain h3,
+  .research-concept-228 .research228-area h3,
+  .research-concept-228 .research228-question-main h3{
+    transform:none !important;
+  }
+
+  .research-concept-228 .research228-question{
+    overflow:hidden;
+  }
+
+  .research-concept-228 .research228-approach,
+  .research-concept-228 .research228-crosscut{
+    overflow:hidden;
+  }
+}
+
+@media(max-width:600px){
+  .research-concept-228 .research228-canvas{
+    right:-6% !important;
+    height:43% !important;
+  }
+
+  .research-concept-228 .research20-copy{
+    padding-bottom:250px;
+  }
+}
