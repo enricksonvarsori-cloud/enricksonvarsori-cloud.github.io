@@ -12508,3 +12508,212 @@ button:focus-visible,
     width:90% !important;
   }
 }
+
+
+/* =========================================================
+   PUBLICATIONS — FINAL 2.1
+   Validated desktop and mobile implementation — 4 October 2026.
+   ========================================================= */
+
+/* =========================================================
+   PUBLICATIONS — CONCEPT 2.1
+   Validation version only.
+   Keeps hero, 2x2 card grid, illustrations and full-record section.
+   ========================================================= */
+
+.publications-page .publications-section-head{
+  display:grid !important;
+  grid-template-columns:minmax(170px,.38fr) minmax(0,1fr) !important;
+  gap:56px !important;
+  align-items:end !important;
+  margin-bottom:54px !important;
+}
+
+.publications-page .publications-section-head .publications-kicker{
+  align-self:start;
+  padding-top:8px;
+}
+
+.publications-page .publications-section-head h2{
+  margin:0 !important;
+  justify-self:start !important;
+  max-width:680px !important;
+}
+
+/* Card rhythm and hierarchy */
+.publications-page .publication-card{
+  --pub-glow:217,122,99;
+}
+
+.publications-page .pub-card-ux{
+  --pub-glow:120,151,170;
+}
+
+.publications-page .pub-card-climate{
+  --pub-glow:194,126,91;
+}
+
+.publications-page .pub-card-ocean{
+  --pub-glow:143,177,166;
+}
+
+.publications-page .publication-card-visual{
+  position:relative;
+  isolation:isolate;
+  transition:
+    box-shadow .34s ease,
+    transform .38s cubic-bezier(.22,1,.36,1),
+    border-color .28s ease;
+}
+
+.publications-page .publication-card-visual::before{
+  content:"";
+  position:absolute;
+  inset:-6%;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    radial-gradient(
+      ellipse at 50% 56%,
+      rgba(var(--pub-glow),.16) 0%,
+      rgba(var(--pub-glow),.08) 34%,
+      rgba(var(--pub-glow),0) 72%
+    );
+  filter:blur(20px);
+  opacity:0;
+  transform:scale(.94);
+  transition:
+    opacity .32s ease,
+    transform .48s cubic-bezier(.22,1,.36,1);
+}
+
+.publications-page .publication-card:hover .publication-card-visual,
+.publications-page .publication-card:focus-within .publication-card-visual{
+  transform:translateY(-2px);
+  border-color:rgba(var(--pub-glow),.34);
+  box-shadow:0 18px 44px rgba(var(--pub-glow),.075);
+}
+
+.publications-page .publication-card:hover .publication-card-visual::before,
+.publications-page .publication-card:focus-within .publication-card-visual::before{
+  opacity:1;
+  transform:scale(1);
+}
+
+.publications-page .publication-card-body>p:not(.publication-card-meta){
+  margin-bottom:18px !important;
+}
+
+.publications-page .publication-card-tags{
+  margin-top:2px !important;
+  margin-bottom:18px !important;
+}
+
+.publications-page .publication-card-action{
+  display:inline-flex !important;
+  align-items:center;
+  gap:7px;
+  margin-top:2px !important;
+  padding-bottom:4px;
+  border-bottom:1px solid rgba(52,49,43,.26);
+  transition:
+    border-color .25s ease,
+    transform .28s cubic-bezier(.22,1,.36,1);
+}
+
+.publications-page .publication-card-action>span{
+  font-family:"Helvetica Neue",Arial,sans-serif !important;
+  font-variant-emoji:text;
+  transition:transform .28s cubic-bezier(.22,1,.36,1);
+}
+
+.publications-page .publication-card:hover .publication-card-action,
+.publications-page .publication-card:focus-within .publication-card-action{
+  border-bottom-color:rgba(var(--pub-glow),.76);
+}
+
+.publications-page .publication-card:hover .publication-card-action>span,
+.publications-page .publication-card:focus-within .publication-card-action>span{
+  transform:translate(3px,-3px);
+}
+
+/* Full-record links: subtle editorial response */
+.publications-page .publications-record-links a{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  transition:
+    padding .28s cubic-bezier(.22,1,.36,1),
+    color .25s ease;
+}
+
+.publications-page .publications-record-links a::before{
+  content:"";
+  position:absolute;
+  inset:-40% -10%;
+  z-index:-1;
+  pointer-events:none;
+  background:radial-gradient(
+    ellipse at 66% 50%,
+    rgba(217,122,99,.10) 0%,
+    rgba(217,122,99,.035) 42%,
+    transparent 72%
+  );
+  opacity:0;
+  transform:scale(.92);
+  transition:opacity .3s ease,transform .42s cubic-bezier(.22,1,.36,1);
+}
+
+.publications-page .publications-record-links a:hover,
+.publications-page .publications-record-links a:focus-visible{
+  padding-left:10px;
+  padding-right:8px;
+  color:#F4F0E7;
+}
+
+.publications-page .publications-record-links a:hover::before,
+.publications-page .publications-record-links a:focus-visible::before{
+  opacity:1;
+  transform:scale(1);
+}
+
+.publications-page .publications-record-links a span{
+  font-family:"Helvetica Neue",Arial,sans-serif !important;
+  font-variant-emoji:text;
+  transition:transform .28s cubic-bezier(.22,1,.36,1);
+}
+
+.publications-page .publications-record-links a:hover span,
+.publications-page .publications-record-links a:focus-visible span{
+  transform:translate(3px,-3px);
+}
+
+@media(max-width:720px){
+  .publications-page .publications-section-head{
+    grid-template-columns:1fr !important;
+    gap:12px !important;
+    margin-bottom:40px !important;
+  }
+
+  .publications-page .publications-section-head .publications-kicker{
+    padding-top:0;
+  }
+
+  .publications-page .publication-card-body>p:not(.publication-card-meta){
+    margin-bottom:16px !important;
+  }
+
+  .publications-page .publication-card-tags{
+    margin-bottom:16px !important;
+  }
+
+  /* Avoid sticky hover states on touch devices */
+  .publications-page .publication-card:hover .publication-card-visual{
+    transform:none;
+    box-shadow:none;
+  }
+
+  .publications-page .publication-card:hover .publication-card-visual::before{
+    opacity:0;
+  }
+}
