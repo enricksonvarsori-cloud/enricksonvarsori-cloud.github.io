@@ -6911,3 +6911,95 @@
     padding-bottom:250px;
   }
 }
+
+
+/* =========================================================
+   MOBILE TOUCH-STATE CORRECTION — 4 October 2026
+   Prevent sticky iOS hover states, simplify the method axis,
+   and force text presentation for closing-link arrows.
+   ========================================================= */
+
+.research-concept-228 .research228-next-link i{
+  font-family:"Manrope",Arial,sans-serif;
+  font-style:normal;
+  font-variant-emoji:text;
+}
+
+@media(max-width:760px){
+  /* Remove the decorative axis cap behind the first method marker. */
+  .research-concept-228 .research228-method-axis span{
+    display:none !important;
+  }
+}
+
+@media(max-width:760px) and (hover:none),
+       (max-width:760px) and (pointer:coarse){
+  /* iOS can retain :hover after a tap. On touch layouts these sections
+     must always return to their neutral editorial state. */
+  .research-concept-228 .research228-domain:hover,
+  .research-concept-228 .research228-domain:focus-within,
+  .research-concept-228 .research228-area:hover,
+  .research-concept-228 .research228-area:focus-within,
+  .research-concept-228 .research228-question:hover,
+  .research-concept-228 .research228-question:focus-within,
+  .research-concept-228 .research228-method-row:hover,
+  .research-concept-228 .research228-method-row:focus-within,
+  .research-concept-228 .research228-next-link:hover{
+    transform:none !important;
+    filter:none !important;
+    text-shadow:none !important;
+  }
+
+  .research-concept-228 .research228-domain:hover,
+  .research-concept-228 .research228-domain:focus-within,
+  .research-concept-228 .research228-method-row:hover,
+  .research-concept-228 .research228-method-row:focus-within,
+  .research-concept-228 .research228-next-link:hover{
+    background:transparent !important;
+  }
+
+  .research-concept-228 .research228-domain:hover::after,
+  .research-concept-228 .research228-domain:focus-within::after,
+  .research-concept-228 .research228-domain:hover .research228-domain-meta::before,
+  .research-concept-228 .research228-domain:focus-within .research228-domain-meta::before,
+  .research-concept-228 .research228-area:hover .research228-area-top::before,
+  .research-concept-228 .research228-area:focus-within .research228-area-top::before,
+  .research-concept-228 .research228-area:hover .research228-area-top::after,
+  .research-concept-228 .research228-area:focus-within .research228-area-top::after,
+  .research-concept-228 .research228-question:hover::after,
+  .research-concept-228 .research228-question:focus-within::after,
+  .research-concept-228 .research228-question:hover .research228-question-main::before,
+  .research-concept-228 .research228-question:focus-within .research228-question-main::before,
+  .research-concept-228 .research228-question:hover .research228-question-main::after,
+  .research-concept-228 .research228-question:focus-within .research228-question-main::after,
+  .research-concept-228 .research228-method-row:hover::after,
+  .research-concept-228 .research228-method-row:focus-within::after,
+  .research-concept-228 .research228-next-link:hover::before{
+    content:none !important;
+    display:none !important;
+    opacity:0 !important;
+  }
+
+  .research-concept-228 .research228-domain:hover h3,
+  .research-concept-228 .research228-domain:focus-within h3,
+  .research-concept-228 .research228-area:hover h3,
+  .research-concept-228 .research228-area:focus-within h3,
+  .research-concept-228 .research228-question:hover .research228-question-main h3,
+  .research-concept-228 .research228-question:focus-within .research228-question-main h3,
+  .research-concept-228 .research228-method-row:hover .research228-method-purpose span,
+  .research-concept-228 .research228-method-row:focus-within .research228-method-purpose span{
+    transform:none !important;
+    text-shadow:none !important;
+  }
+
+  .research-concept-228 .research228-domain:hover h3::after,
+  .research-concept-228 .research228-domain:focus-within h3::after{
+    opacity:0 !important;
+    transform:scaleX(.45) !important;
+  }
+
+  .research-concept-228 .research228-next-link:hover i{
+    transform:none !important;
+    text-shadow:none !important;
+  }
+}
