@@ -1,0 +1,346 @@
+
+/* =========================================================
+   IMPACT — CONCEPT 2.1
+   Validation version only.
+   ========================================================= */
+
+/* Hero: slightly stronger visual connection between title and side copy */
+.impact-page .impact-hero-grid{
+  grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr) !important;
+  gap:64px !important;
+}
+
+.impact-page .impact-hero-side{
+  max-width:520px;
+  justify-self:start;
+}
+
+/* Carousel controls: slightly larger and clearer without changing layout */
+.impact-page .impact-pathway-count{
+  font-size:13px !important;
+  letter-spacing:.09em !important;
+}
+
+.impact-page .impact-pathway-control{
+  width:42px !important;
+  height:42px !important;
+  min-width:42px !important;
+  min-height:42px !important;
+}
+
+.impact-page .impact-pathway-toggle{
+  width:auto !important;
+  min-width:58px !important;
+  padding:0 12px !important;
+  font-size:11.5px !important;
+}
+
+/* Practice rows: distinct micro-accent per pathway */
+.impact-page .impact-practice-row{
+  --impact-row-rgb:217,122,99;
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  transition:
+    padding-left .34s cubic-bezier(.22,1,.36,1),
+    padding-right .34s cubic-bezier(.22,1,.36,1),
+    background-color .28s ease;
+}
+
+.impact-page .impact-practice-row.impact-tone-blue{
+  --impact-row-rgb:120,151,170;
+}
+
+.impact-page .impact-practice-row.impact-tone-sage{
+  --impact-row-rgb:143,177,166;
+}
+
+.impact-page .impact-practice-row.impact-tone-sand{
+  --impact-row-rgb:184,169,139;
+}
+
+.impact-page .impact-practice-row::before{
+  content:"";
+  position:absolute;
+  inset:-28% -6%;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    radial-gradient(
+      ellipse at 54% 50%,
+      rgba(var(--impact-row-rgb),.105) 0%,
+      rgba(var(--impact-row-rgb),.035) 42%,
+      transparent 72%
+    );
+  filter:blur(14px);
+  opacity:0;
+  transform:scale(.94);
+  transition:opacity .34s ease,transform .48s cubic-bezier(.22,1,.36,1);
+}
+
+.impact-page .impact-practice-row::after{
+  content:"";
+  position:absolute;
+  left:0;
+  top:22%;
+  bottom:22%;
+  width:2px;
+  background:rgba(var(--impact-row-rgb),.88);
+  transform:scaleY(0);
+  transform-origin:center;
+  transition:transform .34s cubic-bezier(.22,1,.36,1);
+}
+
+.impact-page .impact-practice-row:hover,
+.impact-page .impact-practice-row:focus-within{
+  padding-left:12px;
+  padding-right:12px;
+  background:rgba(244,240,231,.012);
+}
+
+.impact-page .impact-practice-row:hover::before,
+.impact-page .impact-practice-row:focus-within::before{
+  opacity:1;
+  transform:scale(1);
+}
+
+.impact-page .impact-practice-row:hover::after,
+.impact-page .impact-practice-row:focus-within::after{
+  transform:scaleY(1);
+}
+
+.impact-page .impact-practice-row h3{
+  transition:transform .32s cubic-bezier(.22,1,.36,1);
+}
+
+.impact-page .impact-practice-row:hover h3,
+.impact-page .impact-practice-row:focus-within h3{
+  transform:translateX(4px);
+}
+
+/* New closing navigation */
+.impact-page .impact-next-v2{
+  position:relative;
+  padding:54px 0 58px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 78% 42%,rgba(120,151,170,.03),transparent 24%),
+    radial-gradient(circle at 62% 58%,rgba(217,122,99,.028),transparent 26%),
+    #302E28;
+  border-top:1px solid rgba(244,240,231,.10);
+  border-bottom:1px solid rgba(244,240,231,.12);
+}
+
+.impact-page .impact-next-v2-grid{
+  display:grid;
+  grid-template-columns:minmax(300px,.9fr) minmax(520px,1.1fr);
+  gap:78px;
+  align-items:end;
+}
+
+.impact-page .impact-next-v2-kicker{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:14px;
+}
+
+.impact-page .impact-next-v2-kicker p{
+  margin:0;
+  color:#F0A08D;
+  font-size:10px;
+  font-weight:600;
+  line-height:1.2;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+
+.impact-page .impact-next-v2-kicker span{
+  width:52px;
+  height:1px;
+  background:linear-gradient(90deg,rgba(217,122,99,.72),rgba(217,122,99,0));
+}
+
+.impact-page .impact-next-v2-copy h2{
+  max-width:560px;
+  margin:0;
+  color:#F4F0E7;
+  font-family:"Manrope",Arial,sans-serif;
+  font-size:clamp(29px,3vw,42px);
+  font-weight:300;
+  line-height:1.06;
+  letter-spacing:-.045em;
+}
+
+.impact-page .impact-next-v2-links{
+  border-top:1px solid rgba(244,240,231,.15);
+}
+
+.impact-page .impact-next-v2-link{
+  --impact-next-rgb:217,122,99;
+  position:relative;
+  display:grid;
+  grid-template-columns:180px minmax(0,1fr) auto;
+  gap:20px;
+  align-items:center;
+  min-height:78px;
+  padding:18px 2px;
+  overflow:hidden;
+  border-bottom:1px solid rgba(244,240,231,.12);
+  color:inherit;
+  text-decoration:none;
+  isolation:isolate;
+  transition:padding .32s cubic-bezier(.22,1,.36,1),background .28s ease;
+}
+
+.impact-page .impact-next-v2-link.next-research{
+  --impact-next-rgb:120,151,170;
+}
+
+.impact-page .impact-next-v2-link::before{
+  content:"";
+  position:absolute;
+  inset:-35% -10%;
+  z-index:-1;
+  pointer-events:none;
+  background:radial-gradient(
+    ellipse at 58% 50%,
+    rgba(var(--impact-next-rgb),.11) 0%,
+    rgba(var(--impact-next-rgb),.04) 40%,
+    transparent 69%
+  );
+  filter:blur(12px);
+  opacity:0;
+  transform:scale(.9);
+  transition:opacity .32s ease,transform .46s cubic-bezier(.22,1,.36,1);
+}
+
+.impact-page .impact-next-v2-link:hover,
+.impact-page .impact-next-v2-link:focus-visible{
+  padding-left:12px;
+  padding-right:12px;
+  background:rgba(244,240,231,.014);
+}
+
+.impact-page .impact-next-v2-link:hover::before,
+.impact-page .impact-next-v2-link:focus-visible::before{
+  opacity:1;
+  transform:scale(1);
+}
+
+.impact-page .impact-next-v2-meta{
+  color:rgba(var(--impact-next-rgb),.92);
+  font-size:8.5px;
+  line-height:1.2;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+
+.impact-page .impact-next-v2-link strong{
+  color:#EDE6DC;
+  font-family:"Manrope",Arial,sans-serif;
+  font-size:19px;
+  font-weight:400;
+  line-height:1.2;
+  letter-spacing:-.025em;
+}
+
+.impact-page .impact-next-v2-link i{
+  color:#999289;
+  font-family:"Helvetica Neue",Arial,sans-serif;
+  font-size:17px;
+  font-style:normal;
+  font-variant-emoji:text;
+  transition:transform .3s cubic-bezier(.22,1,.36,1),color .26s ease;
+}
+
+.impact-page .impact-next-v2-link:hover i,
+.impact-page .impact-next-v2-link:focus-visible i{
+  color:#F4F0E7;
+  transform:translate(3px,-3px);
+}
+
+@media(max-width:1000px){
+  .impact-page .impact-hero-grid{
+    grid-template-columns:1fr !important;
+    gap:42px !important;
+  }
+
+  .impact-page .impact-hero-side{
+    max-width:620px;
+  }
+
+  .impact-page .impact-next-v2-grid{
+    grid-template-columns:1fr;
+    gap:34px;
+  }
+}
+
+@media(max-width:700px){
+  .impact-page .impact-practice-row:hover,
+  .impact-page .impact-practice-row:focus-within{
+    padding-left:0;
+    padding-right:0;
+    background:transparent;
+  }
+
+  .impact-page .impact-practice-row:hover::before,
+  .impact-page .impact-practice-row:focus-within::before,
+  .impact-page .impact-practice-row:hover::after,
+  .impact-page .impact-practice-row:focus-within::after{
+    opacity:0;
+    transform:none;
+  }
+
+  .impact-page .impact-practice-row:hover h3,
+  .impact-page .impact-practice-row:focus-within h3{
+    transform:none;
+  }
+
+  .impact-page .impact-next-v2{
+    padding:40px 0 44px;
+  }
+
+  .impact-page .impact-next-v2-grid{
+    gap:28px;
+  }
+
+  .impact-page .impact-next-v2-copy h2{
+    font-size:clamp(28px,9vw,38px);
+  }
+
+  .impact-page .impact-next-v2-link{
+    grid-template-columns:1fr auto;
+    gap:7px 14px;
+    min-height:74px;
+    padding:16px 2px;
+  }
+
+  .impact-page .impact-next-v2-meta{
+    grid-column:1/-1;
+  }
+}
+
+
+/* =========================================================
+   IMPACT — CONCEPT 2.1.1
+   Final micro-adjustment: soften the Interdisciplinarity
+   accent so its hover weight matches the other pathways.
+   ========================================================= */
+
+.impact-page .impact-practice-row.impact-tone-sand::after{
+  top:29% !important;
+  bottom:29% !important;
+  width:1px !important;
+  background:rgba(184,169,139,.58) !important;
+}
+
+.impact-page .impact-practice-row.impact-tone-sand::before{
+  background:
+    radial-gradient(
+      ellipse at 54% 50%,
+      rgba(184,169,139,.075) 0%,
+      rgba(184,169,139,.025) 42%,
+      transparent 72%
+    ) !important;
+}
