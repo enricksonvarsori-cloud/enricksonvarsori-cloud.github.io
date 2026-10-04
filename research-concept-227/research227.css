@@ -1,0 +1,6461 @@
+/* RESEARCH CONCEPT 2.0 — hero implementation test */
+
+.research-concept-227 .site-header,
+.research-concept-227 .research20-hero{
+  background:#1F201A;
+}
+
+.research-concept-227 .site-header{
+  border-bottom-color:rgba(244,240,231,.10);
+}
+
+.research-concept-227 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  padding:58px 0 0;
+  color:#F4F0E7;
+  border-bottom:1px solid rgba(244,240,231,.12);
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.02) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.018) 1px,transparent 1px),
+    #1F201A;
+  background-size:132px 132px,132px 132px,auto;
+}
+
+.research-concept-227 .research20-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 86% 20%,rgba(220,126,92,.08),transparent 27%),
+    linear-gradient(90deg,rgba(31,32,26,.82) 0%,rgba(31,32,26,.38) 42%,transparent 64%);
+}
+
+.research-concept-227 .research20-hero-shell{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:minmax(0,.93fr) minmax(520px,1.07fr);
+  gap:34px;
+  align-items:center;
+  min-height:590px;
+}
+
+.research-concept-227 .research20-copy{
+  position:relative;
+  z-index:3;
+  min-width:0;
+  padding:28px 0 44px;
+}
+
+.research-concept-227 .research20-copy .label{
+  margin:0 0 18px;
+  font-size:10px;
+  line-height:1;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#E6927B;
+}
+
+.research-concept-227 .research20-copy h1{
+  max-width:720px;
+  margin:0;
+  font-size:clamp(48px,4.7vw,70px);
+  line-height:.96;
+  letter-spacing:-.055em;
+  font-weight:400;
+  color:#F4F0E7;
+  text-wrap:balance;
+}
+
+.research-concept-227 .research20-lead{
+  max-width:600px;
+  margin:26px 0 0;
+  font-size:15.5px;
+  line-height:1.62;
+  color:#D4CEC4;
+}
+
+.research-concept-227 .research20-actions{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  margin-top:30px;
+}
+
+.research-concept-227 .research20-actions a{
+  display:inline-flex;
+  align-items:center;
+  gap:18px;
+  min-height:42px;
+  font-size:12px;
+  text-decoration:none;
+  transition:transform .25s ease,border-color .25s ease,color .25s ease,background-color .25s ease;
+}
+
+.research-concept-227 .research20-primary{
+  padding:0 18px;
+  border:1px solid rgba(230,146,123,.72);
+  background:rgba(182,95,77,.17);
+  color:#F4F0E7;
+}
+
+.research-concept-227 .research20-secondary{
+  padding:0 0 4px;
+  border-bottom:1px solid rgba(230,146,123,.54);
+  color:#DED7CD;
+}
+
+.research-concept-227 .research20-actions a:hover{
+  transform:translateY(-2px);
+}
+
+.research-concept-227 .research20-primary:hover{
+  background:rgba(182,95,77,.28);
+  border-color:#E6927B;
+}
+
+.research-concept-227 .research20-secondary:hover{
+  color:#F4F0E7;
+  border-color:#E6927B;
+}
+
+.research-concept-227 .research20-visual{
+  position:relative;
+  align-self:stretch;
+  min-height:590px;
+  overflow:visible;
+}
+
+.research-concept-227 .research20-visual::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,#1F201A 0%,rgba(31,32,26,.84) 4%,rgba(31,32,26,.26) 17%,transparent 30%),
+    linear-gradient(270deg,#1F201A 0%,rgba(31,32,26,.24) 5%,transparent 15%),
+    linear-gradient(180deg,#1F201A 0%,transparent 12%,transparent 88%,rgba(31,32,26,.45) 96%,#1F201A 100%);
+}
+
+.research-concept-227 .research20-visual img{
+  position:absolute;
+  z-index:1;
+  top:50%;
+  left:50%;
+  width:150%;
+  max-width:none;
+  height:auto;
+  transform:translate(-49%,-50%);
+  filter:saturate(.95) contrast(1.02) brightness(.92);
+  opacity:.98;
+  user-select:none;
+  pointer-events:none;
+}
+
+.research-concept-227 .research20-meta{
+  position:relative;
+  z-index:3;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  border-top:1px solid rgba(244,240,231,.13);
+}
+
+.research-concept-227 .research20-meta span{
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  padding:0 18px;
+  border-right:1px solid rgba(244,240,231,.11);
+  font-size:9px;
+  line-height:1.35;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:#BDB6AC;
+}
+
+.research-concept-227 .research20-meta span:first-child{
+  padding-left:0;
+}
+
+.research-concept-227 .research20-meta span:last-child{
+  border-right:0;
+}
+
+.research227-preview-switch{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:90;
+  display:flex;
+  gap:6px;
+  align-items:center;
+  padding:6px;
+  border:1px solid rgba(244,240,231,.18);
+  background:#2F2C27;
+  box-shadow:0 10px 28px rgba(0,0,0,.18);
+}
+
+.research227-preview-switch span,
+.research227-preview-switch a{
+  min-height:34px;
+  display:inline-flex;
+  align-items:center;
+  padding:0 10px;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  color:#F4F0E7;
+  text-decoration:none;
+}
+
+.research227-preview-switch a{
+  background:#F4F0E7;
+  color:#34312B;
+}
+
+@media(max-width:1100px){
+  .research-concept-227 .research20-hero-shell{
+    grid-template-columns:minmax(0,1fr) minmax(430px,.95fr);
+    gap:18px;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(46px,5.1vw,64px);
+  }
+
+  .research-concept-227 .research20-visual img{
+    width:142%;
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research20-hero{
+    padding-top:48px;
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    grid-template-columns:1fr;
+    gap:6px;
+    min-height:0;
+  }
+
+  .research-concept-227 .research20-copy{
+    padding-bottom:14px;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    max-width:780px;
+  }
+
+  .research-concept-227 .research20-visual{
+    min-height:390px;
+  }
+
+  .research-concept-227 .research20-visual img{
+    width:min(126%,860px);
+    transform:translate(-50%,-50%);
+  }
+
+  .research-concept-227 .research20-meta{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .research-concept-227 .research20-meta span:nth-child(2){
+    border-right:0;
+  }
+
+  .research-concept-227 .research20-meta span:nth-child(-n+2){
+    border-bottom:1px solid rgba(244,240,231,.11);
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research20-hero{
+    padding-top:38px;
+  }
+
+  .research-concept-227 .research20-copy{
+    padding:12px 0 8px;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(38px,10.9vw,50px);
+    line-height:.985;
+    text-wrap:pretty;
+  }
+
+  .research-concept-227 .research20-lead{
+    margin-top:18px;
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .research-concept-227 .research20-actions{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+    margin-top:22px;
+  }
+
+  .research-concept-227 .research20-visual{
+    min-height:280px;
+  }
+
+  .research-concept-227 .research20-visual img{
+    width:132%;
+  }
+
+  .research-concept-227 .research20-meta{
+    grid-template-columns:1fr;
+    margin-top:0;
+  }
+
+  .research-concept-227 .research20-meta span{
+    min-height:44px;
+    padding:0;
+    border-right:0;
+    border-bottom:1px solid rgba(244,240,231,.09);
+  }
+
+  .research-concept-227 .research20-meta span:last-child{
+    border-bottom:0;
+  }
+
+  .research227-preview-switch{
+    right:8px;
+    bottom:8px;
+    transform:scale(.86);
+    transform-origin:right bottom;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .research-concept-227 .research20-actions a{
+    transition:none;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.1 — hero integration correction
+   Use the approved artwork as one continuous hero background.
+   ========================================================= */
+
+.research-concept-227 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  padding:58px 0 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20,20,16,.94) 0%,
+      rgba(20,20,16,.82) 28%,
+      rgba(20,20,16,.48) 47%,
+      rgba(20,20,16,.12) 66%,
+      rgba(20,20,16,.06) 100%
+    ),
+    url("/assets/paisagem_de_dados_em_cobre_e_luz.png") center center / cover no-repeat !important;
+  color:#F4F0E7;
+}
+
+.research-concept-227 .research20-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg,rgba(16,16,13,.10),transparent 20%,transparent 80%,rgba(16,16,13,.34)),
+    linear-gradient(90deg,rgba(244,240,231,.018) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.014) 1px,transparent 1px);
+  background-size:auto,132px 132px,132px 132px;
+}
+
+.research-concept-227 .research20-hero-shell{
+  position:relative;
+  z-index:2;
+  display:block;
+  min-height:590px;
+}
+
+.research-concept-227 .research20-copy{
+  width:min(56%,700px);
+  padding:44px 0 56px;
+}
+
+.research-concept-227 .research20-copy h1{
+  max-width:690px;
+  font-size:clamp(48px,4.65vw,68px);
+  line-height:.965;
+  letter-spacing:-.052em;
+}
+
+.research-concept-227 .research20-lead{
+  max-width:560px;
+  color:#D9D2C8;
+}
+
+.research-concept-227 .research20-visual{
+  display:none !important;
+}
+
+.research-concept-227 .research20-meta{
+  position:relative;
+  z-index:3;
+  background:linear-gradient(90deg,rgba(20,20,16,.26),rgba(20,20,16,.12));
+  backdrop-filter:blur(1.5px);
+}
+
+.research-concept-227 .research20-meta span{
+  color:#C9C1B7;
+}
+
+@media(max-width:1100px){
+  .research-concept-227 .research20-copy{
+    width:min(62%,650px);
+  }
+
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(46px,5vw,62px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research20-hero{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(20,20,16,.92) 0%,
+        rgba(20,20,16,.78) 42%,
+        rgba(20,20,16,.24) 72%,
+        rgba(20,20,16,.12) 100%
+      ),
+      url("/assets/paisagem_de_dados_em_cobre_e_luz.png") 62% center / cover no-repeat !important;
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    min-height:650px;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(100%,690px);
+    padding:28px 0 250px;
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research20-hero{
+    padding-top:34px;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(20,20,16,.95) 0%,
+        rgba(20,20,16,.90) 48%,
+        rgba(20,20,16,.34) 73%,
+        rgba(20,20,16,.14) 100%
+      ),
+      url("/assets/paisagem_de_dados_em_cobre_e_luz.png") 66% center / cover no-repeat !important;
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    min-height:610px;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:100%;
+    padding:12px 0 230px;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(38px,10.8vw,48px);
+    line-height:.99;
+  }
+
+  .research-concept-227 .research20-actions{
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:16px;
+  }
+
+  .research-concept-227 .research20-meta{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .research-concept-227 .research20-meta span{
+    min-height:50px;
+    padding:0 12px;
+    border-bottom:1px solid rgba(244,240,231,.09);
+  }
+
+  .research-concept-227 .research20-meta span:nth-child(odd){
+    padding-left:0;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.2 — hero premium refinement
+   ========================================================= */
+
+/* Slightly calmer left reading field, more visual focus to the right */
+.research-concept-227 .research20-hero{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20,20,16,.95) 0%,
+      rgba(20,20,16,.87) 27%,
+      rgba(20,20,16,.56) 43%,
+      rgba(20,20,16,.18) 59%,
+      rgba(20,20,16,.05) 100%
+    ),
+    url("/assets/paisagem_de_dados_em_cobre_e_luz.png") 58% center / cover no-repeat !important;
+}
+
+.research-concept-227 .research20-hero-shell{
+  min-height:600px;
+}
+
+/* Headline: less dominant, tighter editorial measure */
+.research-concept-227 .research20-copy{
+  width:min(52%,640px);
+  padding:52px 0 62px;
+}
+
+.research-concept-227 .research20-copy h1{
+  max-width:610px;
+  font-size:clamp(46px,4.25vw,62px);
+  line-height:.985;
+  letter-spacing:-.048em;
+  text-wrap:balance;
+}
+
+.research-concept-227 .research20-lead{
+  max-width:535px;
+  margin-top:32px;
+  font-size:15.5px;
+  line-height:1.64;
+}
+
+/* Give title -> body -> CTA sequence more breathing room */
+.research-concept-227 .research20-actions{
+  margin-top:34px;
+  gap:28px;
+}
+
+.research-concept-227 .research20-primary{
+  min-height:44px;
+  padding:0 20px;
+}
+
+.research-concept-227 .research20-secondary{
+  padding-bottom:5px;
+}
+
+/* More editorial lower descriptor band */
+.research-concept-227 .research20-meta{
+  min-height:76px;
+  background:
+    linear-gradient(90deg,rgba(18,18,15,.38),rgba(18,18,15,.18));
+  border-top:1px solid rgba(244,240,231,.15);
+}
+
+.research-concept-227 .research20-meta span{
+  min-height:76px;
+  padding:0 24px;
+  font-size:9.5px;
+  line-height:1.42;
+  letter-spacing:.16em;
+}
+
+.research-concept-227 .research20-meta span:first-child{
+  padding-left:0;
+}
+
+/* Slightly soften artwork near the centre-left, preserve right-side impact */
+.research-concept-227 .research20-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(20,20,16,.06) 34%,
+      rgba(20,20,16,.16) 47%,
+      rgba(20,20,16,.04) 60%,
+      transparent 72%
+    );
+}
+
+.research-concept-227 .research20-copy,
+.research-concept-227 .research20-meta{
+  position:relative;
+  z-index:4;
+}
+
+@media(max-width:1100px){
+  .research-concept-227 .research20-hero{
+    background-position:62% center !important;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(58%,610px);
+  }
+
+  .research-concept-227 .research20-copy h1{
+    max-width:580px;
+    font-size:clamp(44px,4.8vw,58px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research20-hero{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(20,20,16,.94) 0%,
+        rgba(20,20,16,.84) 44%,
+        rgba(20,20,16,.30) 72%,
+        rgba(20,20,16,.13) 100%
+      ),
+      url("/assets/paisagem_de_dados_em_cobre_e_luz.png") 68% center / cover no-repeat !important;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(100%,660px);
+    padding:34px 0 260px;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    max-width:640px;
+  }
+
+  .research-concept-227 .research20-meta{
+    min-height:0;
+  }
+
+  .research-concept-227 .research20-meta span{
+    min-height:58px;
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research20-hero{
+    background-position:70% center !important;
+  }
+
+  .research-concept-227 .research20-copy{
+    padding:14px 0 228px;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(36px,10.4vw,46px);
+    line-height:1;
+  }
+
+  .research-concept-227 .research20-lead{
+    margin-top:22px;
+  }
+
+  .research-concept-227 .research20-actions{
+    margin-top:26px;
+  }
+
+  .research-concept-227 .research20-meta{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .research-concept-227 .research20-meta span{
+    min-height:54px;
+    padding:0 10px;
+    font-size:8.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.3 — corrected hero proportion + labels
+   ========================================================= */
+
+.research-concept-227 .research20-hero{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20,20,16,.98) 0%,
+      rgba(20,20,16,.92) 30%,
+      rgba(20,20,16,.66) 47%,
+      rgba(20,20,16,.18) 64%,
+      rgba(20,20,16,.02) 100%
+    ),
+    #1F201A !important;
+}
+
+.research-concept-227 .research20-hero-shell{
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(0,.88fr) minmax(560px,1.12fr);
+  gap:20px;
+  align-items:center;
+  min-height:560px;
+}
+
+.research-concept-227 .research20-copy{
+  width:auto;
+  max-width:610px;
+  padding:44px 0 54px;
+  position:relative;
+  z-index:5;
+}
+
+.research-concept-227 .research20-copy h1{
+  max-width:600px;
+  font-size:clamp(44px,4.05vw,60px);
+  line-height:.99;
+  letter-spacing:-.047em;
+}
+
+.research-concept-227 .research20-lead{
+  max-width:520px;
+  margin-top:30px;
+}
+
+.research-concept-227 .research20-actions{
+  margin-top:32px;
+}
+
+/* Restore image as a real visual column so its full aspect ratio is respected */
+.research-concept-227 .research20-visual{
+  display:block !important;
+  position:relative;
+  align-self:stretch;
+  min-height:560px;
+  overflow:visible;
+}
+
+.research-concept-227 .research20-visual::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,#1F201A 0%,rgba(31,32,26,.62) 7%,rgba(31,32,26,.14) 19%,transparent 34%),
+    linear-gradient(180deg,#1F201A 0%,transparent 10%,transparent 90%,rgba(31,32,26,.28) 97%,#1F201A 100%);
+}
+
+.research-concept-227 .research20-visual img{
+  display:block;
+  position:absolute;
+  z-index:1;
+  top:50%;
+  right:-13%;
+  left:auto;
+  width:auto;
+  height:96%;
+  max-width:none;
+  transform:translateY(-50%);
+  object-fit:contain;
+  opacity:.98;
+  filter:saturate(.93) contrast(1.02) brightness(.94);
+  user-select:none;
+  pointer-events:none;
+}
+
+/* Editorial words over the image — HTML/CSS, not baked into the artwork */
+.research-concept-227 .research203-word{
+  position:absolute;
+  z-index:4;
+  font-size:8px;
+  line-height:1.25;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:rgba(244,240,231,.76);
+  white-space:nowrap;
+  text-shadow:0 1px 8px rgba(0,0,0,.45);
+}
+
+.research-concept-227 .word-people{
+  top:9%;
+  left:49%;
+}
+
+.research-concept-227 .word-technology{
+  top:41%;
+  left:11%;
+}
+
+.research-concept-227 .word-society{
+  top:44%;
+  right:4%;
+}
+
+.research-concept-227 .word-environment{
+  bottom:14%;
+  left:18%;
+}
+
+.research-concept-227 .word-impact{
+  right:2%;
+  bottom:13%;
+  white-space:normal;
+  text-align:left;
+}
+
+.research-concept-227 .research20-meta{
+  min-height:72px;
+}
+
+.research-concept-227 .research20-meta span{
+  min-height:72px;
+}
+
+@media(max-width:1100px){
+  .research-concept-227 .research20-hero-shell{
+    grid-template-columns:minmax(0,.95fr) minmax(470px,1.05fr);
+    min-height:540px;
+  }
+
+  .research-concept-227 .research20-visual{
+    min-height:540px;
+  }
+
+  .research-concept-227 .research20-visual img{
+    right:-18%;
+    height:92%;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(42px,4.7vw,56px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research20-hero-shell{
+    grid-template-columns:1fr;
+    gap:0;
+    min-height:0;
+  }
+
+  .research-concept-227 .research20-copy{
+    max-width:680px;
+    padding:28px 0 10px;
+  }
+
+  .research-concept-227 .research20-visual{
+    min-height:370px;
+  }
+
+  .research-concept-227 .research20-visual img{
+    right:50%;
+    height:auto;
+    width:min(118%,900px);
+    transform:translate(50%,-50%);
+  }
+
+  .research-concept-227 .research20-visual::before{
+    background:
+      linear-gradient(180deg,#1F201A 0%,rgba(31,32,26,.30) 10%,transparent 25%,transparent 84%,#1F201A 100%);
+  }
+
+  .research-concept-227 .word-people{top:7%;left:54%}
+  .research-concept-227 .word-technology{top:40%;left:8%}
+  .research-concept-227 .word-society{top:44%;right:7%}
+  .research-concept-227 .word-environment{bottom:10%;left:16%}
+  .research-concept-227 .word-impact{right:6%;bottom:9%}
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(36px,10.4vw,46px);
+  }
+
+  .research-concept-227 .research20-visual{
+    min-height:300px;
+  }
+
+  .research-concept-227 .research20-visual img{
+    width:126%;
+  }
+
+  .research-concept-227 .research203-word{
+    font-size:6.8px;
+    letter-spacing:.13em;
+  }
+
+  .research-concept-227 .word-impact{
+    right:2%;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.4 — hero composition alignment
+   ========================================================= */
+
+.research-concept-227 .research20-hero-shell{
+  grid-template-columns:minmax(0,.92fr) minmax(540px,1.08fr);
+  gap:28px;
+  min-height:548px;
+}
+
+.research-concept-227 .research20-copy{
+  max-width:590px;
+  padding:40px 0 50px;
+}
+
+.research-concept-227 .research20-copy h1{
+  max-width:570px;
+  font-size:clamp(43px,3.9vw,58px);
+  line-height:.995;
+}
+
+.research-concept-227 .research20-lead{
+  max-width:500px;
+  margin-top:28px;
+}
+
+.research-concept-227 .research20-visual{
+  min-height:548px;
+}
+
+/* Slightly smaller artwork, pushed right for more breathing room */
+.research-concept-227 .research20-visual img{
+  right:-8%;
+  height:90%;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+/* Labels aligned to visible geometry/nodes in the approved artwork */
+.research-concept-227 .research203-word{
+  font-size:7.5px;
+  letter-spacing:.17em;
+  color:rgba(244,240,231,.72);
+}
+
+.research-concept-227 .word-people{
+  top:7%;
+  left:54%;
+}
+
+.research-concept-227 .word-technology{
+  top:38%;
+  left:7%;
+}
+
+.research-concept-227 .word-society{
+  top:41%;
+  right:5%;
+}
+
+.research-concept-227 .word-environment{
+  bottom:10%;
+  left:25%;
+}
+
+.research-concept-227 .word-impact{
+  right:3%;
+  bottom:9%;
+  line-height:1.35;
+}
+
+/* Keep copy clearly separated from the visual */
+.research-concept-227 .research20-visual::before{
+  background:
+    linear-gradient(90deg,#1F201A 0%,rgba(31,32,26,.72) 6%,rgba(31,32,26,.20) 17%,transparent 30%),
+    linear-gradient(180deg,#1F201A 0%,transparent 10%,transparent 91%,rgba(31,32,26,.30) 97%,#1F201A 100%);
+}
+
+.research-concept-227 .research20-meta{
+  min-height:74px;
+}
+
+.research-concept-227 .research20-meta span{
+  min-height:74px;
+  font-size:9px;
+}
+
+@media(max-width:1100px){
+  .research-concept-227 .research20-hero-shell{
+    grid-template-columns:minmax(0,.97fr) minmax(460px,1.03fr);
+    min-height:530px;
+  }
+
+  .research-concept-227 .research20-visual{
+    min-height:530px;
+  }
+
+  .research-concept-227 .research20-visual img{
+    right:-13%;
+    height:88%;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    max-width:550px;
+    font-size:clamp(41px,4.5vw,55px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research20-hero-shell{
+    grid-template-columns:1fr;
+    min-height:0;
+  }
+
+  .research-concept-227 .research20-copy{
+    max-width:650px;
+    padding:26px 0 8px;
+  }
+
+  .research-concept-227 .research20-visual{
+    min-height:360px;
+  }
+
+  .research-concept-227 .research20-visual img{
+    right:50%;
+    width:min(112%,850px);
+    height:auto;
+    transform:translate(50%,-50%);
+  }
+
+  .research-concept-227 .word-people{top:6%;left:55%}
+  .research-concept-227 .word-technology{top:38%;left:7%}
+  .research-concept-227 .word-society{top:42%;right:6%}
+  .research-concept-227 .word-environment{bottom:8%;left:18%}
+  .research-concept-227 .word-impact{right:5%;bottom:7%}
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(35px,10vw,45px);
+  }
+
+  .research-concept-227 .research20-visual{
+    min-height:290px;
+  }
+
+  .research-concept-227 .research20-visual img{
+    width:120%;
+  }
+
+  .research-concept-227 .research203-word{
+    font-size:6.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.5 — implementation with final hero base artwork
+   ========================================================= */
+
+/* One continuous visual field: artwork is the hero itself, not a boxed image */
+.research-concept-227 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  padding:58px 0 0;
+  background-color:#171813 !important;
+  background-image:url("/assets/research-hero-labelled.png") !important;
+  background-repeat:no-repeat !important;
+  background-position:right center !important;
+  background-size:auto 100% !important;
+  color:#F4F0E7;
+}
+
+/* Calm reading field on the left; fades into the artwork without a visible edge */
+.research-concept-227 .research20-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(23,24,19,.98) 0%,
+      rgba(23,24,19,.97) 19%,
+      rgba(23,24,19,.91) 31%,
+      rgba(23,24,19,.68) 41%,
+      rgba(23,24,19,.30) 51%,
+      rgba(23,24,19,.08) 61%,
+      transparent 72%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(23,24,19,.18) 0%,
+      transparent 16%,
+      transparent 84%,
+      rgba(23,24,19,.24) 100%
+    );
+}
+
+/* Very subtle site grid over the entire hero so image + page read as one system */
+.research-concept-227 .research20-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  opacity:.38;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.025) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.018) 1px,transparent 1px);
+  background-size:132px 132px;
+}
+
+.research-concept-227 .research20-hero-shell{
+  position:relative;
+  z-index:3;
+  display:block;
+  min-height:590px;
+}
+
+.research-concept-227 .research20-copy{
+  position:relative;
+  z-index:4;
+  width:min(48%,610px);
+  max-width:610px;
+  padding:46px 0 58px;
+}
+
+.research-concept-227 .research20-copy h1{
+  max-width:585px;
+  font-size:clamp(43px,3.95vw,59px);
+  line-height:.99;
+  letter-spacing:-.048em;
+  text-wrap:balance;
+}
+
+.research-concept-227 .research20-lead{
+  max-width:515px;
+  margin-top:30px;
+  color:#D8D2C8;
+}
+
+.research-concept-227 .research20-actions{
+  margin-top:32px;
+}
+
+/* Artwork is supplied by the section background */
+.research-concept-227 .research20-visual{
+  display:none !important;
+}
+
+/* Editorial footer band remains separate HTML, not baked into the artwork */
+.research-concept-227 .research20-meta{
+  position:relative;
+  z-index:4;
+  min-height:74px;
+  background:rgba(18,19,15,.34);
+  backdrop-filter:blur(1.5px);
+  border-top:1px solid rgba(244,240,231,.14);
+}
+
+.research-concept-227 .research20-meta span{
+  min-height:74px;
+  color:#C8C1B7;
+  font-size:9px;
+  letter-spacing:.16em;
+}
+
+/* Ensure no legacy label overlays remain visible */
+.research-concept-227 .research203-word{
+  display:none !important;
+}
+
+@media(max-width:1180px){
+  .research-concept-227 .research20-hero{
+    background-position:62% center !important;
+    background-size:auto 100% !important;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(52%,590px);
+  }
+
+  .research-concept-227 .research20-copy h1{
+    max-width:555px;
+    font-size:clamp(41px,4.4vw,55px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research20-hero{
+    padding-top:44px;
+    background-position:68% bottom !important;
+    background-size:auto 66% !important;
+  }
+
+  .research-concept-227 .research20-hero::before{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(23,24,19,.98) 0%,
+        rgba(23,24,19,.95) 42%,
+        rgba(23,24,19,.56) 58%,
+        rgba(23,24,19,.12) 76%,
+        transparent 100%
+      );
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    min-height:690px;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(100%,680px);
+    max-width:680px;
+    padding:28px 0 320px;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    max-width:640px;
+  }
+
+  .research-concept-227 .research20-meta{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research20-hero{
+    padding-top:34px;
+    background-position:70% bottom !important;
+    background-size:auto 55% !important;
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    min-height:650px;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:100%;
+    padding:12px 0 290px;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(35px,10vw,45px);
+    line-height:1;
+  }
+
+  .research-concept-227 .research20-lead{
+    margin-top:22px;
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .research-concept-227 .research20-actions{
+    margin-top:26px;
+  }
+
+  .research-concept-227 .research20-meta span{
+    min-height:54px;
+    font-size:8.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.6 — CSS background + semantic SVG overlay
+   ========================================================= */
+
+.research-concept-227 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  padding:58px 0 0;
+  background-color:#171813 !important;
+  background-image:url("/assets/Paisagem Futurista de Dados.png") !important;
+  background-repeat:no-repeat !important;
+  background-position:center center !important;
+  background-size:cover !important;
+  color:#F4F0E7;
+}
+
+/* Unified dark veil: keeps the hero reading as one field rather than an image block */
+.research-concept-227 .research20-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(23,24,19,.97) 0%,
+      rgba(23,24,19,.94) 18%,
+      rgba(23,24,19,.84) 28%,
+      rgba(23,24,19,.58) 39%,
+      rgba(23,24,19,.24) 50%,
+      rgba(23,24,19,.06) 63%,
+      rgba(23,24,19,.02) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(23,24,19,.08) 0%,
+      transparent 18%,
+      transparent 82%,
+      rgba(23,24,19,.22) 100%
+    );
+}
+
+/* Site-wide editorial grid across both text and artwork */
+.research-concept-227 .research20-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  opacity:.22;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.025) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.016) 1px,transparent 1px);
+  background-size:132px 132px;
+}
+
+.research-concept-227 .research20-hero-shell{
+  position:relative;
+  z-index:3;
+  display:block;
+  min-height:600px;
+}
+
+.research-concept-227 .research20-copy{
+  width:min(46%,590px);
+  max-width:590px;
+  padding:48px 0 60px;
+  position:relative;
+  z-index:4;
+}
+
+.research-concept-227 .research20-copy h1{
+  max-width:570px;
+  font-size:clamp(43px,3.9vw,58px);
+  line-height:.99;
+  letter-spacing:-.047em;
+  text-wrap:balance;
+}
+
+.research-concept-227 .research20-lead{
+  max-width:500px;
+  margin-top:30px;
+  color:#D8D2C8;
+}
+
+.research-concept-227 .research20-actions{
+  margin-top:32px;
+}
+
+.research-concept-227 .research20-visual{
+  display:none !important;
+}
+
+/* Transparent overlay surface used for semantic mapping.
+   Content is visually hidden because labels are already baked into the supplied artwork. */
+.research-concept-227 .research207-overlay{
+  position:absolute;
+  z-index:2;
+  inset:58px 0 74px;
+  pointer-events:none;
+}
+
+.research-concept-227 .research207-overlay-svg{
+  width:100%;
+  height:100%;
+  overflow:visible;
+}
+
+.research-concept-227 .research207-label circle,
+.research-concept-227 .research207-label text{
+  opacity:0;
+}
+
+.research-concept-227 .research20-meta{
+  position:relative;
+  z-index:4;
+  min-height:74px;
+  background:rgba(18,19,15,.34);
+  backdrop-filter:blur(1.4px);
+  border-top:1px solid rgba(244,240,231,.14);
+}
+
+.research-concept-227 .research20-meta span{
+  min-height:74px;
+  color:#C8C1B7;
+  font-size:9px;
+  letter-spacing:.16em;
+}
+
+@media(max-width:1180px){
+  .research-concept-227 .research20-hero{
+    background-position:58% center !important;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(50%,570px);
+  }
+
+  .research-concept-227 .research20-copy h1{
+    max-width:545px;
+    font-size:clamp(41px,4.35vw,55px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research20-hero{
+    padding-top:44px;
+    background-position:66% bottom !important;
+    background-size:auto 66% !important;
+  }
+
+  .research-concept-227 .research20-hero::before{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(23,24,19,.98) 0%,
+        rgba(23,24,19,.94) 41%,
+        rgba(23,24,19,.56) 58%,
+        rgba(23,24,19,.14) 76%,
+        transparent 100%
+      );
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    min-height:700px;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(100%,670px);
+    max-width:670px;
+    padding:28px 0 326px;
+  }
+
+  .research-concept-227 .research207-overlay{
+    display:none;
+  }
+
+  .research-concept-227 .research20-meta{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research20-hero{
+    padding-top:34px;
+    background-position:69% bottom !important;
+    background-size:auto 55% !important;
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    min-height:650px;
+  }
+
+  .research-concept-227 .research20-copy{
+    padding:12px 0 290px;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(35px,10vw,45px);
+    line-height:1;
+  }
+
+  .research-concept-227 .research20-lead{
+    margin-top:22px;
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .research-concept-227 .research20-actions{
+    margin-top:26px;
+  }
+
+  .research-concept-227 .research20-meta span{
+    min-height:54px;
+    font-size:8.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.7 — clean art + precise vector labels
+   ========================================================= */
+
+.research-concept-227 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  padding:58px 0 0;
+  background:#171813 !important;
+  color:#F4F0E7;
+}
+
+/* Clean image: independent layer so crop and label coordinates can match */
+.research-concept-227 .research20-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-3;
+  background-image:url("/assets/Paisagem Futurista de Dados.png?v=20261003-clean-1");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  filter:saturate(.78) contrast(.96) brightness(.82);
+  transform:scale(1.002);
+}
+
+/* Premium tonal integration: matte left field + soft edge falloff */
+.research-concept-227 .research20-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(23,24,19,.995) 0%,
+      rgba(23,24,19,.985) 15%,
+      rgba(23,24,19,.94) 24%,
+      rgba(23,24,19,.78) 33%,
+      rgba(23,24,19,.45) 43%,
+      rgba(23,24,19,.15) 53%,
+      rgba(23,24,19,.025) 65%,
+      transparent 78%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(10,11,9,.13) 0%,
+      transparent 14%,
+      transparent 82%,
+      rgba(10,11,9,.24) 100%
+    ),
+    radial-gradient(
+      ellipse at 71% 47%,
+      transparent 0%,
+      transparent 43%,
+      rgba(10,11,9,.08) 72%,
+      rgba(10,11,9,.20) 100%
+    );
+}
+
+/* Main hero dimensions */
+.research-concept-227 .research20-hero-shell{
+  position:relative;
+  z-index:3;
+  display:block;
+  min-height:590px;
+}
+
+.research-concept-227 .research20-copy{
+  position:relative;
+  z-index:5;
+  width:min(45%,575px);
+  max-width:575px;
+  padding:44px 0 58px;
+}
+
+.research-concept-227 .research20-copy h1{
+  max-width:555px;
+  font-size:clamp(42px,3.8vw,57px);
+  line-height:.995;
+  letter-spacing:-.046em;
+}
+
+.research-concept-227 .research20-lead{
+  max-width:490px;
+  margin-top:30px;
+  color:#D9D3C9;
+}
+
+.research-concept-227 .research20-actions{
+  margin-top:32px;
+}
+
+/* The labels share the exact source-image coordinate system. */
+.research-concept-227 .research207-overlay{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+}
+
+.research-concept-227 .research207-overlay-svg{
+  display:block;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+.research-concept-227 .research207-label line{
+  stroke:rgba(226,165,147,.62);
+  stroke-width:1;
+  vector-effect:non-scaling-stroke;
+}
+
+.research-concept-227 .research207-label text{
+  fill:rgba(244,240,231,.78);
+  font-family:"Manrope",system-ui,sans-serif;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:3.4px;
+  paint-order:stroke;
+  stroke:rgba(15,16,13,.34);
+  stroke-width:.9px;
+}
+
+.research-concept-227 .research207-impact text{
+  fill:rgba(226,165,147,.86);
+}
+
+/* Keep labels behind the editorial copy area if the viewport narrows */
+.research-concept-227 .research20-copy{
+  background:linear-gradient(90deg,rgba(23,24,19,.12),transparent);
+}
+
+.research-concept-227 .research20-meta{
+  position:relative;
+  z-index:5;
+  min-height:74px;
+  background:rgba(18,19,15,.36);
+  backdrop-filter:blur(1.6px);
+  border-top:1px solid rgba(244,240,231,.13);
+}
+
+.research-concept-227 .research20-meta span{
+  min-height:74px;
+  font-size:9px;
+  letter-spacing:.16em;
+  color:#C8C1B7;
+}
+
+/* remove any legacy semantic-map rules */
+.research-concept-227 .research207-label circle{
+  display:none;
+}
+
+@media(max-width:1180px){
+  .research-concept-227 .research20-hero::before{
+    background-position:58% center;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(49%,555px);
+  }
+
+  .research-concept-227 .research20-copy h1{
+    max-width:535px;
+    font-size:clamp(40px,4.25vw,54px);
+  }
+
+  .research-concept-227 .research207-overlay-svg{
+    transform:translateX(2%);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research20-hero{
+    padding-top:44px;
+  }
+
+  .research-concept-227 .research20-hero::before{
+    background-position:68% bottom;
+    background-size:auto 66%;
+  }
+
+  .research-concept-227 .research20-hero::after{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(23,24,19,.99) 0%,
+        rgba(23,24,19,.95) 40%,
+        rgba(23,24,19,.58) 58%,
+        rgba(23,24,19,.16) 76%,
+        transparent 100%
+      );
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    min-height:700px;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(100%,660px);
+    max-width:660px;
+    padding:28px 0 325px;
+  }
+
+  .research-concept-227 .research207-overlay{
+    display:none;
+  }
+
+  .research-concept-227 .research20-meta{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research20-hero{
+    padding-top:34px;
+  }
+
+  .research-concept-227 .research20-hero::before{
+    background-position:70% bottom;
+    background-size:auto 55%;
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    min-height:650px;
+  }
+
+  .research-concept-227 .research20-copy{
+    padding:12px 0 290px;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(35px,10vw,45px);
+    line-height:1;
+  }
+
+  .research-concept-227 .research20-lead{
+    margin-top:22px;
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .research-concept-227 .research20-actions{
+    margin-top:26px;
+  }
+
+  .research-concept-227 .research20-meta span{
+    min-height:54px;
+    font-size:8.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.8
+   One 1916 × 821 stage for BOTH artwork and vector labels.
+   ========================================================= */
+
+.research-concept-227 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  padding:58px 0 0;
+  background:#171813 !important;
+  color:#F4F0E7;
+}
+
+/* Disable all legacy hero background artwork. */
+.research-concept-227 .research20-hero::before,
+.research-concept-227 .research20-hero::after{
+  content:none !important;
+}
+
+/* The single responsive stage. Image and SVG occupy exactly the same box. */
+.research-concept-227 .research227-stage{
+  position:absolute;
+  z-index:0;
+  inset:0 0 74px;
+  overflow:hidden;
+  pointer-events:none;
+}
+
+.research-concept-227 .research227-art,
+.research-concept-227 .research227-map{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.research-concept-227 .research227-art{
+  object-fit:cover;
+  object-position:center center;
+  filter:saturate(.72) contrast(.94) brightness(.78);
+  transform:translateZ(0);
+}
+
+.research-concept-227 .research227-map{
+  z-index:2;
+  overflow:hidden;
+}
+
+/* Premium tonal field, independent from the artwork crop. */
+.research-concept-227 .research227-tone{
+  position:absolute;
+  z-index:1;
+  inset:0 0 74px;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(22,23,18,.995) 0%,
+      rgba(22,23,18,.99) 14%,
+      rgba(22,23,18,.955) 22%,
+      rgba(22,23,18,.84) 30%,
+      rgba(22,23,18,.59) 39%,
+      rgba(22,23,18,.29) 48%,
+      rgba(22,23,18,.08) 58%,
+      transparent 69%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(10,11,9,.12) 0%,
+      transparent 16%,
+      transparent 82%,
+      rgba(10,11,9,.24) 100%
+    ),
+    radial-gradient(
+      ellipse at 73% 47%,
+      transparent 0%,
+      transparent 42%,
+      rgba(8,9,7,.06) 68%,
+      rgba(8,9,7,.18) 100%
+    );
+}
+
+/* Vector typography — exact Manrope family used across the site. */
+.research-concept-227 .research227-label line{
+  stroke:rgba(219,132,105,.56);
+  stroke-width:1;
+  vector-effect:non-scaling-stroke;
+}
+
+.research-concept-227 .research227-label text{
+  fill:rgba(244,240,231,.74);
+  font-family:"Manrope",system-ui,sans-serif;
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:3.2px;
+  paint-order:stroke;
+  stroke:rgba(13,14,11,.28);
+  stroke-width:.75px;
+}
+
+.research-concept-227 .research227-impact text{
+  fill:rgba(225,153,128,.82);
+}
+
+/* Content sits over the unified image/SVG stage. */
+.research-concept-227 .research20-hero-shell{
+  position:relative;
+  z-index:4;
+  display:block;
+  min-height:590px;
+}
+
+.research-concept-227 .research20-copy{
+  position:relative;
+  z-index:5;
+  width:min(44%,565px);
+  max-width:565px;
+  padding:44px 0 58px;
+  background:none;
+}
+
+.research-concept-227 .research20-copy h1{
+  max-width:550px;
+  font-size:clamp(42px,3.75vw,56px);
+  line-height:.995;
+  letter-spacing:-.046em;
+  text-wrap:balance;
+}
+
+.research-concept-227 .research20-lead{
+  max-width:485px;
+  margin-top:30px;
+  color:#D9D3C9;
+}
+
+.research-concept-227 .research20-actions{
+  margin-top:32px;
+}
+
+/* Remove all legacy overlay/visual layers inherited from older concepts. */
+.research-concept-227 .research20-visual,
+.research-concept-227 .research207-overlay,
+.research-concept-227 .research207-overlay-svg,
+.research-concept-227 .research207-label{
+  display:none !important;
+}
+
+.research-concept-227 .research20-meta{
+  position:relative;
+  z-index:5;
+  min-height:74px;
+  background:rgba(18,19,15,.39);
+  backdrop-filter:blur(1.8px);
+  border-top:1px solid rgba(244,240,231,.13);
+}
+
+.research-concept-227 .research20-meta span{
+  min-height:74px;
+  color:#C8C1B7;
+  font-size:9px;
+  letter-spacing:.16em;
+}
+
+/* Desktop refinement: calm left side, retain full landscape logic. */
+@media(min-width:1181px){
+  .research-concept-227 .research227-art{
+    object-position:51% 50%;
+  }
+}
+
+/* Tablet: image and SVG still share the exact same crop. */
+@media(max-width:1180px){
+  .research-concept-227 .research20-copy{
+    width:min(49%,550px);
+  }
+
+  .research-concept-227 .research20-copy h1{
+    max-width:530px;
+    font-size:clamp(40px,4.2vw,53px);
+  }
+
+  .research-concept-227 .research227-art{
+    object-position:57% center;
+  }
+
+  .research-concept-227 .research227-map{
+    transform:translateX(0);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research20-hero{
+    padding-top:44px;
+  }
+
+  .research-concept-227 .research227-stage,
+  .research-concept-227 .research227-tone{
+    inset:0 0 116px;
+  }
+
+  .research-concept-227 .research227-art{
+    object-position:67% center;
+  }
+
+  .research-concept-227 .research227-map{
+    display:none;
+  }
+
+  .research-concept-227 .research227-tone{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(22,23,18,.995) 0%,
+        rgba(22,23,18,.96) 40%,
+        rgba(22,23,18,.62) 57%,
+        rgba(22,23,18,.18) 76%,
+        transparent 100%
+      );
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    min-height:700px;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(100%,655px);
+    max-width:655px;
+    padding:28px 0 325px;
+  }
+
+  .research-concept-227 .research20-meta{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research20-hero{
+    padding-top:34px;
+  }
+
+  .research-concept-227 .research227-stage,
+  .research-concept-227 .research227-tone{
+    inset:0 0 216px;
+  }
+
+  .research-concept-227 .research227-art{
+    object-position:70% center;
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    min-height:650px;
+  }
+
+  .research-concept-227 .research20-copy{
+    padding:12px 0 290px;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(35px,10vw,45px);
+    line-height:1;
+  }
+
+  .research-concept-227 .research20-lead{
+    margin-top:22px;
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .research-concept-227 .research20-actions{
+    margin-top:26px;
+  }
+
+  .research-concept-227 .research20-meta span{
+    min-height:54px;
+    font-size:8.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.9
+   Fixed 1916×821 canvas, right anchored, no vertical crop.
+   ========================================================= */
+
+.research-concept-227 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  padding:58px 0 0;
+  background:#171813 !important;
+  color:#F4F0E7;
+}
+
+.research-concept-227 .research20-hero::before,
+.research-concept-227 .research20-hero::after{
+  content:none !important;
+}
+
+/* Hero art stage. */
+.research-concept-227 .research227-stage{
+  position:absolute;
+  z-index:0;
+  inset:0 0 74px;
+  overflow:hidden;
+  pointer-events:none;
+}
+
+/* Critical correction:
+   image + SVG use one immutable 1916:821 canvas.
+   The canvas scales as one object and is anchored to the right. */
+.research-concept-227 .research227-canvas{
+  position:absolute;
+  top:50%;
+  right:0;
+  height:100%;
+  aspect-ratio:1916 / 821;
+  transform:translateY(-50%);
+  transform-origin:right center;
+}
+
+.research-concept-227 .research227-art,
+.research-concept-227 .research227-map{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.research-concept-227 .research227-art{
+  object-fit:fill;
+  filter:saturate(.68) contrast(.93) brightness(.76);
+}
+
+.research-concept-227 .research227-map{
+  z-index:2;
+  overflow:visible;
+}
+
+/* Softer editorial integration. */
+.research-concept-227 .research227-tone{
+  position:absolute;
+  z-index:1;
+  inset:0 0 74px;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(22,23,18,.998) 0%,
+      rgba(22,23,18,.995) 15%,
+      rgba(22,23,18,.965) 23%,
+      rgba(22,23,18,.86) 31%,
+      rgba(22,23,18,.64) 39%,
+      rgba(22,23,18,.35) 47%,
+      rgba(22,23,18,.13) 56%,
+      rgba(22,23,18,.035) 65%,
+      transparent 76%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(8,9,7,.12) 0%,
+      transparent 16%,
+      transparent 84%,
+      rgba(8,9,7,.22) 100%
+    );
+}
+
+.research-concept-227 .research227-label line{
+  stroke:rgba(220,137,111,.56);
+  stroke-width:1;
+  vector-effect:non-scaling-stroke;
+}
+
+.research-concept-227 .research227-label text{
+  fill:rgba(244,240,231,.72);
+  font-family:"Manrope",system-ui,sans-serif;
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:3.15px;
+  paint-order:stroke;
+  stroke:rgba(13,14,11,.26);
+  stroke-width:.7px;
+}
+
+.research-concept-227 .research227-impact text{
+  fill:rgba(226,156,132,.82);
+}
+
+/* Ensure every label remains inside the artwork's safe zone. */
+.research-concept-227 .research227-people text,
+.research-concept-227 .research227-society text{
+  dominant-baseline:middle;
+}
+
+.research-concept-227 .research20-hero-shell{
+  position:relative;
+  z-index:4;
+  display:block;
+  min-height:590px;
+}
+
+.research-concept-227 .research20-copy{
+  position:relative;
+  z-index:5;
+  width:min(43%,555px);
+  max-width:555px;
+  padding:44px 0 58px;
+  background:none;
+}
+
+.research-concept-227 .research20-copy h1{
+  max-width:540px;
+  font-size:clamp(41px,3.65vw,55px);
+  line-height:.998;
+  letter-spacing:-.045em;
+}
+
+.research-concept-227 .research20-lead{
+  max-width:480px;
+  margin-top:30px;
+  color:#D9D3C9;
+}
+
+.research-concept-227 .research20-actions{
+  margin-top:32px;
+}
+
+.research-concept-227 .research20-meta{
+  position:relative;
+  z-index:5;
+  min-height:74px;
+  background:rgba(18,19,15,.42);
+  backdrop-filter:blur(1.8px);
+  border-top:1px solid rgba(244,240,231,.13);
+}
+
+.research-concept-227 .research20-meta span{
+  min-height:74px;
+  color:#C8C1B7;
+  font-size:9px;
+  letter-spacing:.16em;
+}
+
+/* Tablet */
+@media(max-width:1180px){
+  .research-concept-227 .research227-canvas{
+    right:-4%;
+    height:96%;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(48%,540px);
+  }
+
+  .research-concept-227 .research20-copy h1{
+    max-width:520px;
+    font-size:clamp(39px,4.15vw,52px);
+  }
+}
+
+/* Mobile/tablet stack:
+   preserve artwork ratio, no SVG labels where they would become too small. */
+@media(max-width:900px){
+  .research-concept-227 .research20-hero{
+    padding-top:44px;
+  }
+
+  .research-concept-227 .research227-stage,
+  .research-concept-227 .research227-tone{
+    inset:0 0 116px;
+  }
+
+  .research-concept-227 .research227-canvas{
+    top:auto;
+    right:-22%;
+    bottom:0;
+    height:55%;
+    transform:none;
+  }
+
+  .research-concept-227 .research227-map{
+    display:none;
+  }
+
+  .research-concept-227 .research227-tone{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(22,23,18,.998) 0%,
+        rgba(22,23,18,.965) 42%,
+        rgba(22,23,18,.66) 58%,
+        rgba(22,23,18,.18) 76%,
+        transparent 100%
+      );
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    min-height:700px;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(100%,650px);
+    max-width:650px;
+    padding:28px 0 325px;
+  }
+
+  .research-concept-227 .research20-meta{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research20-hero{
+    padding-top:34px;
+  }
+
+  .research-concept-227 .research227-stage,
+  .research-concept-227 .research227-tone{
+    inset:0 0 216px;
+  }
+
+  .research-concept-227 .research227-canvas{
+    right:-48%;
+    height:48%;
+  }
+
+  .research-concept-227 .research20-hero-shell{
+    min-height:650px;
+  }
+
+  .research-concept-227 .research20-copy{
+    padding:12px 0 290px;
+  }
+
+  .research-concept-227 .research20-copy h1{
+    font-size:clamp(35px,10vw,44px);
+    line-height:1;
+  }
+
+  .research-concept-227 .research20-lead{
+    margin-top:22px;
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .research-concept-227 .research20-actions{
+    margin-top:26px;
+  }
+
+  .research-concept-227 .research20-meta span{
+    min-height:54px;
+    font-size:8.5px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.10
+   Premium finishing pass — structure preserved from 2.0.9.
+   ========================================================= */
+
+/* Slightly calmer artwork: less glow, less render-like contrast. */
+.research-concept-227 .research227-art{
+  filter:saturate(.62) contrast(.91) brightness(.72);
+}
+
+/* Softer and longer left-to-right tonal transition. */
+.research-concept-227 .research227-tone{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(22,23,18,.998) 0%,
+      rgba(22,23,18,.995) 14%,
+      rgba(22,23,18,.975) 22%,
+      rgba(22,23,18,.90) 30%,
+      rgba(22,23,18,.72) 38%,
+      rgba(22,23,18,.49) 46%,
+      rgba(22,23,18,.27) 54%,
+      rgba(22,23,18,.11) 62%,
+      rgba(22,23,18,.035) 69%,
+      transparent 78%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(8,9,7,.14) 0%,
+      transparent 18%,
+      transparent 82%,
+      rgba(8,9,7,.24) 100%
+    ),
+    radial-gradient(
+      ellipse at 71% 48%,
+      transparent 0%,
+      transparent 43%,
+      rgba(8,9,7,.05) 68%,
+      rgba(8,9,7,.15) 100%
+    );
+}
+
+/* More editorial labels: slightly smaller, quieter, more refined. */
+.research-concept-227 .research227-label text{
+  font-size:10.4px;
+  letter-spacing:3px;
+  font-weight:500;
+  fill:rgba(244,240,231,.66);
+  stroke:rgba(13,14,11,.22);
+  stroke-width:.62px;
+}
+
+.research-concept-227 .research227-label line{
+  stroke:rgba(211,132,108,.48);
+}
+
+/* Technology should read as a quiet annotation, not compete with H1. */
+.research-concept-227 .research227-technology text{
+  fill:rgba(244,240,231,.56);
+}
+
+/* Less saturated terracotta on the lower-right annotation. */
+.research-concept-227 .research227-impact text{
+  fill:rgba(211,145,123,.70);
+}
+
+/* A touch more openness around the headline/visual handoff. */
+.research-concept-227 .research20-copy{
+  width:min(42.5%,550px);
+  max-width:550px;
+}
+
+.research-concept-227 .research20-copy h1{
+  max-width:535px;
+}
+
+/* More breathing room in the bottom editorial descriptor band. */
+.research-concept-227 .research20-meta{
+  min-height:82px;
+  background:rgba(18,19,15,.39);
+}
+
+.research-concept-227 .research20-meta span{
+  min-height:82px;
+  padding-top:4px;
+  padding-bottom:4px;
+  letter-spacing:.155em;
+}
+
+/* Keep the artwork fractionally farther right without changing ratio/crop logic. */
+@media(min-width:1181px){
+  .research-concept-227 .research227-canvas{
+    right:-1.4%;
+    height:99%;
+  }
+}
+
+@media(max-width:1180px){
+  .research-concept-227 .research227-canvas{
+    right:-5%;
+    height:95%;
+  }
+
+  .research-concept-227 .research20-copy{
+    width:min(47.5%,535px);
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research20-meta{
+    min-height:0;
+  }
+
+  .research-concept-227 .research20-meta span{
+    min-height:58px;
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research20-meta span{
+    min-height:54px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.11
+   Final hero micro-refinement.
+   ========================================================= */
+
+/* Restore a touch of dimensionality to the landscape without reintroducing glare. */
+.research-concept-227 .research227-art{
+  filter:saturate(.64) contrast(.945) brightness(.745);
+}
+
+/* SOCIETY should read as a local annotation, not an edge label. */
+.research-concept-227 .research227-society text{
+  fill:rgba(244,240,231,.64);
+}
+
+/* Lower-right triad becomes quieter and more editorial. */
+.research-concept-227 .research227-impact text{
+  fill:rgba(202,139,119,.60);
+  font-size:10px;
+  letter-spacing:2.85px;
+}
+
+.research-concept-227 .research227-impact line{
+  stroke:rgba(201,126,103,.38);
+}
+
+/* Keep overall annotation hierarchy calm. */
+.research-concept-227 .research227-label text{
+  text-shadow:none;
+}
+
+/* Preserve all 2.0.10 spacing and structure exactly. */
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.12 — Research Constellation
+   ========================================================= */
+
+.research-concept-227 .research227-constellation{
+  position:relative;
+  padding:76px 0 90px;
+  background:
+    radial-gradient(circle at 50% 47%,rgba(217,122,99,.045),transparent 29%),
+    linear-gradient(180deg,#2D2B26 0%,#292722 100%);
+  border-bottom:1px solid rgba(244,240,231,.11);
+  overflow:hidden;
+}
+
+.research-concept-227 .research227-constellation::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.32;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.018) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.014) 1px,transparent 1px);
+  background-size:132px 132px;
+}
+
+.research-concept-227 .research227-constellation::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:-1px;
+  width:min(1200px,80%);
+  height:1px;
+  transform:translateX(-50%);
+  background:linear-gradient(90deg,transparent,rgba(217,122,99,.32),transparent);
+}
+
+.research-concept-227 .research227-constellation>.wrap{
+  position:relative;
+  z-index:2;
+}
+
+.research-concept-227 .research227-constellation-intro{
+  display:grid;
+  grid-template-columns:minmax(180px,.30fr) minmax(0,1fr);
+  gap:72px;
+  align-items:start;
+  margin-bottom:34px;
+}
+
+.research-concept-227 .research227-intro-copy{
+  max-width:820px;
+}
+
+.research-concept-227 .research227-intro-copy h2{
+  max-width:720px;
+  font-size:clamp(38px,4.25vw,58px);
+  line-height:1.01;
+}
+
+.research-concept-227 .research227-intro-copy>p{
+  max-width:650px;
+  margin:18px 0 0;
+  font-size:14px;
+  line-height:1.7;
+  color:#9D978D;
+}
+
+.research-concept-227 .research227-constellation-map{
+  position:relative;
+  width:min(1160px,100%);
+  min-height:430px;
+  margin:0 auto;
+}
+
+.research-concept-227 .research227-constellation-lines{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  overflow:visible;
+  pointer-events:none;
+}
+
+.research-concept-227 .research227-constellation-lines path,
+.research-concept-227 .research227-constellation-lines ellipse,
+.research-concept-227 .research227-constellation-lines circle{
+  vector-effect:non-scaling-stroke;
+}
+
+.research-concept-227 .research227-halo{
+  fill:rgba(217,122,99,.035);
+  stroke:none;
+}
+
+.research-concept-227 .research227-orbit{
+  fill:none;
+  stroke:rgba(244,240,231,.08);
+  stroke-width:1;
+}
+
+.research-concept-227 .research227-orbit.orbit-b{
+  stroke:rgba(217,122,99,.10);
+  stroke-dasharray:2 8;
+}
+
+.research-concept-227 .research227-path{
+  fill:none;
+  stroke:rgba(244,240,231,.29);
+  stroke-width:1;
+}
+
+.research-concept-227 .research227-path.cross-a,
+.research-concept-227 .research227-path.cross-b{
+  stroke:rgba(217,122,99,.20);
+  stroke-dasharray:3 8;
+}
+
+.research-concept-227 .research227-core-ring{
+  fill:none;
+  stroke:rgba(244,240,231,.16);
+  stroke-width:1;
+}
+
+.research-concept-227 .research227-core-ring.inner{
+  stroke:rgba(217,122,99,.26);
+}
+
+.research-concept-227 .research227-core-dot{
+  fill:#D97A63;
+  stroke:none;
+}
+
+.research-concept-227 .research227-endpoint{
+  fill:#D3CCC2;
+  stroke:none;
+}
+
+.research-concept-227 .research227-signal{
+  fill:#D97A63;
+  stroke:none;
+  opacity:.62;
+}
+
+.research-concept-227 .research227-core{
+  width:250px;
+  padding:22px 18px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(44,41,35,.78) 0%,rgba(44,41,35,.38) 55%,transparent 74%);
+}
+
+.research-concept-227 .research227-core span{
+  margin-bottom:9px;
+  font-size:8.5px;
+  letter-spacing:.18em;
+  color:#C97862;
+}
+
+.research-concept-227 .research227-core strong{
+  font-size:17px;
+  line-height:1.42;
+  color:#E0D9CF;
+}
+
+.research-concept-227 .research227-core i{
+  display:block;
+  width:26px;
+  height:1px;
+  margin:15px auto 0;
+  background:#D97A63;
+  opacity:.68;
+}
+
+.research-concept-227 .research227-node{
+  width:235px;
+  padding:15px 0 13px;
+  transition:transform .35s cubic-bezier(.22,1,.36,1),opacity .25s ease;
+}
+
+.research-concept-227 .research227-node::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:1px;
+  background:linear-gradient(90deg,rgba(244,240,231,.20),rgba(244,240,231,.03));
+  transform-origin:left center;
+  transition:background .25s ease;
+}
+
+.research-concept-227 .node-hci::before,
+.research-concept-227 .node-ai::before{
+  background:linear-gradient(270deg,rgba(244,240,231,.20),rgba(244,240,231,.03));
+}
+
+.research-concept-227 .research227-node:hover{
+  transform:translateY(-3px);
+}
+
+.research-concept-227 .research227-node:hover::before{
+  background:linear-gradient(90deg,rgba(217,122,99,.72),rgba(217,122,99,.04));
+}
+
+.research-concept-227 .node-hci:hover::before,
+.research-concept-227 .node-ai:hover::before{
+  background:linear-gradient(270deg,rgba(217,122,99,.72),rgba(217,122,99,.04));
+}
+
+.research-concept-227 .research227-node-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:13px;
+}
+
+.research-concept-227 .node-hci .research227-node-head,
+.research-concept-227 .node-ai .research227-node-head{
+  justify-content:flex-end;
+}
+
+.research-concept-227 .research227-node-head .research-node-shape{
+  width:11px;
+  height:11px;
+  margin:0;
+  color:#A9A197;
+}
+
+.research-concept-227 .research227-node-head small{
+  font-size:8.5px;
+  line-height:1;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:#817B72;
+}
+
+.research-concept-227 .research227-node h3{
+  margin-bottom:9px;
+  font-size:22px;
+  line-height:1.06;
+}
+
+.research-concept-227 .research227-node p{
+  font-size:11.5px;
+  line-height:1.5;
+  color:#9A948A;
+}
+
+.research-concept-227 .node-digital{
+  left:0;
+  top:3%;
+}
+
+.research-concept-227 .node-hci{
+  right:0;
+  top:3%;
+}
+
+.research-concept-227 .node-sustainability{
+  left:0;
+  bottom:1%;
+}
+
+.research-concept-227 .node-ai{
+  right:0;
+  bottom:1%;
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research227-constellation{
+    padding:68px 0 76px;
+  }
+
+  .research-concept-227 .research227-constellation-intro{
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-bottom:40px;
+  }
+
+  .research-concept-227 .research227-intro-copy>p{
+    margin-top:14px;
+  }
+
+  .research-concept-227 .research227-constellation-map{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:36px 28px;
+    min-height:auto;
+    padding:0;
+  }
+
+  .research-concept-227 .research227-constellation-lines{
+    display:none;
+  }
+
+  .research-concept-227 .research227-core{
+    position:relative;
+    left:auto;
+    top:auto;
+    width:auto;
+    transform:none;
+    grid-column:1/-1;
+    padding:22px 0 25px;
+    border-radius:0;
+    border-top:1px solid rgba(244,240,231,.13);
+    border-bottom:1px solid rgba(244,240,231,.13);
+    background:none;
+    text-align:left;
+  }
+
+  .research-concept-227 .research227-core i{
+    margin:14px 0 0;
+  }
+
+  .research-concept-227 .research227-node{
+    position:relative;
+    width:auto;
+    left:auto;
+    right:auto;
+    top:auto;
+    bottom:auto;
+    text-align:left;
+  }
+
+  .research-concept-227 .node-hci .research227-node-head,
+  .research-concept-227 .node-ai .research227-node-head{
+    justify-content:flex-start;
+  }
+
+  .research-concept-227 .node-hci p,
+  .research-concept-227 .node-ai p{
+    margin-left:0;
+  }
+
+  .research-concept-227 .node-hci::before,
+  .research-concept-227 .node-ai::before{
+    background:linear-gradient(90deg,rgba(244,240,231,.20),rgba(244,240,231,.03));
+  }
+}
+
+@media(max-width:600px){
+  .research-concept-227 .research227-constellation{
+    padding:60px 0 66px;
+  }
+
+  .research-concept-227 .research227-constellation-map{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .research-concept-227 .research227-core{
+    grid-column:auto;
+  }
+
+  .research-concept-227 .research227-node{
+    padding-bottom:22px;
+  }
+
+  .research-concept-227 .research227-node:not(:last-child){
+    border-bottom:1px solid rgba(244,240,231,.08);
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.13 — structural repair
+   Fix mismatched hero class namespace from 2.0.12.
+   ========================================================= */
+
+.research-concept-227 .research20-hero{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+}
+
+.research-concept-227 .research227-stage,
+.research-concept-227 .research227-tone{
+  position:absolute;
+  pointer-events:none;
+}
+
+.research-concept-227 .research227-stage{
+  z-index:0;
+  inset:0 0 82px;
+  overflow:hidden;
+}
+
+.research-concept-227 .research227-tone{
+  z-index:1;
+  inset:0 0 82px;
+}
+
+.research-concept-227 .research227-canvas{
+  position:absolute;
+  top:50%;
+  right:-1.4%;
+  height:99%;
+  aspect-ratio:1916 / 821;
+  transform:translateY(-50%);
+  transform-origin:right center;
+}
+
+.research-concept-227 .research227-art,
+.research-concept-227 .research227-map{
+  position:absolute;
+  inset:0;
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+.research-concept-227 .research20-hero-shell{
+  position:relative;
+  z-index:4;
+  min-height:590px;
+}
+
+.research-concept-227 .research20-copy{
+  position:relative;
+  z-index:5;
+}
+
+.research-concept-227 .research20-meta{
+  position:relative;
+  z-index:5;
+}
+
+/* No accidental spacer can be introduced by the artwork layer. */
+.research-concept-227 .research227-stage,
+.research-concept-227 .research227-canvas,
+.research-concept-227 .research227-art,
+.research-concept-227 .research227-map{
+  margin:0;
+  padding:0;
+}
+
+@media(max-width:1180px){
+  .research-concept-227 .research227-canvas{
+    right:-5%;
+    height:95%;
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research227-stage,
+  .research-concept-227 .research227-tone{
+    inset:0 0 116px;
+  }
+
+  .research-concept-227 .research227-canvas{
+    top:auto;
+    right:-22%;
+    bottom:0;
+    height:55%;
+    transform:none;
+  }
+
+  .research-concept-227 .research227-map{
+    display:none;
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research227-stage,
+  .research-concept-227 .research227-tone{
+    inset:0 0 216px;
+  }
+
+  .research-concept-227 .research227-canvas{
+    right:-48%;
+    height:48%;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.14 — premium Research Constellation
+   ========================================================= */
+
+.research-concept-227 .research227-constellation{
+  position:relative;
+  padding:82px 0 96px;
+  overflow:hidden;
+  color:#F4F0E7;
+  background:
+    radial-gradient(circle at 50% 54%,rgba(199,111,86,.055),transparent 24%),
+    linear-gradient(180deg,#2B2924 0%,#282620 100%);
+  border-bottom:1px solid rgba(244,240,231,.10);
+}
+
+.research-concept-227 .research227-constellation::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.014) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.012) 1px,transparent 1px);
+  background-size:132px 132px;
+  opacity:.45;
+}
+
+.research-concept-227 .research227-constellation::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  width:min(1200px,80%);
+  height:1px;
+  transform:translateX(-50%);
+  background:linear-gradient(90deg,transparent,rgba(214,131,105,.26),transparent);
+}
+
+.research-concept-227 .research227-constellation>.wrap{
+  position:relative;
+  z-index:2;
+}
+
+.research-concept-227 .research227-constellation-intro{
+  display:grid;
+  grid-template-columns:minmax(175px,.30fr) minmax(0,1fr);
+  gap:72px;
+  align-items:start;
+  margin-bottom:48px;
+}
+
+.research-concept-227 .research227-constellation-copy{
+  max-width:820px;
+}
+
+.research-concept-227 .research227-constellation-copy h2{
+  margin:0;
+  max-width:730px;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(40px,4.3vw,58px);
+  font-weight:300;
+  line-height:1.01;
+  letter-spacing:-.047em;
+  color:#F4F0E7;
+}
+
+.research-concept-227 .research227-constellation-copy p{
+  max-width:655px;
+  margin:18px 0 0;
+  font-size:14px;
+  line-height:1.72;
+  color:#9D978D;
+}
+
+/* Field: intentionally spacious, not a boxed diagram. */
+.research-concept-227 .research227-field{
+  position:relative;
+  width:min(1200px,100%);
+  min-height:500px;
+  margin:0 auto;
+}
+
+.research-concept-227 .research227-field-grid{
+  position:absolute;
+  left:14%;
+  right:14%;
+  top:15%;
+  bottom:15%;
+  border:1px solid rgba(244,240,231,.035);
+  background:
+    linear-gradient(90deg,transparent 49.9%,rgba(244,240,231,.025) 50%,transparent 50.1%),
+    linear-gradient(transparent 49.9%,rgba(244,240,231,.025) 50%,transparent 50.1%);
+  pointer-events:none;
+}
+
+.research-concept-227 .research227-links{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  overflow:visible;
+  pointer-events:none;
+}
+
+.research-concept-227 .research227-links path,
+.research-concept-227 .research227-links ellipse,
+.research-concept-227 .research227-links circle{
+  vector-effect:non-scaling-stroke;
+}
+
+.research-concept-227 .link-main{
+  fill:none;
+  stroke:rgba(244,240,231,.24);
+  stroke-width:1;
+}
+
+.research-concept-227 .link-secondary{
+  fill:none;
+  stroke:rgba(210,126,101,.16);
+  stroke-width:1;
+  stroke-dasharray:3 8;
+}
+
+.research-concept-227 .link-orbit{
+  fill:none;
+  stroke:rgba(244,240,231,.085);
+  stroke-width:1;
+}
+
+.research-concept-227 .link-orbit-inner{
+  stroke:rgba(210,126,101,.20);
+}
+
+.research-concept-227 .link-node{
+  fill:#B9B2A7;
+  stroke:none;
+  opacity:.92;
+}
+
+.research-concept-227 .link-core{
+  fill:#D17D64;
+  stroke:none;
+}
+
+/* Central territory: quiet, architectural and editorial. */
+.research-concept-227 .research227-core{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:270px;
+  transform:translate(-50%,-50%);
+  padding:34px 24px 30px;
+  text-align:center;
+  border:1px solid rgba(244,240,231,.105);
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(51,47,40,.92) 0%,rgba(47,43,37,.76) 52%,rgba(43,40,34,.18) 76%,transparent 100%);
+  box-shadow:0 0 70px rgba(0,0,0,.10);
+}
+
+.research-concept-227 .research227-core span{
+  display:block;
+  margin-bottom:10px;
+  font-size:8.5px;
+  line-height:1;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:#C87A62;
+}
+
+.research-concept-227 .research227-core strong{
+  display:block;
+  font-family:"Manrope",sans-serif;
+  font-size:17px;
+  font-weight:400;
+  line-height:1.45;
+  color:#DED7CD;
+}
+
+.research-concept-227 .research227-core-mark{
+  display:flex;
+  justify-content:center;
+  gap:5px;
+  margin-top:16px;
+}
+
+.research-concept-227 .research227-core-mark i{
+  display:block;
+  width:3px;
+  height:3px;
+  border-radius:50%;
+  background:#D17D64;
+  opacity:.72;
+}
+
+/* Domain labels are not cards: only a fine editorial rule anchors each one. */
+.research-concept-227 .research227-domain{
+  position:absolute;
+  width:245px;
+  padding-top:15px;
+  z-index:3;
+  transition:transform .32s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-domain::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:1px;
+  background:linear-gradient(90deg,rgba(244,240,231,.21),rgba(244,240,231,.025));
+}
+
+.research-concept-227 .domain-hci::before,
+.research-concept-227 .domain-ai::before{
+  background:linear-gradient(270deg,rgba(244,240,231,.21),rgba(244,240,231,.025));
+}
+
+.research-concept-227 .research227-domain:hover{
+  transform:translateY(-3px);
+}
+
+.research-concept-227 .research227-domain:hover::before{
+  background:linear-gradient(90deg,rgba(210,126,101,.72),rgba(210,126,101,.025));
+}
+
+.research-concept-227 .domain-hci:hover::before,
+.research-concept-227 .domain-ai:hover::before{
+  background:linear-gradient(270deg,rgba(210,126,101,.72),rgba(210,126,101,.025));
+}
+
+.research-concept-227 .research227-domain-meta{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+}
+
+.research-concept-227 .domain-hci .research227-domain-meta,
+.research-concept-227 .domain-ai .research227-domain-meta{
+  justify-content:flex-end;
+}
+
+.research-concept-227 .research227-domain-meta .research-node-shape{
+  width:10px;
+  height:10px;
+  margin:0;
+  color:#A59E94;
+}
+
+.research-concept-227 .research227-domain-meta small{
+  font-size:8.5px;
+  line-height:1;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:#817B72;
+}
+
+.research-concept-227 .research227-domain h3{
+  margin:0 0 9px;
+  font-family:"Manrope",sans-serif;
+  font-size:22px;
+  font-weight:400;
+  line-height:1.06;
+  letter-spacing:-.03em;
+  color:#EEE8DE;
+}
+
+.research-concept-227 .research227-domain p{
+  margin:0;
+  font-size:11.5px;
+  line-height:1.52;
+  color:#938D84;
+}
+
+.research-concept-227 .domain-digital{
+  left:0;
+  top:10%;
+}
+
+.research-concept-227 .domain-hci{
+  right:0;
+  top:10%;
+  text-align:right;
+}
+
+.research-concept-227 .domain-sustainability{
+  left:0;
+  bottom:8%;
+}
+
+.research-concept-227 .domain-ai{
+  right:0;
+  bottom:8%;
+  text-align:right;
+}
+
+@media(max-width:980px){
+  .research-concept-227 .research227-constellation{
+    padding:68px 0 78px;
+  }
+
+  .research-concept-227 .research227-constellation-intro{
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-bottom:40px;
+  }
+
+  .research-concept-227 .research227-field{
+    min-height:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:34px 28px;
+  }
+
+  .research-concept-227 .research227-links,
+  .research-concept-227 .research227-field-grid{
+    display:none;
+  }
+
+  .research-concept-227 .research227-core{
+    position:relative;
+    left:auto;
+    top:auto;
+    width:auto;
+    transform:none;
+    grid-column:1/-1;
+    padding:22px 0 24px;
+    text-align:left;
+    border-radius:0;
+    border-left:0;
+    border-right:0;
+    background:none;
+    box-shadow:none;
+  }
+
+  .research-concept-227 .research227-core-mark{
+    justify-content:flex-start;
+  }
+
+  .research-concept-227 .research227-domain{
+    position:relative;
+    left:auto;
+    right:auto;
+    top:auto;
+    bottom:auto;
+    width:auto;
+    text-align:left;
+  }
+
+  .research-concept-227 .domain-hci .research227-domain-meta,
+  .research-concept-227 .domain-ai .research227-domain-meta{
+    justify-content:flex-start;
+  }
+
+  .research-concept-227 .domain-hci::before,
+  .research-concept-227 .domain-ai::before{
+    background:linear-gradient(90deg,rgba(244,240,231,.21),rgba(244,240,231,.025));
+  }
+}
+
+@media(max-width:620px){
+  .research-concept-227 .research227-constellation{
+    padding:60px 0 68px;
+  }
+
+  .research-concept-227 .research227-field{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .research-concept-227 .research227-core{
+    grid-column:auto;
+  }
+
+  .research-concept-227 .research227-domain{
+    padding-bottom:22px;
+    border-bottom:1px solid rgba(244,240,231,.075);
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.15
+   Constellation execution matched to approved visual concept.
+   ========================================================= */
+
+.research-concept-227 .research227-constellation{
+  position:relative;
+  padding:78px 0 98px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 58%,rgba(177,101,74,.055),transparent 27%),
+    linear-gradient(180deg,#2B2924 0%,#282620 100%);
+  border-bottom:1px solid rgba(244,240,231,.10);
+}
+
+.research-concept-227 .research227-constellation::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.018) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.016) 1px,transparent 1px);
+  background-size:128px 128px;
+  opacity:.72;
+}
+
+.research-concept-227 .research227-constellation::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse at center,transparent 0%,transparent 58%,rgba(22,21,18,.14) 100%);
+}
+
+.research-concept-227 .research227-constellation>.wrap{
+  position:relative;
+  z-index:2;
+}
+
+.research-concept-227 .research227-constellation-intro{
+  display:grid;
+  grid-template-columns:minmax(180px,.29fr) minmax(0,1fr);
+  gap:76px;
+  align-items:start;
+  margin-bottom:24px;
+}
+
+.research-concept-227 .research227-constellation-copy{
+  max-width:840px;
+}
+
+.research-concept-227 .research227-constellation-copy h2{
+  margin:0;
+  max-width:760px;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(42px,4.45vw,62px);
+  font-weight:300;
+  line-height:.99;
+  letter-spacing:-.05em;
+  color:#F4F0E7;
+}
+
+.research-concept-227 .research227-constellation-copy p{
+  max-width:660px;
+  margin:19px 0 0;
+  font-size:14px;
+  line-height:1.72;
+  color:#A19B91;
+}
+
+.research-concept-227 .research227-field{
+  position:relative;
+  width:min(1320px,100%);
+  min-height:520px;
+  margin:0 auto;
+}
+
+.research-concept-227 .research227-field-grid{
+  position:absolute;
+  inset:0 8%;
+  pointer-events:none;
+  opacity:.42;
+  background:
+    linear-gradient(90deg,transparent 24.8%,rgba(244,240,231,.025) 25%,transparent 25.2%,transparent 49.8%,rgba(244,240,231,.03) 50%,transparent 50.2%,transparent 74.8%,rgba(244,240,231,.025) 75%,transparent 75.2%),
+    linear-gradient(transparent 32.8%,rgba(244,240,231,.022) 33%,transparent 33.2%,transparent 65.8%,rgba(244,240,231,.022) 66%,transparent 66.2%);
+}
+
+.research-concept-227 .research227-network{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  overflow:visible;
+}
+
+.research-concept-227 .research227-network path,
+.research-concept-227 .research227-network ellipse,
+.research-concept-227 .research227-network circle,
+.research-concept-227 .research227-network line{
+  vector-effect:non-scaling-stroke;
+}
+
+.research-concept-227 .network-glow{
+  fill:url(#research216Glow);
+  stroke:none;
+}
+
+.research-concept-227 .network-orbit{
+  fill:none;
+  stroke:rgba(234,221,206,.16);
+  stroke-width:1;
+}
+
+.research-concept-227 .network-orbit.orbit-mid{
+  stroke:rgba(218,138,104,.14);
+}
+
+.research-concept-227 .network-orbit.orbit-inner{
+  stroke:rgba(218,138,104,.24);
+}
+
+.research-concept-227 .network-arc{
+  fill:none;
+  stroke:rgba(207,119,88,.34);
+  stroke-width:1;
+  stroke-dasharray:2 8;
+}
+
+.research-concept-227 .network-link{
+  fill:none;
+  stroke:rgba(241,232,219,.48);
+  stroke-width:1;
+}
+
+.research-concept-227 .network-link.link-c,
+.research-concept-227 .network-link.link-d{
+  stroke:rgba(207,119,88,.26);
+  stroke-dasharray:3 8;
+}
+
+.research-concept-227 .network-axis{
+  stroke:rgba(224,202,184,.15);
+  stroke-width:1;
+}
+
+.research-concept-227 .network-axis.horizontal{
+  stroke:rgba(224,202,184,.10);
+}
+
+.research-concept-227 .network-node{
+  stroke:none;
+}
+
+.research-concept-227 .network-node.terminal{
+  fill:#EFE5D7;
+  filter:url(#research216SoftGlow);
+}
+
+.research-concept-227 .network-node.warm{
+  fill:#D48666;
+  opacity:.9;
+}
+
+.research-concept-227 .network-node.hollow{
+  fill:#292722;
+  stroke:#B76D50;
+  stroke-width:1;
+}
+
+.research-concept-227 .research227-core{
+  position:absolute;
+  z-index:4;
+  left:50%;
+  top:52%;
+  width:270px;
+  min-height:176px;
+  transform:translate(-50%,-50%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:28px 26px;
+  text-align:center;
+  border:1px solid rgba(219,134,100,.46);
+  border-radius:50%;
+  background:
+    radial-gradient(circle at center,
+      rgba(77,54,43,.44) 0%,
+      rgba(59,48,40,.48) 38%,
+      rgba(45,42,36,.80) 66%,
+      rgba(43,40,34,.28) 82%,
+      transparent 100%);
+  box-shadow:
+    0 0 0 48px rgba(186,105,76,.035),
+    0 0 72px rgba(181,101,74,.10);
+}
+
+.research-concept-227 .research227-core span{
+  display:block;
+  margin-bottom:11px;
+  font-size:8.5px;
+  line-height:1;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:#D18364;
+}
+
+.research-concept-227 .research227-core strong{
+  display:block;
+  font-family:"Manrope",sans-serif;
+  font-size:17px;
+  font-weight:400;
+  line-height:1.42;
+  color:#ECE4D9;
+}
+
+.research-concept-227 .research227-core b{
+  display:block;
+  width:30px;
+  height:1px;
+  margin-top:16px;
+  background:#D17D61;
+  opacity:.82;
+}
+
+.research-concept-227 .research227-domain{
+  position:absolute;
+  z-index:5;
+  width:248px;
+  padding-top:16px;
+  transition:transform .32s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-domain::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:1px;
+  background:linear-gradient(90deg,rgba(244,240,231,.19),rgba(244,240,231,.025));
+}
+
+.research-concept-227 .domain-hci::before,
+.research-concept-227 .domain-ai::before{
+  background:linear-gradient(270deg,rgba(244,240,231,.19),rgba(244,240,231,.025));
+}
+
+.research-concept-227 .research227-domain:hover{
+  transform:translateY(-3px);
+}
+
+.research-concept-227 .research227-domain-meta{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:13px;
+}
+
+.research-concept-227 .domain-hci .research227-domain-meta,
+.research-concept-227 .domain-ai .research227-domain-meta{
+  justify-content:flex-end;
+}
+
+.research-concept-227 .research227-domain-meta .research-node-shape{
+  width:11px;
+  height:11px;
+  margin:0;
+  color:#C07A61;
+}
+
+.research-concept-227 .research227-domain-meta i{
+  display:block;
+  width:20px;
+  height:1px;
+  background:#C07A61;
+  opacity:.72;
+}
+
+.research-concept-227 .research227-domain-meta small{
+  font-size:8.5px;
+  line-height:1;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#8B847A;
+}
+
+.research-concept-227 .research227-domain h3{
+  margin:0 0 9px;
+  font-family:"Manrope",sans-serif;
+  font-size:23px;
+  font-weight:400;
+  line-height:1.06;
+  letter-spacing:-.033em;
+  color:#F0EADF;
+}
+
+.research-concept-227 .research227-domain p{
+  margin:0;
+  font-size:11.5px;
+  line-height:1.5;
+  color:#A49D93;
+}
+
+.research-concept-227 .domain-digital{
+  left:0;
+  top:10%;
+}
+
+.research-concept-227 .domain-hci{
+  right:0;
+  top:10%;
+  text-align:right;
+}
+
+.research-concept-227 .domain-sustainability{
+  left:0;
+  bottom:7%;
+}
+
+.research-concept-227 .domain-ai{
+  right:0;
+  bottom:7%;
+  text-align:right;
+}
+
+@media(max-width:1100px){
+  .research-concept-227 .research227-field{
+    min-height:500px;
+  }
+
+  .research-concept-227 .research227-domain{
+    width:220px;
+  }
+
+  .research-concept-227 .research227-core{
+    width:250px;
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research227-constellation{
+    padding:68px 0 78px;
+  }
+
+  .research-concept-227 .research227-constellation-intro{
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-bottom:38px;
+  }
+
+  .research-concept-227 .research227-field{
+    min-height:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:34px 28px;
+  }
+
+  .research-concept-227 .research227-network,
+  .research-concept-227 .research227-field-grid{
+    display:none;
+  }
+
+  .research-concept-227 .research227-core{
+    position:relative;
+    left:auto;
+    top:auto;
+    width:auto;
+    min-height:0;
+    transform:none;
+    grid-column:1/-1;
+    align-items:flex-start;
+    padding:22px 0 24px;
+    text-align:left;
+    border-radius:0;
+    border-left:0;
+    border-right:0;
+    background:none;
+    box-shadow:none;
+  }
+
+  .research-concept-227 .research227-domain{
+    position:relative;
+    left:auto;
+    right:auto;
+    top:auto;
+    bottom:auto;
+    width:auto;
+    text-align:left;
+  }
+
+  .research-concept-227 .domain-hci .research227-domain-meta,
+  .research-concept-227 .domain-ai .research227-domain-meta{
+    justify-content:flex-start;
+  }
+
+  .research-concept-227 .domain-hci::before,
+  .research-concept-227 .domain-ai::before{
+    background:linear-gradient(90deg,rgba(244,240,231,.19),rgba(244,240,231,.025));
+  }
+}
+
+@media(max-width:600px){
+  .research-concept-227 .research227-constellation{
+    padding:60px 0 68px;
+  }
+
+  .research-concept-227 .research227-field{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .research-concept-227 .research227-core{
+    grid-column:auto;
+  }
+
+  .research-concept-227 .research227-domain{
+    padding-bottom:22px;
+    border-bottom:1px solid rgba(244,240,231,.075);
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.16
+   Constellation refinement — closer to approved mockup.
+   ========================================================= */
+
+.research-concept-227 .research227-constellation{
+  padding:82px 0 102px;
+  background:
+    radial-gradient(ellipse at 50% 59%,rgba(170,91,64,.072),transparent 31%),
+    linear-gradient(180deg,#2C2924 0%,#282620 100%);
+}
+
+.research-concept-227 .research227-constellation::before{
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.020) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.018) 1px,transparent 1px);
+  background-size:124px 124px;
+  opacity:.78;
+}
+
+.research-concept-227 .research227-constellation-intro{
+  grid-template-columns:minmax(190px,.285fr) minmax(0,1fr);
+  gap:78px;
+  margin-bottom:12px;
+}
+
+.research-concept-227 .research227-kicker-line{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding-top:7px;
+}
+
+.research-concept-227 .research227-kicker-line .research-kicker{
+  flex:0 0 auto;
+  margin:0;
+}
+
+.research-concept-227 .research227-kicker-line>span{
+  display:block;
+  width:66px;
+  height:1px;
+  background:linear-gradient(90deg,rgba(210,126,101,.82),rgba(210,126,101,0));
+}
+
+.research-concept-227 .research227-constellation-copy{
+  max-width:880px;
+}
+
+.research-concept-227 .research227-constellation-copy h2{
+  max-width:775px;
+  font-size:clamp(44px,4.6vw,64px);
+  line-height:.985;
+}
+
+.research-concept-227 .research227-constellation-copy p{
+  max-width:690px;
+  margin-top:20px;
+  color:#A9A197;
+}
+
+.research-concept-227 .research227-field{
+  width:min(1400px,100%);
+  min-height:590px;
+  margin-top:0;
+}
+
+.research-concept-227 .research227-field-grid{
+  inset:0 5.5%;
+  opacity:.60;
+  background:
+    linear-gradient(90deg,
+      transparent 12.4%,rgba(244,240,231,.018) 12.5%,transparent 12.6%,
+      transparent 24.9%,rgba(244,240,231,.026) 25%,transparent 25.1%,
+      transparent 37.4%,rgba(244,240,231,.018) 37.5%,transparent 37.6%,
+      transparent 49.9%,rgba(244,240,231,.034) 50%,transparent 50.1%,
+      transparent 62.4%,rgba(244,240,231,.018) 62.5%,transparent 62.6%,
+      transparent 74.9%,rgba(244,240,231,.026) 75%,transparent 75.1%,
+      transparent 87.4%,rgba(244,240,231,.018) 87.5%,transparent 87.6%),
+    linear-gradient(
+      transparent 24.9%,rgba(244,240,231,.016) 25%,transparent 25.1%,
+      transparent 49.9%,rgba(244,240,231,.026) 50%,transparent 50.1%,
+      transparent 74.9%,rgba(244,240,231,.016) 75%,transparent 75.1%);
+}
+
+.research-concept-227 .research227-network{
+  overflow:visible;
+}
+
+.research-concept-227 .network-aura{
+  fill:url(#research217Aura);
+  stroke:none;
+}
+
+.research-concept-227 .network-aura.aura-inner{
+  fill:url(#research217Core);
+}
+
+.research-concept-227 .network-orbit{
+  fill:none;
+  stroke:rgba(229,211,194,.19);
+  stroke-width:1;
+}
+
+.research-concept-227 .network-orbit.orbit-2{
+  stroke:rgba(219,140,105,.19);
+}
+
+.research-concept-227 .network-orbit.orbit-3{
+  stroke:rgba(219,140,105,.29);
+}
+
+.research-concept-227 .network-orbit.orbit-4{
+  stroke:rgba(233,208,188,.16);
+}
+
+.research-concept-227 .network-orbit.orbit-5{
+  stroke:rgba(220,127,91,.38);
+}
+
+.research-concept-227 .network-arc{
+  stroke:rgba(213,123,89,.49);
+  stroke-dasharray:2 7;
+}
+
+.research-concept-227 .network-link.primary{
+  stroke:rgba(244,233,218,.72);
+  stroke-width:1.05;
+}
+
+.research-concept-227 .network-link.secondary{
+  stroke:rgba(210,119,84,.31);
+  stroke-dasharray:3 7;
+}
+
+.research-concept-227 .network-axis{
+  stroke:rgba(222,188,166,.19);
+}
+
+.research-concept-227 .network-axis.axis-v{
+  stroke:rgba(222,188,166,.28);
+}
+
+.research-concept-227 .network-axis.axis-h{
+  stroke:rgba(222,188,166,.11);
+}
+
+.research-concept-227 .network-node.terminal{
+  fill:#F6E9D7;
+  filter:url(#research217GlowStrong);
+}
+
+.research-concept-227 .network-node.bright{
+  fill:#F3DDC4;
+  filter:url(#research217GlowSoft);
+}
+
+.research-concept-227 .network-node.core-side{
+  fill:#F4D7BA;
+  filter:url(#research217GlowStrong);
+}
+
+.research-concept-227 .network-node.warm{
+  fill:#D98665;
+  opacity:.96;
+}
+
+.research-concept-227 .network-node.hollow{
+  fill:#292722;
+  stroke:#CC7352;
+  stroke-width:1.15;
+}
+
+.research-concept-227 .network-node.hollow.small{
+  stroke:#D17A58;
+}
+
+.research-concept-227 .research227-core{
+  top:51.7%;
+  width:286px;
+  min-height:190px;
+  padding:31px 28px;
+  border-color:rgba(225,132,95,.68);
+  background:
+    radial-gradient(circle at center,
+      rgba(105,61,43,.46) 0%,
+      rgba(78,55,44,.48) 34%,
+      rgba(57,47,40,.76) 60%,
+      rgba(45,42,36,.34) 80%,
+      transparent 100%);
+  box-shadow:
+    0 0 0 38px rgba(194,103,71,.055),
+    0 0 0 72px rgba(194,103,71,.025),
+    0 0 100px rgba(197,103,71,.20);
+}
+
+.research-concept-227 .research227-core span{
+  color:#DC8765;
+  letter-spacing:.19em;
+}
+
+.research-concept-227 .research227-core strong{
+  font-size:18px;
+  color:#F0E8DD;
+}
+
+.research-concept-227 .research227-core b{
+  width:34px;
+  background:#D78362;
+}
+
+.research-concept-227 .research227-domain{
+  width:260px;
+  padding-top:17px;
+}
+
+.research-concept-227 .research227-domain::before{
+  background:linear-gradient(90deg,rgba(244,240,231,.22),rgba(244,240,231,.018));
+}
+
+.research-concept-227 .domain-hci::before,
+.research-concept-227 .domain-ai::before{
+  background:linear-gradient(270deg,rgba(244,240,231,.22),rgba(244,240,231,.018));
+}
+
+.research-concept-227 .research227-domain-meta{
+  gap:10px;
+  margin-bottom:14px;
+}
+
+.research-concept-227 .research227-domain-meta .research-node-shape{
+  width:12px;
+  height:12px;
+  color:#D18261;
+}
+
+.research-concept-227 .research227-domain-meta i{
+  width:22px;
+  background:#D18261;
+  opacity:.86;
+}
+
+.research-concept-227 .research227-domain-meta small{
+  color:#989085;
+  letter-spacing:.145em;
+}
+
+.research-concept-227 .research227-domain h3{
+  font-size:24px;
+  color:#F2ECE2;
+}
+
+.research-concept-227 .research227-domain p{
+  color:#AAA399;
+}
+
+.research-concept-227 .domain-digital{
+  left:0;
+  top:14%;
+}
+
+.research-concept-227 .domain-hci{
+  right:0;
+  top:14%;
+}
+
+.research-concept-227 .domain-sustainability{
+  left:0;
+  bottom:10%;
+}
+
+.research-concept-227 .domain-ai{
+  right:0;
+  bottom:10%;
+}
+
+@media(max-width:1120px){
+  .research-concept-227 .research227-field{
+    min-height:545px;
+  }
+
+  .research-concept-227 .research227-domain{
+    width:226px;
+  }
+
+  .research-concept-227 .research227-core{
+    width:258px;
+    min-height:178px;
+  }
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research227-constellation-intro{
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-bottom:38px;
+  }
+
+  .research-concept-227 .research227-kicker-line{
+    padding-top:0;
+  }
+
+  .research-concept-227 .research227-field{
+    min-height:auto;
+  }
+
+  .research-concept-227 .research227-core{
+    width:auto;
+    min-height:0;
+  }
+}
+
+@media(max-width:600px){
+  .research-concept-227 .research227-kicker-line>span{
+    width:42px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.17
+   Three-layer constellation: atmosphere + SVG + HTML.
+   ========================================================= */
+
+.research-concept-227 .research227-constellation{
+  position:relative;
+  padding:82px 0 104px;
+  overflow:hidden;
+  background:#292722;
+  border-bottom:1px solid rgba(244,240,231,.10);
+}
+
+.research-concept-227 .research227-constellation::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.020) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.018) 1px,transparent 1px);
+  background-size:124px 124px;
+  opacity:.72;
+}
+
+.research-concept-227 .research227-constellation::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse at 50% 61%,transparent 0%,transparent 44%,rgba(21,20,17,.09) 72%,rgba(21,20,17,.18) 100%);
+}
+
+.research-concept-227 .research227-constellation>.wrap{
+  position:relative;
+  z-index:2;
+}
+
+.research-concept-227 .research227-constellation-intro{
+  display:grid;
+  grid-template-columns:minmax(190px,.285fr) minmax(0,1fr);
+  gap:78px;
+  align-items:start;
+  margin-bottom:14px;
+}
+
+.research-concept-227 .research227-kicker-line{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding-top:7px;
+}
+
+.research-concept-227 .research227-kicker-line .research-kicker{margin:0}
+.research-concept-227 .research227-kicker-line>span{
+  width:66px;
+  height:1px;
+  background:linear-gradient(90deg,rgba(210,126,101,.88),rgba(210,126,101,0));
+}
+
+.research-concept-227 .research227-constellation-copy{
+  max-width:880px;
+}
+
+.research-concept-227 .research227-constellation-copy h2{
+  margin:0;
+  max-width:790px;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(44px,4.65vw,65px);
+  font-weight:300;
+  line-height:.985;
+  letter-spacing:-.05em;
+  color:#F4F0E7;
+}
+
+.research-concept-227 .research227-constellation-copy p{
+  max-width:690px;
+  margin:20px 0 0;
+  font-size:14px;
+  line-height:1.72;
+  color:#AAA399;
+}
+
+/* LAYER 1 — atmosphere */
+.research-concept-227 .research227-constellation-stage{
+  position:relative;
+  width:min(1440px,100%);
+  min-height:620px;
+  margin:0 auto;
+}
+
+.research-concept-227 .research227-atmosphere{
+  position:absolute;
+  inset:7% 7% 5%;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse at 50% 51%,rgba(195,108,77,.14) 0%,rgba(195,108,77,.065) 26%,rgba(195,108,77,.018) 50%,transparent 72%),
+    linear-gradient(90deg,
+      transparent 12.4%,rgba(244,240,231,.018) 12.5%,transparent 12.6%,
+      transparent 24.9%,rgba(244,240,231,.026) 25%,transparent 25.1%,
+      transparent 37.4%,rgba(244,240,231,.018) 37.5%,transparent 37.6%,
+      transparent 49.9%,rgba(244,240,231,.034) 50%,transparent 50.1%,
+      transparent 62.4%,rgba(244,240,231,.018) 62.5%,transparent 62.6%,
+      transparent 74.9%,rgba(244,240,231,.026) 75%,transparent 75.1%,
+      transparent 87.4%,rgba(244,240,231,.018) 87.5%,transparent 87.6%),
+    linear-gradient(
+      transparent 24.9%,rgba(244,240,231,.016) 25%,transparent 25.1%,
+      transparent 49.9%,rgba(244,240,231,.026) 50%,transparent 50.1%,
+      transparent 74.9%,rgba(244,240,231,.016) 75%,transparent 75.1%);
+  opacity:.82;
+}
+
+/* LAYER 2 — SVG */
+.research-concept-227 .research227-svg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+  overflow:visible;
+  pointer-events:none;
+}
+
+.research-concept-227 .research227-svg *{
+  vector-effect:non-scaling-stroke;
+}
+
+.research-concept-227 .r227-aura{
+  fill:url(#r227CoreGlow);
+  stroke:none;
+}
+
+.research-concept-227 .aura-2{
+  opacity:.62;
+}
+
+.research-concept-227 .r227-orbit{
+  fill:none;
+  stroke:rgba(233,215,198,.17);
+  stroke-width:1;
+}
+
+.research-concept-227 .orbit-2{stroke:rgba(220,139,104,.18)}
+.research-concept-227 .orbit-3{stroke:rgba(220,139,104,.26)}
+.research-concept-227 .orbit-4{stroke:rgba(234,213,195,.15)}
+.research-concept-227 .orbit-5{stroke:rgba(219,127,91,.38)}
+
+.research-concept-227 .r227-dotted{
+  fill:none;
+  stroke:rgba(213,123,89,.54);
+  stroke-width:1;
+  stroke-dasharray:2 7;
+}
+
+.research-concept-227 .r227-path{
+  fill:none;
+  stroke-width:1.05;
+}
+
+.research-concept-227 .r227-path.primary{
+  stroke:rgba(246,235,221,.74);
+}
+
+.research-concept-227 .r227-path.secondary{
+  stroke:rgba(208,117,84,.30);
+  stroke-dasharray:3 7;
+}
+
+.research-concept-227 .r227-axis{
+  stroke:rgba(223,190,168,.18);
+  stroke-width:1;
+}
+
+.research-concept-227 .axis-v{stroke:rgba(223,190,168,.30)}
+.research-concept-227 .axis-h{stroke:rgba(223,190,168,.10)}
+
+/* Premium luminous nodes */
+.research-concept-227 .r227-glow-node .glow-halo{
+  fill:url(#r227NodeGlow);
+  opacity:.90;
+}
+
+.research-concept-227 .r227-glow-node .glow-core{
+  fill:#FFF5E9;
+  filter:url(#r227StrongGlow);
+}
+
+.research-concept-227 .r227-glow-node.minor .glow-halo{
+  opacity:.64;
+}
+
+.research-concept-227 .r227-glow-node.minor .glow-core{
+  fill:#F8E0C7;
+  filter:url(#r227SoftGlow);
+}
+
+.research-concept-227 .r227-glow-node.core-light .glow-halo{
+  opacity:1;
+}
+
+.research-concept-227 .r227-glow-node.core-light .glow-core{
+  fill:#FFEAD7;
+  filter:url(#r227StrongGlow);
+}
+
+.research-concept-227 .r227-axis-lights .axis-halo{
+  fill:url(#r227NodeGlow);
+  opacity:.58;
+}
+
+.research-concept-227 .r227-axis-lights .axis-core{
+  fill:#F2C7AA;
+  filter:url(#r227SoftGlow);
+}
+
+.research-concept-227 .r227-hollow{
+  fill:#292722;
+  stroke:#CC7352;
+  stroke-width:1.15;
+}
+
+.research-concept-227 .r227-hollow.small{
+  stroke:#D17A58;
+}
+
+/* LAYER 3 — HTML */
+.research-concept-227 .research227-core{
+  position:absolute;
+  z-index:4;
+  left:50%;
+  top:53.5%;
+  width:292px;
+  min-height:196px;
+  transform:translate(-50%,-50%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:32px 28px;
+  text-align:center;
+  border:1px solid rgba(225,132,95,.72);
+  border-radius:50%;
+  background:
+    radial-gradient(circle at center,
+      rgba(112,64,45,.46) 0%,
+      rgba(79,56,45,.46) 34%,
+      rgba(57,47,40,.75) 60%,
+      rgba(45,42,36,.33) 80%,
+      transparent 100%);
+  box-shadow:
+    0 0 0 40px rgba(194,103,71,.055),
+    0 0 0 76px rgba(194,103,71,.026),
+    0 0 100px rgba(197,103,71,.20);
+}
+
+.research-concept-227 .research227-core span{
+  display:block;
+  margin-bottom:11px;
+  font-size:8.5px;
+  line-height:1;
+  letter-spacing:.19em;
+  text-transform:uppercase;
+  color:#DC8765;
+}
+
+.research-concept-227 .research227-core strong{
+  display:block;
+  font-family:"Manrope",sans-serif;
+  font-size:18px;
+  font-weight:400;
+  line-height:1.42;
+  color:#F0E8DD;
+}
+
+.research-concept-227 .research227-core b{
+  display:block;
+  width:34px;
+  height:1px;
+  margin-top:16px;
+  background:#D78362;
+}
+
+.research-concept-227 .research227-domain{
+  position:absolute;
+  z-index:5;
+  width:262px;
+  padding-top:17px;
+}
+
+.research-concept-227 .research227-domain::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:1px;
+  background:linear-gradient(90deg,rgba(244,240,231,.22),rgba(244,240,231,.018));
+}
+
+.research-concept-227 .domain-hci::before,
+.research-concept-227 .domain-ai::before{
+  background:linear-gradient(270deg,rgba(244,240,231,.22),rgba(244,240,231,.018));
+}
+
+.research-concept-227 .research227-domain-meta{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+}
+
+.research-concept-227 .domain-hci .research227-domain-meta,
+.research-concept-227 .domain-ai .research227-domain-meta{
+  justify-content:flex-end;
+}
+
+.research-concept-227 .research227-domain-meta .research-node-shape{
+  width:12px;
+  height:12px;
+  margin:0;
+  color:#D18261;
+}
+
+.research-concept-227 .research227-domain-meta i{
+  display:block;
+  width:22px;
+  height:1px;
+  background:#D18261;
+  opacity:.86;
+}
+
+.research-concept-227 .research227-domain-meta small{
+  font-size:8.5px;
+  line-height:1;
+  letter-spacing:.145em;
+  text-transform:uppercase;
+  color:#989085;
+}
+
+.research-concept-227 .research227-domain h3{
+  margin:0 0 9px;
+  font-family:"Manrope",sans-serif;
+  font-size:24px;
+  font-weight:400;
+  line-height:1.06;
+  letter-spacing:-.033em;
+  color:#F2ECE2;
+}
+
+.research-concept-227 .research227-domain p{
+  margin:0;
+  font-size:11.5px;
+  line-height:1.5;
+  color:#AAA399;
+}
+
+.research-concept-227 .domain-digital{left:0;top:15%}
+.research-concept-227 .domain-hci{right:0;top:15%;text-align:right}
+.research-concept-227 .domain-sustainability{left:0;bottom:9%}
+.research-concept-227 .domain-ai{right:0;bottom:9%;text-align:right}
+
+@media(max-width:1120px){
+  .research-concept-227 .research227-constellation-stage{min-height:560px}
+  .research-concept-227 .research227-domain{width:228px}
+  .research-concept-227 .research227-core{width:260px;min-height:180px}
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research227-constellation{
+    padding:68px 0 78px;
+  }
+
+  .research-concept-227 .research227-constellation-intro{
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-bottom:38px;
+  }
+
+  .research-concept-227 .research227-kicker-line{padding-top:0}
+
+  .research-concept-227 .research227-constellation-stage{
+    min-height:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:34px 28px;
+  }
+
+  .research-concept-227 .research227-atmosphere,
+  .research-concept-227 .research227-svg{
+    display:none;
+  }
+
+  .research-concept-227 .research227-core{
+    position:relative;
+    left:auto;
+    top:auto;
+    width:auto;
+    min-height:0;
+    transform:none;
+    grid-column:1/-1;
+    align-items:flex-start;
+    padding:22px 0 24px;
+    text-align:left;
+    border-radius:0;
+    border-left:0;
+    border-right:0;
+    background:none;
+    box-shadow:none;
+  }
+
+  .research-concept-227 .research227-domain{
+    position:relative;
+    left:auto;
+    right:auto;
+    top:auto;
+    bottom:auto;
+    width:auto;
+    text-align:left;
+  }
+
+  .research-concept-227 .domain-hci .research227-domain-meta,
+  .research-concept-227 .domain-ai .research227-domain-meta{
+    justify-content:flex-start;
+  }
+
+  .research-concept-227 .domain-hci::before,
+  .research-concept-227 .domain-ai::before{
+    background:linear-gradient(90deg,rgba(244,240,231,.22),rgba(244,240,231,.018));
+  }
+}
+
+@media(max-width:600px){
+  .research-concept-227 .research227-constellation-stage{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .research-concept-227 .research227-core{
+    grid-column:auto;
+  }
+
+  .research-concept-227 .research227-domain{
+    padding-bottom:22px;
+    border-bottom:1px solid rgba(244,240,231,.075);
+  }
+
+  .research-concept-227 .research227-kicker-line>span{
+    width:42px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.18 — class collision repair
+   Hero stage and constellation stage are now isolated.
+   ========================================================= */
+
+.research-concept-227 .research227-constellation-stage{
+  position:relative;
+  width:min(1440px,100%);
+  min-height:620px;
+  margin:0 auto;
+}
+
+/* Hero contract: prevent future constellation rules from altering it. */
+.research-concept-227 .research20-hero > .research227-stage{
+  position:absolute;
+  z-index:0;
+  inset:0 0 82px;
+  width:auto;
+  min-height:0;
+  margin:0;
+  overflow:hidden;
+  pointer-events:none;
+}
+
+@media(max-width:900px){
+  .research-concept-227 .research227-constellation-stage{
+    min-height:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:34px 28px;
+  }
+
+  .research-concept-227 .research20-hero > .research227-stage{
+    inset:0 0 116px;
+    display:block;
+  }
+}
+
+@media(max-width:600px){
+  .research-concept-227 .research227-constellation-stage{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .research-concept-227 .research20-hero > .research227-stage{
+    inset:0 0 216px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.19 — SVG namespace repair
+   ========================================================= */
+
+.research-concept-227 .research227-svg path,
+.research-concept-227 .research227-svg ellipse,
+.research-concept-227 .research227-svg line{
+  fill:none;
+}
+
+.research-concept-227 .research227-svg circle{
+  vector-effect:non-scaling-stroke;
+}
+
+/* Explicit fallbacks prevent browser-default black fills. */
+.research-concept-227 .r227-aura{
+  fill:url(#r227CoreGlow);
+}
+
+.research-concept-227 .r227-orbit,
+.research-concept-227 .r227-dotted,
+.research-concept-227 .r227-path,
+.research-concept-227 .r227-axis{
+  fill:none;
+}
+
+.research-concept-227 .r227-glow-node .glow-halo,
+.research-concept-227 .r227-axis-lights .axis-halo{
+  fill:url(#r227NodeGlow);
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.20 — finishing pass only
+   Glow calibration; composition and geometry unchanged.
+   ========================================================= */
+
+/* Cleaner terminal light: smaller white core, tighter warm halo. */
+.research-concept-227 .r227-glow-node .glow-halo{
+  opacity:.76;
+}
+
+.research-concept-227 .r227-glow-node .glow-core{
+  fill:#FFF1E2;
+}
+
+/* Intermediate nodes should sparkle rather than bloom. */
+.research-concept-227 .r227-glow-node.minor .glow-halo{
+  opacity:.46;
+}
+
+.research-concept-227 .r227-glow-node.minor .glow-core{
+  fill:#F6D8BE;
+}
+
+/* Core-side lights remain the strongest after the four terminals. */
+.research-concept-227 .r227-glow-node.core-light .glow-halo{
+  opacity:.72;
+}
+
+.research-concept-227 .r227-glow-node.core-light .glow-core{
+  fill:#FFE3CB;
+}
+
+/* Vertical axis becomes a restrained rhythm instead of a row of bulbs. */
+.research-concept-227 .r227-axis-lights .axis-halo{
+  opacity:.29;
+}
+
+.research-concept-227 .r227-axis-lights .axis-core{
+  fill:#E6A783;
+}
+
+/* Concentrate the central atmosphere and reduce grey spill. */
+.research-concept-227 .research227-atmosphere{
+  background:
+    radial-gradient(ellipse at 50% 51%,
+      rgba(198,108,76,.13) 0%,
+      rgba(198,108,76,.052) 23%,
+      rgba(198,108,76,.014) 42%,
+      transparent 61%
+    ),
+    linear-gradient(90deg,
+      transparent 12.4%,rgba(244,240,231,.018) 12.5%,transparent 12.6%,
+      transparent 24.9%,rgba(244,240,231,.026) 25%,transparent 25.1%,
+      transparent 37.4%,rgba(244,240,231,.018) 37.5%,transparent 37.6%,
+      transparent 49.9%,rgba(244,240,231,.034) 50%,transparent 50.1%,
+      transparent 62.4%,rgba(244,240,231,.018) 62.5%,transparent 62.6%,
+      transparent 74.9%,rgba(244,240,231,.026) 75%,transparent 75.1%,
+      transparent 87.4%,rgba(244,240,231,.018) 87.5%,transparent 87.6%),
+    linear-gradient(
+      transparent 24.9%,rgba(244,240,231,.016) 25%,transparent 25.1%,
+      transparent 49.9%,rgba(244,240,231,.026) 50%,transparent 50.1%,
+      transparent 74.9%,rgba(244,240,231,.016) 75%,transparent 75.1%);
+}
+
+/* Slightly quieter core bloom; preserve copper ring and text hierarchy. */
+.research-concept-227 .research227-core{
+  box-shadow:
+    0 0 0 34px rgba(194,103,71,.046),
+    0 0 0 64px rgba(194,103,71,.020),
+    0 0 72px rgba(197,103,71,.14);
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.21 — Research Landscape refinement
+   Hero + constellation preserved from 2.0.20.
+   ========================================================= */
+
+.research-concept-227 .research227-landscape{
+  position:relative;
+  padding:94px 0 102px;
+  overflow:hidden;
+  background:#F4F0E7;
+  color:#34312B;
+  border-bottom:1px solid rgba(52,49,43,.14);
+}
+
+.research-concept-227 .research227-landscape::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.42;
+  background:
+    linear-gradient(90deg,rgba(52,49,43,.022) 1px,transparent 1px),
+    linear-gradient(rgba(52,49,43,.018) 1px,transparent 1px);
+  background-size:132px 132px;
+}
+
+.research-concept-227 .research227-landscape::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  width:min(1180px,78%);
+  height:1px;
+  transform:translateX(-50%);
+  background:linear-gradient(90deg,transparent,rgba(190,105,82,.28),transparent);
+}
+
+.research-concept-227 .research227-landscape>.wrap{
+  position:relative;
+  z-index:2;
+}
+
+.research-concept-227 .research227-landscape-head{
+  display:grid;
+  grid-template-columns:minmax(185px,.29fr) minmax(0,1fr);
+  gap:78px;
+  align-items:start;
+  margin-bottom:62px;
+}
+
+.research-concept-227 .research227-landscape-kicker{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding-top:7px;
+}
+
+.research-concept-227 .research227-landscape-kicker .research-kicker{
+  margin:0;
+  color:#BC6651;
+}
+
+.research-concept-227 .research227-landscape-kicker>span{
+  display:block;
+  width:64px;
+  height:1px;
+  background:linear-gradient(90deg,rgba(188,102,81,.68),rgba(188,102,81,0));
+}
+
+.research-concept-227 .research227-landscape-title{
+  max-width:850px;
+}
+
+.research-concept-227 .research227-landscape-title h2{
+  margin:0;
+  max-width:770px;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(42px,4.55vw,62px);
+  font-weight:300;
+  line-height:1;
+  letter-spacing:-.05em;
+  color:#34312B;
+}
+
+.research-concept-227 .research227-landscape-title>p{
+  max-width:650px;
+  margin:18px 0 0;
+  font-size:14px;
+  line-height:1.7;
+  color:#777168;
+}
+
+.research-concept-227 .research227-landscape-grid{
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  border-top:1px solid rgba(52,49,43,.18);
+  border-left:1px solid rgba(52,49,43,.13);
+}
+
+.research-concept-227 .research227-landscape-grid::before,
+.research-concept-227 .research227-landscape-grid::after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  z-index:3;
+}
+
+.research-concept-227 .research227-landscape-grid::before{
+  left:50%;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:rgba(52,49,43,.14);
+}
+
+.research-concept-227 .research227-landscape-grid::after{
+  top:50%;
+  left:0;
+  right:0;
+  height:1px;
+  background:rgba(52,49,43,.14);
+}
+
+.research-concept-227 .research227-area{
+  position:relative;
+  min-height:390px;
+  padding:34px 46px 38px;
+  border-right:1px solid rgba(52,49,43,.13);
+  border-bottom:1px solid rgba(52,49,43,.13);
+  overflow:hidden;
+  background:rgba(244,240,231,.54);
+  transition:
+    background .28s ease,
+    transform .36s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-area::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:3px;
+  height:0;
+  background:#C16C56;
+  transition:height .36s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-area::after{
+  content:attr(data-index);
+  position:absolute;
+  right:34px;
+  bottom:-12px;
+  font-family:"Manrope",sans-serif;
+  font-size:110px;
+  font-weight:300;
+  line-height:1;
+  letter-spacing:-.06em;
+  color:rgba(52,49,43,.022);
+  pointer-events:none;
+}
+
+.research-concept-227 .research227-area:hover{
+  background:rgba(237,226,214,.66);
+}
+
+.research-concept-227 .research227-area:hover::before{
+  height:100%;
+}
+
+.research-concept-227 .research227-area-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  margin-bottom:28px;
+}
+
+.research-concept-227 .research227-area-mark{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.research-concept-227 .research227-area-mark .research-domain-symbol{
+  width:12px;
+  height:12px;
+  color:#B66A56;
+}
+
+.research-concept-227 .research227-area-mark i{
+  display:block;
+  width:34px;
+  height:1px;
+  background:linear-gradient(90deg,rgba(182,106,86,.72),rgba(182,106,86,.10));
+}
+
+.research-concept-227 .research227-area-index{
+  font-size:9px;
+  line-height:1;
+  letter-spacing:.18em;
+  color:#A59E94;
+}
+
+.research-concept-227 .research227-area h3{
+  margin:0 0 18px;
+  max-width:510px;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(25px,2.35vw,34px);
+  font-weight:400;
+  line-height:1.06;
+  letter-spacing:-.038em;
+  color:#34312B;
+}
+
+.research-concept-227 .research227-area-question{
+  margin:0 0 18px;
+  max-width:520px;
+  font-size:14px;
+  line-height:1.58;
+  color:#514C45;
+}
+
+.research-concept-227 .research227-area-copy{
+  margin:0;
+  max-width:560px;
+  font-size:12.5px;
+  line-height:1.72;
+  color:#79736A;
+}
+
+.research-concept-227 .research227-area-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:26px;
+}
+
+.research-concept-227 .research227-area-tags span{
+  display:inline-flex;
+  align-items:center;
+  min-height:25px;
+  padding:5px 8px 4px;
+  border:1px solid rgba(52,49,43,.14);
+  background:rgba(255,255,255,.16);
+  font-size:8px;
+  line-height:1.2;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:#7C756C;
+  transition:border-color .24s ease,color .24s ease,background .24s ease;
+}
+
+.research-concept-227 .research227-area:hover .research227-area-tags span{
+  border-color:rgba(185,102,80,.22);
+  color:#6E625B;
+  background:rgba(255,255,255,.24);
+}
+
+/* Distinct but restrained territory accents. */
+.research-concept-227 .area-digital{--area-accent:#B76D50}
+.research-concept-227 .area-hci{--area-accent:#8C9A9C}
+.research-concept-227 .area-sustainability{--area-accent:#8C9B85}
+.research-concept-227 .area-ai{--area-accent:#9B7F72}
+
+.research-concept-227 .research227-area:hover::before{
+  background:var(--area-accent);
+}
+
+/* Large ghost numbers stay deliberately quiet. */
+.research-concept-227 .area-digital::after{content:"01"}
+.research-concept-227 .area-hci::after{content:"02"}
+.research-concept-227 .area-sustainability::after{content:"03"}
+.research-concept-227 .area-ai::after{content:"04"}
+
+@media(max-width:900px){
+  .research-concept-227 .research227-landscape{
+    padding:72px 0 80px;
+  }
+
+  .research-concept-227 .research227-landscape-head{
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-bottom:42px;
+  }
+
+  .research-concept-227 .research227-landscape-kicker{
+    padding-top:0;
+  }
+
+  .research-concept-227 .research227-landscape-grid{
+    grid-template-columns:1fr;
+  }
+
+  .research-concept-227 .research227-landscape-grid::before,
+  .research-concept-227 .research227-landscape-grid::after{
+    display:none;
+  }
+
+  .research-concept-227 .research227-area{
+    min-height:0;
+    padding:32px 28px 34px;
+  }
+}
+
+@media(max-width:600px){
+  .research-concept-227 .research227-landscape{
+    padding:62px 0 68px;
+  }
+
+  .research-concept-227 .research227-landscape-kicker>span{
+    width:42px;
+  }
+
+  .research-concept-227 .research227-area{
+    padding:28px 20px 30px;
+  }
+
+  .research-concept-227 .research227-area h3{
+    font-size:27px;
+  }
+
+  .research-concept-227 .research227-area::after{
+    font-size:82px;
+    right:18px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.22 — Cross-cutting questions
+   ========================================================= */
+
+.research-concept-227 .research227-crosscut{
+  position:relative;
+  padding:92px 0 102px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 76% 16%,rgba(194,104,80,.028),transparent 26%),
+    linear-gradient(180deg,#2D2B26 0%,#2A2823 100%);
+  border-bottom:1px solid rgba(244,240,231,.10);
+}
+
+.research-concept-227 .research227-crosscut::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.36;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.013) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.011) 1px,transparent 1px);
+  background-size:132px 132px;
+}
+
+.research-concept-227 .research227-crosscut::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  width:min(1180px,80%);
+  height:1px;
+  transform:translateX(-50%);
+  background:linear-gradient(90deg,transparent,rgba(211,126,101,.22),transparent);
+}
+
+.research-concept-227 .research227-crosscut>.wrap{
+  position:relative;
+  z-index:2;
+}
+
+.research-concept-227 .research227-crosscut-head{
+  display:grid;
+  grid-template-columns:minmax(185px,.29fr) minmax(0,1fr);
+  gap:78px;
+  align-items:start;
+  margin-bottom:58px;
+}
+
+.research-concept-227 .research227-crosscut-kicker{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding-top:7px;
+}
+
+.research-concept-227 .research227-crosscut-kicker .research-kicker{
+  margin:0;
+}
+
+.research-concept-227 .research227-crosscut-kicker>span{
+  display:block;
+  width:64px;
+  height:1px;
+  background:linear-gradient(90deg,rgba(211,126,101,.76),rgba(211,126,101,0));
+}
+
+.research-concept-227 .research227-crosscut-title{
+  max-width:880px;
+}
+
+.research-concept-227 .research227-crosscut-title h2{
+  margin:0;
+  max-width:780px;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(42px,4.5vw,62px);
+  font-weight:300;
+  line-height:1;
+  letter-spacing:-.05em;
+  color:#F4F0E7;
+}
+
+.research-concept-227 .research227-crosscut-title>p{
+  max-width:660px;
+  margin:18px 0 0;
+  font-size:14px;
+  line-height:1.72;
+  color:#9F998F;
+}
+
+.research-concept-227 .research227-question-grid{
+  position:relative;
+  border-top:1px solid rgba(244,240,231,.16);
+}
+
+.research-concept-227 .research227-question{
+  position:relative;
+  display:grid;
+  grid-template-columns:170px minmax(320px,1fr) minmax(280px,.72fr);
+  gap:42px;
+  align-items:start;
+  padding:34px 0 38px;
+  border-bottom:1px solid rgba(244,240,231,.115);
+  transition:background .28s ease;
+}
+
+.research-concept-227 .research227-question::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:2px;
+  background:#C46D55;
+  transform:scaleY(0);
+  transform-origin:top;
+  transition:transform .35s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-question::after{
+  content:"";
+  position:absolute;
+  inset:0 -28px;
+  z-index:-1;
+  background:linear-gradient(90deg,rgba(211,126,101,.045),rgba(211,126,101,.008) 58%,transparent);
+  opacity:0;
+  transition:opacity .28s ease;
+}
+
+.research-concept-227 .research227-question:hover::before{
+  transform:scaleY(1);
+}
+
+.research-concept-227 .research227-question:hover::after{
+  opacity:1;
+}
+
+.research-concept-227 .research227-question-meta{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  padding-top:4px;
+}
+
+.research-concept-227 .research227-question-index{
+  font-size:9px;
+  line-height:1;
+  letter-spacing:.17em;
+  color:#6F6961;
+}
+
+.research-concept-227 .research227-question-label{
+  font-size:9px;
+  line-height:1;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#D17A60;
+}
+
+.research-concept-227 .research227-question-main{
+  max-width:620px;
+}
+
+.research-concept-227 .research227-question-main h3{
+  margin:0;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(26px,2.5vw,36px);
+  font-weight:400;
+  line-height:1.08;
+  letter-spacing:-.038em;
+  color:#F1EBE1;
+}
+
+.research-concept-227 .research227-question-note{
+  max-width:430px;
+}
+
+.research-concept-227 .research227-question-note p{
+  margin:3px 0 0;
+  font-size:13px;
+  line-height:1.72;
+  color:#AAA39A;
+}
+
+/* A restrained micro-marker creates continuity with the constellation. */
+.research-concept-227 .research227-question-meta::after{
+  content:"";
+  display:block;
+  width:22px;
+  height:1px;
+  margin-left:2px;
+  background:linear-gradient(90deg,rgba(209,122,96,.68),rgba(209,122,96,0));
+}
+
+@media(max-width:1000px){
+  .research-concept-227 .research227-question{
+    grid-template-columns:135px minmax(0,1fr);
+    gap:22px 34px;
+  }
+
+  .research-concept-227 .research227-question-note{
+    grid-column:2;
+  }
+}
+
+@media(max-width:760px){
+  .research-concept-227 .research227-crosscut{
+    padding:70px 0 76px;
+  }
+
+  .research-concept-227 .research227-crosscut-head{
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-bottom:42px;
+  }
+
+  .research-concept-227 .research227-crosscut-kicker{
+    padding-top:0;
+  }
+
+  .research-concept-227 .research227-question{
+    grid-template-columns:1fr;
+    gap:14px;
+    padding:28px 0 31px;
+  }
+
+  .research-concept-227 .research227-question-note{
+    grid-column:auto;
+  }
+
+  .research-concept-227 .research227-question-main h3{
+    font-size:28px;
+  }
+}
+
+@media(max-width:600px){
+  .research-concept-227 .research227-crosscut{
+    padding:62px 0 68px;
+  }
+
+  .research-concept-227 .research227-crosscut-kicker>span{
+    width:42px;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.23 — luminous hover on recurring questions
+   Inspired by Project Involvement interaction, adapted to Research.
+   ========================================================= */
+
+.research-concept-227 .research227-question{
+  isolation:isolate;
+  overflow:hidden;
+  transition:
+    transform .34s cubic-bezier(.22,1,.36,1),
+    background .34s ease,
+    box-shadow .34s ease;
+}
+
+/* Soft luminous field across the row */
+.research-concept-227 .research227-question::after{
+  content:"";
+  position:absolute;
+  inset:-22% -4%;
+  z-index:-2;
+  pointer-events:none;
+  background:
+    radial-gradient(
+      ellipse at 34% 50%,
+      rgba(244,240,231,.15) 0%,
+      rgba(244,240,231,.075) 16%,
+      rgba(211,126,101,.105) 34%,
+      rgba(211,126,101,.035) 54%,
+      transparent 72%
+    );
+  filter:blur(16px);
+  opacity:0;
+  transform:scale(.92);
+  transition:
+    opacity .38s ease,
+    transform .55s cubic-bezier(.22,1,.36,1);
+}
+
+/* Directional sheen, similar to the project-card light pass */
+.research-concept-227 .research227-question .research227-question-main::before{
+  content:"";
+  position:absolute;
+  inset:-24px -80px;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      112deg,
+      transparent 20%,
+      rgba(255,248,239,.025) 30%,
+      rgba(255,248,239,.12) 43%,
+      rgba(211,126,101,.09) 52%,
+      rgba(255,248,239,.03) 61%,
+      transparent 72%
+    );
+  filter:blur(10px);
+  opacity:0;
+  transform:translateX(-12%);
+  transition:
+    opacity .36s ease,
+    transform .55s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-question-main{
+  position:relative;
+  isolation:isolate;
+}
+
+.research-concept-227 .research227-question:hover,
+.research-concept-227 .research227-question:focus-within{
+  transform:translateY(-2px);
+  background:rgba(244,240,231,.018);
+  box-shadow:
+    0 18px 42px rgba(7,8,6,.12),
+    inset 0 0 0 1px rgba(211,126,101,.07);
+}
+
+.research-concept-227 .research227-question:hover::after,
+.research-concept-227 .research227-question:focus-within::after{
+  opacity:1;
+  transform:scale(1);
+}
+
+.research-concept-227 .research227-question:hover .research227-question-main::before,
+.research-concept-227 .research227-question:focus-within .research227-question-main::before{
+  opacity:.78;
+  transform:translateX(3%);
+}
+
+/* Left accent becomes luminous rather than simply taller */
+.research-concept-227 .research227-question::before{
+  background:
+    linear-gradient(
+      180deg,
+      rgba(235,155,126,.18) 0%,
+      #D17A60 22%,
+      #E5A184 50%,
+      #D17A60 78%,
+      rgba(235,155,126,.18) 100%
+    );
+  box-shadow:
+    0 0 0 rgba(211,126,101,0),
+    0 0 18px rgba(211,126,101,0);
+  transition:
+    transform .35s cubic-bezier(.22,1,.36,1),
+    box-shadow .35s ease;
+}
+
+.research-concept-227 .research227-question:hover::before,
+.research-concept-227 .research227-question:focus-within::before{
+  transform:scaleY(1);
+  box-shadow:
+    0 0 10px rgba(211,126,101,.28),
+    0 0 26px rgba(211,126,101,.12);
+}
+
+/* Typography reacts subtly, as on the Project Involvement cards */
+.research-concept-227 .research227-question-main h3{
+  transition:
+    color .28s ease,
+    text-shadow .34s ease,
+    transform .34s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-question:hover .research227-question-main h3,
+.research-concept-227 .research227-question:focus-within .research227-question-main h3{
+  color:#FFF7EC;
+  text-shadow:
+    0 0 22px rgba(244,240,231,.08),
+    0 0 34px rgba(211,126,101,.055);
+  transform:translateX(3px);
+}
+
+.research-concept-227 .research227-question-note p{
+  transition:color .28s ease;
+}
+
+.research-concept-227 .research227-question:hover .research227-question-note p,
+.research-concept-227 .research227-question:focus-within .research227-question-note p{
+  color:#C0B9AF;
+}
+
+.research-concept-227 .research227-question-label,
+.research-concept-227 .research227-question-meta::after{
+  transition:
+    color .28s ease,
+    opacity .28s ease,
+    box-shadow .28s ease;
+}
+
+.research-concept-227 .research227-question:hover .research227-question-label,
+.research-concept-227 .research227-question:focus-within .research227-question-label{
+  color:#E39A79;
+  text-shadow:0 0 16px rgba(211,126,101,.20);
+}
+
+.research-concept-227 .research227-question:hover .research227-question-meta::after,
+.research-concept-227 .research227-question:focus-within .research227-question-meta::after{
+  opacity:1;
+  box-shadow:0 0 12px rgba(211,126,101,.16);
+}
+
+/* Slight project-card-like horizontal light line along the row */
+.research-concept-227 .research227-question-main::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:10%;
+  bottom:-20px;
+  height:1px;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(211,126,101,.44) 30%,
+      rgba(244,240,231,.26) 50%,
+      rgba(211,126,101,.22) 70%,
+      transparent
+    );
+  opacity:0;
+  transform:scaleX(.42);
+  transform-origin:left center;
+  transition:
+    opacity .32s ease,
+    transform .50s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-question:hover .research227-question-main::after,
+.research-concept-227 .research227-question:focus-within .research227-question-main::after{
+  opacity:.62;
+  transform:scaleX(1);
+}
+
+@media(prefers-reduced-motion:reduce){
+  .research-concept-227 .research227-question,
+  .research-concept-227 .research227-question::before,
+  .research-concept-227 .research227-question::after,
+  .research-concept-227 .research227-question-main::before,
+  .research-concept-227 .research227-question-main::after,
+  .research-concept-227 .research227-question-main h3{
+    transition:none!important;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.24 — differentiated glow palette
+   Same interaction as 2.0.23; only the light colour changes.
+   ========================================================= */
+
+.research-concept-227 .question-experience{
+  --q-glow-rgb:211,126,101;
+  --q-glow-solid:#D37E65;
+}
+
+.research-concept-227 .question-evaluation{
+  --q-glow-rgb:126,157,168;
+  --q-glow-solid:#7E9DA8;
+}
+
+.research-concept-227 .question-translation{
+  --q-glow-rgb:143,157,126;
+  --q-glow-solid:#8F9D7E;
+}
+
+/* Shared glow field now inherits the card-specific colour. */
+.research-concept-227 .research227-question::after{
+  background:
+    radial-gradient(
+      ellipse at 34% 50%,
+      rgba(244,240,231,.15) 0%,
+      rgba(244,240,231,.072) 16%,
+      rgba(var(--q-glow-rgb),.115) 34%,
+      rgba(var(--q-glow-rgb),.038) 54%,
+      transparent 72%
+    );
+}
+
+/* Directional sheen */
+.research-concept-227 .research227-question .research227-question-main::before{
+  background:
+    linear-gradient(
+      112deg,
+      transparent 20%,
+      rgba(255,248,239,.025) 30%,
+      rgba(255,248,239,.105) 43%,
+      rgba(var(--q-glow-rgb),.105) 52%,
+      rgba(255,248,239,.03) 61%,
+      transparent 72%
+    );
+}
+
+/* Vertical accent */
+.research-concept-227 .research227-question::before{
+  background:
+    linear-gradient(
+      180deg,
+      rgba(var(--q-glow-rgb),.18) 0%,
+      var(--q-glow-solid) 22%,
+      rgba(var(--q-glow-rgb),.95) 50%,
+      var(--q-glow-solid) 78%,
+      rgba(var(--q-glow-rgb),.18) 100%
+    );
+}
+
+.research-concept-227 .research227-question:hover::before,
+.research-concept-227 .research227-question:focus-within::before{
+  box-shadow:
+    0 0 10px rgba(var(--q-glow-rgb),.30),
+    0 0 26px rgba(var(--q-glow-rgb),.13);
+}
+
+/* Title and label illumination */
+.research-concept-227 .research227-question:hover .research227-question-main h3,
+.research-concept-227 .research227-question:focus-within .research227-question-main h3{
+  text-shadow:
+    0 0 22px rgba(244,240,231,.075),
+    0 0 34px rgba(var(--q-glow-rgb),.075);
+}
+
+.research-concept-227 .research227-question:hover .research227-question-label,
+.research-concept-227 .research227-question:focus-within .research227-question-label{
+  color:var(--q-glow-solid);
+  text-shadow:0 0 16px rgba(var(--q-glow-rgb),.23);
+}
+
+.research-concept-227 .research227-question-meta::after{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(var(--q-glow-rgb),.72),
+      rgba(var(--q-glow-rgb),0)
+    );
+}
+
+.research-concept-227 .research227-question:hover .research227-question-meta::after,
+.research-concept-227 .research227-question:focus-within .research227-question-meta::after{
+  box-shadow:0 0 12px rgba(var(--q-glow-rgb),.18);
+}
+
+/* Bottom light trace */
+.research-concept-227 .research227-question-main::after{
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(var(--q-glow-rgb),.46) 30%,
+      rgba(244,240,231,.24) 50%,
+      rgba(var(--q-glow-rgb),.24) 70%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.25 — differentiated glow on landscape cards
+   Same luminous language as recurring questions.
+   ========================================================= */
+
+.research-concept-227 .area-digital{
+  --area-glow-rgb:211,126,101;
+  --area-glow-solid:#D37E65;
+}
+
+.research-concept-227 .area-hci{
+  --area-glow-rgb:126,157,168;
+  --area-glow-solid:#7E9DA8;
+}
+
+.research-concept-227 .area-sustainability{
+  --area-glow-rgb:143,157,126;
+  --area-glow-solid:#8F9D7E;
+}
+
+.research-concept-227 .area-ai{
+  --area-glow-rgb:154,126,137;
+  --area-glow-solid:#9A7E89;
+}
+
+.research-concept-227 .research227-area{
+  isolation:isolate;
+  overflow:hidden;
+  transition:
+    transform .34s cubic-bezier(.22,1,.36,1),
+    background .34s ease,
+    box-shadow .34s ease;
+}
+
+/* Soft card-wide halo */
+.research-concept-227 .research227-area .research227-area-top::before{
+  content:"";
+  position:absolute;
+  inset:-130px -80px -220px -80px;
+  z-index:-2;
+  pointer-events:none;
+  background:
+    radial-gradient(
+      ellipse at 24% 18%,
+      rgba(244,240,231,.22) 0%,
+      rgba(244,240,231,.10) 12%,
+      rgba(var(--area-glow-rgb),.12) 30%,
+      rgba(var(--area-glow-rgb),.045) 50%,
+      transparent 72%
+    );
+  filter:blur(18px);
+  opacity:0;
+  transform:scale(.92);
+  transition:
+    opacity .38s ease,
+    transform .58s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-area-top{
+  position:relative;
+  isolation:isolate;
+}
+
+/* Directional light sweep */
+.research-concept-227 .research227-area .research227-area-top::after{
+  content:"";
+  position:absolute;
+  inset:-70px -140px -250px -100px;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      116deg,
+      transparent 22%,
+      rgba(255,248,239,.035) 32%,
+      rgba(255,248,239,.12) 43%,
+      rgba(var(--area-glow-rgb),.10) 53%,
+      rgba(255,248,239,.035) 62%,
+      transparent 73%
+    );
+  filter:blur(12px);
+  opacity:0;
+  transform:translateX(-10%);
+  transition:
+    opacity .36s ease,
+    transform .56s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-area:hover,
+.research-concept-227 .research227-area:focus-within{
+  transform:translateY(-3px);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(var(--area-glow-rgb),.040),
+      rgba(244,240,231,.56) 46%,
+      rgba(var(--area-glow-rgb),.018)
+    );
+  box-shadow:
+    0 18px 42px rgba(70,58,50,.085),
+    inset 0 0 0 1px rgba(var(--area-glow-rgb),.09);
+}
+
+.research-concept-227 .research227-area:hover .research227-area-top::before,
+.research-concept-227 .research227-area:focus-within .research227-area-top::before{
+  opacity:1;
+  transform:scale(1);
+}
+
+.research-concept-227 .research227-area:hover .research227-area-top::after,
+.research-concept-227 .research227-area:focus-within .research227-area-top::after{
+  opacity:.76;
+  transform:translateX(4%);
+}
+
+/* Vertical accent inherits the card colour */
+.research-concept-227 .research227-area::before{
+  background:
+    linear-gradient(
+      180deg,
+      rgba(var(--area-glow-rgb),.15) 0%,
+      var(--area-glow-solid) 22%,
+      rgba(var(--area-glow-rgb),.95) 50%,
+      var(--area-glow-solid) 78%,
+      rgba(var(--area-glow-rgb),.15) 100%
+    );
+  box-shadow:
+    0 0 0 rgba(var(--area-glow-rgb),0),
+    0 0 0 rgba(var(--area-glow-rgb),0);
+}
+
+.research-concept-227 .research227-area:hover::before,
+.research-concept-227 .research227-area:focus-within::before{
+  height:100%;
+  box-shadow:
+    0 0 10px rgba(var(--area-glow-rgb),.22),
+    0 0 24px rgba(var(--area-glow-rgb),.10);
+}
+
+/* Symbol + line glow */
+.research-concept-227 .research227-area .research227-area-mark .research-domain-symbol{
+  color:var(--area-glow-solid);
+  transition:
+    color .28s ease,
+    filter .28s ease,
+    transform .32s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-area .research227-area-mark i{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(var(--area-glow-rgb),.76),
+      rgba(var(--area-glow-rgb),.12)
+    );
+  transition:box-shadow .28s ease,opacity .28s ease;
+}
+
+.research-concept-227 .research227-area:hover .research227-area-mark .research-domain-symbol,
+.research-concept-227 .research227-area:focus-within .research227-area-mark .research-domain-symbol{
+  filter:drop-shadow(0 0 8px rgba(var(--area-glow-rgb),.30));
+  transform:scale(1.08);
+}
+
+.research-concept-227 .research227-area:hover .research227-area-mark i,
+.research-concept-227 .research227-area:focus-within .research227-area-mark i{
+  box-shadow:0 0 10px rgba(var(--area-glow-rgb),.20);
+}
+
+/* Title gets a subtle light lift */
+.research-concept-227 .research227-area h3{
+  transition:
+    color .28s ease,
+    text-shadow .34s ease,
+    transform .34s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-area:hover h3,
+.research-concept-227 .research227-area:focus-within h3{
+  color:#2E2B26;
+  text-shadow:
+    0 0 20px rgba(255,255,255,.28),
+    0 0 30px rgba(var(--area-glow-rgb),.10);
+  transform:translateX(3px);
+}
+
+.research-concept-227 .research227-area-question,
+.research-concept-227 .research227-area-copy{
+  transition:color .28s ease;
+}
+
+.research-concept-227 .research227-area:hover .research227-area-question,
+.research-concept-227 .research227-area:focus-within .research227-area-question{
+  color:#464039;
+}
+
+.research-concept-227 .research227-area:hover .research227-area-copy,
+.research-concept-227 .research227-area:focus-within .research227-area-copy{
+  color:#6C665E;
+}
+
+/* Tags pick up the territory colour without becoming saturated */
+.research-concept-227 .research227-area:hover .research227-area-tags span,
+.research-concept-227 .research227-area:focus-within .research227-area-tags span{
+  border-color:rgba(var(--area-glow-rgb),.24);
+  background:rgba(var(--area-glow-rgb),.035);
+  color:#625C55;
+}
+
+/* Ghost index receives the same hue very faintly */
+.research-concept-227 .research227-area::after{
+  color:rgba(var(--area-glow-rgb),.050);
+  transition:color .32s ease;
+}
+
+.research-concept-227 .research227-area:hover::after,
+.research-concept-227 .research227-area:focus-within::after{
+  color:rgba(var(--area-glow-rgb),.085);
+}
+
+@media(prefers-reduced-motion:reduce){
+  .research-concept-227 .research227-area,
+  .research-concept-227 .research227-area::before,
+  .research-concept-227 .research227-area::after,
+  .research-concept-227 .research227-area-top::before,
+  .research-concept-227 .research227-area-top::after,
+  .research-concept-227 .research227-area h3{
+    transition:none!important;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.26 — differentiated glow on constellation domains
+   Mirrors the landscape palette without changing constellation geometry.
+   ========================================================= */
+
+.research-concept-227 .domain-digital{
+  --const-glow-rgb:211,126,101;
+  --const-glow-solid:#D37E65;
+}
+
+.research-concept-227 .domain-hci{
+  --const-glow-rgb:126,157,168;
+  --const-glow-solid:#7E9DA8;
+}
+
+.research-concept-227 .domain-sustainability{
+  --const-glow-rgb:143,157,126;
+  --const-glow-solid:#8F9D7E;
+}
+
+.research-concept-227 .domain-ai{
+  --const-glow-rgb:154,126,137;
+  --const-glow-solid:#9A7E89;
+}
+
+.research-concept-227 .research227-domain{
+  isolation:isolate;
+  overflow:visible;
+  transition:
+    transform .34s cubic-bezier(.22,1,.36,1),
+    filter .34s ease;
+}
+
+/* Local atmospheric halo behind each domain label */
+.research-concept-227 .research227-domain::after{
+  content:"";
+  position:absolute;
+  inset:-46px -54px -52px -54px;
+  z-index:-2;
+  pointer-events:none;
+  border-radius:999px;
+  background:
+    radial-gradient(
+      ellipse at 50% 48%,
+      rgba(244,240,231,.12) 0%,
+      rgba(244,240,231,.055) 18%,
+      rgba(var(--const-glow-rgb),.13) 38%,
+      rgba(var(--const-glow-rgb),.040) 58%,
+      transparent 76%
+    );
+  filter:blur(16px);
+  opacity:0;
+  transform:scale(.88);
+  transition:
+    opacity .38s ease,
+    transform .54s cubic-bezier(.22,1,.36,1);
+}
+
+/* Fine light sweep through the label block */
+.research-concept-227 .research227-domain .research227-domain-meta::before{
+  content:"";
+  position:absolute;
+  inset:-28px -90px -95px -70px;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      116deg,
+      transparent 22%,
+      rgba(255,248,239,.028) 32%,
+      rgba(255,248,239,.10) 43%,
+      rgba(var(--const-glow-rgb),.10) 52%,
+      rgba(255,248,239,.025) 62%,
+      transparent 72%
+    );
+  filter:blur(10px);
+  opacity:0;
+  transform:translateX(-12%);
+  transition:
+    opacity .34s ease,
+    transform .54s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-domain-meta{
+  position:relative;
+  isolation:isolate;
+}
+
+.research-concept-227 .research227-domain:hover,
+.research-concept-227 .research227-domain:focus-within{
+  transform:translateY(-3px);
+  filter:drop-shadow(0 12px 26px rgba(9,9,8,.08));
+}
+
+.research-concept-227 .research227-domain:hover::after,
+.research-concept-227 .research227-domain:focus-within::after{
+  opacity:1;
+  transform:scale(1);
+}
+
+.research-concept-227 .research227-domain:hover .research227-domain-meta::before,
+.research-concept-227 .research227-domain:focus-within .research227-domain-meta::before{
+  opacity:.76;
+  transform:translateX(4%);
+}
+
+/* Domain marker adopts its own glow colour */
+.research-concept-227 .research227-domain-meta .research-node-shape{
+  color:var(--const-glow-solid);
+  transition:
+    color .28s ease,
+    filter .28s ease,
+    transform .32s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-domain-meta i{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(var(--const-glow-rgb),.78),
+      rgba(var(--const-glow-rgb),.12)
+    );
+  transition:
+    box-shadow .28s ease,
+    opacity .28s ease,
+    transform .32s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-domain:hover .research-node-shape,
+.research-concept-227 .research227-domain:focus-within .research-node-shape{
+  filter:drop-shadow(0 0 8px rgba(var(--const-glow-rgb),.34));
+  transform:scale(1.10);
+}
+
+.research-concept-227 .domain-ai:hover .shape-diamond,
+.research-concept-227 .domain-ai:focus-within .shape-diamond{
+  transform:rotate(45deg) scale(1.10);
+}
+
+.research-concept-227 .research227-domain:hover .research227-domain-meta i,
+.research-concept-227 .research227-domain:focus-within .research227-domain-meta i{
+  box-shadow:0 0 12px rgba(var(--const-glow-rgb),.22);
+  transform:scaleX(1.10);
+}
+
+/* Metadata and title glow */
+.research-concept-227 .research227-domain-meta small{
+  transition:
+    color .28s ease,
+    text-shadow .30s ease;
+}
+
+.research-concept-227 .research227-domain:hover .research227-domain-meta small,
+.research-concept-227 .research227-domain:focus-within .research227-domain-meta small{
+  color:var(--const-glow-solid);
+  text-shadow:0 0 14px rgba(var(--const-glow-rgb),.18);
+}
+
+.research-concept-227 .research227-domain h3{
+  transition:
+    color .28s ease,
+    text-shadow .34s ease,
+    transform .34s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-domain:hover h3,
+.research-concept-227 .research227-domain:focus-within h3{
+  color:#FFF6EB;
+  text-shadow:
+    0 0 20px rgba(244,240,231,.08),
+    0 0 34px rgba(var(--const-glow-rgb),.085);
+  transform:translateX(3px);
+}
+
+.research-concept-227 .research227-domain p{
+  transition:color .28s ease;
+}
+
+.research-concept-227 .research227-domain:hover p,
+.research-concept-227 .research227-domain:focus-within p{
+  color:#C1BAB0;
+}
+
+/* Thin local light trace under each label */
+.research-concept-227 .research227-domain h3::after{
+  content:"";
+  display:block;
+  width:72%;
+  height:1px;
+  margin-top:12px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(var(--const-glow-rgb),0),
+      rgba(var(--const-glow-rgb),.44) 32%,
+      rgba(244,240,231,.22) 52%,
+      rgba(var(--const-glow-rgb),.18) 72%,
+      rgba(var(--const-glow-rgb),0)
+    );
+  opacity:0;
+  transform:scaleX(.45);
+  transform-origin:left center;
+  transition:
+    opacity .30s ease,
+    transform .48s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .domain-hci h3::after,
+.research-concept-227 .domain-ai h3::after{
+  margin-left:auto;
+  transform-origin:right center;
+}
+
+.research-concept-227 .research227-domain:hover h3::after,
+.research-concept-227 .research227-domain:focus-within h3::after{
+  opacity:.64;
+  transform:scaleX(1);
+}
+
+@media(prefers-reduced-motion:reduce){
+  .research-concept-227 .research227-domain,
+  .research-concept-227 .research227-domain::after,
+  .research-concept-227 .research227-domain-meta::before,
+  .research-concept-227 .research227-domain h3,
+  .research-concept-227 .research227-domain h3::after{
+    transition:none!important;
+  }
+}
+
+
+/* =========================================================
+   RESEARCH CONCEPT 2.0.27 — methodological system
+   ========================================================= */
+
+.research-concept-227 .research227-approach{
+  position:relative;
+  padding:92px 0 98px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 72% 34%,rgba(207,126,97,.035),transparent 25%),
+    linear-gradient(180deg,#27251F 0%,#25231E 100%);
+  border-bottom:1px solid rgba(244,240,231,.10);
+}
+
+.research-concept-227 .research227-approach::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.34;
+  background:
+    linear-gradient(90deg,rgba(244,240,231,.012) 1px,transparent 1px),
+    linear-gradient(rgba(244,240,231,.010) 1px,transparent 1px);
+  background-size:132px 132px;
+}
+
+.research-concept-227 .research227-approach::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  width:min(1180px,80%);
+  height:1px;
+  transform:translateX(-50%);
+  background:linear-gradient(90deg,transparent,rgba(211,126,101,.20),transparent);
+}
+
+.research-concept-227 .research227-approach>.wrap{
+  position:relative;
+  z-index:2;
+}
+
+.research-concept-227 .research227-approach-head{
+  display:grid;
+  grid-template-columns:minmax(185px,.29fr) minmax(0,1fr);
+  gap:78px;
+  align-items:start;
+  margin-bottom:58px;
+}
+
+.research-concept-227 .research227-approach-kicker{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding-top:7px;
+}
+
+.research-concept-227 .research227-approach-kicker .research-kicker{
+  margin:0;
+}
+
+.research-concept-227 .research227-approach-kicker>span{
+  display:block;
+  width:64px;
+  height:1px;
+  background:linear-gradient(90deg,rgba(211,126,101,.74),rgba(211,126,101,0));
+}
+
+.research-concept-227 .research227-approach-title{
+  max-width:880px;
+}
+
+.research-concept-227 .research227-approach-title h2{
+  margin:0;
+  max-width:760px;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(42px,4.5vw,62px);
+  font-weight:300;
+  line-height:1;
+  letter-spacing:-.05em;
+  color:#F4F0E7;
+}
+
+.research-concept-227 .research227-approach-title>p{
+  max-width:690px;
+  margin:18px 0 0;
+  font-size:14px;
+  line-height:1.72;
+  color:#A39D93;
+}
+
+.research-concept-227 .research227-method-system{
+  position:relative;
+  border-top:1px solid rgba(244,240,231,.16);
+}
+
+.research-concept-227 .research227-method-axis{
+  position:absolute;
+  left:199px;
+  top:0;
+  bottom:164px;
+  width:1px;
+  pointer-events:none;
+  background:linear-gradient(
+    180deg,
+    rgba(211,126,101,.10),
+    rgba(244,240,231,.15) 18%,
+    rgba(244,240,231,.10) 82%,
+    rgba(211,126,101,.08)
+  );
+}
+
+.research-concept-227 .research227-method-axis span{
+  position:absolute;
+  left:50%;
+  top:0;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:#D17A60;
+  box-shadow:0 0 12px rgba(211,126,101,.28);
+}
+
+.research-concept-227 .research227-method-row{
+  --method-rgb:211,126,101;
+  --method-solid:#D37E65;
+  position:relative;
+  display:grid;
+  grid-template-columns:170px minmax(210px,.58fr) minmax(360px,1fr);
+  gap:42px;
+  align-items:center;
+  min-height:104px;
+  padding:27px 0 29px;
+  border-bottom:1px solid rgba(244,240,231,.105);
+  transition:
+    background .30s ease,
+    transform .34s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .method-qualitative{
+  --method-rgb:126,157,168;
+  --method-solid:#7E9DA8;
+}
+
+.research-concept-227 .method-mixed{
+  --method-rgb:154,126,137;
+  --method-solid:#9A7E89;
+}
+
+.research-concept-227 .method-participatory{
+  --method-rgb:143,157,126;
+  --method-solid:#8F9D7E;
+}
+
+.research-concept-227 .research227-method-row::before{
+  content:"";
+  position:absolute;
+  left:196px;
+  top:50%;
+  width:7px;
+  height:7px;
+  border:1px solid var(--method-solid);
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:#27251F;
+  box-shadow:0 0 0 rgba(var(--method-rgb),0);
+  transition:
+    background .28s ease,
+    box-shadow .30s ease,
+    transform .32s cubic-bezier(.22,1,.36,1);
+}
+
+.research-concept-227 .research227-method-row::after{
+  content:"";
+  position:absolute;
+  inset:10% -18px;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    radial-gradient(
+      ellipse at 42% 50%,
+      rgba(var(--method-rgb),.075) 0%,
+      rgba(var(--method-rgb),.026) 42%,
+      transparent 70%
+    );
+  opacity:0;
+  filter:blur(12px);
+  transition:opacity .32s ease;
+}
+
+.research-concept-227 .research227-method-row:hover{
+  transform:translateX(3px);
+  background:rgba(244,240,231,.012);
+}
+
+.research-concept-227 .research227-method-row:hover::before{
+  background:var(--method-solid);
+  box-shadow:
+    0 0 10px rgba(var(--method-rgb),.32),
+    0 0 24px rgba(var(--method-rgb),.12);
+  transform:translate(-50%,-50%) scale(1.08);
+}
+
+.research-concept-227 .research227-method-row:hover::after{
+  opacity:1;
+}
+
+.research-concept-227 .research227-method-meta{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  padding-right:16px;
+}
+
+.research-concept-227 .research227-method-index{
+  font-size:9px;
+  letter-spacing:.16em;
+  color:#6E6961;
+}
+
+.research-concept-227 .research227-method-family{
+  font-size:9px;
+  line-height:1;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--method-solid);
+  transition:
+    color .28s ease,
+    text-shadow .28s ease;
+}
+
+.research-concept-227 .research227-method-row:hover .research227-method-family{
+  text-shadow:0 0 15px rgba(var(--method-rgb),.20);
+}
+
+.research-concept-227 .research227-method-purpose{
+  padding-left:8px;
+}
+
+.research-concept-227 .research227-method-purpose span{
+  display:block;
+  font-family:"Manrope",sans-serif;
+  font-size:clamp(20px,1.75vw,27px);
+  font-weight:400;
+  line-height:1.18;
+  letter-spacing:-.032em;
+  color:#EEE8DE;
+  transition:
+    color .28s ease,
+    text-shadow .30s ease;
+}
+
+.research-concept-227 .research227-method-row:hover .research227-method-purpose span{
+  color:#FFF7EC;
+  text-shadow:0 0 24px rgba(var(--method-rgb),.075);
+}
+
+.research-concept-227 .research227-method-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.research-concept-227 .research227-method-list span{
+  display:inline-flex;
+  align-items:center;
+  min-height:28px;
+  padding:6px 9px 5px;
+  border:1px solid rgba(244,240,231,.13);
+  background:rgba(244,240,231,.015);
+  font-size:9px;
+  line-height:1.15;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:#A9A298;
+  transition:
+    border-color .28s ease,
+    background .28s ease,
+    color .28s ease,
+    box-shadow .28s ease;
+}
+
+.research-concept-227 .research227-method-row:hover .research227-method-list span{
+  border-color:rgba(var(--method-rgb),.24);
+  background:rgba(var(--method-rgb),.035);
+  color:#C9C1B6;
+  box-shadow:0 0 16px rgba(var(--method-rgb),.035);
+}
+
+.research-concept-227 .research227-method-footer{
+  display:grid;
+  grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);
+  gap:1px;
+  margin-top:34px;
+  border:1px solid rgba(244,240,231,.12);
+  background:rgba(244,240,231,.10);
+}
+
+.research-concept-227 .research227-synthesis,
+.research-concept-227 .research227-context-fit{
+  position:relative;
+  min-height:126px;
+  padding:27px 30px;
+  background:#27251F;
+}
+
+.research-concept-227 .research227-synthesis span,
+.research-concept-227 .research227-context-fit>span{
+  display:block;
+  margin-bottom:10px;
+  font-size:8.5px;
+  line-height:1;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#D17A60;
+}
+
+.research-concept-227 .research227-synthesis strong,
+.research-concept-227 .research227-context-fit strong{
+  display:block;
+  font-family:"Manrope",sans-serif;
+  font-size:21px;
+  font-weight:400;
+  line-height:1.15;
+  letter-spacing:-.025em;
+  color:#F0E9DF;
+}
+
+.research-concept-227 .research227-synthesis::after{
+  content:"";
+  position:absolute;
+  right:28px;
+  top:50%;
+  width:54px;
+  height:54px;
+  border:1px solid rgba(126,157,168,.20);
+  border-radius:50%;
+  transform:translateY(-50%);
+  box-shadow:
+    0 0 0 12px rgba(126,157,168,.025),
+    0 0 24px rgba(126,157,168,.025);
+}
+
+.research-concept-227 .research227-context-fit{
+  background:
+    radial-gradient(circle at 86% 50%,rgba(211,126,101,.055),transparent 28%),
+    #27251F;
+}
+
+.research-concept-227 .research227-context-fit p{
+  max-width:570px;
+  margin:10px 0 0;
+  font-size:12.5px;
+  line-height:1.65;
+  color:#AAA39A;
+}
+
+.research-concept-227 .research227-context-fit::after{
+  content:"";
+  position:absolute;
+  right:28px;
+  bottom:24px;
+  width:78px;
+  height:1px;
+  background:linear-gradient(90deg,rgba(211,126,101,0),rgba(211,126,101,.62));
+}
+
+@media(max-width:1000px){
+  .research-concept-227 .research227-method-axis{
+    left:149px;
+  }
+
+  .research-concept-227 .research227-method-row{
+    grid-template-columns:120px minmax(190px,.62fr) minmax(280px,1fr);
+    gap:28px;
+  }
+
+  .research-concept-227 .research227-method-row::before{
+    left:146px;
+  }
+}
+
+@media(max-width:760px){
+  .research-concept-227 .research227-approach{
+    padding:70px 0 76px;
+  }
+
+  .research-concept-227 .research227-approach-head{
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-bottom:42px;
+  }
+
+  .research-concept-227 .research227-approach-kicker{
+    padding-top:0;
+  }
+
+  .research-concept-227 .research227-method-axis{
+    left:6px;
+    top:26px;
+    bottom:192px;
+  }
+
+  .research-concept-227 .research227-method-row{
+    grid-template-columns:1fr;
+    gap:12px;
+    min-height:0;
+    padding:27px 0 29px 28px;
+  }
+
+  .research-concept-227 .research227-method-row::before{
+    left:6px;
+    top:31px;
+  }
+
+  .research-concept-227 .research227-method-purpose{
+    padding-left:0;
+  }
+
+  .research-concept-227 .research227-method-footer{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:600px){
+  .research-concept-227 .research227-approach{
+    padding:62px 0 68px;
+  }
+
+  .research-concept-227 .research227-approach-kicker>span{
+    width:42px;
+  }
+
+  .research-concept-227 .research227-synthesis,
+  .research-concept-227 .research227-context-fit{
+    padding:24px 22px;
+  }
+
+  .research-concept-227 .research227-synthesis::after{
+    width:42px;
+    height:42px;
+    right:20px;
+  }
+}
