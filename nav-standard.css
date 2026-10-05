@@ -1,0 +1,48 @@
+/* =========================================================
+   GLOBAL PRIMARY NAV — FINAL OVERRIDE TEST
+   Loaded AFTER every page-specific stylesheet so all pages
+   render the same navigation surface and active indicator.
+   ========================================================= */
+
+html body .site-header,
+html body.home-final .site-header,
+html body.homepage .site-header,
+html body.about-page .site-header,
+html body.research-concept-228 .site-header,
+html body.projects-page .site-header,
+html body.publications-page .site-header,
+html body.impact-page .site-header,
+html body.contact-page .site-header{
+  background:#2B2924 !important;
+  background-color:#2B2924 !important;
+  border-bottom:1px solid rgba(244,240,231,.13) !important;
+  color:#F4F0E7 !important;
+}
+
+html body .site-header .brand,
+html body .site-header .nav-links a{
+  color:#F4F0E7 !important;
+}
+
+html body .site-header .nav-links a[aria-current="page"]{
+  opacity:1 !important;
+  background:none !important;
+}
+
+html body .site-header .nav-links a[aria-current="page"]::after{
+  content:"" !important;
+  display:block !important;
+  position:absolute !important;
+  left:0 !important;
+  bottom:-7px !important;
+  width:100% !important;
+  height:1px !important;
+  background:#D97A63 !important;
+  opacity:1 !important;
+}
+
+@media(max-width:800px){
+  html body .site-header .nav-links a[aria-current="page"]::after{
+    bottom:-5px !important;
+  }
+}
