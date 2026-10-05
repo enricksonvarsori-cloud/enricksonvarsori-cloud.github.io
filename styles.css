@@ -13282,3 +13282,17 @@ button:focus-visible,
     transform:none;
   }
 }
+
+
+/* =========================================================
+   NAV ACTIVE ACCENT TEST — TERRACOTTA
+   Test version: use one consistent active-page underline
+   colour across all primary navigation items.
+   ========================================================= */
+
+.site-header .nav-links a[aria-current="page"]::after,
+.homepage .site-header .nav-links a[aria-current="page"]::after,
+body.home-final .site-header .nav-links a[aria-current="page"]::after,
+.contact-page .site-header .nav-links a[aria-current="page"]::after{
+  background:#D97A63 !important;
+}
