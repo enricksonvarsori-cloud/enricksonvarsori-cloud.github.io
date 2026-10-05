@@ -13332,3 +13332,24 @@ body.home-final .site-header .nav-links a[aria-current="page"]::after,
     background-position:left calc(100% + 5px) !important;
   }
 }
+
+
+/* =========================================================
+   PRIMARY NAV BACKGROUND TEST — CHARCOAL #2B2924
+   Test one consistent navigation background across the site.
+   ========================================================= */
+
+.site-header,
+.homepage .site-header,
+body.home-final .site-header,
+.about-page .site-header,
+.research-concept-228 .site-header,
+.projects-page .site-header,
+.publications-page .site-header,
+.impact-page .site-header,
+.contact-page .site-header{
+  background:#2B2924 !important;
+  background-color:#2B2924 !important;
+  border-bottom-color:rgba(244,240,231,.13) !important;
+  color:#F4F0E7 !important;
+}
