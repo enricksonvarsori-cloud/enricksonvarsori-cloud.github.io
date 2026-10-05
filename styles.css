@@ -13069,3 +13069,216 @@ button:focus-visible,
       transparent 72%
     ) !important;
 }
+
+
+/* =========================================================
+   CONTACT — FINAL 2.1
+   Validated desktop and mobile implementation — 5 October 2026.
+   ========================================================= */
+
+/* =========================================================
+   CONTACT — CONCEPT 2.1
+   Validation version only.
+   ========================================================= */
+
+/* Hero: slightly tighter relationship between title and side copy */
+.contact-page .contact-hero-grid{
+  grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr) !important;
+  gap:64px !important;
+}
+
+.contact-page .contact-hero-side{
+  max-width:520px;
+  justify-self:start;
+}
+
+/* Direct contact: clearer editorial hierarchy */
+.contact-page .contact-email{
+  display:inline-flex !important;
+  align-items:center;
+  gap:8px;
+}
+
+.contact-page .contact-email span{
+  font-family:"Helvetica Neue",Arial,sans-serif !important;
+  font-variant-emoji:text;
+  font-size:.9em;
+  transition:transform .28s cubic-bezier(.22,1,.36,1);
+}
+
+.contact-page .contact-email:hover span,
+.contact-page .contact-email:focus-visible span{
+  transform:translate(3px,-3px);
+}
+
+.contact-page .contact-affiliation{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  margin-top:48px !important;
+  max-width:470px !important;
+}
+
+.contact-page .contact-affiliation span{
+  display:block;
+}
+
+.contact-page .contact-affiliation span:first-child{
+  color:#4E4942;
+  font-size:15px;
+  font-weight:500;
+  line-height:1.45;
+}
+
+.contact-page .contact-affiliation span:nth-child(2){
+  color:#6C665D;
+  font-size:13.5px;
+  line-height:1.5;
+}
+
+.contact-page .contact-affiliation span:last-child{
+  color:#777168;
+  font-size:13.5px;
+  line-height:1.5;
+}
+
+.contact-page .contact-location{
+  margin-top:16px !important;
+}
+
+/* Profile links: same restrained interaction language as the rest of the site */
+.contact-page .contact-profile-link{
+  --contact-rgb:217,122,99;
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  transition:
+    padding .30s cubic-bezier(.22,1,.36,1),
+    color .25s ease,
+    background .25s ease;
+}
+
+.contact-page .contact-profile-link:nth-child(2){
+  --contact-rgb:120,151,170;
+}
+
+.contact-page .contact-profile-link:nth-child(3){
+  --contact-rgb:184,169,139;
+}
+
+.contact-page .contact-profile-link:nth-child(4){
+  --contact-rgb:143,177,166;
+}
+
+.contact-page .contact-profile-link:nth-child(5){
+  --contact-rgb:164,138,119;
+}
+
+.contact-page .contact-profile-link::before{
+  content:"";
+  position:absolute;
+  inset:-40% -8%;
+  z-index:-1;
+  pointer-events:none;
+  background:radial-gradient(
+    ellipse at 64% 50%,
+    rgba(var(--contact-rgb),.12) 0%,
+    rgba(var(--contact-rgb),.04) 42%,
+    transparent 72%
+  );
+  filter:blur(12px);
+  opacity:0;
+  transform:scale(.93);
+  transition:opacity .3s ease,transform .44s cubic-bezier(.22,1,.36,1);
+}
+
+.contact-page .contact-profile-link:hover,
+.contact-page .contact-profile-link:focus-visible{
+  padding-left:12px !important;
+  padding-right:10px !important;
+  color:#34312B !important;
+  background:rgba(244,240,231,.22) !important;
+}
+
+.contact-page .contact-profile-link:hover::before,
+.contact-page .contact-profile-link:focus-visible::before{
+  opacity:1;
+  transform:scale(1);
+}
+
+.contact-page .contact-profile-link span:last-child{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:auto !important;
+  height:auto !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  background:none !important;
+  box-shadow:none !important;
+  color:rgb(var(--contact-rgb)) !important;
+  font-family:"Helvetica Neue",Arial,sans-serif !important;
+  font-size:17px !important;
+  font-variant-emoji:text;
+  line-height:1 !important;
+  transition:transform .28s cubic-bezier(.22,1,.36,1),color .22s ease;
+}
+
+.contact-page .contact-profile-link:hover span:last-child,
+.contact-page .contact-profile-link:focus-visible span:last-child{
+  transform:translate(3px,-3px) !important;
+}
+
+/* Slightly more intentional spacing in the light section */
+.contact-page .contact-primary,
+.contact-page .contact-profiles{
+  padding-top:46px !important;
+  padding-bottom:50px !important;
+}
+
+/* Footer correction is part of this concept */
+.contact-page .footer-meta{
+  white-space:nowrap;
+}
+
+@media(max-width:900px){
+  .contact-page .contact-hero-grid{
+    grid-template-columns:1fr !important;
+    gap:34px !important;
+  }
+
+  .contact-page .contact-hero-side{
+    max-width:620px;
+  }
+
+  .contact-page .contact-primary,
+  .contact-page .contact-profiles{
+    padding-top:36px !important;
+    padding-bottom:40px !important;
+  }
+}
+
+@media(max-width:720px){
+  .contact-page .contact-affiliation{
+    margin-top:36px !important;
+  }
+
+  .contact-page .contact-profile-link{
+    min-height:66px;
+  }
+
+  .contact-page .contact-profile-link:hover,
+  .contact-page .contact-profile-link:focus-visible{
+    padding-left:0 !important;
+    padding-right:0 !important;
+    background:transparent !important;
+  }
+
+  .contact-page .contact-profile-link:hover::before,
+  .contact-page .contact-profile-link:focus-visible::before{
+    opacity:0;
+    transform:none;
+  }
+}
