@@ -13296,3 +13296,39 @@ body.home-final .site-header .nav-links a[aria-current="page"]::after,
 .contact-page .site-header .nav-links a[aria-current="page"]::after{
   background:#D97A63 !important;
 }
+
+
+/* =========================================================
+   PRIMARY NAV ACTIVE INDICATOR — FINAL STANDARD
+   One literal colour and one rendering method on every page.
+   Avoids page-specific pseudo-element differences.
+   ========================================================= */
+
+.site-header .nav-links a[aria-current="page"],
+.homepage .site-header .nav-links a[aria-current="page"],
+body.home-final .site-header .nav-links a[aria-current="page"],
+.contact-page .site-header .nav-links a[aria-current="page"]{
+  --nav-active-accent:#D97A63;
+  opacity:1 !important;
+  background-image:linear-gradient(var(--nav-active-accent),var(--nav-active-accent)) !important;
+  background-repeat:no-repeat !important;
+  background-size:100% 1px !important;
+  background-position:left calc(100% + 7px) !important;
+}
+
+.site-header .nav-links a[aria-current="page"]::after,
+.homepage .site-header .nav-links a[aria-current="page"]::after,
+body.home-final .site-header .nav-links a[aria-current="page"]::after,
+.contact-page .site-header .nav-links a[aria-current="page"]::after{
+  display:none !important;
+  content:none !important;
+}
+
+@media(max-width:800px){
+  .site-header .nav-links a[aria-current="page"],
+  .homepage .site-header .nav-links a[aria-current="page"],
+  body.home-final .site-header .nav-links a[aria-current="page"],
+  .contact-page .site-header .nav-links a[aria-current="page"]{
+    background-position:left calc(100% + 5px) !important;
+  }
+}
