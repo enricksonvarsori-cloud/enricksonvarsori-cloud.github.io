@@ -13353,3 +13353,17 @@ body.home-final .site-header,
   border-bottom-color:rgba(244,240,231,.13) !important;
   color:#F4F0E7 !important;
 }
+
+
+/* LEGAL PAGES — Accessibility & Privacy */
+.privacy-page .accessibility-hero .label{
+  color:#F0A08D;
+}
+.privacy-page .accessibility-document strong{
+  font-weight:600;
+}
+@media(max-width:800px){
+  .accessibility-page .site-footer .footer-grid{
+    align-items:start;
+  }
+}
