@@ -13442,3 +13442,65 @@ body.home-final .site-header,
     font-size:10px !important;
   }
 }
+
+/* =========================================================
+   PUBLICATIONS — FINAL 2.2
+   Validated typography refinement.
+   ========================================================= */
+/* PUBLICATIONS TEST 2.2 — typography refinement only */
+
+.publications-page .publications-hero-side>p{
+  font-size:16px !important;
+  line-height:1.72 !important;
+}
+
+.publications-page .publication-card-meta{
+  font-size:12.5px !important;
+}
+
+.publications-page .publication-card-body>p:not(.publication-card-meta){
+  font-size:14.5px !important;
+  line-height:1.68 !important;
+}
+
+.publications-page .publication-card-tags span{
+  font-size:10.5px !important;
+}
+
+.publications-page .publication-card-action{
+  font-size:12.5px !important;
+}
+
+.publications-page .publication-card-label{
+  font-size:12.5px !important;
+}
+
+.publications-page .publications-record-links a{
+  font-size:13.5px !important;
+}
+
+@media(max-width:720px){
+  .publications-page .publications-hero-side>p{
+    font-size:15px !important;
+  }
+
+  .publications-page .publication-card-meta{
+    font-size:12px !important;
+  }
+
+  .publications-page .publication-card-body>p:not(.publication-card-meta){
+    font-size:14px !important;
+  }
+
+  .publications-page .publication-card-tags span{
+    font-size:10px !important;
+  }
+
+  .publications-page .publication-card-action{
+    font-size:12px !important;
+  }
+
+  .publications-page .publication-card-label{
+    font-size:12px !important;
+  }
+}
