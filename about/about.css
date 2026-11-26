@@ -3699,3 +3699,105 @@
     padding-bottom:36px;
   }
 }
+
+
+/* =========================================================
+   ABOUT — FINAL 2.12
+   Institutional update + validated typography scale.
+   ========================================================= */
+/* ABOUT TEST 2.12 — institutional update + typography scale */
+.about-page .about-lead{
+  font-size:18px !important;
+  line-height:1.72 !important;
+  max-width:760px !important;
+}
+
+.about-page .about-story-copy,
+.about-page .about-story-copy p,
+.about-page .about-story-copy p:first-child{
+  font-size:16.5px !important;
+  line-height:1.78 !important;
+}
+
+.about-page .about27-theme p,
+.about-page .about282-method-card p{
+  font-size:14px !important;
+  line-height:1.65 !important;
+}
+
+.about-page .about282-method-lead{
+  font-size:16px !important;
+  line-height:1.7 !important;
+}
+
+.about-page .about-trajectory-stage{
+  font-size:11px !important;
+}
+
+.about-page .about-trajectory-place{
+  font-size:13px !important;
+  line-height:1.5 !important;
+}
+
+.about-page .about2101-ecosystem-intro > p:not(.about-kicker){
+  font-size:15.5px !important;
+  line-height:1.7 !important;
+}
+
+.about-page .about2101-ecosystem-column h3{
+  font-size:15.5px !important;
+}
+
+.about-page .about2101-entry strong{
+  font-size:15px !important;
+}
+
+.about-page .about2101-entry span{
+  font-size:14px !important;
+  line-height:1.55 !important;
+}
+
+.about-page .about2101-entry small{
+  display:block;
+  margin-top:5px;
+  font-size:12.75px !important;
+  line-height:1.55 !important;
+}
+
+.about-page .about2101-ecosystem-intro > a{
+  font-size:12.5px !important;
+}
+
+@media(max-width:800px){
+  .about-page .about-lead{
+    font-size:15px !important;
+    line-height:1.7 !important;
+  }
+  .about-page .about-story-copy,
+  .about-page .about-story-copy p,
+  .about-page .about-story-copy p:first-child{
+    font-size:15px !important;
+  }
+  .about-page .about27-theme p,
+  .about-page .about282-method-card p{
+    font-size:13.5px !important;
+  }
+  .about-page .about282-method-lead{
+    font-size:14.5px !important;
+  }
+  .about-page .about-trajectory-place{
+    font-size:12.5px !important;
+  }
+  .about-page .about2101-ecosystem-intro > p:not(.about-kicker){
+    font-size:14.5px !important;
+  }
+  .about-page .about2101-entry strong{
+    font-size:14.5px !important;
+  }
+  .about-page .about2101-entry span{
+    font-size:13px !important;
+  }
+  .about-page .about2101-entry small{
+    font-size:12px !important;
+  }
+}
