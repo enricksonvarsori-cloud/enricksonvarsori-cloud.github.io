@@ -1,0 +1,69 @@
+/* PROJECT INVOLVEMENT TEST 2.2.18 — typography refinement only
+   Preserve validated cards, glow system, layout and interactions. */
+
+.projects-page .concept222-hero .lead{
+  font-size:16.5px !important;
+  line-height:1.74 !important;
+}
+
+.projects-page .projects-bridge-copy p{
+  font-size:15px !important;
+  line-height:1.7 !important;
+}
+
+.projects-page .projects-bridge-kicker,
+.projects-page .concept222-hero .label{
+  font-size:10.5px !important;
+}
+
+.projects-page .story-card-type{
+  font-size:11.5px !important;
+}
+
+.projects-page .story-card-meta{
+  font-size:11.5px !important;
+  line-height:1.5 !important;
+}
+
+.projects-page .story-card .story-copy{
+  font-size:14.5px !important;
+  line-height:1.65 !important;
+}
+
+.projects-page .story-card-index{
+  font-size:10.5px !important;
+}
+
+.projects-page .projects-next-meta{
+  font-size:10.5px !important;
+}
+
+@media(max-width:700px){
+  .projects-page .concept222-hero .lead{
+    font-size:15px !important;
+  }
+
+  .projects-page .projects-bridge-copy p{
+    font-size:14.5px !important;
+  }
+
+  .projects-page .story-card-type{
+    font-size:10.5px !important;
+  }
+
+  .projects-page .story-card-meta{
+    font-size:11.5px !important;
+  }
+
+  .projects-page .story-card .story-copy{
+    font-size:13.5px !important;
+  }
+
+  .projects-page .story-card-index{
+    font-size:10px !important;
+  }
+
+  .projects-page .projects-next-meta{
+    font-size:10px !important;
+  }
+}
