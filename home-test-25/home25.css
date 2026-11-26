@@ -1,0 +1,64 @@
+/* HOME TEST 2.5 — institutional update + typography scale */
+body.home-final .home-affiliation-sub{
+  display:inline-block;
+  margin-top:4px;
+  color:#5F5A52;
+}
+
+body.home-final .home-projects-section .premium-heading .section-note,
+body.home-final .home-publications-section .premium-heading .section-note,
+body.home-final .home-ecosystem-section .premium-heading .section-note,
+body.home-final .home-territories-section .premium-heading .section-note{
+  font-size:14px !important;
+  line-height:1.65 !important;
+}
+
+body.home-final .home-projects-section .project-slide-copy p:not(.project-kicker),
+body.home-final .home-practice-section .practice-copy p{
+  font-size:14.5px !important;
+  line-height:1.65 !important;
+}
+
+body.home-final .home-publications-section .pub-meta{
+  font-size:13px !important;
+}
+
+body.home-final .home-projects-section .premium-heading .label,
+body.home-final .home-publications-section .premium-heading .label,
+body.home-final .home-ecosystem-section .premium-heading .label,
+body.home-final .home-practice-section .practice-copy .label,
+body.home-final .home-ecosystem-type{
+  font-size:11.5px !important;
+}
+
+body.home-final .home-ecosystem-entry h3{
+  font-size:16px !important;
+}
+
+body.home-final .home-ecosystem-entry p{
+  font-size:13.5px !important;
+  line-height:1.6 !important;
+}
+
+body.home-final .home-projects-section .project-slide-copy .text-link,
+body.home-final .home-publications-section > .wrap > .text-link,
+body.home-final .home-practice-section .practice-copy .text-link,
+body.home-final .home-ecosystem-section > .wrap > .text-link{
+  font-size:12px !important;
+}
+
+@media(max-width:800px){
+  body.home-final .home-projects-section .premium-heading .section-note,
+  body.home-final .home-publications-section .premium-heading .section-note,
+  body.home-final .home-ecosystem-section .premium-heading .section-note,
+  body.home-final .home-territories-section .premium-heading .section-note{
+    font-size:14px !important;
+  }
+  body.home-final .home-projects-section .project-slide-copy p:not(.project-kicker),
+  body.home-final .home-practice-section .practice-copy p{
+    font-size:14px !important;
+  }
+  body.home-final .home-ecosystem-entry p{
+    font-size:13.5px !important;
+  }
+}
