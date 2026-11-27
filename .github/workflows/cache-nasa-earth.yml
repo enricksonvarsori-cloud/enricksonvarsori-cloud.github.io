@@ -1,0 +1,49 @@
+name: Cache NASA Earth assets
+
+on:
+  push:
+    paths:
+      - '.github/workflows/cache-nasa-earth.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  cache-earth:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download NASA Earth assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+          curl -fL --retry 4 --retry-delay 3 \
+            -A "Mozilla/5.0" \
+            -e "https://svs.gsfc.nasa.gov/5570" \
+            "https://svs.gsfc.nasa.gov/vis/a000000/a005500/a005570/Earth_wAtmos_spin_02.04000.still.jpg" \
+            -o assets/earth-nasa-still.jpg
+          curl -fL --retry 4 --retry-delay 3 \
+            -A "Mozilla/5.0" \
+            -e "https://svs.gsfc.nasa.gov/5570" \
+            "https://svs.gsfc.nasa.gov/vis/a000000/a005500/a005570/Earth_wAtmos_spin_02_1080p60.mp4" \
+            -o assets/earth-nasa-motion.mp4
+          test -s assets/earth-nasa-still.jpg
+          test -s assets/earth-nasa-motion.mp4
+
+      - name: Commit cached assets
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/earth-nasa-still.jpg assets/earth-nasa-motion.mp4
+          if git diff --cached --quiet; then
+            echo "Assets already present."
+          else
+            git commit -m "Cache NASA Earth assets locally"
+            git push
+          fi
