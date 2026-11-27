@@ -13573,3 +13573,67 @@ body.home-final .site-header,
     font-size:10px !important;
   }
 }
+
+/* =========================================================
+   CONTACT — FINAL 2.2
+   Institutional update + validated typography refinement.
+   ========================================================= */
+/* CONTACT TEST 2.2 — institutional update + typography refinement */
+
+.contact-page .contact-hero-side p{
+  font-size:18px !important;
+  line-height:1.74 !important;
+}
+
+.contact-page .contact-kicker{
+  font-size:11.5px !important;
+}
+
+.contact-page .contact-affiliation span:first-child{
+  font-size:16px !important;
+}
+
+.contact-page .contact-affiliation span:nth-child(2),
+.contact-page .contact-affiliation span:nth-child(3),
+.contact-page .contact-affiliation span:nth-child(4){
+  font-size:14px !important;
+  line-height:1.55 !important;
+}
+
+.contact-page .contact-affiliation span:nth-child(4){
+  margin-top:3px;
+  color:#615B53 !important;
+  font-weight:500;
+}
+
+.contact-page .contact-location{
+  font-size:12px !important;
+}
+
+.contact-page .contact-profile-link span:first-child{
+  font-size:18px !important;
+}
+
+@media(max-width:720px){
+  .contact-page .contact-hero-side p{
+    font-size:15.5px !important;
+  }
+
+  .contact-page .contact-kicker{
+    font-size:11px !important;
+  }
+
+  .contact-page .contact-affiliation span:first-child{
+    font-size:15.5px !important;
+  }
+
+  .contact-page .contact-affiliation span:nth-child(2),
+  .contact-page .contact-affiliation span:nth-child(3),
+  .contact-page .contact-affiliation span:nth-child(4){
+    font-size:13.5px !important;
+  }
+
+  .contact-page .contact-location{
+    font-size:11.5px !important;
+  }
+}
